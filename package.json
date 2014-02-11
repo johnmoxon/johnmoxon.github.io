@@ -1,0 +1,32 @@
+{
+  "name": "jmoxonblog",
+  "version": "0.0.1",
+  "description": "Geek block using Jekyll and GulpJS",
+  "license": "",
+  "repository": "johnmoxon/johnmoxon.github.io",
+  "author": {
+    "name": "John Moxon",
+    "email": "john@jmoxon.net",
+    "url": "https://github.com/johnmoxon"
+  },
+  "dependencies": {
+    "gulp": "~3.5.2",
+    "stream-combiner": "~0.0.4",
+    "gulp-util": "~2.2.14",
+    "gulp": "~3.5.2",
+    "gulp-exec": "~1.0.4",
+    "gulp-rename": "~1.0.0",
+    "gulp-git": "~0.3.0",
+    "gulp-livereload": "~1.1.1",
+    "gulp-uglify": "~0.2.1",
+    "gulp-compass": "~1.1.2",
+    "gulp-cdnizer": "~0.2.2",
+    "gulp-jshint": "~1.4.0",
+    "gulp-sass": "~0.7.0",
+    "bower": "~1.2.8",
+    "gulp-imagemin": "~0.1.5"
+  },
+  "engines": {
+    "npm": "1.3.x"
+  }
+}
