@@ -1,99 +1,126 @@
 // var Combine = require('stream-combiner');
-var jshint = require('gulp-jshint');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
-var compass = require('gulp-compass');
-var watch = require('gulp-watch');
-
-// var File = require('vinyl');
-var gulp = require('gulp');
-var child_process = require('child_process');
+var jshint      = require('gulp-jshint'),
+  concat        = require('gulp-concat'),
+  rename        = require('gulp-rename'),
+  uglify        = require('gulp-uglify'),
+  sass          = require('gulp-sass'),
+  compass       = require('gulp-compass'),
+  watch         = require('gulp-watch'),
+  reload        = require('gulp-livereload'),
+  images        = require('gulp-imagemin'),
+  // rev        = require('gulp-rev'),
+  // inject     = require('gulp-inject'),
+  child_process = require('child_process'),
+  gulp          = require('gulp');
 
 /** Define sources and paths */
 var paths = {
-  assets   : './app/assets/',
-  src      : './src/',
-  images   : './client/img/**/*',
-  posts    : './_posts/',
-};
-paths.sass_src = paths.src + 'sass/*.scss',
-paths.js_src   = paths.src + 'js/*.js',
-paths.css_src  = paths.assets + 'css/';
-paths.css      = paths.css_src + "*.css";
-paths.js       = paths.assets + "js";
+  assets    : './assets/',
+  sass      : './src/sass/*.scss',
+  sasscfg   : './config.rb',
+  js        : './src/js/*.js',
+  css       : './src/css/',
+  cssmin    : './assets/css/',
+  jsmin     : './assets/js/',
+  img       : './src/images/**/*',
+  imgmin    : './assets/images/',
+  // images : './client/img/**/*',
 
-gulp.task('stub', function(){
-  console.dir(paths, 'paths');
-});
+  // When these assets change then we will need jekyll to rebuild
+  // This is handled by the jekyll serve command if passed the watch flag??
+  posts     : './_posts/*',
+  layouts   : './_layouts/*'
+};
+
+// gulp.task('live-reload', function(){
+//   gulp.watch(, function(){
+//     console.log();
+//   });
+// });
 
 
 /** Linting */
 
 // Lint JS
-gulp.task('lint', function() {
-  return gulp.src( paths.js_src )
+gulp.task('lint', function( done ) {
+  return gulp.src( paths.js )
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
+    done( err );
 });
 
 
 /** Optimising */
 
 // Concat & Minify JS
-gulp.task('js', function(){
-  gulp.src( paths.js_src )
+gulp.task('js', ['lint'], function(){
+  gulp.src( paths.js )
     .pipe(concat('all.js'))
-    .pipe(gulp.dest( paths.js ))
+    .pipe(gulp.dest( paths.jsmin ))
     .pipe(rename('all.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest( paths.js ));
-    // .pipe(gulp.dest( paths.js ));
+    .pipe(gulp.dest( paths.jsmin ));
 });
 
-/** Concatenates css files
+/** Concatenates css files - for compressed css, set in compass config
 /*  @ depends compass task
 */
-gulp.task('css', function(){
-  return gulp.src( paths.styles )
+gulp.task('css', ['compass'], function(){
+  return gulp.src( paths.css + '*.css' )
     .pipe(concat('all.css'))
-    .pipe(gulp.dest( paths.css ));
+    .pipe(gulp.dest( paths.cssmin ));
+
+
+    // Note: not minifying here as this will be done in the compass config
 });
 
 /** Compiling - i.e. sass/compass */
-gulp.task('compass', function() {
-    return gulp.src( paths.sass_src )
-      // .pipe(watch())
+gulp.task('compass', function( done ) {
+    return gulp.src( paths.sass )
       .pipe(compass({
         config_file: './config.rb',
-        css: './app/assets/css',
+        css: './src/css',
         sass: './src/sass'
       }))
-      .pipe(gulp.dest( paths.css_src));
+      .pipe(gulp.dest( paths.css ));
+
+      done(err);
 });
 
 
 /**  Serve - test server and live reload etc */
 
 // Run the jekyll server
-gulp.task('jekyllServe', function(){
-  child_process.spawn('jekyll', ['serve'], {stdio: 'inherit'});
+gulp.task('jekyll-serve', function(){
+  child_process.spawn('jekyll', ['serve', '--watch'], {stdio: 'inherit'});
 });
 
 /** Watch process - Watch for changes */
+gulp.task('watch', function () {
+  gulp.watch(paths.js_src, ['js']);
+  gulp.watch(paths.sass_src, ['css']);
+
+  // This is an expensive operation - only run for new posts or layout changes
+  // gulp.watch([paths.posts, paths.layouts], ['jekyll-build']);
+  child_process.spawn('jekyll', ['serve', '--watch'], {stdio: 'inherit'});
+});
+
 
 
 /** Build process */
 
 // Jekyll build
-gulp.task('jekyllBuild', function(){
+gulp.task('jekyll-build', function(){
   child_process.spawn('jekyll', ['build'], {stdio: 'inherit'});
 });
 
 /**
  * Task groups
  */
+
+gulp.task('serve', ['watch', 'jekyll-serve']);
+
+gulp.task('build', ['css', 'js', 'jekyll-build']);
 
 
 
