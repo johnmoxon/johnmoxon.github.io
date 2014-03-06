@@ -2,3 +2,4 @@ _site
 node_modules/
 .gulpfile.js.swp
 .sass-cache/
+jmoxon-blog.*
