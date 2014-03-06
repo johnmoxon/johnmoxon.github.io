@@ -1,4 +1,1 @@
-/* line 4, ../sass/base.scss */
-body { font: 100% Helvetica, sans-serif; color: #333333; font-size: 30px; }
-/* line 9, ../sass/base.scss */
-body h1 { background: #ff9900; color: #fff; padding: 59px; }
+body{font:200% Helvetica,sans-serif;color:#444;font-size:41px;background:#ffffff}body h1{color:#fff;padding:10px;border:10px dashed yellow;background:#add8e6}

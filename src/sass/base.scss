@@ -1,14 +1,17 @@
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: #444;
 
 body {
-  font: 100% $font-stack;
+  font: 200% $font-stack;
   color: $primary-color;
-  font-size: 30px;
+  font-size: 41px;
+  background: #ffffff;
 
   h1{
-    background:#ff9900;
     color:#fff;
-    padding:59px;
+    padding:10px;
+    border:10px dashed yellow;
+    background:lightblue
   }
+
 }
