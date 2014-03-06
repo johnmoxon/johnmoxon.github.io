@@ -8,7 +8,7 @@ var jshint      = require('gulp-jshint'),
   watch         = require('gulp-watch'),
   livereload    = require('gulp-livereload'),
   wait          = require('gulp-wait'),
-  images        = require('gulp-imagemin'),
+  imagemin      = require('gulp-imagemin'),
   // rev        = require('gulp-rev'),
   // inject     = require('gulp-inject'),
   watch         = require('gulp-watch'),
@@ -91,6 +91,13 @@ gulp.task('compass', function( done ) {
       done(err);
 });
 
+/** images */
+gulp.task('images', function () {
+  gulp.src(paths.img)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.imgmin));
+});
+
 /** Watch process - Watch for changes and reload */
 gulp.task('watch', function () {
   var s = livereload();
@@ -107,6 +114,7 @@ gulp.task('watch', function () {
   });
 
   // Watch for changes to _site dir and reload
+  // Watches in batch mode to avoid multiple reloads
   watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
       s.changed('file');
   });
