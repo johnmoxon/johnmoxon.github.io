@@ -1,4 +1,4 @@
-// var Combine = require('stream-combiner');
+/** Dependencies */
 var jshint      = require('gulp-jshint'),
   concat        = require('gulp-concat'),
   rename        = require('gulp-rename'),
@@ -6,14 +6,23 @@ var jshint      = require('gulp-jshint'),
   sass          = require('gulp-sass'),
   compass       = require('gulp-compass'),
   watch         = require('gulp-watch'),
-  reload        = require('gulp-livereload'),
+  livereload    = require('gulp-livereload'),
+  wait          = require('gulp-wait'),
   images        = require('gulp-imagemin'),
   // rev        = require('gulp-rev'),
   // inject     = require('gulp-inject'),
+  watch         = require('gulp-watch'),
+  // plumber       = require('gulp-plumber'),
   child_process = require('child_process'),
   gulp          = require('gulp');
 
-/** Define sources and paths */
+/** Server config */
+var connect = require('connect'),
+    path    = require('path'),
+    dir     = './_site',
+    port    = 4444;
+
+/** Sources and paths */
 var paths = {
   assets    : './assets/',
   sass      : './src/sass/*.scss',
@@ -21,6 +30,7 @@ var paths = {
   js        : './src/js/*.js',
   css       : './src/css/',
   cssmin    : './assets/css/',
+  cssbuild  : './_site/assets/css/',
   jsmin     : './assets/js/',
   img       : './src/images/**/*',
   imgmin    : './assets/images/',
@@ -32,12 +42,6 @@ var paths = {
   layouts   : './_layouts/*'
 };
 
-// gulp.task('live-reload', function(){
-//   gulp.watch(, function(){
-//     console.log();
-//   });
-// });
-
 
 /** Linting */
 
@@ -46,7 +50,7 @@ gulp.task('lint', function( done ) {
   return gulp.src( paths.js )
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
-    done( err );
+    // done( err );
 });
 
 
@@ -68,8 +72,8 @@ gulp.task('js', ['lint'], function(){
 gulp.task('css', ['compass'], function(){
   return gulp.src( paths.css + '*.css' )
     .pipe(concat('all.css'))
-    .pipe(gulp.dest( paths.cssmin ));
-
+    .pipe(gulp.dest( paths.cssmin ))
+    .pipe(gulp.dest( paths.cssbuild )); // For hot reload only, will get overwritten by jekyll build
 
     // Note: not minifying here as this will be done in the compass config
 });
@@ -87,57 +91,75 @@ gulp.task('compass', function( done ) {
       done(err);
 });
 
-
-/**  Serve - test server and live reload etc */
-
-// Run the jekyll server
-gulp.task('jekyll-serve', function(){
-  child_process.spawn('jekyll', ['serve', '--watch'], {stdio: 'inherit'});
-});
-
-/** Watch process - Watch for changes */
+/** Watch process - Watch for changes and reload */
 gulp.task('watch', function () {
-  gulp.watch(paths.js_src, ['js']);
-  gulp.watch(paths.sass_src, ['css']);
+  var s = livereload();
+  var spawn = child_process.spawn;
 
-  // This is an expensive operation - only run for new posts or layout changes
-  // gulp.watch([paths.posts, paths.layouts], ['jekyll-build']);
-  child_process.spawn('jekyll', ['serve', '--watch'], {stdio: 'inherit'});
+  // Watch the js and css source files
+  gulp.watch(paths.js, ['js']);
+  gulp.watch(paths.sass, ['css']);
+
+  // Watch for css changes in _site dir to inject
+  gulp.watch(paths.cssbuild + '**').on('change', function(file) {
+    console.log('File '+file.path+' was '+file.type+', reloading browser styles...');
+    s.changed(file.path);
+  });
+
+  // Watch for changes to _site dir and reload
+  watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
+      s.changed('file');
+  });
+
+  // Any other changes will need to trigger jekyll build
+  gulp.watch(['*.html', '*.yml', 'assets/js/**.js',
+    '_posts/**', '_includes/**', '_layouts/**'], function(file){
+      jekyll = spawn('jekyll', ['build']);
+      jekyll.stdout.on('data', function (data) {
+        console.log('jekyll: ' + data);
+      });
+  });
 });
-
 
 
 /** Build process */
 
 // Jekyll build
-gulp.task('jekyll-build', function(){
-  child_process.spawn('jekyll', ['build'], {stdio: 'inherit'});
-});
+// gulp.task('jekyll-build', function(){
+//   // child_process.spawn('jekyll', ['build'], {stdio: 'inherit'});
+//   child_process.exec('jekyll build');
+// });
 
 /**
  * Task groups
  */
-
-gulp.task('serve', ['watch', 'jekyll-serve']);
-
+// NOTE: currently not working
 gulp.task('build', ['css', 'js', 'jekyll-build']);
 
+/** Default task - serve and watch for changes (develop) */
+gulp.task('serve', ['watch'], function(){
 
+  // Serve the site from _site/ directory
+  console.log('Starting static web server...\n');
+  console.log('Web root: ' + dir);
+  console.log('Port    : ' + port);
+  console.log('Going to   : http://localhost:' + port);
+  try {
+    var app = connect()
+      .use(connect.static(dir))
+      .listen(port);
 
-// gulp.task('compass-build', function () {
+    child_process.exec('open -a Google\\ Chrome\\ Canary http://localhost:' + port,
+      function(error, stdout, stderr){
+        if (error && error.length) {
+          console.log('Launching Chrome Canary error:\n' + error);
+        }
+      });
 
-// })
-
-
-
-
-// Default
-gulp.task('default', function(){
-  gulp.run('lint', 'minify');
-  // gulp.run('lint', 'minify');
-
-  // Watch JS Files
-  gulp.watch("./src/js/*.js", function(event){
-    gulp.run('lint', 'minify');
-  });
+  } catch (e) {
+    console.log(e);
+  }
 });
+
+// Default task - Development mode
+gulp.task('default', ['serve']);
