@@ -9,11 +9,13 @@ var jshint      = require('gulp-jshint'),
   livereload    = require('gulp-livereload'),
   wait          = require('gulp-wait'),
   imagemin      = require('gulp-imagemin'),
-  rev        = require('gulp-rev'),
-  inject     = require('gulp-inject'),
+  rev           = require('gulp-rev'),
+  inject        = require('gulp-inject'),
   watch         = require('gulp-watch'),
   // plumber       = require('gulp-plumber'),
+  gulpif        = require('gulp-if'),
   child_process = require('child_process'),
+  exec          = require('gulp-exec'),
   gulp          = require('gulp');
 
 /** Server config */
@@ -43,7 +45,6 @@ var paths = {
   layouts   : '_layouts/'
 };
 
-
 /** Linting */
 
 // Lint JS
@@ -59,7 +60,7 @@ gulp.task('lint', function() {
 
 // Concat & Minify JS
 gulp.task('js', ['lint'], function(){
-  return gulp.src( paths.js )
+  gulp.src( paths.js )
     .pipe(concat('all.js'))
     .pipe(gulp.dest( paths.jsmin ))
     .pipe(rename('all.min.js'))
@@ -67,17 +68,12 @@ gulp.task('js', ['lint'], function(){
     .pipe(uglify())
     .pipe(gulp.dest( paths.jsmin ))
     // Inject revisioned file path into default template
-    .pipe(inject('src/_layouts/default.html', {
+    .pipe(inject('_layouts/default.html', {
       addRootSlash: false,  // ensures proper relative paths
       ignorePath: '/build/' // ensures proper relative paths
     }))
-    .pipe(gulp.dest(paths.layouts))
+    .pipe(gulp.dest(paths.layouts));
 });
-
-gulp.task('css-pre-serve', function () {
-  // This will
-  console.log(gulp.seq[0]);
-})
 
 /** Concatenates css files - for compressed css, set in compass config
 /*  @ depends compass task
@@ -85,27 +81,40 @@ gulp.task('css-pre-serve', function () {
 gulp.task('css', ['compass'], function(){
   return gulp.src( paths.css + '*.css' )
     .pipe(concat('all.css'))
-    .pipe(gulp.dest( paths.cssbuild )) // For hot reload only, will get overwritten by jekyll build
-    .pipe(gulp.dest( paths.cssmin ))
-    .pipe(inject('src/_layouts/**/*.html', {
+    .pipe(gulp.dest( paths.cssbuild )) // For hot reload only, overwritten on jekyll build
+    .pipe(gulp.dest( paths.cssmin ));
+});
+
+// To be run once before serving
+// injects development css path into template
+gulp.task('cssserve', ['css'], function () {
+  gulp.src(paths.cssmin + 'all.css')
+  .pipe(inject('_layouts/default.html', {
       addRootSlash: false  // ensures proper relative paths
     }))
-    .pipe(gulp.dest(paths.layouts)) // This will trigger a rebuild. We don't want that!
+    .pipe(gulp.dest(paths.layouts));
+});
 
-    // Note: not minifying here as this will be done in the compass config
+/** Revision CSS file and inject into the default layout */
+gulp.task('cssbuild', ['css'], function () {
+  gulp.src( paths.cssmin + 'all.css' )
+    .pipe(rev())
+    .pipe(gulp.dest( paths.cssmin ))
+    .pipe(inject('_layouts/default.html', {
+      addRootSlash: false
+    }))
+    .pipe(gulp.dest(paths.layouts));
 });
 
 /** Compiling - i.e. sass/compass */
 gulp.task('compass', function( done ) {
-    return gulp.src( paths.sass )
-      .pipe(compass({
-        config_file: './config.rb',
-        css: './src/css',
-        sass: './src/sass'
-      }))
-      .pipe(gulp.dest( paths.css ));
-
-      done(err);
+  return gulp.src( paths.sass )
+    .pipe(compass({
+      config_file: './config.rb',
+      css: './src/css',
+      sass: './src/sass'
+    }))
+    .pipe(gulp.dest( paths.css ));
 });
 
 /** images */
@@ -117,7 +126,7 @@ gulp.task('images', function () {
 
 /** Watch process - Watch for changes and reload */
 gulp.task('watch', function () {
-  var s = livereload();
+  var server = livereload();
   var spawn = child_process.spawn;
 
   // Watch the js and css source files
@@ -125,26 +134,31 @@ gulp.task('watch', function () {
   gulp.watch(paths.sass, ['css']);
   // gulp.watch(paths.img, ['images']);
 
+  // Should watch for new images, doesn't work
   watch({glob: [paths.img]}, function (files) {
-      s.changed('image');
+      server.changed('image');
   });
 
+  /** Hot reload */
   // Watch for css changes in _site dir to inject
   gulp.watch(paths.cssbuild + '**').on('change', function(file) {
     console.log('File '+file.path+' was '+file.type+', reloading browser styles...');
-    s.changed(file.path);
+    server.changed(file.path);
   });
 
+  /** Full refresh */
   // Watch for changes to _site dir and reload
   // Watches in batch mode to avoid multiple reloads
   watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
-      s.changed('file');
+      server.changed('file');
+  }).on('change', function (f) {
+    console.log('File '+f.path+' was '+file.type+', reloading browser styles...');
   });
 
-  // Any other changes will need to trigger jekyll build
+  // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html', '*.yml', 'assets/js/**.js',
     '_posts/**', '_includes/**', '_layouts/**'], function(file){
-      jekyll = spawn('jekyll', ['build']);
+      var jekyll = spawn('jekyll', ['build']);
       jekyll.stdout.on('data', function (data) {
         console.log('jekyll: ' + data);
       });
@@ -154,32 +168,21 @@ gulp.task('watch', function () {
 
 /** Build process */
 
-// gulp.task('build-layouts', ['js'], function () {
-//   return gulp.src('assets/js/*')
-//   .pipe(inject('src/_layouts/default.html', {
-//     addRootSlash: false,  // ensures proper relative paths
-//     ignorePath: '/build/' // ensures proper relative paths
-//   }))
-//   .pipe(gulp.dest(paths.jsmin));
-// });
-
 // Jekyll build
-// gulp.task('jekyll-build', function(){
-//   // child_process.spawn('jekyll', ['build'], {stdio: 'inherit'});
-//   child_process.exec('jekyll build');
-// });
+gulp.task('jekyll-build', function(){
+  var exec = child_process.exec;
+  var jekyll = exec('jekyll build');
+  return jekyll.stdout.on('data', function (data) {
+    console.log(data);
+  });
 
-/**
- * Task groups
- */
-// NOTE: currently not working
-gulp.task('build', ['css', 'js', 'jekyll-build']);
+});
 
-
+/** Build task */
+gulp.task('build', ['cssbuild', 'js', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['watch'], function(){
-
+gulp.task('serve', ['cssserve','jekyll-build','watch'], function(){
   // Serve the site from _site/ directory
   console.log('Starting static web server...\n');
   console.log('Web root: ' + dir);
@@ -202,5 +205,5 @@ gulp.task('serve', ['watch'], function(){
   }
 });
 
-// Default task - Development mode
+// Set default task - Development mode
 gulp.task('default', ['serve']);
