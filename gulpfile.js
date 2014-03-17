@@ -13,7 +13,6 @@ var jshint      = require('gulp-jshint'),
   inject        = require('gulp-inject'),
   watch         = require('gulp-watch'),
   // plumber       = require('gulp-plumber'),
-  gulpif        = require('gulp-if'),
   child_process = require('child_process'),
   exec          = require('gulp-exec'),
   gulp          = require('gulp');
