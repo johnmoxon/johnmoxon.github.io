@@ -12,7 +12,7 @@ var jshint      = require('gulp-jshint'),
   rev           = require('gulp-rev'),
   inject        = require('gulp-inject'),
   watch         = require('gulp-watch'),
-  // plumber       = require('gulp-plumber'),
+  plumber       = require('gulp-plumber'),
   child_process = require('child_process'),
   exec          = require('gulp-exec'),
   gulp          = require('gulp');
@@ -44,6 +44,11 @@ var paths = {
   layouts   : '_layouts/'
 };
 
+var onError = function (err) {
+  child_process.spawn('tput', ['bel']);
+  console.log(err);
+};
+
 /** Linting */
 
 // Lint JS
@@ -60,6 +65,7 @@ gulp.task('lint', function() {
 // Concat & Minify JS
 gulp.task('js', ['lint'], function(){
   gulp.src( paths.js )
+    .pipe(plumber({errorHandler: onError}))
     .pipe(concat('all.js'))
     .pipe(gulp.dest( paths.jsmin ))
     .pipe(rename('all.min.js'))
@@ -79,6 +85,7 @@ gulp.task('js', ['lint'], function(){
 */
 gulp.task('css', ['compass'], function(){
   return gulp.src( paths.css + '*.css' )
+    .pipe(plumber({errorHandler: onError}))
     .pipe(concat('all.css'))
     .pipe(gulp.dest( paths.cssbuild )) // For hot reload only, overwritten on jekyll build
     .pipe(gulp.dest( paths.cssmin ));
@@ -88,6 +95,7 @@ gulp.task('css', ['compass'], function(){
 // injects development css path into template
 gulp.task('cssserve', ['css'], function () {
   gulp.src(paths.cssmin + 'all.css')
+  .pipe(plumber({errorHandler: onError}))
   .pipe(inject('_layouts/default.html', {
       addRootSlash: false  // ensures proper relative paths
     }))
@@ -97,6 +105,7 @@ gulp.task('cssserve', ['css'], function () {
 /** Revision CSS file and inject into the default layout */
 gulp.task('cssbuild', ['css'], function () {
   gulp.src( paths.cssmin + 'all.css' )
+    .pipe(plumber({errorHandler: onError}))
     .pipe(rev())
     .pipe(gulp.dest( paths.cssmin ))
     .pipe(inject('_layouts/default.html', {
@@ -108,6 +117,7 @@ gulp.task('cssbuild', ['css'], function () {
 /** Compiling - i.e. sass/compass */
 gulp.task('compass', function( done ) {
   return gulp.src( paths.sass )
+    .pipe(plumber({errorHandler: onError}))
     .pipe(compass({
       config_file: './config.rb',
       css: './src/css',
@@ -136,7 +146,7 @@ gulp.task('watch', function () {
   // Should watch for new images, doesn't work
   watch({glob: [paths.img]}, function (files) {
       server.changed('image');
-  });
+  }).pipe(plumber({errorHandler: onError}));
 
   /** Hot reload */
   // Watch for css changes in _site dir to inject
@@ -150,7 +160,9 @@ gulp.task('watch', function () {
   // Watches in batch mode to avoid multiple reloads
   watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
       server.changed('file');
-  }).on('change', function (f) {
+  })
+  .pipe(plumber({errorHandler: onError}))
+  .on('change', function (f) {
     console.log('File '+f.path+' was '+file.type+', reloading browser styles...');
   });
 
