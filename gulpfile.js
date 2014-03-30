@@ -15,6 +15,7 @@ var jshint      = require('gulp-jshint'),
   plumber       = require('gulp-plumber'),
   child_process = require('child_process'),
   exec          = require('gulp-exec'),
+  es            = require('event-stream'),
   gulp          = require('gulp');
 
 /** Server config */
@@ -36,6 +37,8 @@ var paths = {
   img       : './src/images/**/*',
   imgmin    : './assets/images/',
   // images : './client/img/**/*',
+  bowerpkg  : './public/components/',
+
 
   // When these assets change then we will need jekyll to rebuild
   // This is handled by the jekyll serve command if passed the watch flag??
@@ -44,10 +47,24 @@ var paths = {
   layouts   : '_layouts/'
 };
 
+paths.csssource = [paths.css + '*.css', paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'];
+
+var defaults = {
+  theme     : 'grayscale'
+};
+
 var onError = function (err) {
   child_process.spawn('tput', ['bel']);
   console.log(err);
 };
+
+gulp.task('copy', function () {
+  // Need to copy several sources and then return after finished
+  return es.merge(
+    gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
+      .pipe(gulp.dest( paths.assets ))
+  );
+});
 
 /** Linting */
 
@@ -84,7 +101,7 @@ gulp.task('js', ['lint'], function(){
 /*  @ depends compass task
 */
 gulp.task('css', ['compass'], function(){
-  return gulp.src( paths.css + '*.css' )
+  return gulp.src( paths.csssource )
     .pipe(plumber({errorHandler: onError}))
     .pipe(concat('all.css'))
     .pipe(gulp.dest( paths.cssbuild )) // For hot reload only, overwritten on jekyll build
@@ -116,7 +133,7 @@ gulp.task('cssbuild', ['css'], function () {
 
 /** Compiling - i.e. sass/compass */
 gulp.task('compass', function( done ) {
-  return gulp.src( paths.sass )
+  return gulp.src( [paths.sass] )
     .pipe(plumber({errorHandler: onError}))
     .pipe(compass({
       config_file: './config.rb',
@@ -190,7 +207,7 @@ gulp.task('jekyll-build', function(){
 });
 
 /** Build task */
-gulp.task('build', ['cssbuild', 'js', 'jekyll-build']);
+gulp.task('build', ['copy', 'cssbuild', 'js', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
 gulp.task('serve', ['cssserve','jekyll-build','watch'], function(){

@@ -9,7 +9,7 @@ Thumbs.db
 !.gitkeep
 
 .sass-cache/
-jmoxon-blog.*
+*.sublime-*
 .rbenv-version
 .rvmrc
 test.js
