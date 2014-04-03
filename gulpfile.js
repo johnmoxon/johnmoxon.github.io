@@ -3,11 +3,11 @@ var jshint      = require('gulp-jshint'),
   concat        = require('gulp-concat'),
   rename        = require('gulp-rename'),
   uglify        = require('gulp-uglify'),
-  sass          = require('gulp-sass'),
+  // sass          = require('gulp-sass'),
   compass       = require('gulp-compass'),
   watch         = require('gulp-watch'),
   livereload    = require('gulp-livereload'),
-  wait          = require('gulp-wait'),
+  // wait          = require('gulp-wait'),
   imagemin      = require('gulp-imagemin'),
   rev           = require('gulp-rev'),
   inject        = require('gulp-inject'),
@@ -47,7 +47,10 @@ var paths = {
   layouts   : '_layouts/'
 };
 
-paths.csssource = [paths.css + '*.css', paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'];
+paths.csssource = [
+  paths.css + '*.css',
+  paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'
+];
 
 var defaults = {
   theme     : 'grayscale'
@@ -210,7 +213,7 @@ gulp.task('jekyll-build', function(){
 gulp.task('build', ['copy', 'cssbuild', 'js', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['cssserve','jekyll-build','watch'], function(){
+gulp.task('serve', ['copy','cssserve','jekyll-build','watch'], function(){
   // Serve the site from _site/ directory
   console.log('Starting static web server...\n');
   console.log('Web root: ' + dir);
