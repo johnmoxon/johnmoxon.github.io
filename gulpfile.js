@@ -52,6 +52,11 @@ paths.csssource = [
   paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'
 ];
 
+paths.jssource = [
+  paths.bowerpkg + 'jquery/jquery.min.js',
+  paths.js
+];
+
 var defaults = {
   theme     : 'grayscale'
 };
@@ -84,7 +89,7 @@ gulp.task('lint', function() {
 
 // Concat & Minify JS
 gulp.task('js', ['lint'], function(){
-  gulp.src( paths.js )
+  gulp.src( paths.jssource )
     .pipe(plumber({errorHandler: onError}))
     .pipe(concat('all.js'))
     .pipe(gulp.dest( paths.jsmin ))
@@ -213,7 +218,7 @@ gulp.task('jekyll-build', function(){
 gulp.task('build', ['copy', 'cssbuild', 'js', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['copy','cssserve','jekyll-build','watch'], function(){
+gulp.task('serve', ['copy','cssserve','js','jekyll-build','watch'], function(){
   // Serve the site from _site/ directory
   console.log('Starting static web server...\n');
   console.log('Web root: ' + dir);
