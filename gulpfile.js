@@ -70,6 +70,7 @@ gulp.task('copy', function () {
   // Need to copy several sources and then return after finished
   return es.merge(
     gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
+      .pipe(plumber({errorHandler: onError}))
       .pipe(gulp.dest( paths.assets ))
   );
 });
@@ -79,6 +80,7 @@ gulp.task('copy', function () {
 // Lint JS
 gulp.task('lint', function() {
   return gulp.src( paths.js )
+    .pipe(plumber({errorHandler: onError}))
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
     // done( err );
@@ -154,6 +156,7 @@ gulp.task('compass', function( done ) {
 /** images */
 gulp.task('images', function () {
   gulp.src(paths.img)
+    .pipe(plumber({errorHandler: onError}))
     .pipe(imagemin())
     .pipe(gulp.dest(paths.imgmin));
 });
