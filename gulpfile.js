@@ -196,9 +196,10 @@ gulp.task('watch', function () {
 
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html', '*.yml', 'assets/js/**.js',
-    '_posts/**', '_includes/**', '_layouts/**'], function(file){
+    '_posts/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
       var jekyll = spawn('jekyll', ['build']);
       jekyll.stdout.on('data', function (data) {
+        console.log('static file updated!');
         console.log('jekyll: ' + data);
       });
   });

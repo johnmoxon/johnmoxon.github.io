@@ -15,3 +15,4 @@ Thumbs.db
 .rvmrc
 test.js
 src/images/
+tmp/

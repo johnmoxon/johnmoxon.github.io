@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Free One Page Theme for Bootstrap 3</title>
+    <title>{{site.title}}</title>
 
     <!-- Bootstrap Core CSS -->
     <!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
@@ -17,6 +17,7 @@
     <!-- Fonts -->
     <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
@@ -34,7 +35,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                    <i class="fa fa-play-circle"></i>  <span class="light">John</span> Moxon
                 </a>
             </div>
 
@@ -55,13 +56,14 @@
         <!-- /.container -->
     </nav>
 
+    {%if page.url == "/index.html" %}
     <section class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
+                        <h1 class="brand-heading">{{ site.title }}</h1>
+                        <p class="intro-text">{{site.tagline}}</p>
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down animated"></i>
@@ -72,11 +74,14 @@
             </div>
         </div>
     </section>
+    {% endif %}
 
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="container content-section">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
+
                 {{ content }}
+
             </div>
         </div>
     </section>
