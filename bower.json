@@ -8,5 +8,9 @@
     "**/.*",
     "node_modules",
     "bower_components"
-  ]
+  ],
+  "devDependencies": {
+    "fontawesome": "~4.0.3",
+    "jquery.stellar": "~0.6.2"
+  }
 }
