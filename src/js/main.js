@@ -18,6 +18,30 @@ $(function() {
     });
 });
 
+// Calculate post reading time
+(function(){
+    $('.reading-time').text('reading time ' +$('article.post').readingtime() + ' min');
+})(jQuery, window);
+
+// fade out movie on scroll
+var fadeBegin = 10,
+    fadeFinish = 600,
+    fadingElement = $('video');
+$(window).bind('scroll', function(){
+    var offset = $(document).scrollTop(), opacity = 1;
+
+    if( offset <= fadeBegin ){
+        opacity = 1;
+    } else if( offset <= fadeFinish ){
+
+        opacity = 1 - offset / fadeFinish;
+        console.log(opacity, "opacity");
+    } else {
+        opacity = 0;
+    }
+    fadingElement.css('opacity',opacity);
+});
+
 /**
 //Google Map Skin - Get more at http://snazzymaps.com/
 var myOptions = {
