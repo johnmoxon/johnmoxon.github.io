@@ -32,7 +32,7 @@ When you don't need the samples anymore just delete the `_posts/core-samples` fo
 
 Here's a sample "posts list".
 -->
-
+<h2>static jekyll power</h2>
 <ul class="posts">
   {% for post in site.posts %}
     <li>
