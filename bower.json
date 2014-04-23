@@ -1,12 +1,18 @@
 {
   "name": "jmoxonblog",
   "dependencies": {
-    "sass-bootstrap": "*",
-    "jquery": "~2.0.x"
+    "jquery": "~2.0.x",
+    "bootstrap": "~3.1.1"
   },
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components"
-  ]
+  ],
+  "devDependencies": {
+    "fontawesome": "~4.0.3",
+    "jquery.stellar": "~0.6.2",
+    "BigVideo.js": "~1.0.9",
+    "jquery-readingtime": "~0.1.1"
+  }
 }
