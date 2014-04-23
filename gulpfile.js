@@ -3,11 +3,11 @@ var jshint      = require('gulp-jshint'),
   concat        = require('gulp-concat'),
   rename        = require('gulp-rename'),
   uglify        = require('gulp-uglify'),
-  sass          = require('gulp-sass'),
+  // sass          = require('gulp-sass'),
   compass       = require('gulp-compass'),
   watch         = require('gulp-watch'),
   livereload    = require('gulp-livereload'),
-  wait          = require('gulp-wait'),
+  // wait          = require('gulp-wait'),
   imagemin      = require('gulp-imagemin'),
   rev           = require('gulp-rev'),
   inject        = require('gulp-inject'),
@@ -15,6 +15,7 @@ var jshint      = require('gulp-jshint'),
   plumber       = require('gulp-plumber'),
   child_process = require('child_process'),
   exec          = require('gulp-exec'),
+  es            = require('event-stream'),
   gulp          = require('gulp');
 
 /** Server config */
@@ -36,6 +37,8 @@ var paths = {
   img       : './src/images/**/*',
   imgmin    : './assets/images/',
   // images : './client/img/**/*',
+  bowerpkg  : './public/components/',
+
 
   // When these assets change then we will need jekyll to rebuild
   // This is handled by the jekyll serve command if passed the watch flag??
@@ -44,16 +47,42 @@ var paths = {
   layouts   : '_layouts/'
 };
 
+paths.csssource = [
+  paths.css + '*.css',
+  paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'
+];
+
+// JS sources to concatenate and minify
+paths.jssource = [
+  paths.bowerpkg + 'jquery/jquery.min.js',
+  paths.bowerpkg + 'jquery-readingtime/jquery.readingtime.min.js',
+  paths.js
+];
+
+var defaults = {
+  theme     : 'grayscale'
+};
+
 var onError = function (err) {
   child_process.spawn('tput', ['bel']);
   console.log(err);
 };
+
+gulp.task('copy', function () {
+  // Need to copy several sources and then return after finished
+  return es.merge(
+    gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
+      .pipe(plumber({errorHandler: onError}))
+      .pipe(gulp.dest( paths.assets ))
+  );
+});
 
 /** Linting */
 
 // Lint JS
 gulp.task('lint', function() {
   return gulp.src( paths.js )
+    .pipe(plumber({errorHandler: onError}))
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
     // done( err );
@@ -64,7 +93,7 @@ gulp.task('lint', function() {
 
 // Concat & Minify JS
 gulp.task('js', ['lint'], function(){
-  gulp.src( paths.js )
+  gulp.src( paths.jssource )
     .pipe(plumber({errorHandler: onError}))
     .pipe(concat('all.js'))
     .pipe(gulp.dest( paths.jsmin ))
@@ -84,7 +113,7 @@ gulp.task('js', ['lint'], function(){
 /*  @ depends compass task
 */
 gulp.task('css', ['compass'], function(){
-  return gulp.src( paths.css + '*.css' )
+  return gulp.src( paths.csssource )
     .pipe(plumber({errorHandler: onError}))
     .pipe(concat('all.css'))
     .pipe(gulp.dest( paths.cssbuild )) // For hot reload only, overwritten on jekyll build
@@ -116,7 +145,7 @@ gulp.task('cssbuild', ['css'], function () {
 
 /** Compiling - i.e. sass/compass */
 gulp.task('compass', function( done ) {
-  return gulp.src( paths.sass )
+  return gulp.src( [paths.sass] )
     .pipe(plumber({errorHandler: onError}))
     .pipe(compass({
       config_file: './config.rb',
@@ -129,6 +158,7 @@ gulp.task('compass', function( done ) {
 /** images */
 gulp.task('images', function () {
   gulp.src(paths.img)
+    .pipe(plumber({errorHandler: onError}))
     .pipe(imagemin())
     .pipe(gulp.dest(paths.imgmin));
 });
@@ -167,10 +197,11 @@ gulp.task('watch', function () {
   });
 
   // Changes to source assets should trigger jekyll rebuild
-  gulp.watch(['*.html', '*.yml', 'assets/js/**.js',
-    '_posts/**', '_includes/**', '_layouts/**'], function(file){
+  gulp.watch(['*.html', '*.md', '*.markdown', '*.yml', 'assets/js/**.js',
+    '_posts/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
       var jekyll = spawn('jekyll', ['build']);
       jekyll.stdout.on('data', function (data) {
+        console.log('static file updated!');
         console.log('jekyll: ' + data);
       });
   });
@@ -190,10 +221,10 @@ gulp.task('jekyll-build', function(){
 });
 
 /** Build task */
-gulp.task('build', ['cssbuild', 'js', 'jekyll-build']);
+gulp.task('build', ['copy', 'cssbuild', 'js', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['cssserve','jekyll-build','watch'], function(){
+gulp.task('serve', ['copy','cssserve','js','jekyll-build','watch'], function(){
   // Serve the site from _site/ directory
   console.log('Starting static web server...\n');
   console.log('Web root: ' + dir);
@@ -204,7 +235,7 @@ gulp.task('serve', ['cssserve','jekyll-build','watch'], function(){
       .use(connect.static(dir))
       .listen(port);
 
-    child_process.exec('open -a Google\\ Chrome\\ Canary http://localhost:' + port,
+    child_process.exec('open -a Google\\ Chrome http://localhost:' + port,
       function(error, stdout, stderr){
         if (error && error.length) {
           console.log('Launching Chrome Canary error:\n' + error);

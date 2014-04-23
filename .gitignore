@@ -1,10 +1,22 @@
-_site
+_site/*
+_theme_packages/*
 node_modules/
+public/
+
+Thumbs.db
 .gulpfile.js.swp
+.DS_Store
+
+!.gitkeep
+
 .sass-cache/
+*.sublime-*
 jmoxon-blog.*
+.rbenv-version
+.rvmrc
 test.js
 src/images/
 
 
 johnmoxon.github.io.sublime-*
+tmp/
