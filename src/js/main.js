@@ -35,7 +35,6 @@ $(window).bind('scroll', function(){
     } else if( offset <= fadeFinish ){
 
         opacity = 1 - offset / fadeFinish;
-        console.log(opacity, "opacity");
     } else {
         opacity = 0;
     }
