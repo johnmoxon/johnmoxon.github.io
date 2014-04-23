@@ -9,20 +9,17 @@
 
     <title>{{site.title}}</title>
 
-    <!-- Bootstrap Core CSS -->
-    <!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Replace this with the inject markup -->
-    <link rel="stylesheet" href="{{ASSET_PATH}}/css/all.css">
+    <!-- Modernizr -->
+    <script src="/assets/modernizr/modernizr.min.js"></script>
 
-    <!-- Fonts -->
-    <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /> -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <!-- endinject -->
+
+
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom Theme CSS -->
-    <!-- <link href="css/grayscale.css" rel="stylesheet"> -->
 
 </head>
 
@@ -35,7 +32,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">John</span> Moxon
+                    <i class="fa fa-play-circle"></i>  <span class="light">Test</span> Site
                 </a>
             </div>
 
@@ -58,6 +55,13 @@
 
     {%if page.url == "/index.html" %}
     <section class="intro">
+        <!-- <div class="intro-video"> -->
+        <video autoplay loop poster="polina.jpg" id="bgvid">
+            <source src="assets/video/test2.webm" type="video/webm">
+            <source src="assets/video/test2.mp4" type="video/mp4">
+            <source src="assets/video/test2.ogg" type="video/ogg">
+        </video>
+        <!-- </div> -->
         <div class="intro-body">
             <div class="container">
                 <div class="row">
@@ -65,7 +69,7 @@
                         <h1 class="brand-heading">{{ site.title }}</h1>
                         <p class="intro-text">{{site.tagline}}</p>
                         <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
+                            <a href="#about" class="btn btn-circle ">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
                         </div>
@@ -100,7 +104,7 @@
     </section>
     -->
 
-    <!--
+    <
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -118,7 +122,7 @@
             </div>
         </div>
     </section>
-    -->
+
 
     <!-- <div id="map"></div> -->
 
@@ -134,9 +138,11 @@
     <!-- // <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
 
     <!-- Custom Theme JavaScript -->
-    <!-- <script src="js/grayscale.js"></script>-->
-    <script src="assets/js/all.js" charset="utf-8"></script>
+    <!-- inject:js -->
+    <script src="/assets/js/all.js"></script>
+    <!-- endinject -->
 
+    <!-- Include analytics -->
     {% include JB/analytics %}
 
 </body>

@@ -52,8 +52,10 @@ paths.csssource = [
   paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'
 ];
 
+// JS sources to concatenate and minify
 paths.jssource = [
   paths.bowerpkg + 'jquery/jquery.min.js',
+  paths.bowerpkg + 'jquery-readingtime/jquery.readingtime.min.js',
   paths.js
 ];
 
@@ -195,7 +197,7 @@ gulp.task('watch', function () {
   });
 
   // Changes to source assets should trigger jekyll rebuild
-  gulp.watch(['*.html', '*.yml', 'assets/js/**.js',
+  gulp.watch(['*.html', '*.md', '*.markdown', '*.yml', 'assets/js/**.js',
     '_posts/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
       var jekyll = spawn('jekyll', ['build']);
       jekyll.stdout.on('data', function (data) {
@@ -233,7 +235,7 @@ gulp.task('serve', ['copy','cssserve','js','jekyll-build','watch'], function(){
       .use(connect.static(dir))
       .listen(port);
 
-    child_process.exec('open -a Google\\ Chrome\\ Canary http://localhost:' + port,
+    child_process.exec('open -a Google\\ Chrome http://localhost:' + port,
       function(error, stdout, stderr){
         if (error && error.length) {
           console.log('Launching Chrome Canary error:\n' + error);

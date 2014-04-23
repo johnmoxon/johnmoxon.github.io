@@ -11,6 +11,8 @@
   ],
   "devDependencies": {
     "fontawesome": "~4.0.3",
-    "jquery.stellar": "~0.6.2"
+    "jquery.stellar": "~0.6.2",
+    "BigVideo.js": "~1.0.9",
+    "jquery-readingtime": "~0.1.1"
   }
 }
