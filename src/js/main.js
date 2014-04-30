@@ -1,44 +1,54 @@
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
+  if ($(".navbar").offset().top > 50) {
+    $(".navbar-fixed-top").not('.disable-nav-expanded').addClass("top-nav-collapse");
+  } else {
+    $(".navbar-fixed-top").not('.disable-nav-expanded').removeClass("top-nav-collapse");
+  }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  $('.page-scroll a').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
 });
 
+
 // Calculate post reading time
-(function(){
-    $('.reading-time').text('reading time ' +$('article.post').readingtime() + ' min');
-})(jQuery, window);
+(function($,window){
+  $('.post').each(function(){
+    var $this = $(this);
+    $this.find('.eta').text( $this.readingtime( $this.data('words') ) );
+
+  });
+
+})(jQuery, window, undefined);
+
+
+
+
 
 // fade out movie on scroll
 var fadeBegin = 10,
-    fadeFinish = 600,
-    fadingElement = $('video');
+fadeFinish = 600,
+fadingElement = $('video');
 $(window).bind('scroll', function(){
-    var offset = $(document).scrollTop(), opacity = 1;
+  var offset = $(document).scrollTop(), opacity = 1;
 
-    if( offset <= fadeBegin ){
-        opacity = 1;
-    } else if( offset <= fadeFinish ){
+  if( offset <= fadeBegin ){
+    opacity = 1;
+  } else if( offset <= fadeFinish ){
 
-        opacity = 1 - offset / fadeFinish;
-    } else {
-        opacity = 0;
-    }
-    fadingElement.css('opacity',opacity);
+    opacity = 1 - offset / fadeFinish;
+  } else {
+    opacity = 0;
+  }
+  fadingElement.css('opacity',opacity);
 });
 
 /**

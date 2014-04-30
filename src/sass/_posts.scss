@@ -1,0 +1,19 @@
+// Posts vars
+$post-spacing: 60px;
+
+ul.posts{
+  list-style-type: none;
+
+  li{
+      list-style-type:inherit;
+      border-bottom:1px solid #eee;
+      padding-bottom: $post-spacing;
+      margin-bottom: $post-spacing;
+  }
+}
+
+.post-date {
+  color: $lightgreytext;
+}
+
+

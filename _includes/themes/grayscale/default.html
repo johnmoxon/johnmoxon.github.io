@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -10,23 +11,32 @@
 
     <title>{{site.title}}</title>
 
+    <!-- Progress meter - Remove if video load times are acceptable -->
+    <link rel="stylesheet" href="/assets/vendor/pace/themes/pace-theme-minimal.css">
+    <script src="/assets/vendor/pace/pace.js"></script>
+
+
     <!-- Modernizr -->
     <script src="/assets/modernizr/modernizr.min.js"></script>
 
-    <!-- inject:css -->
-    <link rel="stylesheet" href="/assets/css/all.css">
-    <!-- endinject -->
+
+
+
 
 
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <!-- endinject -->
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top{%if page.intro.title == null%} top-nav-collapse disable-nav-expanded{%endif%}" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -54,23 +64,21 @@
         <!-- /.container -->
     </nav>
 
-    {%if page.url == "/index.html" %}
+    {%unless page.intro.title == null %}
     <section class="intro">
-        <!-- <div class="intro-video"> -->
         <video autoplay loop poster="polina.jpg" id="bgvid">
-            <source src="assets/video/test2.webm" type="video/webm">
-            <source src="assets/video/test2.mp4" type="video/mp4">
-            <source src="assets/video/test2.ogg" type="video/ogg">
+            <source src="/assets/video/test2.webm" type="video/webm">
+            <source src="/assets/video/test2.mp4" type="video/mp4">
+            <source src="/assets/video/test2.ogg" type="video/ogg">
         </video>
-        <!-- </div> -->
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">{{ site.title }}</h1>
-                        <p class="intro-text">{{site.tagline}}</p>
+                        <h1 class="brand-heading">{{ page.intro.title }}</h1>
+                        <p class="intro-text">{{page.intro.tagline}}</p>
                         <div class="page-scroll">
-                            <a href="#posts_list" class="btn btn-circle ">
+                            <a href="#content" class="btn btn-circle ">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
                         </div>
@@ -79,16 +87,16 @@
             </div>
         </div>
     </section>
-    {% endif %}
+    {% endunless %}
 
-    <section id="posts_list" class="container content-section">
-        <section class="row">
-            <article class="col-lg-8 col-lg-offset-2">
+    <section id="content" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
 
                 {{ content }}
 
-            </article>
-        </section>
+            </div>
+        </div>
     </section>
 
     <!--

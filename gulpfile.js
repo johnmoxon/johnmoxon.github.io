@@ -30,10 +30,11 @@ var paths = {
   sass      : './src/sass/*.scss',
   sasscfg   : './config.rb',
   js        : './src/js/*.js',
+  jsmin     : './assets/js/',
+  vendor    : './assets/vendor/',
   css       : './src/css/',
   cssmin    : './assets/css/',
   cssbuild  : './_site/assets/css/',
-  jsmin     : './assets/js/',
   img       : './src/images/**/*',
   imgmin    : './assets/images/',
   // images : './client/img/**/*',
@@ -48,6 +49,7 @@ var paths = {
 };
 
 paths.csssource = [
+  paths.bowerpkg + 'bootstrap/dist/css/bootstrap.min.css',
   paths.css + '*.css',
   paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'
 ];
@@ -55,7 +57,7 @@ paths.csssource = [
 // JS sources to concatenate and minify
 paths.jssource = [
   paths.bowerpkg + 'jquery/jquery.min.js',
-  paths.bowerpkg + 'jquery-readingtime/jquery.readingtime.min.js',
+  paths.bowerpkg + 'jquery-readingtime-forked/jquery.readingtime.min.js',
   paths.js
 ];
 
@@ -71,9 +73,16 @@ var onError = function (err) {
 gulp.task('copy', function () {
   // Need to copy several sources and then return after finished
   return es.merge(
+    // PACE - progress bar (Part of Head)
+    gulp.src([paths.bowerpkg + 'pace/**'], {base: './public/components'})
+      .pipe(plumber({errorHandler: onError}))
+      .pipe(gulp.dest( paths.vendor )),
+
+    // Font awesome fonts (CSS packaged)
     gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
       .pipe(plumber({errorHandler: onError}))
       .pipe(gulp.dest( paths.assets ))
+
   );
 });
 
@@ -198,7 +207,7 @@ gulp.task('watch', function () {
 
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html', '*.md', '*.markdown', '*.yml', 'assets/js/**.js',
-    '_posts/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
+    '_posts/**', 'about/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
       var jekyll = spawn('jekyll', ['build']);
       jekyll.stdout.on('data', function (data) {
         console.log('static file updated!');
