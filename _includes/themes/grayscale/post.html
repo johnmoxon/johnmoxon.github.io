@@ -1,15 +1,17 @@
+<article class="post" data-words="{{ content | number_of_words}}">
+
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <div class="post-date">
+    <span>{{ page.date | date_to_long_string }} - <small class="reading-time eta">calculating reading time...</small></span>
+  </div>
 </div>
 
-<div class="row-fluid post-full">
+<section class="row-fluid post-full">
   <div class="span12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }} - <small class="reading-time">reading time...</small></span>
-    </div>
-    <article class="content post" id="{{page.id}}">
+    <div class="content" id="{{page.id}}">
       {{ content }}
-    </article>
+    </div>
 
 
 
@@ -48,4 +50,5 @@
     <hr>
     {% include JB/comments %}
   </div>
-</div>
+</section>
+</article>
