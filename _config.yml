@@ -14,8 +14,8 @@ permalink: /:categories/:title
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : web development articles
-tagline: my 2 cents on everything web
+title :  articles on web development
+tagline: My 2 cents on everything web
 author :
   name : John Moxon
   email : jmoxon@gmail.com
