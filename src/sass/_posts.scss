@@ -14,6 +14,16 @@ ul.posts{
 
 .post-date {
   color: $lightgreytext;
+
+  .share {
+    vertical-align: middle;
+    font-size:1.3em;
+
+    i {
+      padding: 0 5px;
+    }
+  }
 }
+
 
 

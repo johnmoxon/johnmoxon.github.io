@@ -2,14 +2,29 @@
 <html lang="en">
 
 <head>
+    <title>{{page.title}} - {{site.name}}</title>
 
+    <meta name="description" content="{{page.description}}">
+    <meta name="keywords" content="{{page.keywords}}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
     <meta name="author" content="https://plus.google.com/+{{site.author.googleplus}}">
     <meta name="google-site-verification" content="{{site.webmastertools.verification_code}}" />
 
-    <title>{{site.title}}</title>
+    <link rel="alternate" type="application/rss+xml" title="{{site.author.name}}: {{site.feed_description}} » Feed" href="{{site.production_url}}{{site.JB.rss_path}}" />
+
+    <!-- Social -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Thoughts on Google Instant" />
+    <meta property="og:url" content="http://www.mattcutts.com/blog/thoughts-on-google-instant/" />
+    <meta property="og:description" content="The blogosphere is absorbing today's announcement of Google Instant. I wanted to give some context and some thoughts. Google's web search (and web search infrastructure) team tries to do several th..." />
+    <meta property="article:published_time" content="2010-09-08T20:09:00+00:00" />
+    <meta property="article:modified_time" content="2010-09-08T20:09:00+00:00" />
+    <meta property="article:author" content="http://www.mattcutts.com/blog/author/admin/" />
+    <meta property="og:site_name" content="Matt Cutts: Gadgets, Google, and SEO" />
+    <meta property="og:image" content="http://wordpress.com/i/blank.jpg" />
+    <meta name="twitter:site" content="@jetpack" />
+    <meta name="twitter:card" content="summary" />
 
     <!-- Progress meter - Remove if video load times are acceptable -->
     <link rel="stylesheet" href="/assets/vendor/pace/themes/pace-theme-minimal.css">
@@ -66,10 +81,10 @@
 
     {%unless page.intro.title == null %}
     <section class="intro">
-        <video autoplay loop poster="polina.jpg" id="bgvid">
-            <source src="/assets/video/test2.webm" type="video/webm">
-            <source src="/assets/video/test2.mp4" type="video/mp4">
-            <source src="/assets/video/test2.ogg" type="video/ogg">
+        <video autoplay loop poster="/assets/img/bgclip.jpg" id="bgvid">
+            <source src="/assets/video/bgclip.webm" type="video/webm">
+            <source src="/assets/video/bgclip.mp4" type="video/mp4">
+            <source src="/assets/video/bgclip.ogg" type="video/ogg">
         </video>
         <div class="intro-body">
             <div class="container">

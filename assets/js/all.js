@@ -64,11 +64,20 @@ $(window).scroll(function() {
   } else {
     $(".navbar-fixed-top").not('.disable-nav-expanded').removeClass("top-nav-collapse");
   }
+
+  if($("#content").offset().top > 100) {
+    if($('.scroll-to-top').length < 1) {
+        $('<span class="page-scroll"><a href="#content" class="scroll-to-top hide"><i class="fa fa-play-circle fa-rotate-270"></i> to top</a></span>').appendTo('body');
+    }
+    $('.scroll-to-top').removeClass('hide');
+  } else {
+    $('.scroll-to-top').addClass('hide');
+  }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-  $('.page-scroll a').bind('click', function(event) {
+  $('body').delegate('.page-scroll a', 'click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top

@@ -3,6 +3,8 @@ layout: post
 title:  "Jekyll workflow and tooling"
 date:   2014-04-17 18:11:30
 tags: jekyll blogging
+description: "all blog posts need descriptions"
+keywords: "all, blogs, need, keywords"
 ---
 Jekyll is a powerful static website file creation framework.  _This site itself is built in jekyl!_
 
