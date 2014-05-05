@@ -5,6 +5,8 @@ tagline: Supporting tagline
 intro:
     title: articles on web development
     tagline: My 2 cents on everything web
+description: Web Development articles
+keywords: web development, devops, HTML5, workflow, tooling
 ---
 {% include JB/setup %}
 
