@@ -1,18 +1,28 @@
+(function($,window){
+
+  var $window = $(window);
+
 //jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
+$window.scroll(function() {
   if ($(".navbar").offset().top > 50) {
     $(".navbar-fixed-top").not('.disable-nav-expanded').addClass("top-nav-collapse");
   } else {
     $(".navbar-fixed-top").not('.disable-nav-expanded').removeClass("top-nav-collapse");
   }
 
-  if($("#content").offset().top > 100) {
+  // Show scroll to top button for posts
+  if ($window.scrollTop() > $('.post-single').offset().top) {
     if($('.scroll-to-top').length < 1) {
-        $('<span class="page-scroll"><a href="#content" class="scroll-to-top hide"><i class="fa fa-play-circle fa-rotate-270"></i> to top</a></span>').appendTo('body');
+      $('<span class="page-scroll"><a href="#content" class="scroll-to-top btn btn-default"><i class="fa fa-play-circle fa-rotate-270"></i> to top</a></span>')
+        .appendTo('body')
+        .hide()
+        .fadeIn(300);
+    } else {
+      $('.scroll-to-top').css('opacity', 1);
     }
-    $('.scroll-to-top').removeClass('hide');
+
   } else {
-    $('.scroll-to-top').addClass('hide');
+    $('.scroll-to-top').css('opacity', 0);
   }
 });
 
@@ -29,14 +39,13 @@ $(function() {
 
 
 // Calculate post reading time
-(function($,window){
   $('.post').each(function(){
     var $this = $(this);
     $this.find('.eta').text( $this.readingtime( $this.data('words') ) );
 
   });
 
-})(jQuery, window, undefined);
+
 
 
 
@@ -59,6 +68,10 @@ $(window).bind('scroll', function(){
   }
   fadingElement.css('opacity',opacity);
 });
+
+
+})(jQuery, window, undefined);
+/** End JM script **/
 
 /**
 //Google Map Skin - Get more at http://snazzymaps.com/
