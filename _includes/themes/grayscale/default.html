@@ -58,7 +58,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">
+                <a class="navbar-brand" href="{% if page.url == '/index.html' %}#page-top{% else %}/{% endif %}">
                     <i class="fa fa-play-circle"></i>  <span class="light">Test</span> Site
                 </a>
             </div>
@@ -115,26 +115,14 @@
         </div>
     </section>
 
-    <!--
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container content-section">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Why not say hello?</h2>
                 <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+
+                {% include themes/grayscale/contact_form.html %}
+
                 <p>{{site.author.email}}</p>
                 <ul class="list-inline banner-social-buttons">
                     <li><a href="https://twitter.com/{{site.author.twitter}}" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>

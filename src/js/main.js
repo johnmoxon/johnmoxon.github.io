@@ -11,7 +11,9 @@ $window.scroll(function() {
   }
 
   // Show scroll to top button for posts
-  if ($window.scrollTop() > $('.post-single').offset().top) {
+
+  if ( $('.post-single').length > 0 &&
+    $window.scrollTop() > $('.post-single').offset().top) {
     if($('.scroll-to-top').length < 1) {
       $('<span class="page-scroll"><a href="#content" class="scroll-to-top btn btn-default"><i class="fa fa-play-circle fa-rotate-270"></i> to top</a></span>')
         .appendTo('body')
