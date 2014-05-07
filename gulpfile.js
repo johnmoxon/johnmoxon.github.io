@@ -57,6 +57,8 @@ paths.csssource = [
 // JS sources to concatenate and minify
 paths.jssource = [
   paths.bowerpkg + 'jquery/jquery.min.js',
+  paths.bowerpkg + 'bootstrap/dist/js/bootstrap.min.js',
+  paths.bowerpkg + 'jquery.easing/js/jquery.easing.min.js',
   paths.bowerpkg + 'jquery-readingtime-forked/jquery.readingtime.min.js',
   paths.js
 ];
