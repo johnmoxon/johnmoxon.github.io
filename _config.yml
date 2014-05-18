@@ -9,6 +9,9 @@ exclude: ["node_modules","public", "src", "bower.json", "config.rb", "gulpfile.j
 # permalink: /:categories/:year/:month/:day/:title
 permalink: /:categories/:title
 
+# Will comment this back in when I have pagination sorted
+# paginate: 5
+
 # excerpt_separator: ""
 
 # Themes are encouraged to use these universal variables

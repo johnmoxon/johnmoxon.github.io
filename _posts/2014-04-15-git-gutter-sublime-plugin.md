@@ -2,7 +2,8 @@
 layout: post
 title:  "Git Gutter Sublime Plugin"
 date:   2014-02-12 12:22:55
-tags: git corporate
+category: workflow
+tags: ["git", "version-control", "sublime-text"]
 description: "all blog posts need descriptions"
 keywords: "all, blogs, need, keywords"
 ---

@@ -1,6 +1,9 @@
-(function($,window){
+;(function($,window){
 
   var $window = $(window);
+
+  // Tooltips for share buttons
+  $('[data-toggle="tooltip"]').tooltip();
 
 //jQuery to collapse the navbar on scroll
 $window.scroll(function() {
@@ -15,7 +18,7 @@ $window.scroll(function() {
   if ( $('.post-single').length > 0 &&
     $window.scrollTop() > $('.post-single').offset().top) {
     if($('.scroll-to-top').length < 1) {
-      $('<span class="page-scroll"><a href="#content" class="scroll-to-top btn btn-default"><i class="fa fa-play-circle fa-rotate-270"></i> to top</a></span>')
+      $('<span class="page-scroll"><a href="#content" class="scroll-to-top btn btn-default"><i class="fa fa-play-circle fa-rotate-270"></i> top</a></span>')
         .appendTo('body')
         .hide()
         .fadeIn(300);

@@ -2,7 +2,8 @@
 layout: post
 title:  "Jekyll workflow and tooling"
 date:   2014-04-17 18:11:30
-tags: jekyll blogging
+category: workflow
+tags: jekyll blogging gulp
 description: "all blog posts need descriptions"
 keywords: "all, blogs, need, keywords"
 ---
