@@ -1,8 +1,9 @@
 ---
 layout: page
 title:  "about"
-subtitle: "Using the command-line"
+subtitle: "Front end developer and project manager"
 date:  2014-04-28 08:20:47
+group: navigation
 permalink: /
 ---
 <p class="text-center">

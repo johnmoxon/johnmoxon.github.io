@@ -52,7 +52,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-    <nav class="navbar navbar-custom navbar-fixed-top{%if page.intro.title == null%} top-nav-collapse disable-nav-expanded{%endif%}" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top{%unless page.intro.herounit %} top-nav-collapse disable-nav-expanded{%endunless%}" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -80,7 +80,7 @@
         <!-- /.container -->
     </nav>
 
-    {%unless page.intro.title == null %}
+    {%if page.intro.herounit %}
     <section class="intro">
         <video autoplay loop poster="/assets/img/bgclip.jpg" id="bgvid">
             <source src="/assets/video/bgclip.webm" type="video/webm">
@@ -103,7 +103,7 @@
             </div>
         </div>
     </section>
-    {% endunless %}
+    {% endif %}
 
     <section id="content" class="container content-section">
         <div class="row">
@@ -115,23 +115,35 @@
         </div>
     </section>
 
-    <section id="contact" class="container content-section">
+    <section id="contact" class="jumbotron content-section contact_form">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Why not say hello?</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p>I'd love to hear from you, so get in touch</p>
 
                 {% include themes/grayscale/contact_form.html %}
 
-                <p>{{site.author.email}}</p>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="jumbotron copyright">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/{{site.author.twitter}}" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    <li><a href="https://twitter.com/{{site.author.twitter}}" class="" title="Twitter"><i class="fa fa-twitter fa-fw fa-4x"></i></a>
                     </li>
-                    <li><a href="http://github.com/{{site.author.github}}" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    <li><a href="http://github.com/{{site.author.github}}" class="" title="Github"><i class="fa fa-github fa-fw fa-4x"></i></a>
                     </li>
-                    <li><a href="https://plus.google.com/+{{site.author.googleplus}}/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    <li><a href="https://plus.google.com/+{{site.author.googleplus}}/posts" class="" title="Google+"><i class="fa fa-google-plus fa-fw fa-4x"></i></a>
+                    </li>
+                    <li><a href="https://plus.google.com/+{{site.author.googleplus}}/posts" class="" title="LinkedIn"><i class="fa fa-linkedin fa-fw fa-4x"></i></a>
                     </li>
                 </ul>
+
+                <span class="small">copyright John Moxon 2014. All rights reserved.</span>
             </div>
         </div>
     </section>

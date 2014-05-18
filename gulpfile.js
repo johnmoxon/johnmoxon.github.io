@@ -58,6 +58,7 @@ paths.csssource = [
 paths.jssource = [
   paths.bowerpkg + 'jquery/jquery.min.js',
   paths.bowerpkg + 'bootstrap/dist/js/bootstrap.min.js',
+  paths.bowerpkg + 'bootstrap-validator/dist/validator.min.js',
   paths.bowerpkg + 'jquery.easing/js/jquery.easing.min.js',
   paths.bowerpkg + 'jquery-readingtime-forked/jquery.readingtime.min.js',
   paths.js
@@ -201,14 +202,16 @@ gulp.task('watch', function () {
   // Watches in batch mode to avoid multiple reloads
   watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
       server.changed('file');
+      console.log('Should have reloaded browser');
   })
   .pipe(plumber({errorHandler: onError}))
   .on('change', function (f) {
     console.log('File '+f.path+' was '+file.type+', reloading browser styles...');
+    // console.log("echo $'\e]9;Growl Notification\007'");
   });
 
   // Changes to source assets should trigger jekyll rebuild
-  gulp.watch(['*.html', '*.md', '*.markdown', '*.yml', 'assets/js/**.js',
+  gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', 'assets/js/**.js',
     '_posts/**', 'about/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
       var jekyll = spawn('jekyll', ['build']);
       jekyll.stdout.on('data', function (data) {
