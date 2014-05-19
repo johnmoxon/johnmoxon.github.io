@@ -11,12 +11,12 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, .h1,
+h2, .h2
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -45,13 +45,6 @@ p {
 .form-control:focus {
     border-color: $lightgreentext;
 }
-
-
-// .has-error {
-//     .form-control {
-//         border-color: $errorred;
-//     }
-// }
 
 @media(min-width:767px) {
     p {
@@ -303,6 +296,15 @@ btn-circle-dark:hover,
 
 .content-section {
     padding-top: 100px;
+
+    .breadcrumb {
+        padding:0;
+        border-radius: 0;
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: 100;
+
+    }
 }
 
 .download-section {
@@ -323,19 +325,21 @@ btn-circle-dark:hover,
     margin-top: 100px;
 }
 
-.contact_form {
+.contact-form {
     background-color: darken($lightgreentext, 10);
     color: #ffffff;
     margin-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     input, textarea, select {
         border:4px solid #bbbbbb;
         border-radius: 0;
     }
 
-    label {
-        display:none;
-    }
+    // label {
+    //     display:none;
+    // }
 }
 .copyright {
     color:$lightgreytext;
@@ -441,4 +445,3 @@ body {
     @include transition-property(opacity);
     @include transition-duration(3s);
 }
-

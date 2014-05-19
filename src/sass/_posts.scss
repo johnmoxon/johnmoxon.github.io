@@ -19,6 +19,11 @@ ul.posts{
 .post-date {
   color: $lightgreytext;
 
+  .tag_box {
+    font-family: $fontsans;
+    text-transform: uppercase;
+  }
+
   .share {
     vertical-align: middle;
     font-size:1.3em;
