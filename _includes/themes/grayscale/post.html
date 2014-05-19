@@ -1,9 +1,21 @@
 <article class="post post-single" data-words="{{ content | number_of_words}}">
 
 <div class="page-header">
+  {% unless page.intro.herounit == true %}
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  {% else %}
+  <h2 class="h1">{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h2>
+  {% endunless %}
   <div class="post-date">
+    {% unless page.tags == empty %}
+    <ul class="tag_box list-inline pull-right hidden-xs hidden-sm">
+      {% assign tags_list = page.tags %}
+      {% assign nobadges = true %}
+      {% include JB/tags_list %}
+    </ul>
+    {% endunless %}
     {{ page.date | date_to_long_string }} - <small class="reading-time eta">calculating reading time...</small> -
+
     <span class="share">
       <a href="http://twitter.com/home?status={{page.description | uri_escape}}%20{{site.production_url}}{{page.url | uri_escape}}" title="Share with twitter" data-toggle="tooltip" data-placement="top">
           <i class="fa fa-twitter"></i>
@@ -29,22 +41,6 @@
     <div class="content" id="{{page.id}}">
       {{ content }}
     </div>
-
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}
-
-  {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-    </ul>
-  {% endunless %}
 
     <hr>
     <div class="">
