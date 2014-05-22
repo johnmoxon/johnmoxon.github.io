@@ -48,10 +48,11 @@ var paths = {
   layouts   : '_layouts/'
 };
 
+// Javascripts to concat and load
 paths.csssource = [
   paths.bowerpkg + 'bootstrap/dist/css/bootstrap.min.css',
-  paths.css + '*.css',
-  paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'
+  paths.bowerpkg + 'fontawesome/css/font-awesome.min.css',
+  paths.css + '*.css' // Userscripts
 ];
 
 // JS sources to concatenate and minify
@@ -263,3 +264,7 @@ gulp.task('serve', ['copy','cssserve','js','jekyll-build','watch'], function(){
 
 // Set default task - Development mode
 gulp.task('default', ['serve']);
+
+gulp.task('debug', function(){
+  console.log(paths.bowerpkg + 'video.js/dist/video-js/video.js','videojs');
+});
