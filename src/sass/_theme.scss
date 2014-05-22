@@ -139,7 +139,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -150,7 +150,7 @@ a:focus {
     // background-size: cover;
     // -o-background-size: cover;
 
-    video#bgvid {
+    video#bgvid{
         position: absolute; right: 0; bottom: 0;
         min-width: 100%; min-height: 100%;
         width: auto; height: auto; z-index: -100;
@@ -166,7 +166,7 @@ a:focus {
 }
 
 .brand-heading {
-    font-size: 40px;
+    font-size: 34px;
 }
 
 .intro-text {

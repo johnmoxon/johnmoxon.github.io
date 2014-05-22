@@ -7,11 +7,18 @@
     <meta name="description" content="{{page.description}}">
     <meta name="keywords" content="{{page.keywords}}">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="cleartype" content="on">
+
     <meta name="author" content="https://plus.google.com/+{{site.author.googleplus}}">
     <meta name="google-site-verification" content="{{site.webmastertools.verification_code}}" />
 
-    <link rel="alternate" type="application/rss+xml" title="{{site.author.name}}: {{site.feed_description}} » Feed" href="{{site.production_url}}{{site.JB.rss_path}}" />
+    <link rel="alternate" type="application/rss+xml" title="{{site.author.name}}: {{site.feed_description}} » Feed" href="{{site.production_url}}{{site.xJB.rss_path}}" />
 
     <!-- Social  -->
     <!-- Hmm do I want on all -->
@@ -82,11 +89,12 @@
     </nav>
 
     {%if page.intro.herounit %}
-    <section class="intro">
-        <video autoplay loop poster="/assets/img/bgclip.jpg" id="bgvid">
-            <source src="/assets/video/bgclip.webm" type="video/webm">
+    <section class="intro" id="herounit">
+        <video autoplay loop id="bgvid">
+           <!--  <source src="/assets/video/bgclip.webm" type="video/webm">
+            poster="/assets/img/bgclip.jpg"
             <source src="/assets/video/bgclip.mp4" type="video/mp4">
-            <source src="/assets/video/bgclip.ogg" type="video/ogg">
+            <source src="/assets/video/bgclip.ogg" type="video/ogg"> -->
         </video>
         <div class="intro-body">
             <div class="container">
