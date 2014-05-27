@@ -1,0 +1,10 @@
+  {% for url in urlset %}
+    <url>
+      <loc>{{site.production_url}}{{ url.url }}</loc>
+      {% unless url.date == null %}<lastmod>{{ url.date | date_to_xmlschema }}</lastmod>
+      {% endunless %}<changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url>
+
+  {% endfor %}
+  {% assign urlset = nil %}
