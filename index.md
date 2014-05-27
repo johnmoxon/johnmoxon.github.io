@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mardown homepage eh? Hello World!
+title: Articles
 tagline: Supporting tagline
 intro:
     title: articles on web development
@@ -8,6 +8,7 @@ intro:
     herounit: true
 description: Web Development articles
 keywords: web development, devops, HTML5, workflow, tooling
+group: navigation
 ---
 {% include JB/setup %}
 

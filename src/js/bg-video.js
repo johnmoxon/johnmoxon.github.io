@@ -1,4 +1,11 @@
-/** Video **/
+/**
+ * Bg-video.js
+ * Conditionally loads a video source or hides element based on device
+ * @param  {function} $       jQuery passed in preserving $ in no conflict mode
+ * @param  {object} window    window objct
+ * @param  {null} undefined   null
+ * @return {null}             null
+ */
 (function($, window, undefined){
   var formats = {
     webm : '/assets/video/bgclip.webm',
@@ -8,15 +15,13 @@
 
   if(!Modernizr.touch) {
     var vsrc = null;
-    // let's play some video! but what kind?
+    // Test for video codec support with Modernizr
     if (Modernizr.video.webm) {
-      vsrc = formats['webm'];
+      vsrc = formats.webm;
     } else if (Modernizr.video.ogg) {
-      // try Ogg Theora + Vorbis in an Ogg container
-      vsrc = formats['ogg'];
+      vsrc = formats.ogg;
     } else if (Modernizr.video.h264){
-      // try H.264 video + AAC audio in an MP4 container
-      vsrc = formats['mp4'];
+      vsrc = formats.mp4;
     }
 
     $('#bgvid').attr({
@@ -25,6 +30,6 @@
     }).load();
 
   } else {
-
+    $('#herounit').addClass('hidden');
   }
 })(jQuery, window);
