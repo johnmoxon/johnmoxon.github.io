@@ -35,9 +35,9 @@ var paths = {
   css       : './src/css/',
   cssmin    : './assets/css/',
   cssbuild  : './_site/assets/css/',
-  img       : './src/images/**/*',
-  imgmin    : './assets/images/',
-  // images : './client/img/**/*',
+  // img       : './src/images/**/*',
+  // imgmin    : './assets/images/',
+  images : './assets/img/',
   bowerpkg  : './public/components/',
 
 
@@ -170,10 +170,10 @@ gulp.task('compass', function( done ) {
 
 /** images */
 gulp.task('images', function () {
-  gulp.src(paths.img)
+  gulp.src(paths.images + '**')
     .pipe(plumber({errorHandler: onError}))
     .pipe(imagemin())
-    .pipe(gulp.dest(paths.imgmin));
+    .pipe(gulp.dest(paths.images));
 });
 
 /** Watch process - Watch for changes and reload */
@@ -187,8 +187,8 @@ gulp.task('watch', function () {
   // gulp.watch(paths.img, ['images']);
 
   // Should watch for new images, doesn't work
-  watch({glob: [paths.img]}, function (files) {
-      server.changed('image');
+  watch({glob: [paths.images + '**']}, function (files) {
+      server.changed('image'); // Why do I want to reload the browser when an images chages? Surely better to trigger image optimisation on build or server
   }).pipe(plumber({errorHandler: onError}));
 
   /** Hot reload */
@@ -212,7 +212,7 @@ gulp.task('watch', function () {
   });
 
   // Changes to source assets should trigger jekyll rebuild
-  gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', 'assets/js/**.js',
+  gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
     '_posts/**', 'about/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
       var jekyll = spawn('jekyll', ['build']);
       jekyll.stdout.on('data', function (data) {
@@ -236,10 +236,10 @@ gulp.task('jekyll-build', function(){
 });
 
 /** Build task */
-gulp.task('build', ['copy', 'cssbuild', 'js', 'jekyll-build']);
+gulp.task('build', ['copy', 'cssbuild', 'js', 'images', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['copy','cssserve','js','jekyll-build','watch'], function(){
+gulp.task('serve', ['copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
   // Serve the site from _site/ directory
   console.log('Starting static web server...\n');
   console.log('Web root: ' + dir);
@@ -264,7 +264,3 @@ gulp.task('serve', ['copy','cssserve','js','jekyll-build','watch'], function(){
 
 // Set default task - Development mode
 gulp.task('default', ['serve']);
-
-gulp.task('debug', function(){
-  console.log(paths.bowerpkg + 'video.js/dist/video-js/video.js','videojs');
-});
