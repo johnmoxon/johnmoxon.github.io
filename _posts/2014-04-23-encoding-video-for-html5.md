@@ -11,6 +11,8 @@ intro:
     title: HTML5 Video baby!
     tagline: How to streamline video encoding for your site
     herounit: true
+sitemap:
+    priority: 0.6
 ---
 Encoding video for the web is **hard**. At best a time consuming multi-part
 process requiring several different bits of software to create the various
