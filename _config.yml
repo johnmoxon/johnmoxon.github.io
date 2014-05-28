@@ -2,7 +2,7 @@ name: jmoxon.net webdev articles
 markdown: redcarpet
 pygments: true
 safe: true
-exclude: ["node_modules","public", "src", "bower.json", "config.rb", "gulpfile.js", "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: ["node_modules","public", "src", "bower.json", "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project", "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
@@ -20,6 +20,7 @@ permalink: /:categories/:title
 title :  articles on web development
 tagline: My 2 cents on everything web
 feed_description:  Web development industry news and articles
+fail_back_keywords: "Web development, DevOps, workflow, productivity, automation"
 author :
   name : John Moxon
   email : jmoxon@gmail.com
@@ -38,6 +39,10 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://jmoxon.net
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-mentions
 
 webmastertools:
   verification_code : 'WF6HdnRC6yGC1qbfvGK4hBfGcCdhDbnlN_9n364Fq_o'

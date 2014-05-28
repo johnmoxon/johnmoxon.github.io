@@ -4,8 +4,8 @@
 <head>
     <title>{{page.title}} - {{site.name}}</title>
 
-    <meta name="description" content="{{page.description}}">
-    <meta name="keywords" content="{{page.keywords}}">
+    <meta name="description" content="{%unless page.description == null %}{{ page.description }}{%else%}{{ site.feed_description }}{% endunless %}">
+    <meta name="keywords" content="{% unless page.keywords == null %}{{ page.keywords }}{% else %}{{ site.fail_back_keywords }}{% endunless %}">
     <meta charset="utf-8">
 
     <meta name="MobileOptimized" content="width">
@@ -38,8 +38,9 @@
     <meta name="twitter:site" content="@jetpack" />
     <meta name="twitter:card" content="summary" />
 
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- inject:css -->
     <link rel="stylesheet" href="/assets/css/all.css">

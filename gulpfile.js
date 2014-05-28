@@ -179,7 +179,7 @@ gulp.task('images', function () {
 /** Watch process - Watch for changes and reload */
 gulp.task('watch', function () {
   var server = livereload();
-  var spawn = child_process.spawn;
+  var exec = child_process.exec;
 
   // Watch the js and css source files
   gulp.watch(paths.js, ['js']);
@@ -214,9 +214,9 @@ gulp.task('watch', function () {
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
     '_posts/**', 'about/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
-      var jekyll = spawn('jekyll', ['build']);
+      var jekyll = exec('bundle exec jekyll build');
       jekyll.stdout.on('data', function (data) {
-        console.log('static file updated!');
+        console.log('static file updated! running jekyll build');
         console.log('jekyll: ' + data);
       });
   });
@@ -228,7 +228,7 @@ gulp.task('watch', function () {
 // Jekyll build
 gulp.task('jekyll-build', function(){
   var exec = child_process.exec;
-  var jekyll = exec('jekyll build');
+  var jekyll = exec('bundle exec jekyll build');
   return jekyll.stdout.on('data', function (data) {
     console.log(data);
   });
