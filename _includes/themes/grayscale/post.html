@@ -16,6 +16,7 @@
     {% endunless %}
     {{ page.date | date_to_long_string }} - <small class="reading-time eta">calculating reading time...</small> -
 
+    {% unless page.description == null %}
     <span class="share">
       <a href="http://twitter.com/home?status={{page.description | uri_escape}}%20{{site.production_url}}{{page.url | uri_escape}}" title="Share with twitter" data-toggle="tooltip" data-placement="top">
           <i class="fa fa-twitter"></i>
@@ -33,6 +34,7 @@
           <i class="fa fa-rss"></i>
       </a>
     </span>
+    {% endunless %}
   </div>
 </div>
 

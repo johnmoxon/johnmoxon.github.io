@@ -8,9 +8,8 @@ intro:
     herounit: true
 description: Web Development articles
 keywords: web development, devops, HTML5, workflow, tooling
-group: navigation
 sitemap:
-    priority: 1
+    priority: 1.0
 ---
 {% include JB/setup %}
 

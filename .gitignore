@@ -20,3 +20,5 @@ src/images/
 
 johnmoxon.github.io.sublime-*
 tmp/
+
+*.lock
