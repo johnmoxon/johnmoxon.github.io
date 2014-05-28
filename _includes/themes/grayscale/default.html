@@ -17,7 +17,12 @@
     <meta name="author" content="https://plus.google.com/+{{site.author.googleplus}}">
     <meta name="google-site-verification" content="{{site.webmastertools.verification_code}}" />
 
+    {% if page.sitemap.noindex != null %}
+    <meta name="robots" content="{{ page.sitemap.noindex | join: ', ' }}">
+    {% endif %}
+
     <link rel="alternate" type="application/rss+xml" title="{{site.author.name}}: {{site.feed_description}} » Feed" href="{{site.production_url}}{{site.xJB.rss_path}}" />
+
 
     <!-- Social  -->
     <!-- Hmm do I want on all -->
