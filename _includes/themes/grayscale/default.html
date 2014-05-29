@@ -2,37 +2,69 @@
 <html lang="en">
 
 <head>
+    <title>{{page.title}} - {{site.name}}</title>
+
+    <meta name="description" content="{%unless page.description == null %}{{ page.description }}{%else%}{{ site.feed_description }}{% endunless %}">
+    <meta name="keywords" content="{% unless page.keywords == null %}{{ page.keywords }}{% else %}{{ site.fail_back_keywords }}{% endunless %}">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>{{site.title}}</title>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="cleartype" content="on">
 
-    <!-- Modernizr -->
-    <script src="/assets/modernizr/modernizr.min.js"></script>
+    <meta name="author" content="https://plus.google.com/+{{site.author.googleplus}}">
+    <meta name="google-site-verification" content="{{site.webmastertools.verification_code}}" />
+
+    {% if page.sitemap.noindex != null %}
+    <meta name="robots" content="{{ page.sitemap.noindex | join: ', ' }}">
+    {% endif %}
+
+    <link rel="alternate" type="application/rss+xml" title="{{site.author.name}}: {{site.feed_description}} » Feed" href="{{site.production_url}}{{site.xJB.rss_path}}" />
+
+
+    <!-- Social  -->
+    <!-- Hmm do I want on all -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Thoughts on Google Instant" />
+    <meta property="og:url" content="http://www.mattcutts.com/blog/thoughts-on-google-instant/" />
+    <meta property="og:description" content="The blogosphere is absorbing today's announcement of Google Instant. I wanted to give some context and some thoughts. Google's web search (and web search infrastructure) team tries to do several th..." />
+    <meta property="article:published_time" content="2010-09-08T20:09:00+00:00" />
+    <meta property="article:modified_time" content="2010-09-08T20:09:00+00:00" />
+    <meta property="article:author" content="http://www.mattcutts.com/blog/author/admin/" />
+    <meta property="og:site_name" content="Matt Cutts: Gadgets, Google, and SEO" />
+    <meta property="og:image" content="http://wordpress.com/i/blank.jpg" />
+    <meta name="twitter:site" content="@jetpack" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- inject:css -->
     <link rel="stylesheet" href="/assets/css/all.css">
     <!-- endinject -->
 
+    <!-- Progress meter - Remove if video load times are acceptable -->
+    <link rel="stylesheet" href="/assets/vendor/pace/themes/pace-theme-minimal.css">
+    <script src="/assets/vendor/pace/pace.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Modernizr -->
+    <script src="/assets/modernizr/modernizr.min.js"></script>
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top{%unless page.intro.herounit %} top-nav-collapse disable-nav-expanded{%endunless%}" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Test</span> Site
+                <a class="navbar-brand" href="{% if page.url == '/index.html' %}#page-top{% else %}/{% endif %}">
+                    <i class="fa fa-play-circle"></i>  <span class="light">John</span> Moxon
                 </a>
             </div>
 
@@ -43,9 +75,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <li><a href="{{site.production_url}}">Articles</a></li>
                     {% assign pages_list = site.pages %}
                     {% assign group = 'navigation' %}
                     {% include JB/pages_list %}
+                    <li class="page-scroll"><a href="#contact">contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -53,23 +87,22 @@
         <!-- /.container -->
     </nav>
 
-    {%if page.url == "/index.html" %}
-    <section class="intro">
-        <!-- <div class="intro-video"> -->
-        <video autoplay loop poster="polina.jpg" id="bgvid">
-            <source src="assets/video/test2.webm" type="video/webm">
-            <source src="assets/video/test2.mp4" type="video/mp4">
-            <source src="assets/video/test2.ogg" type="video/ogg">
+    {%if page.intro.herounit %}
+    <section class="intro" id="herounit">
+        <video autoplay loop id="bgvid">
+           <!--  <source src="/assets/video/bgclip.webm" type="video/webm">
+            poster="/assets/img/bgclip.jpg"
+            <source src="/assets/video/bgclip.mp4" type="video/mp4">
+            <source src="/assets/video/bgclip.ogg" type="video/ogg"> -->
         </video>
-        <!-- </div> -->
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">{{ site.title }}</h1>
-                        <p class="intro-text">{{site.tagline}}</p>
+                        <h1 class="brand-heading">{{ page.intro.title }}</h1>
+                        <p class="intro-text">{{page.intro.tagline}}</p>
                         <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle ">
+                            <a href="#content" class="btn btn-circle ">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
                         </div>
@@ -80,9 +113,12 @@
     </section>
     {% endif %}
 
-    <section id="about" class="container content-section">
+    <section id="content" class="container content-section">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
+                {% unless page.url == '/index.html' %}
+                {% include themes/grayscale/components/breadcrumb %}
+                {% endunless %}
 
                 {{ content }}
 
@@ -90,35 +126,35 @@
         </div>
     </section>
 
-    <!--
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
+    <section id="contact" class="jumbotron contact-form">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Why not say hello?</h2>
+                <p>I'd love to hear from you, so get in touch</p>
+
+                {% include themes/grayscale/contact_form.html %}
+
+
+
             </div>
         </div>
     </section>
-    -->
-
-    <
-    <section id="contact" class="container content-section text-center">
+    <section class="jumbotron copyright">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p>feedback@startbootstrap.com</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+
+                <ul class="list-inline list-unstyled banner-social-buttons">
+                    <li><a href="https://twitter.com/{{site.author.twitter}}" class="" title="Twitter"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                     </li>
-                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    <li><a href="http://github.com/{{site.author.github}}" class="" title="Github"><i class="fa fa-github fa-fw fa-3x"></i></a>
                     </li>
-                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    <li><a href="https://plus.google.com/+{{site.author.googleplus}}/posts" class="" title="Google+"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
+                    </li>
+                    <li><a href="au.linkedin.com/in/{{site.author.linkedin}}" class="" title="LinkedIn"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
                     </li>
                 </ul>
+
+                <span class="small">copyright John Moxon 2014. All rights reserved.</span>
             </div>
         </div>
     </section>

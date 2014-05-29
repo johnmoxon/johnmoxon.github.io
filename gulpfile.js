@@ -30,13 +30,14 @@ var paths = {
   sass      : './src/sass/*.scss',
   sasscfg   : './config.rb',
   js        : './src/js/*.js',
+  jsmin     : './assets/js/',
+  vendor    : './assets/vendor/',
   css       : './src/css/',
   cssmin    : './assets/css/',
   cssbuild  : './_site/assets/css/',
-  jsmin     : './assets/js/',
-  img       : './src/images/**/*',
-  imgmin    : './assets/images/',
-  // images : './client/img/**/*',
+  // img       : './src/images/**/*',
+  // imgmin    : './assets/images/',
+  images : './assets/img/',
   bowerpkg  : './public/components/',
 
 
@@ -47,15 +48,20 @@ var paths = {
   layouts   : '_layouts/'
 };
 
+// Javascripts to concat and load
 paths.csssource = [
-  paths.css + '*.css',
-  paths.bowerpkg + 'fontawesome/css/font-awesome.min.css'
+  paths.bowerpkg + 'bootstrap/dist/css/bootstrap.min.css',
+  paths.bowerpkg + 'fontawesome/css/font-awesome.min.css',
+  paths.css + '*.css' // Userscripts
 ];
 
 // JS sources to concatenate and minify
 paths.jssource = [
   paths.bowerpkg + 'jquery/jquery.min.js',
-  paths.bowerpkg + 'jquery-readingtime/jquery.readingtime.min.js',
+  paths.bowerpkg + 'bootstrap/dist/js/bootstrap.min.js',
+  paths.bowerpkg + 'bootstrap-validator/dist/validator.min.js',
+  paths.bowerpkg + 'jquery.easing/js/jquery.easing.min.js',
+  paths.bowerpkg + 'jquery-readingtime-forked/jquery.readingtime.min.js',
   paths.js
 ];
 
@@ -71,9 +77,16 @@ var onError = function (err) {
 gulp.task('copy', function () {
   // Need to copy several sources and then return after finished
   return es.merge(
+    // PACE - progress bar (Part of Head)
+    gulp.src([paths.bowerpkg + 'pace/**'], {base: './public/components'})
+      .pipe(plumber({errorHandler: onError}))
+      .pipe(gulp.dest( paths.vendor )),
+
+    // Font awesome fonts (CSS packaged)
     gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
       .pipe(plumber({errorHandler: onError}))
       .pipe(gulp.dest( paths.assets ))
+
   );
 });
 
@@ -157,16 +170,16 @@ gulp.task('compass', function( done ) {
 
 /** images */
 gulp.task('images', function () {
-  gulp.src(paths.img)
+  gulp.src(paths.images + '**')
     .pipe(plumber({errorHandler: onError}))
     .pipe(imagemin())
-    .pipe(gulp.dest(paths.imgmin));
+    .pipe(gulp.dest(paths.images));
 });
 
 /** Watch process - Watch for changes and reload */
 gulp.task('watch', function () {
   var server = livereload();
-  var spawn = child_process.spawn;
+  var exec = child_process.exec;
 
   // Watch the js and css source files
   gulp.watch(paths.js, ['js']);
@@ -174,8 +187,8 @@ gulp.task('watch', function () {
   // gulp.watch(paths.img, ['images']);
 
   // Should watch for new images, doesn't work
-  watch({glob: [paths.img]}, function (files) {
-      server.changed('image');
+  watch({glob: [paths.images + '**']}, function (files) {
+      server.changed('image'); // Why do I want to reload the browser when an images chages? Surely better to trigger image optimisation on build or server
   }).pipe(plumber({errorHandler: onError}));
 
   /** Hot reload */
@@ -190,18 +203,20 @@ gulp.task('watch', function () {
   // Watches in batch mode to avoid multiple reloads
   watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
       server.changed('file');
+      console.log('Should have reloaded browser');
   })
   .pipe(plumber({errorHandler: onError}))
   .on('change', function (f) {
     console.log('File '+f.path+' was '+file.type+', reloading browser styles...');
+    // console.log("echo $'\e]9;Growl Notification\007'");
   });
 
   // Changes to source assets should trigger jekyll rebuild
-  gulp.watch(['*.html', '*.md', '*.markdown', '*.yml', 'assets/js/**.js',
-    '_posts/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
-      var jekyll = spawn('jekyll', ['build']);
+  gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
+    '_posts/**', 'about/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
+      var jekyll = exec('bundle exec jekyll build');
       jekyll.stdout.on('data', function (data) {
-        console.log('static file updated!');
+        console.log('static file updated! running jekyll build');
         console.log('jekyll: ' + data);
       });
   });
@@ -213,7 +228,7 @@ gulp.task('watch', function () {
 // Jekyll build
 gulp.task('jekyll-build', function(){
   var exec = child_process.exec;
-  var jekyll = exec('jekyll build');
+  var jekyll = exec('bundle exec jekyll build');
   return jekyll.stdout.on('data', function (data) {
     console.log(data);
   });
@@ -221,10 +236,10 @@ gulp.task('jekyll-build', function(){
 });
 
 /** Build task */
-gulp.task('build', ['copy', 'cssbuild', 'js', 'jekyll-build']);
+gulp.task('build', ['copy', 'cssbuild', 'js', 'images', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['copy','cssserve','js','jekyll-build','watch'], function(){
+gulp.task('serve', ['copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
   // Serve the site from _site/ directory
   console.log('Starting static web server...\n');
   console.log('Web root: ' + dir);

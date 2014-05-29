@@ -2,7 +2,13 @@
 layout: post
 title:  "Git Gutter Sublime Plugin"
 date:   2014-02-12 12:22:55
-tags: git corporate
+category: workflow
+tags: ["git", "version-control", "sublime-text"]
+description: "all blog posts need descriptions"
+keywords: "all, blogs, need, keywords"
+sitemap:
+    priority: 0.8
+redirect_from: /post/123456798/
 ---
 
 There are a few plugins for sublime text that I just can't live without, [GitGutter][gitgutter] is very quickly becoming a must-have development aid in my development workflow.  A simple idea that uses diff style icons in the gutter of your sublime text window to show you where you have added new/modified or deleted lines of code since your last commit.

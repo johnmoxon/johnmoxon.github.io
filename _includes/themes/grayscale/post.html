@@ -1,45 +1,60 @@
+<article class="post post-single" data-words="{{ content | number_of_words}}">
+
 <div class="page-header">
+  {% unless page.intro.herounit == true %}
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
-</div>
-
-<div class="row-fluid post-full">
-  <div class="span12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }} - <small class="reading-time">reading time...</small></span>
-    </div>
-    <article class="content post" id="{{page.id}}">
-      {{ content }}
-    </article>
-
-
-
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
+  {% else %}
+  <h2 class="h1">{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h2>
   {% endunless %}
-
-  {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
+  <div class="post-date">
+    {% unless page.tags == empty %}
+    <ul class="tag_box list-inline pull-right hidden-xs hidden-sm">
       {% assign tags_list = page.tags %}
+      {% assign nobadges = true %}
       {% include JB/tags_list %}
     </ul>
-  {% endunless %}
+    {% endunless %}
+    {{ page.date | date_to_long_string }} - <small class="reading-time eta">calculating reading time...</small> -
+
+    {% unless page.description == null %}
+    <span class="share">
+      <a href="http://twitter.com/home?status={{page.description | uri_escape}}%20{{site.production_url}}{{page.url | uri_escape}}" title="Share with twitter" data-toggle="tooltip" data-placement="top">
+          <i class="fa fa-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{site.production_url}}{{page.url | uri_escape}}" title="Share with facebook" data-toggle="tooltip" data-placement="top">
+          <i class="fa fa-facebook"></i>
+      </a>
+      <a href="https://plus.google.com/share?url={{page.description | uri_escape}}%20{{site.production_url}}{{page.url | uri_escape}}" title="Share on pinterest" data-toggle="tooltip" data-placement="top">
+          <i class="fa fa-google-plus"></i>
+      </a>
+      <a href="http://pinterest.com/pin/create/button/?url={{site.production_url | uri_escape }}{{page.url | uri_escape}}&media={{site.production_url | uri_escape }}/assets/img/avatar_200x200.jpg&{{page.description | uri_escape}}" title="Share on pinterest" data-toggle="tooltip" data-placement="top">
+          <i class="fa fa-pinterest"></i>
+      </a>
+      <a href="{{site.JB.rss_path}}" title="Rss feed" data-toggle="tooltip" data-placement="top">
+          <i class="fa fa-rss"></i>
+      </a>
+    </span>
+    {% endunless %}
+  </div>
+</div>
+
+<section class="row-fluid post-full">
+  <div class="span12">
+    <div class="content" id="{{page.id}}">
+      {{ content }}
+    </div>
 
     <hr>
-    <div class="pagination">
-      <ul>
+    <div class="">
+      <ul class="pager">
       {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+        <li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" data-toggle="tooltip" data-placement="right">&larr; Previous</a></li>
       {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="previous disabled"><a>&larr; Previous</a></li>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+        {% comment %}<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>{% endcomment %}
       {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" data-toggle="tooltip" data-placement="left">Next &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
@@ -48,4 +63,5 @@
     <hr>
     {% include JB/comments %}
   </div>
-</div>
+</section>
+</article>
