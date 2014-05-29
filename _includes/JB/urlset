@@ -1,0 +1,10 @@
+{% for url in urlset %}
+{% unless url.sitemap.noindex %}
+  <url>
+    <loc>{{site.production_url}}{{ url.url }}</loc>
+    {% unless url.date == null %}<lastmod>{{ url.date | date_to_xmlschema }}</lastmod>
+    {% endunless %}<changefreq>monthly</changefreq>
+    <priority>{% unless url.sitemap.priority %}0.5{% else %}{{url.sitemap.priority}}{% endunless %}</priority>
+  </url>{% endunless %}
+{% endfor %}
+{% assign urlset = nil %}

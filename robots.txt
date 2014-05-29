@@ -1,0 +1,9 @@
+---
+title: robots
+---
+User-agent: *
+{% for page in site.pages %}{% unless page.sitemap.noindex == null %}
+Disallow: {{ page.url }}{% endunless %}{% endfor %}
+
+{% for post in site.posts %}{% unless post.sitemap.noindex == null %}
+Disallow: {{ post.url }}{% endunless %}{% endfor %}
