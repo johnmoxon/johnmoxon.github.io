@@ -45,13 +45,14 @@ var paths = {
   // This is handled by the jekyll serve command if passed the watch flag??
   posts     : '_posts/*',
   src       : 'src/',
-  layouts   : '_layouts/'
+  layouts   : '_includes/themes/'
 };
 
 // Javascripts to concat and load
 paths.csssource = [
   paths.bowerpkg + 'bootstrap/dist/css/bootstrap.min.css',
   paths.bowerpkg + 'fontawesome/css/font-awesome.min.css',
+  paths.vendor + 'pace/themes/min.pace-theme-minimal.css',
   paths.css + '*.css' // Userscripts
 ];
 
@@ -85,7 +86,11 @@ gulp.task('copy', function () {
     // Font awesome fonts (CSS packaged)
     gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
       .pipe(plumber({errorHandler: onError}))
-      .pipe(gulp.dest( paths.assets ))
+      .pipe(gulp.dest( paths.assets )),
+
+    gulp.src([paths.bowerpkg + 'jquery/jquery.min.map'])
+      .pipe(plumber({errorHandler: onError}))
+      .pipe(gulp.dest( paths.jsmin ))
 
   );
 });
@@ -115,11 +120,11 @@ gulp.task('js', ['lint'], function(){
     .pipe(uglify())
     .pipe(gulp.dest( paths.jsmin ))
     // Inject revisioned file path into default template
-    .pipe(inject('_layouts/default.html', {
+    .pipe(inject('_includes/themes/grayscale/default.html', {
       addRootSlash: false,  // ensures proper relative paths
       ignorePath: '/build/' // ensures proper relative paths
     }))
-    .pipe(gulp.dest(paths.layouts));
+    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
 
 /** Concatenates css files - for compressed css, set in compass config
@@ -138,10 +143,10 @@ gulp.task('css', ['compass'], function(){
 gulp.task('cssserve', ['css'], function () {
   gulp.src(paths.cssmin + 'all.css')
   .pipe(plumber({errorHandler: onError}))
-  .pipe(inject('_layouts/default.html', {
+  .pipe(inject('_includes/themes/grayscale/default.html', {
       addRootSlash: false  // ensures proper relative paths
     }))
-    .pipe(gulp.dest(paths.layouts));
+    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
 
 /** Revision CSS file and inject into the default layout */
@@ -150,10 +155,10 @@ gulp.task('cssbuild', ['css'], function () {
     .pipe(plumber({errorHandler: onError}))
     .pipe(rev())
     .pipe(gulp.dest( paths.cssmin ))
-    .pipe(inject('_layouts/default.html', {
+    .pipe(inject('_includes/themes/grayscale/default.html', {
       addRootSlash: false
     }))
-    .pipe(gulp.dest(paths.layouts));
+    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
 
 /** Compiling - i.e. sass/compass */
