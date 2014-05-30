@@ -1,8 +1,10 @@
 name: jmoxon.net webdev articles
 markdown: redcarpet
 pygments: true
-safe: true
+safe: false
 exclude: ["node_modules","public", "src", "bower.json", "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project", "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+gems: [jekyll-redirect-from, jekyll-mentions]
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
@@ -39,10 +41,6 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://jmoxon.net
-
-gems:
-  - jekyll-redirect-from
-  - jekyll-mentions
 
 webmastertools:
   verification_code : 'WF6HdnRC6yGC1qbfvGK4hBfGcCdhDbnlN_9n364Fq_o'

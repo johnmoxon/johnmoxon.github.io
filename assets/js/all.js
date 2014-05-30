@@ -100,7 +100,6 @@ $window.scroll(function() {
   }
 
   // Show scroll to top button for posts
-
   if ( $('.post-single').length > 0 &&
     $window.scrollTop() > $('.post-single').offset().top) {
     if($('.scroll-to-top').length < 1) {
@@ -128,18 +127,12 @@ $(function() {
   });
 });
 
-
 // Calculate post reading time
   $('.post').each(function(){
     var $this = $(this);
     $this.find('.eta').text( $this.readingtime( $this.data('words') ) );
 
   });
-
-
-
-
-
 
 
 // fade out movie on scroll
@@ -152,7 +145,6 @@ $(window).bind('scroll', function(){
   if( offset <= fadeBegin ){
     opacity = 1;
   } else if( offset <= fadeFinish ){
-
     opacity = 1 - offset / fadeFinish;
   } else {
     opacity = 0;
@@ -160,129 +152,8 @@ $(window).bind('scroll', function(){
   fadingElement.css('opacity',opacity);
 });
 
-
 })(jQuery, window, undefined);
 /** End JM script **/
-
-/**
-//Google Map Skin - Get more at http://snazzymaps.com/
-var myOptions = {
-    zoom: 15,
-    center: new google.maps.LatLng(53.385873, -1.471471),
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    disableDefaultUI: true,
-    styles: [{
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 17
-        }]
-    }, {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 20
-        }]
-    }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 17
-        }]
-    }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 29
-        }, {
-            "weight": 0.2
-        }]
-    }, {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 18
-        }]
-    }, {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 16
-        }]
-    }, {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 21
-        }]
-    }, {
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-            "visibility": "on"
-        }, {
-            "color": "#000000"
-        }, {
-            "lightness": 16
-        }]
-    }, {
-        "elementType": "labels.text.fill",
-        "stylers": [{
-            "saturation": 36
-        }, {
-            "color": "#000000"
-        }, {
-            "lightness": 40
-        }]
-    }, {
-        "elementType": "labels.icon",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 19
-        }]
-    }, {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 20
-        }]
-    }, {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "color": "#000000"
-        }, {
-            "lightness": 17
-        }, {
-            "weight": 1.2
-        }]
-    }]
-};
-
-var map = new google.maps.Map(document.getElementById('map'), myOptions);
-*/
 
 /**
  * share.js
