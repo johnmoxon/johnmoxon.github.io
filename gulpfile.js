@@ -121,7 +121,7 @@ gulp.task('js', ['lint'], function(){
     .pipe(gulp.dest( paths.jsmin ))
     // Inject revisioned file path into default template
     .pipe(inject('_includes/themes/grayscale/default.html', {
-      addRootSlash: false,  // ensures proper relative paths
+      addRootSlash: true,  // ensures proper relative paths
       ignorePath: '/build/' // ensures proper relative paths
     }))
     .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
@@ -144,7 +144,7 @@ gulp.task('cssserve', ['css'], function () {
   gulp.src(paths.cssmin + 'all.css')
   .pipe(plumber({errorHandler: onError}))
   .pipe(inject('_includes/themes/grayscale/default.html', {
-      addRootSlash: false  // ensures proper relative paths
+      addRootSlash: true  // ensures proper relative paths
     }))
     .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
@@ -156,7 +156,7 @@ gulp.task('cssbuild', ['css'], function () {
     .pipe(rev())
     .pipe(gulp.dest( paths.cssmin ))
     .pipe(inject('_includes/themes/grayscale/default.html', {
-      addRootSlash: false
+      addRootSlash: true
     }))
     .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
@@ -218,7 +218,8 @@ gulp.task('watch', function () {
 
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
-    '_posts/**', 'about/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
+    '_posts/**', 'about/**', '_includes/**', 'categories/**', 'tags/**', '_config.yml'],
+    function(file){
       var jekyll = exec('bundle exec jekyll build');
       jekyll.stdout.on('data', function (data) {
         console.log('static file updated! running jekyll build');
