@@ -3,8 +3,11 @@ markdown: redcarpet
 pygments: true
 safe: false
 exclude: ["node_modules","public", "src", "bower.json", "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project", "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-
+timezone: Australia/Brisbane
 gems: [jekyll-redirect-from, jekyll-mentions]
+highlighter: pygments
+defaults :
+    max_num_category_posts: 5
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
@@ -31,6 +34,7 @@ author :
   feedburner : feedname
   googleplus : JohnMoxonAU
   linkedin : johnmoxon
+
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -88,8 +92,8 @@ JB :
   # Some JB helpers refer to these paths; change them here if needed.
   #
   archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+  categories_path : /categories/
+  tags_path : /tags/
   atom_path : /atom.xml
   rss_path : /rss.xml
 
