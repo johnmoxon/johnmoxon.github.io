@@ -56,6 +56,7 @@ jQuery.easing["jswing"]=jQuery.easing["swing"];jQuery.extend(jQuery.easing,{def:
 
   } else {
     $('#herounit').addClass('hidden');
+    $('.navbar').addClass('top-nav-collapse disable-nav-expanded');
   }
 })(jQuery, window);
 
@@ -84,6 +85,11 @@ jQuery.easing["jswing"]=jQuery.easing["swing"];jQuery.extend(jQuery.easing,{def:
   });
 })(jQuery, window);
 
+/**
+ * main.js
+ * Handles social sharing buttons
+ * based on https://github.com/kni-labs/rrssb/blob/master/js/rrssb.js
+ */
 ;(function($,window){
 
   var $window = $(window);

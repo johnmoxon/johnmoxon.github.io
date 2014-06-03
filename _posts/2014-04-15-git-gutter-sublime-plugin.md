@@ -11,7 +11,7 @@ sitemap:
 redirect_from: /post/123456798/
 ---
 
-There are a few plugins for sublime text that I just can't live without, [GitGutter][gitgutter] is very quickly becoming a must-have development aid in my development workflow.  A simple idea that uses diff style icons in the gutter of your sublime text window to show you where you have added new/modified or deleted lines of code since your last commit.
+There are a few plugins for [sublime text][sublime-text] that I just can't live without, [GitGutter][gitgutter] is very quickly becoming a must-have development aid in my development workflow.  A simple idea that uses diff style icons in the line-numbers gutter of your sublime text editor window to show you where you have added new lines, modified or deleted code since your last commit.
 
 If your already using Git ([and you should be!](http://insertwhyusegitlink)) then this plugin will become invaluable very quickly.   One of the major advantages of using Git over another version control system like SVN is that you can commit your work locally many times before pushing it to a remote repository, allowing you to leverage the power of version control without having to push unfinished code to a shared repository.
 
@@ -40,11 +40,14 @@ When I installed the plugin I already had a file open with uncommited git change
 
 Another great plugin the [SublimeText Git](https://github.com/kemayo/sublime-text-git/wiki) addon which allows you to run `git commit`, `git push` and other git commands directly from Sublime's command palatte.
 
-## Other articles for improving your SublimeText workflow
+## Related articles
 * [Perfect Workflow in Sublime Text - Tuts Plus][perfectSublimeWorflow]
-* [Smooting corporate proxy pains with cntlm][cntlm]
+* [Try git!][http://trygit.github.io] - Great tutorial to learn git
+* [Smooting corporate proxy pains with cntlm][cntlm] - Must have app when working behind a corporate proxy
 
 
 [gitgutter]: http://wbond.net/packages/gitgutter
 [perfectSublimeWorflow]: http://code.tutsplus.com/articles/perfect-workflow-in-sublime-text-free-course--net-27293
 [cntlm]: http://setting-up-cntlm-link
+[sublime-text]: http://sublimetext.com/3/
+[Try git!][http://trygit.github.io]
