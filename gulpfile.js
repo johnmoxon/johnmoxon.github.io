@@ -1,13 +1,12 @@
 /** Dependencies */
 var jshint      = require('gulp-jshint'),
   concat        = require('gulp-concat'),
+  clean         = require('gulp-clean'),
   rename        = require('gulp-rename'),
   uglify        = require('gulp-uglify'),
-  // sass          = require('gulp-sass'),
   compass       = require('gulp-compass'),
   watch         = require('gulp-watch'),
   livereload    = require('gulp-livereload'),
-  // wait          = require('gulp-wait'),
   imagemin      = require('gulp-imagemin'),
   rev           = require('gulp-rev'),
   inject        = require('gulp-inject'),
@@ -42,10 +41,11 @@ var paths = {
 
 
   // When these assets change then we will need jekyll to rebuild
-  // This is handled by the jekyll serve command if passed the watch flag??
   posts     : '_posts/*',
   src       : 'src/',
-  layouts   : '_includes/themes/'
+  layouts   : '_includes/themes/',
+
+  sitebuild : '_site/*'
 };
 
 // Javascripts to concat and load
@@ -209,6 +209,7 @@ gulp.task('watch', function () {
   watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
       server.changed('file');
       console.log('Should have reloaded browser');
+      // return files;
   })
   .pipe(plumber({errorHandler: onError}))
   .on('change', function (f) {
@@ -220,6 +221,7 @@ gulp.task('watch', function () {
   gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
     '_posts/**', 'about/**', '_includes/**', 'categories/**', 'tags/**', '_config.yml'],
     function(file){
+      // gulp.start('clean');
       var jekyll = exec('bundle exec jekyll build');
       jekyll.stdout.on('data', function (data) {
         console.log('static file updated! running jekyll build');
@@ -239,6 +241,12 @@ gulp.task('jekyll-build', function(){
     console.log(data);
   });
 
+});
+
+/** Clean tasks **/
+gulp.task('clean', function () {
+  return gulp.src( paths.sitebuild , {read: false})
+    .pipe(clean());
 });
 
 /** Build task */

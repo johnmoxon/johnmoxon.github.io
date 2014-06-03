@@ -1,3 +1,8 @@
+/**
+ * main.js
+ * Handles social sharing buttons
+ * based on https://github.com/kni-labs/rrssb/blob/master/js/rrssb.js
+ */
 ;(function($,window){
 
   var $window = $(window);

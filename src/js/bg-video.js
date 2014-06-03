@@ -31,5 +31,6 @@
 
   } else {
     $('#herounit').addClass('hidden');
+    $('.navbar').addClass('top-nav-collapse disable-nav-expanded');
   }
 })(jQuery, window);
