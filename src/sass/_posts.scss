@@ -16,13 +16,18 @@ ul.posts{
   }
 }
 
-.tag_box {
+.tag-box {
   font-family: $fontsans;
   text-transform: uppercase;
+}
+
+.tag-box-full {
+  @extend .tag-box;
   margin-bottom: 60px;
   padding:10px 5px;
   border-radius: 15px;
   background: lighten($lightgreytext, 13);
+
 }
 
 .posts-by-category,
