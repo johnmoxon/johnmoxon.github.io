@@ -9,7 +9,7 @@ permalink: /
 
 # Posts by category
 
-<ul class="tag_box list-unstyled list-inline">
+<ul class="tag-box-full list-unstyled list-inline">
 {% assign categories_list = site.categories %}
 {% include JB/categories_list %}
 </ul>
