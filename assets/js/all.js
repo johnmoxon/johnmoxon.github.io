@@ -91,7 +91,6 @@ jQuery.easing["jswing"]=jQuery.easing["swing"];jQuery.extend(jQuery.easing,{def:
  */
 ;(function($,window){
 
-var mynewvar = 2323;
   var $window = $(window);
 
   // Tooltips for share buttons
