@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  "Git Gutter Sublime Plugin"
-date:   2014-02-12 12:22:55
+date:   2014-04-15 12:22:55
 category: workflow
 tags: ["git", "version-control", "sublime-text"]
 description: "all blog posts need descriptions"
 keywords: "all, blogs, need, keywords"
 sitemap:
     priority: 0.8
-redirect_from: /post/123456798/
 ---
 
 There are a few plugins for [sublime text][sublime-text] that I just can't live without, [GitGutter][gitgutter] is very quickly becoming a must-have development aid in my development workflow.  A simple idea that uses diff style icons in the line-numbers gutter of your sublime text editor window to show you where you have added new lines, modified or deleted code since your last commit.
@@ -42,7 +41,7 @@ Another great plugin the [SublimeText Git](https://github.com/kemayo/sublime-tex
 
 ## Related articles
 * [Perfect Workflow in Sublime Text - Tuts Plus][perfectSublimeWorflow]
-* [Try git!][http://trygit.github.io] - Great tutorial to learn git
+* [Try git!][try-git] - Great tutorial to learn git
 * [Smooting corporate proxy pains with cntlm][cntlm] - Must have app when working behind a corporate proxy
 
 
@@ -50,4 +49,4 @@ Another great plugin the [SublimeText Git](https://github.com/kemayo/sublime-tex
 [perfectSublimeWorflow]: http://code.tutsplus.com/articles/perfect-workflow-in-sublime-text-free-course--net-27293
 [cntlm]: http://setting-up-cntlm-link
 [sublime-text]: http://sublimetext.com/3/
-[Try git!][http://trygit.github.io]
+[try-git]: http://trygit.github.io
