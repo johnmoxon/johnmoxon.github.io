@@ -29,6 +29,12 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
+
+blockquote {
+    font-style: italic;
+    color: lighten($darkgreytext,40);
+}
+
 .has-error {
     .form-control {
         border-color: darken($errortext,8);
