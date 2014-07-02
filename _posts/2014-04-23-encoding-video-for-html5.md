@@ -14,29 +14,72 @@ intro:
 sitemap:
     priority: 0.6
 ---
-Encoding video for the web can be pretty difficult, at best a time consuming multi-part
-process requiring you to output at least 3 different video formats, required to support
-different browsers. [Miro video coverter][miro] (via [Dive into HTML5 video](http://diveintohtml5.info/video.html#miro)) can make this job pretty simple. Download it for Mac or Windows, throw
-in any input video you like, select the right output and hit convert! Repeat times 3. Still if you're not happy with the quality of the output or you want to make your video **converting** part of your automated work flow... Sorry, this aint the tool for you :disappointed:
+Encoding video for the web can be pretty difficult, at best a time consuming
+process requiring you to output up to 3 different video codecs required to support popular browsers. _[For a full explanation of video/audio codec and container formats check out **dive into html5 video**](http://diveintohtml5.info/video.html#video-codecs)_
+
+[Miro video coverter][miro] (via [Dive into HTML5](http://diveintohtml5.info/video.html#miro)) can make this job pretty simple. Download it for Mac or Windows, throw in any input video you like, select the right output and hit convert! Repeat times 3. Still if you're not happy with the quality of the output or you want to make your video **conversion process** part of an automated work flow... Sorry, this aint the tool for you :disappointed:
 
 ## State of video in HTML5
 
-Well it ain't pretty but it works... _Kinda..._ Leaving asside for now IE8, support for
-HTML5 video is pretty good,
+Well it ain't pretty but it works... _Kinda..._ Leaving aside for now IE8 (You'll need some fall backs and polyfills in place if you want to support this browser), support for HTML5 video is actually pretty good.  The `<video>` element itself is supported in [most modern browsers](http://beta.caniuse.com/#feat=video), the tricky bit comes when choosing your video container and codec.  The `<video>` element can link to any type of video, **there is no standard**. It's down to the developer to know what video and audio codecs are supported by each browser, luckily `<video>` will allow you to reference multiple video sources and the browser will play the first one it understands.
+
+For a good general coverage I chose to output the following video/audio codecs:
+
+* Theora+Vorbis+Ogg
+* H.264+AAC+MP4
+* WebM
 
 > For a full run down of which browser supports what, check out this ever trusty
 [caniuse][caniusevideo] matrix.
 
-## A scripted approach
+## Enough already give me the script...
+
+**Woah there!** slow down firstly a bit of setup.  Lets get the prerequisites out of the way. This has been primarily tested on a Mac with dependencies installed using the excellent Mac package manager _[brew][brew]_. Installing these packages on a linux-based system should be a fairly similar process, switch out [brew][brew] for your package manager of choice.  I haven't tested this script on a windows environment, but if you're feeling daring why not give [Chocolatey](https://chocolatey.org/ "Chocolatey windows package manager") a go.
+
+### Prerequisites
+
+* Handbrake Cli
+* ffmpeg with libvpx and libvorbis
+* ffmpeg2theora
+
+Lets get started, open up a terminal and get typing, first we add a brew-tap to install Handbrake Cli:
+
+```bash
+$ brew tap sceaga/tap;
+$ brew install handbrakecli;
+```
+
+install the other dependencies:
+
+```bash
+$ brew install ffmpeg --with-libvpx --with-libvorbis
+$ brew install ffmpeg2theora
+```
+
+## The Script
+
+Forked from @markupboy's [html5video.sh](https://gist.github.com/markupboy/816610) adapted to output a screencap from the input video after a specified number of seconds.
+
 {% gist johnmoxon/a798474f5d44e505bc71 %}
 
-> Note recent versions of chrome and firefox support both webm and Ogg/Theora video
+### Usage
+
+```bash
+# Input parameters
+# ./html5video.sh infile.mp4 {number of seconds to take screencap after}
+
+# Example
+./html5video.sh mybigvideo.mp4 22
+```
+
+> **Note:** recent versions of chrome and firefox support both webm and Ogg/Theora video
 codecs, so you may only need to provide webm and mp4 versions
 
 ## Other articles on HTML5 video
 * [Dive into HTML5 - Video][diveintohtml5video]
-* [Smooting corporate proxy pains with cntlm][cntlm]
+* [Smoothing corporate proxy pains with cntlm][cntlm]
 
 [diveintohtml5video]: http://diveintohtml5.info/video.html
-[caniusevideo]: http://caniuse.com/#search=video
+[caniusevideo]: http://beta.caniuse.com/#feat=video,webm,ogv,mpeg4
 [miro]: http://www.mirovideoconverter.com/
+[brew]: http://brew.sh/
