@@ -1,13 +1,12 @@
 /** Dependencies */
 var jshint      = require('gulp-jshint'),
   concat        = require('gulp-concat'),
+  clean         = require('gulp-clean'),
   rename        = require('gulp-rename'),
   uglify        = require('gulp-uglify'),
-  // sass          = require('gulp-sass'),
   compass       = require('gulp-compass'),
   watch         = require('gulp-watch'),
   livereload    = require('gulp-livereload'),
-  // wait          = require('gulp-wait'),
   imagemin      = require('gulp-imagemin'),
   rev           = require('gulp-rev'),
   inject        = require('gulp-inject'),
@@ -42,16 +41,18 @@ var paths = {
 
 
   // When these assets change then we will need jekyll to rebuild
-  // This is handled by the jekyll serve command if passed the watch flag??
   posts     : '_posts/*',
   src       : 'src/',
-  layouts   : '_layouts/'
+  layouts   : '_includes/themes/',
+
+  sitebuild : '_site/*'
 };
 
 // Javascripts to concat and load
 paths.csssource = [
   paths.bowerpkg + 'bootstrap/dist/css/bootstrap.min.css',
   paths.bowerpkg + 'fontawesome/css/font-awesome.min.css',
+  paths.vendor + 'pace/themes/min.pace-theme-minimal.css',
   paths.css + '*.css' // Userscripts
 ];
 
@@ -85,7 +86,11 @@ gulp.task('copy', function () {
     // Font awesome fonts (CSS packaged)
     gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
       .pipe(plumber({errorHandler: onError}))
-      .pipe(gulp.dest( paths.assets ))
+      .pipe(gulp.dest( paths.assets )),
+
+    gulp.src([paths.bowerpkg + 'jquery/jquery.min.map'])
+      .pipe(plumber({errorHandler: onError}))
+      .pipe(gulp.dest( paths.jsmin ))
 
   );
 });
@@ -115,11 +120,11 @@ gulp.task('js', ['lint'], function(){
     .pipe(uglify())
     .pipe(gulp.dest( paths.jsmin ))
     // Inject revisioned file path into default template
-    .pipe(inject('_layouts/default.html', {
-      addRootSlash: false,  // ensures proper relative paths
+    .pipe(inject('_includes/themes/grayscale/default.html', {
+      addRootSlash: true,  // ensures proper relative paths
       ignorePath: '/build/' // ensures proper relative paths
     }))
-    .pipe(gulp.dest(paths.layouts));
+    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
 
 /** Concatenates css files - for compressed css, set in compass config
@@ -138,10 +143,10 @@ gulp.task('css', ['compass'], function(){
 gulp.task('cssserve', ['css'], function () {
   gulp.src(paths.cssmin + 'all.css')
   .pipe(plumber({errorHandler: onError}))
-  .pipe(inject('_layouts/default.html', {
-      addRootSlash: false  // ensures proper relative paths
+  .pipe(inject('_includes/themes/grayscale/default.html', {
+      addRootSlash: true  // ensures proper relative paths
     }))
-    .pipe(gulp.dest(paths.layouts));
+    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
 
 /** Revision CSS file and inject into the default layout */
@@ -150,10 +155,10 @@ gulp.task('cssbuild', ['css'], function () {
     .pipe(plumber({errorHandler: onError}))
     .pipe(rev())
     .pipe(gulp.dest( paths.cssmin ))
-    .pipe(inject('_layouts/default.html', {
-      addRootSlash: false
+    .pipe(inject('_includes/themes/grayscale/default.html', {
+      addRootSlash: true
     }))
-    .pipe(gulp.dest(paths.layouts));
+    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
 });
 
 /** Compiling - i.e. sass/compass */
@@ -204,6 +209,7 @@ gulp.task('watch', function () {
   watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
       server.changed('file');
       console.log('Should have reloaded browser');
+      // return files;
   })
   .pipe(plumber({errorHandler: onError}))
   .on('change', function (f) {
@@ -213,7 +219,9 @@ gulp.task('watch', function () {
 
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
-    '_posts/**', 'about/**', '_includes/**', '_layouts/**', '_config.yml'], function(file){
+    '_posts/**', 'about/**', '_includes/**', 'categories/**', 'tags/**', '_config.yml'],
+    function(file){
+      // gulp.start('clean');
       var jekyll = exec('bundle exec jekyll build');
       jekyll.stdout.on('data', function (data) {
         console.log('static file updated! running jekyll build');
@@ -233,6 +241,12 @@ gulp.task('jekyll-build', function(){
     console.log(data);
   });
 
+});
+
+/** Clean tasks **/
+gulp.task('clean', function () {
+  return gulp.src( paths.sitebuild , {read: false})
+    .pipe(clean());
 });
 
 /** Build task */

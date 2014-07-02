@@ -1,8 +1,13 @@
 name: jmoxon.net webdev articles
 markdown: redcarpet
 pygments: true
-safe: true
+safe: false
 exclude: ["node_modules","public", "src", "bower.json", "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project", "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+timezone: Australia/Brisbane
+gems: [jekyll-redirect-from, jekyll-mentions, jemoji]
+highlighter: pygments
+defaults :
+    max_num_category_posts: 5
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
@@ -30,6 +35,7 @@ author :
   googleplus : JohnMoxonAU
   linkedin : johnmoxon
 
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
@@ -39,10 +45,6 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://jmoxon.net
-
-gems:
-  - jekyll-redirect-from
-  - jekyll-mentions
 
 webmastertools:
   verification_code : 'WF6HdnRC6yGC1qbfvGK4hBfGcCdhDbnlN_9n364Fq_o'
@@ -90,8 +92,8 @@ JB :
   # Some JB helpers refer to these paths; change them here if needed.
   #
   archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+  categories_path : /categories/
+  tags_path : /tags/
   atom_path : /atom.xml
   rss_path : /rss.xml
 
