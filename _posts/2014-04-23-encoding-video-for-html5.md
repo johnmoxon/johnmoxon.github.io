@@ -14,7 +14,7 @@ intro:
 sitemap:
     priority: 0.6
 ---
-Encoding video for the web can be pretty difficult, at best a time consuming
+Encoding *test* video for the web can be pretty difficult, at best a time consuming
 process requiring you to output up to 3 different video codecs required to support popular browsers. _[For a full explanation of video/audio codec and container formats check out **dive into html5 video**](http://diveintohtml5.info/video.html#video-codecs)_
 
 [Miro video coverter][miro] (via [Dive into HTML5](http://diveintohtml5.info/video.html#miro)) can make this job pretty simple. Download it for Mac or Windows, throw in any input video you like, select the right output and hit convert! Repeat times 3. Still if you're not happy with the quality of the output or you want to make your video **conversion process** part of an automated work flow... Sorry, this aint the tool for you :disappointed:

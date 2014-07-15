@@ -6,17 +6,15 @@ category: workflow
 tags: ["git", "version-control", "sublime-text"]
 description: "all blog posts need descriptions"
 keywords: "all, blogs, need, keywords"
-sitemap:
-    priority: 0.8
 ---
 
 There are a few plugins for [sublime text][sublime-text] that I just can't live without, [GitGutter][gitgutter] is very quickly becoming a must-have development aid in my development workflow.  A simple idea that uses diff style icons in the line-numbers gutter of your sublime text editor window to show you where you have added new lines, modified or deleted code since your last commit.
 
-If your already using Git ([and you should be!](http://insertwhyusegitlink)) then this plugin will become invaluable very quickly.   One of the major advantages of using Git over another version control system like SVN is that you can commit your work locally many times before pushing it to a remote repository, allowing you to leverage the power of version control without having to push unfinished code to a shared repository.
+If your already using Git ([and you should be!](http://insertwhyusegitlink)) then this plugin will likely become invaluable to you very quickly.   One of the major advantages of using Git over another version control system like SVN is that you can commit your work locally many times before pushing it to a remote repository, allowing you to leverage the power of version control without having to push unfinished code to a shared repository.
 
-GitGutter allows you to keep an eye on how much of your file you have edited, so you can better decide when it's time to do a commit.
+GitGutter allows you to keep an eye on how much of your file has changed, so you can better decide when it's time to do a commit or push.
 
-![GitGutter in action](http://imagepath/images/git-gutter-in-action.jpg)
+![GitGutter in action](/assets/img/gittgutter-in-action.png)
 
 ## Installing GitGutter
 Installing GitGutter is easy using the excellent [SublimeText package control plugin](https://sublime.wbond.net/installation) by Will Bond.  If you don't already have package control installed... **do it now!** Seriously, there are other ways to install SublimeText plugins, but nothing comes close the intuitive in-editor experience that Package Control has acheieved.
