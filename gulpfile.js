@@ -1,5 +1,7 @@
 /** Dependencies */
 var jshint      = require('gulp-jshint'),
+  // jshintrep     = require('jshint-junit-reporter'),
+  jshintstylish = require('jshint-stylish'),
   concat        = require('gulp-concat'),
   clean         = require('gulp-clean'),
   rename        = require('gulp-rename'),
@@ -102,8 +104,9 @@ gulp.task('lint', function() {
   return gulp.src( paths.js )
     .pipe(plumber({errorHandler: onError}))
     .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-    // done( err );
+    .pipe(jshint.reporter('jshint-stylish'));
+
+    console.log(jshint);
 });
 
 
@@ -219,10 +222,10 @@ gulp.task('watch', function () {
 
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
-    '_posts/**', 'about/**', '_includes/**', 'categories/**', 'tags/**', '_config.yml'],
+    '_posts/**', '_drafts/**', 'about/**', '_includes/**', 'categories/**', 'tags/**', '_config.yml'],
     function(file){
       // gulp.start('clean');
-      var jekyll = exec('bundle exec jekyll build');
+      var jekyll = exec('bundle exec jekyll build --drafts');
       jekyll.stdout.on('data', function (data) {
         console.log('static file updated! running jekyll build');
         console.log('jekyll: ' + data);
@@ -236,7 +239,7 @@ gulp.task('watch', function () {
 // Jekyll build
 gulp.task('jekyll-build', function(){
   var exec = child_process.exec;
-  var jekyll = exec('bundle exec jekyll build');
+  var jekyll = exec('bundle exec jekyll build --drafts');
   return jekyll.stdout.on('data', function (data) {
     console.log(data);
   });

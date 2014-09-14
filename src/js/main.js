@@ -2,6 +2,7 @@
  * main.js
  * Handles main theme
  */
+
 ;(function($,window){
 
   var $window = $(window);
