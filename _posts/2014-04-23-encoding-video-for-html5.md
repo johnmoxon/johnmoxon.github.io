@@ -15,7 +15,7 @@ sitemap:
     priority: 0.6
 ---
 Encoding *test* video for the web can be pretty difficult, at best a time consuming
-process requiring you to output up to 3 different video codecs required to support popular browsers. _[For a full explanation of video/audio codec and container formats check out **dive into html5 video**](http://diveintohtml5.info/video.html#video-codecs)_
+process requiring you to output up to 3 different video codecs required to support popular browsers. _For a full explanation of video/audio codec and container formats check out this awesome in-depth article over at [**dive into html5 video**](http://diveintohtml5.info/video.html#video-codecs)_
 
 [Miro video coverter][miro] (via [Dive into HTML5](http://diveintohtml5.info/video.html#miro)) can make this job pretty simple. Download it for Mac or Windows, throw in any input video you like, select the right output and hit convert! Repeat times 3. Still if you're not happy with the quality of the output or you want to make your video **conversion process** part of an automated work flow... Sorry, this aint the tool for you :disappointed:
 
@@ -29,8 +29,7 @@ For a good general coverage I chose to output the following video/audio codecs:
 * H.264+AAC+MP4
 * WebM
 
-> For a full run down of which browser supports what, check out this ever trusty
-[caniuse][caniusevideo] matrix.
+> Check out this [caniuse][caniusevideo] matrix for full browser support details.
 
 ## Enough already give me the script...
 
@@ -58,7 +57,7 @@ $ brew install ffmpeg2theora
 
 ## The Script
 
-Forked from @markupboy's [html5video.sh](https://gist.github.com/markupboy/816610) adapted to output a screencap from the input video after a specified number of seconds.
+The credit for this script goes squarely to @markupboy's [html5video.sh script](https://gist.github.com/markupboy/816610) which I've forked and adapted to output a screencap from the input video after a specified number of seconds.
 
 {% gist johnmoxon/a798474f5d44e505bc71 %}
 

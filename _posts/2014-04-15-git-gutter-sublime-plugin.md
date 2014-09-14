@@ -4,13 +4,13 @@ title:  "Git Gutter Sublime Plugin"
 date:   2014-04-15 12:22:55
 category: workflow
 tags: ["git", "version-control", "sublime-text"]
-description: "all blog posts need descriptions"
-keywords: "all, blogs, need, keywords"
+description: "Perfect git workflow in sublime with the git gutter plugin"
+keywords: "git, gitgutter, sublime, sublime text, web development, workflow"
 ---
 
 There are a few plugins for [sublime text][sublime-text] that I just can't live without, [GitGutter][gitgutter] is very quickly becoming a must-have development aid in my development workflow.  A simple idea that uses diff style icons in the line-numbers gutter of your sublime text editor window to show you where you have added new lines, modified or deleted code since your last commit.
 
-If your already using Git ([and you should be!](http://insertwhyusegitlink)) then this plugin will likely become invaluable to you very quickly.   One of the major advantages of using Git over another version control system like SVN is that you can commit your work locally many times before pushing it to a remote repository, allowing you to leverage the power of version control without having to push unfinished code to a shared repository.
+If your already using Git ([and you should be!](https://blogs.atlassian.com/2013/11/dont-move-to-git/) then this plugin will likely become invaluable to you very quickly.   One of the major advantages of using Git over another version control system like SVN is that you can commit your work locally many times before pushing it to a remote repository, allowing you to leverage the power of version control without having to push unfinished code to a shared repository.
 
 GitGutter allows you to keep an eye on how much of your file has changed, so you can better decide when it's time to do a commit or push.
 
@@ -47,4 +47,4 @@ Another great plugin the [SublimeText Git](https://github.com/kemayo/sublime-tex
 [perfectSublimeWorflow]: http://code.tutsplus.com/articles/perfect-workflow-in-sublime-text-free-course--net-27293
 [cntlm]: http://setting-up-cntlm-link
 [sublime-text]: http://sublimetext.com/3/
-[try-git]: http://trygit.github.io
+[try-git]: https://try.github.io
