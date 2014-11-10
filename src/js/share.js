@@ -28,6 +28,10 @@
   $('.share a').on('click', function(e){
     var $this = $(this);
     popupCenter($this.attr('href'), $this.attr('title'), 580, 470);
+
+    //fire event to data layer
+    dataLayer.push({'event':'social.share', 'social.provider': $this.data('provider') });
+
     e.preventDefault();
   });
 })(jQuery, window);

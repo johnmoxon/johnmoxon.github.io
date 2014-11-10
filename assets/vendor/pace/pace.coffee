@@ -336,7 +336,8 @@ class RequestIntercept extends Events
 
       req
 
-    extendNative window.XMLHttpRequest, _XMLHttpRequest
+    try
+      extendNative window.XMLHttpRequest, _XMLHttpRequest
 
     if _XDomainRequest?
       window.XDomainRequest = ->
@@ -346,7 +347,8 @@ class RequestIntercept extends Events
 
         req
 
-      extendNative window.XDomainRequest, _XDomainRequest
+      try
+        extendNative window.XDomainRequest, _XDomainRequest
 
     if _WebSocket? and options.ajax.trackWebSockets
       window.WebSocket = (url, protocols) =>
@@ -360,7 +362,8 @@ class RequestIntercept extends Events
 
         req
 
-      extendNative window.WebSocket, _WebSocket
+      try
+        extendNative window.WebSocket, _WebSocket
 
 _intercept = null
 getIntercept = ->
@@ -442,10 +445,12 @@ class XHRRequestTracker
           # response, all we can do is increment the progress with backoff such that we
           # never hit 100% until it's done.
           @progress = @progress + (100 - @progress) / 2
+      , false
 
       for event in ['load', 'abort', 'timeout', 'error']
         request.addEventListener event, =>
           @progress = 100
+        , false
 
     else
       _onreadystatechange = request.onreadystatechange
@@ -464,6 +469,7 @@ class SocketRequestTracker
     for event in ['error', 'open']
       request.addEventListener event, =>
         @progress = 100
+      , false
 
 class ElementMonitor
   constructor: (options={}) ->

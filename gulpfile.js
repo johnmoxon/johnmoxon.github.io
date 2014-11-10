@@ -54,7 +54,7 @@ var paths = {
 paths.csssource = [
   paths.bowerpkg + 'bootstrap/dist/css/bootstrap.min.css',
   paths.bowerpkg + 'fontawesome/css/font-awesome.min.css',
-  paths.vendor + 'pace/themes/min.pace-theme-minimal.css',
+  // paths.vendor + 'pace/themes/min.pace-theme-minimal.css',
   paths.css + '*.css' // Userscripts
 ];
 
@@ -81,9 +81,9 @@ gulp.task('copy', function () {
   // Need to copy several sources and then return after finished
   return es.merge(
     // PACE - progress bar (Part of Head)
-    gulp.src([paths.bowerpkg + 'pace/**'], {base: './public/components'})
-      .pipe(plumber({errorHandler: onError}))
-      .pipe(gulp.dest( paths.vendor )),
+    // gulp.src([paths.bowerpkg + 'pace/**'], {base: './public/components'})
+    //   .pipe(plumber({errorHandler: onError}))
+    //   .pipe(gulp.dest( paths.vendor )),
 
     // Font awesome fonts (CSS packaged)
     gulp.src(['./public/components/fontawesome/fonts/*'], {base: './public/components/fontawesome'}) //, {base: './public/components'}
