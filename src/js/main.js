@@ -7,6 +7,20 @@
 
   var $window = $(window);
 
+  // dataLayer fallback
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push = window.dataLayer.push || function(){ return false; };
+
+  // Register DISQUS comment callback 
+  window.disqus_config = function() {
+    this.callbacks.onNewComment = [function(comment) {
+      window.dataLayer.push({
+        'event': 'comment.add',
+        'comment.text': comment.text
+      }); 
+    }];
+  };
+
   // Tooltips for share buttons
   $('[data-toggle="tooltip"]').tooltip();
 

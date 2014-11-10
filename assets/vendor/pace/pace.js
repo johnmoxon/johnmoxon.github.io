@@ -426,7 +426,9 @@
         monitorXHR(req);
         return req;
       };
-      extendNative(window.XMLHttpRequest, _XMLHttpRequest);
+      try {
+        extendNative(window.XMLHttpRequest, _XMLHttpRequest);
+      } catch (_error) {}
       if (_XDomainRequest != null) {
         window.XDomainRequest = function() {
           var req;
@@ -434,7 +436,9 @@
           monitorXHR(req);
           return req;
         };
-        extendNative(window.XDomainRequest, _XDomainRequest);
+        try {
+          extendNative(window.XDomainRequest, _XDomainRequest);
+        } catch (_error) {}
       }
       if ((_WebSocket != null) && options.ajax.trackWebSockets) {
         window.WebSocket = function(url, protocols) {
@@ -454,7 +458,9 @@
           }
           return req;
         };
-        extendNative(window.WebSocket, _WebSocket);
+        try {
+          extendNative(window.WebSocket, _WebSocket);
+        } catch (_error) {}
       }
     }
 
@@ -567,13 +573,13 @@
           } else {
             return _this.progress = _this.progress + (100 - _this.progress) / 2;
           }
-        });
+        }, false);
         _ref2 = ['load', 'abort', 'timeout', 'error'];
         for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
           event = _ref2[_j];
           request.addEventListener(event, function() {
             return _this.progress = 100;
-          });
+          }, false);
         }
       } else {
         _onreadystatechange = request.onreadystatechange;
@@ -603,7 +609,7 @@
         event = _ref2[_j];
         request.addEventListener(event, function() {
           return _this.progress = 100;
-        });
+        }, false);
       }
     }
 
