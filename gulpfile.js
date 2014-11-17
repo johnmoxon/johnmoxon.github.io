@@ -248,7 +248,7 @@ gulp.task('jekyll-build', function(){
 
 /** Clean tasks **/
 gulp.task('clean', function () {
-  return gulp.src( paths.sitebuild , {read: false})
+  return gulp.src( [paths.sitebuild, "assets/css/all-*.css", "assets/js/all.min-*.js"] , {read: false})
     .pipe(clean());
 });
 
