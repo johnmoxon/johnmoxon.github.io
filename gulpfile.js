@@ -62,7 +62,7 @@ paths.csssource = [
 paths.jssource = [
   paths.bowerpkg + 'jquery/jquery.min.js',
   paths.bowerpkg + 'bootstrap/dist/js/bootstrap.min.js',
-  paths.bowerpkg + 'bootstrap-validator/dist/validator.min.js',
+  paths.bowerpkg + 'bootstrap-validator/dist/validator.min.js', // https://1000hz.github.io/bootstrap-validator/
   paths.bowerpkg + 'jquery.easing/js/jquery.easing.min.js',
   paths.bowerpkg + 'jquery-readingtime-forked/jquery.readingtime.min.js',
   paths.js
