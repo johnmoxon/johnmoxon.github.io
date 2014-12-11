@@ -83,13 +83,8 @@ var onError = function (err) {
 };
 
 // browser-sync task for starting the server.
-gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
+// gulp.task('browser-sync', function() {
+// });
 
 gulp.task('copy', function () {
   // Need to copy several sources and then return after finished
@@ -270,27 +265,35 @@ gulp.task('clean', function () {
 gulp.task('build', ['copy', 'cssbuild', 'js', 'images', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['browser-sync','copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
+gulp.task('serve', ['copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
+
+  browserSync({
+    server: {
+        baseDir: "./_site/"
+    }
+  });
+
+
   // Serve the site from _site/ directory
-  console.log('Starting static web server...\n');
-  console.log('Web root: ' + dir);
-  console.log('Port    : ' + port);
-  console.log('Going to   : http://localhost:' + port);
-  try {
-    var app = connect()
-      .use(connect.static(dir))
-      .listen(port);
+  // console.log('Starting static web server...\n');
+  // console.log('Web root: ' + dir);
+  // console.log('Port    : ' + port);
+  // console.log('Going to   : http://localhost:' + port);
+  // try {
+  //   var app = connect()
+  //     .use(connect.static(dir))
+  //     .listen(port);
 
-    child_process.exec('open -a Google\\ Chrome http://localhost:' + port,
-      function(error, stdout, stderr){
-        if (error && error.length) {
-          console.log('Launching Chrome Canary error:\n' + error);
-        }
-      });
+  //   child_process.exec('open -a Google\\ Chrome http://localhost:' + port,
+  //     function(error, stdout, stderr){
+  //       if (error && error.length) {
+  //         console.log('Launching Chrome Canary error:\n' + error);
+  //       }
+  //     });
 
-  } catch (e) {
-    console.log(e);
-  }
+  // } catch (e) {
+  //   console.log(e);
+  // }
 });
 
 // Set default task - Development mode
