@@ -8,7 +8,9 @@ var jshint      = require('gulp-jshint'),
   uglify        = require('gulp-uglify'),
   compass       = require('gulp-compass'),
   watch         = require('gulp-watch'),
-  livereload    = require('gulp-livereload'),
+  // livereload    = require('gulp-livereload'),
+  browserSync   = require('browser-sync'),
+  reload        = browserSync.reload,
   imagemin      = require('gulp-imagemin'),
   rev           = require('gulp-rev'),
   inject        = require('gulp-inject'),
@@ -41,7 +43,6 @@ var paths = {
   images : './assets/img/',
   bowerpkg  : './public/components/',
 
-
   // When these assets change then we will need jekyll to rebuild
   posts     : '_posts/*',
   src       : 'src/',
@@ -49,6 +50,9 @@ var paths = {
 
   sitebuild : '_site/*'
 };
+
+paths.theme = paths.layouts + 'grayscale/';
+paths.default_layout = paths.theme + 'default.html';
 
 // Javascripts to concat and load
 paths.csssource = [
@@ -62,11 +66,12 @@ paths.csssource = [
 paths.jssource = [
   paths.bowerpkg + 'jquery/jquery.min.js',
   paths.bowerpkg + 'bootstrap/dist/js/bootstrap.min.js',
-  paths.bowerpkg + 'bootstrap-validator/dist/validator.min.js', // https://1000hz.github.io/bootstrap-validator/
+  paths.bowerpkg + 'bootstrap-validator/dist/validator.min.js', 
   paths.bowerpkg + 'jquery.easing/js/jquery.easing.min.js',
   paths.bowerpkg + 'jquery-readingtime-forked/jquery.readingtime.min.js',
   paths.js
 ];
+// https://1000hz.github.io/bootstrap-validator/
 
 var defaults = {
   theme     : 'grayscale'
@@ -76,6 +81,15 @@ var onError = function (err) {
   child_process.spawn('tput', ['bel']);
   console.log(err);
 };
+
+// browser-sync task for starting the server.
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
 
 gulp.task('copy', function () {
   // Need to copy several sources and then return after finished
@@ -114,20 +128,20 @@ gulp.task('lint', function() {
 
 // Concat & Minify JS
 gulp.task('js', ['lint'], function(){
-  gulp.src( paths.jssource )
-    .pipe(plumber({errorHandler: onError}))
-    .pipe(concat('all.js'))
+
+  var target = gulp.src(paths.default_layout),
+    sources = gulp.src(paths.jssource),
+
+    js = sources.pipe(concat('all.js'))
     .pipe(gulp.dest( paths.jsmin ))
     .pipe(rename('all.min.js'))
     .pipe(rev())
     .pipe(uglify())
-    .pipe(gulp.dest( paths.jsmin ))
-    // Inject revisioned file path into default template
-    .pipe(inject('_includes/themes/grayscale/default.html', {
-      addRootSlash: true,  // ensures proper relative paths
-      ignorePath: '/build/' // ensures proper relative paths
-    }))
-    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
+    .pipe(gulp.dest( paths.jsmin ));
+
+  return target.pipe(inject( js ))
+    .pipe(gulp.dest( paths.theme ));
+
 });
 
 /** Concatenates css files - for compressed css, set in compass config
@@ -173,7 +187,8 @@ gulp.task('compass', function( done ) {
       css: './src/css',
       sass: './src/sass'
     }))
-    .pipe(gulp.dest( paths.css ));
+    .pipe(gulp.dest( paths.css ))
+    .pipe(reload({stream:true}));
 });
 
 /** images */
@@ -186,7 +201,7 @@ gulp.task('images', function () {
 
 /** Watch process - Watch for changes and reload */
 gulp.task('watch', function () {
-  var server = livereload();
+  // var server = livereload();
   var exec = child_process.exec;
 
   // Watch the js and css source files
@@ -195,30 +210,30 @@ gulp.task('watch', function () {
   // gulp.watch(paths.img, ['images']);
 
   // Should watch for new images, doesn't work
-  watch({glob: [paths.images + '**']}, function (files) {
-      server.changed('image'); // Why do I want to reload the browser when an images chages? Surely better to trigger image optimisation on build or server
-  }).pipe(plumber({errorHandler: onError}));
+  // watch({glob: [paths.images + '**']}, function (files) {
+  //     // server.changed('image'); // Why do I want to reload the browser when an images chages? Surely better to trigger image optimisation on build or server
+  // }).pipe(plumber({errorHandler: onError}));
 
   /** Hot reload */
   // Watch for css changes in _site dir to inject
   gulp.watch(paths.cssbuild + '**').on('change', function(file) {
     console.log('File '+file.path+' was '+file.type+', reloading browser styles...');
-    server.changed(file.path);
+    // server.changed(file.path);
   });
 
   /** Full refresh */
   // Watch for changes to _site dir and reload
   // Watches in batch mode to avoid multiple reloads
-  watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
-      server.changed('file');
-      console.log('Should have reloaded browser');
-      // return files;
-  })
-  .pipe(plumber({errorHandler: onError}))
-  .on('change', function (f) {
-    console.log('File '+f.path+' was '+file.type+', reloading browser styles...');
-    // console.log("echo $'\e]9;Growl Notification\007'");
-  });
+  // watch({glob: ["_site/**/*.html","_site/**/*.js"]}, function (files) {
+  //     // server.changed('file');
+  //     console.log('Should have reloaded browser');
+  //     // return files;
+  // })
+  // .pipe(plumber({errorHandler: onError}))
+  // .on('change', function (f) {
+  //   console.log('File '+f.path+' was '+file.type+', reloading browser styles...');
+  //   // console.log("echo $'\e]9;Growl Notification\007'");
+  // });
 
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
@@ -256,7 +271,7 @@ gulp.task('clean', function () {
 gulp.task('build', ['copy', 'cssbuild', 'js', 'images', 'jekyll-build']);
 
 /** Default task - serve and watch for changes (develop) */
-gulp.task('serve', ['copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
+gulp.task('serve', ['browser-sync','copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
   // Serve the site from _site/ directory
   console.log('Starting static web server...\n');
   console.log('Web root: ' + dir);
