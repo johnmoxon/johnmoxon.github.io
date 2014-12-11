@@ -133,15 +133,14 @@ gulp.task('js', ['lint'], function(){
     sources = gulp.src(paths.jssource),
 
     js = sources.pipe(concat('all.js'))
-    .pipe(gulp.dest( paths.jsmin ))
-    .pipe(rename('all.min.js'))
-    .pipe(rev())
-    .pipe(uglify())
-    .pipe(gulp.dest( paths.jsmin ));
+      .pipe(gulp.dest( paths.jsmin ))
+      .pipe(rename('all.min.js'))
+      .pipe(rev())
+      .pipe(uglify())
+      .pipe(gulp.dest( paths.jsmin ));
 
-  return target.pipe(inject( js ))
-    .pipe(gulp.dest( paths.theme ));
-
+    return target.pipe(inject( js ))
+      .pipe(gulp.dest( paths.theme ));
 });
 
 /** Concatenates css files - for compressed css, set in compass config
@@ -158,24 +157,24 @@ gulp.task('css', ['compass'], function(){
 // To be run once before serving
 // injects development css path into template
 gulp.task('cssserve', ['css'], function () {
-  gulp.src(paths.cssmin + 'all.css')
-  .pipe(plumber({errorHandler: onError}))
-  .pipe(inject('_includes/themes/grayscale/default.html', {
-      addRootSlash: true  // ensures proper relative paths
-    }))
-    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
+  var target = gulp.src(paths.default_layout),
+    sources = gulp.src(paths.cssmin + 'all.css', {read: false});
+
+  return target.pipe(inject( sources ))
+      .pipe(gulp.dest( paths.theme ));
 });
 
 /** Revision CSS file and inject into the default layout */
 gulp.task('cssbuild', ['css'], function () {
-  gulp.src( paths.cssmin + 'all.css' )
-    .pipe(plumber({errorHandler: onError}))
+  var target = gulp.src(paths.default_layout),
+    sources = gulp.src(paths.cssmin + 'all.css');
+
+  var css = sources
     .pipe(rev())
-    .pipe(gulp.dest( paths.cssmin ))
-    .pipe(inject('_includes/themes/grayscale/default.html', {
-      addRootSlash: true
-    }))
-    .pipe(gulp.dest(paths.layouts + defaults.theme + '/'));
+    .pipe(gulp.dest( paths.cssmin ));
+
+  return target.pipe(inject( css ))
+      .pipe(gulp.dest( paths.theme ));
 });
 
 /** Compiling - i.e. sass/compass */
