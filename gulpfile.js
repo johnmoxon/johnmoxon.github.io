@@ -212,6 +212,7 @@ gulp.task('watch', function () {
   // Watch for css changes in _site dir to inject
   gulp.watch(paths.cssbuild + '**').on('change', function(file) {
     console.log('File '+file.path+' was '+file.type+', reloading browser styles...');
+    reload({stream:false});
     // server.changed(file.path);
   });
 
@@ -231,7 +232,7 @@ gulp.task('watch', function () {
 
   // Changes to source assets should trigger jekyll rebuild
   gulp.watch(['*.html','**.html', '*.md', '*.markdown', '*.yml', '*.xml', 'assets/js/**.js',
-    '_posts/**', '_drafts/**', 'about/**', '_includes/**', 'categories/**', 'tags/**', '_config.yml'],
+    '_posts/**', '_drafts/**', 'about/**', '_includes/**', 'categories/**', 'tags/**', '_config.yml'],[
     function(file){
       // gulp.start('clean');
       var jekyll = exec('bundle exec jekyll build --drafts');
@@ -239,7 +240,7 @@ gulp.task('watch', function () {
         console.log('static file updated! running jekyll build');
         console.log('jekyll: ' + data);
       });
-  });
+    }])
 });
 
 
