@@ -35,6 +35,10 @@ blockquote {
     color: lighten($darkgreytext,40);
 }
 
+img {
+  width:100%;
+}
+
 .has-error {
     .form-control {
         border-color: darken($errortext,8);
@@ -53,11 +57,15 @@ blockquote {
 }
 
 @media(min-width:767px) {
-    p {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
+  p {
+      margin: 0 0 35px;
+      font-size: 20px;
+      line-height: 1.6;
+  }
+
+  img {
+    width: auto;
+  }
 }
 
 a {
@@ -83,6 +91,7 @@ a:focus {
     text-transform: uppercase;
     font-family: $fontsans;
     background-color: #000;
+    -webkit-transform: translateZ(0);
 }
 
 .navbar-brand {

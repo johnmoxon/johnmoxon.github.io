@@ -111,13 +111,13 @@ jQuery.easing["jswing"]=jQuery.easing["swing"];jQuery.extend(jQuery.easing,{def:
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push = window.dataLayer.push || function(){ return false; };
 
-  // Register DISQUS comment callback 
+  // Register DISQUS comment callback
   window.disqus_config = function() {
     this.callbacks.onNewComment = [function(comment) {
       window.dataLayer.push({
         'event': 'comment.add',
         'comment.text': comment.text
-      }); 
+      });
     }];
   };
 
@@ -163,7 +163,6 @@ jQuery.easing["jswing"]=jQuery.easing["swing"];jQuery.extend(jQuery.easing,{def:
   $('.post').each(function(){
     var $this = $(this);
     $this.find('.eta').text( $this.readingtime( $this.data('words') ) );
-
   });
 
   // fade out movie on scroll
