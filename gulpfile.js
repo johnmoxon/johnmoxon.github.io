@@ -269,6 +269,12 @@ gulp.task('build', ['copy', 'cssbuild', 'js', 'images', 'jekyll-build']);
 gulp.task('serve', ['copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
 
   browserSync({
+    ui: {
+        port:8080,
+        weinre: {
+          port:9090
+        }
+    },
     server: {
         baseDir: "./_site/"
     }
