@@ -3,6 +3,7 @@ _theme_packages/*
 node_modules/
 no_modules/
 public/
+bower_components/
 
 Thumbs.db
 .gulpfile.js.swp

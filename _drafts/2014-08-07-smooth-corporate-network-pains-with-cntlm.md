@@ -29,14 +29,4 @@ I opted to install via the awesome brew package manager (As I do with most *nix 
 
 
 
-
-
-
-
-
-
-
-
-
-
 [brew]: http://brew.sh/
