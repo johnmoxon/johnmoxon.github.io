@@ -185,6 +185,9 @@ jQuery.easing["jswing"]=jQuery.easing["swing"];jQuery.extend(jQuery.easing,{def:
 })(jQuery, window, undefined);
 /** End JM script **/
 
+// Forcing the script to re-write
+var nonewvar = "is anything without a name";
+
 /**
  * share.js
  * Handles social sharing buttons

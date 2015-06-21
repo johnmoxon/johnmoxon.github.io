@@ -5,7 +5,7 @@ date:   2014-08-07 12:22:55
 category: workflow
 type: article
 tags: ["cntlm"]
-description: ""
+description: "How to setup a local proxy to wrap http requests with NTLM authentication"
 keywords: "all, blogs, need, keywords"
 ---
 
@@ -19,13 +19,17 @@ Cntlm is a locally run service you can install on your machine - a proxy for you
 
 ## Setting up
 
-I've tested this on both a mac and an Ubuntu machine.  I have colleagues who have Cntlm running on Windows, but I won't be going into how to set that up here
+I've tested this on both a mac and an Ubuntu machine.  I have colleagues who have Cntlm running on Windows, but I won't be going into how to set that up here.  The credit for setup goes squarely to @\_oho and his [excellent writeup](http://blog.hoachuck.biz/blog/2013/03/21/howto-set-cntlm-on-mac-os-x/ "Excellent cntlm how-to guid for mac") had me up and running in no time. Thanks!
 
-The credit for setup goes squarely to @\_oho and his [excellent writeup](http://blog.hoachuck.biz/blog/2013/03/21/howto-set-cntlm-on-mac-os-x/ "Excellent cntlm how-to guid for mac") had me up and running in no time. Thanks!
+If you're game enough to compile and run from source then go ahead and grab the files from [http://cntlm.sourceforge.net/](http://cntlm.sourceforge.net/).  I opted to install via the awesome brew package manager with the command below:
 
-If you're game enough to compile and run from source then go ahead and grab the files from [http://cntlm.sourceforge.net/](http://cntlm.sourceforge.net/).
+```bash
+brew install cntlm
+```
+> homebrew for Mac is an awesome package manager, that handles updates and dependencies like yum or apt-get.  Check out my article on [getting started with brew](/article-i-havent-written-yet)
 
-I opted to install via the awesome brew package manager (As I do with most *nix packages missing from OSx).  Check out my article on getting [using brew](/article-i-havent-written-yet)..
+
+
 
 
 
