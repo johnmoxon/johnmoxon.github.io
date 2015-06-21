@@ -143,7 +143,7 @@ jQuery.easing["jswing"]=jQuery.easing["swing"];jQuery.extend(jQuery.easing,{def:
         $('.scroll-to-top').css('opacity', 1);
       }
     } else {
-      $('.scroll-to-top').css('opacity', 0);
+      // $('.scroll-to-top').css('opacity', 0);
     }
   });
 
