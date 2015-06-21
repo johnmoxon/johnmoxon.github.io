@@ -38,7 +38,7 @@ var paths = {
   cssmin    : './assets/css/',
   cssbuild  : './_site/assets/css/',
   // img       : './src/images/**/*',
-  // imgmin    : './assets/images/',
+  // imgmin    : './assets/images/',`
   images : './assets/img/',
   bowerpkg  : './bower_components/',
 
@@ -135,6 +135,23 @@ gulp.task('js', ['lint'], function(){
       .pipe(gulp.dest( paths.theme ));
 });
 
+/** Compiling - i.e. sass/compass */
+gulp.task('compass', function( done ) {
+  return gulp.src( [paths.sass] )
+    .pipe(plumber({errorHandler: onError}))
+    .pipe(compass({
+      config_file: './config.rb',
+      css: './src/css',
+      sass: './src/sass'
+    }))
+    .pipe(gulp.dest( paths.css ))
+    .pipe(reload({stream:true}));
+});
+
+// css       : './src/css/',
+// cssmin    : './assets/css/',
+// cssbuild  : './_site/assets/css/',
+
 /** Concatenates css files - for compressed css, set in compass config
 /*  @ depends compass task
 */
@@ -159,27 +176,13 @@ gulp.task('cssserve', ['css'], function () {
 /** Revision CSS file and inject into the default layout */
 gulp.task('cssbuild', ['css'], function () {
   var target = gulp.src(paths.default_layout),
-    sources = gulp.src(paths.cssmin + 'all.css');
+    sources = gulp.src(paths.cssmin + 'all.css')
+      .pipe(rename('all.min.css'))
+      .pipe(rev())
+      .pipe(gulp.dest( paths.cssmin ));
 
-  var css = sources
-    .pipe(rev())
-    .pipe(gulp.dest( paths.cssmin ));
-
-  return target.pipe(inject( css ))
+  return target.pipe(inject( sources ))
       .pipe(gulp.dest( paths.theme ));
-});
-
-/** Compiling - i.e. sass/compass */
-gulp.task('compass', function( done ) {
-  return gulp.src( [paths.sass] )
-    .pipe(plumber({errorHandler: onError}))
-    .pipe(compass({
-      config_file: './config.rb',
-      css: './src/css',
-      sass: './src/sass'
-    }))
-    .pipe(gulp.dest( paths.css ))
-    .pipe(reload({stream:true}));
 });
 
 /** images */
@@ -265,6 +268,7 @@ gulp.task('build', ['copy', 'cssbuild', 'js', 'images', 'jekyll-build']);
 /** Default task - serve and watch for changes (develop) */
 gulp.task('serve', ['copy','cssserve','js', 'images', 'jekyll-build','watch'], function(){
 
+  // Currently serves initiates a new server each time instead of reloading.  consider moving to process outside and referencing
   browserSync({
     ui: {
         weinre: {

@@ -85,3 +85,6 @@
 
 })(jQuery, window, undefined);
 /** End JM script **/
+
+// Forcing the script to re-write
+var nonewvar = "is anything without a name";
