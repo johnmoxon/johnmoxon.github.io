@@ -1,31 +1,30 @@
 /** Dependencies */
 var jshint      = require('gulp-jshint'),
   // jshintrep     = require('jshint-junit-reporter'),
-  jshintstylish = require('jshint-stylish'),
+  // jshintstylish = require('jshint-stylish'),
   concat        = require('gulp-concat'),
   clean         = require('gulp-clean'),
   rename        = require('gulp-rename'),
   uglify        = require('gulp-uglify'),
   compass       = require('gulp-compass'),
-  watch         = require('gulp-watch'),
   // livereload    = require('gulp-livereload'),
   browserSync   = require('browser-sync'),
   reload        = browserSync.reload,
-  imagemin      = require('gulp-imagemin'),
+  // imagemin      = require('gulp-imagemin'),
   rev           = require('gulp-rev'),
   inject        = require('gulp-inject'),
-  watch         = require('gulp-watch'),
+  // watch         = require('gulp-watch'),
   plumber       = require('gulp-plumber'),
   child_process = require('child_process'),
-  exec          = require('gulp-exec'),
+  // exec          = require('gulp-exec'),
   es            = require('event-stream'),
   gulp          = require('gulp');
 
 /** Server config */
-var connect = require('connect'),
-    path    = require('path'),
-    dir     = './_site',
-    port    = 4444;
+// var connect = require('connect'),
+//     path    = require('path'),
+//     dir     = './_site',
+//     port    = 4444;
 
 /** Sources and paths */
 var paths = {
@@ -41,7 +40,7 @@ var paths = {
   // img       : './src/images/**/*',
   // imgmin    : './assets/images/',`
   images : './assets/img/',
-  bowerpkg  : './public/components/',
+  bowerpkg  : './bower_components/',
 
   // When these assets change then we will need jekyll to rebuild
   posts     : '_posts/*',
@@ -114,8 +113,6 @@ gulp.task('lint', function() {
     .pipe(plumber({errorHandler: onError}))
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
-
-    console.log(jshint);
 });
 
 
@@ -243,7 +240,7 @@ gulp.task('watch', function () {
         console.log('static file updated! running jekyll build');
         console.log('jekyll: ' + data);
       });
-    }])
+    }]);
 });
 
 
@@ -273,6 +270,12 @@ gulp.task('serve', ['copy','cssserve','js', 'images', 'jekyll-build','watch'], f
 
   // Currently serves initiates a new server each time instead of reloading.  consider moving to process outside and referencing
   browserSync({
+    ui: {
+        weinre: {
+          port:9090
+        }
+    },
+    port:8080,
     server: {
         baseDir: "./_site/"
     }

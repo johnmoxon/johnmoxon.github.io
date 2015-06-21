@@ -1,8 +1,8 @@
 name: jmoxon.net webdev articles
 markdown: redcarpet
-pygments: true
+highlighter: true
 safe: true
-exclude: ["node_modules","public", "src", "bower.json", "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project", "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: ["node_modules","public", "src", "bower_components", "bower.json", "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project", "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 timezone: Australia/Brisbane
 gems: [jekyll-redirect-from, jekyll-mentions, jemoji]
 highlighter: pygments
