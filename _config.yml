@@ -5,8 +5,8 @@ safe: false
 exclude: ["node_modules","public", "src", "bower_components", "bower.json",
           "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project",
           "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile",
-          "changelog.md", "categories", "about"]
-include: ["tags"]
+          "changelog.md"]
+include: ["_pages"]
 timezone: Australia/Brisbane
 gems: [jekyll-redirect-from, jekyll-mentions, jemoji]
 defaults :
@@ -16,6 +16,7 @@ defaults :
 # For more see: http://jekyllrb.com/docs/permalinks/
 # permalink: /:categories/:year/:month/:day/:title
 permalink: /:categories/:title
+relative_permalinks: false
 
 # Will comment this back in when I have pagination sorted
 # paginate: 5
