@@ -4,6 +4,7 @@ title : Sitemap
 sitemap:
     priority: 0.1
     noindex: true
+permalink: /sitemap.txt
 ---
 {% for page in site.pages %}
 {{site.production_url}}{{ page.url }}{% endfor %}

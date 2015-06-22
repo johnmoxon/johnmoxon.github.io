@@ -10,6 +10,7 @@ description: Web Development articles
 keywords: web development, devops, HTML5, workflow, tooling
 sitemap:
     priority: 1.0
+permalink: /
 ---
 {% include JB/setup %}
 

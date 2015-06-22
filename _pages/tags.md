@@ -3,7 +3,7 @@ layout: page
 title: Tags
 header: Posts By Tag
 group: navigation
-permalink: /
+permalink: /tags/
 ---
 {% include JB/setup %}
 

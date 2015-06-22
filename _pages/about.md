@@ -4,7 +4,7 @@ title:  "about"
 subtitle: "Front end developer and project manager"
 date:  2014-06-11 08:20:47
 group: navigation
-permalink: /
+permalink: /about/
 ---
 
 <div class="text-center">
@@ -35,4 +35,3 @@ My current favourite is [Gulp.js][gulp-js] which I'll be covering in a future ar
 {%comment%}
 {% gist johnmoxon/a0cbc8f35e925b9a1e92 %}
 {%endcomment%}
-

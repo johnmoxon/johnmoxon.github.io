@@ -3,7 +3,7 @@ layout: page
 title: Categories
 header: Posts By Category
 group: navigation
-permalink: /
+permalink: /categories/
 ---
 {% include JB/setup %}
 
@@ -27,4 +27,3 @@ permalink: /
   <a href="{{category[0]}}" class="btn btn-default">see more {{ category[0] }} posts &raquo;</a>
 </div>
 {% endfor %}
-
