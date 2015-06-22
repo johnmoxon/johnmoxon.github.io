@@ -1,5 +1,6 @@
 ---
 title: robots
+permalink: /robots.txt
 ---
 User-agent: *
 {% for page in site.pages %}{% unless page.sitemap.noindex == null %}
