@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Articles
-tagline: Supporting tagline
 intro:
     title: articles on web development
     tagline: My 2 cents on everything web
