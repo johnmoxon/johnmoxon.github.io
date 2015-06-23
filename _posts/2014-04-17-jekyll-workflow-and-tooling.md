@@ -8,6 +8,7 @@ description: "all blog posts need descriptions"
 keywords: "all, blogs, need, keywords"
 sitemap:
     priority: 0.8
+
 ---
 Jekyll is a powerful static website file creation framework.  _This site itself is built in jekyll!_
 
