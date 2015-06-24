@@ -8,7 +8,7 @@ permalink: /about/
 ---
 
 <div class="text-center">
-  <img src='/assets/img/avatar_200x200.jpg' class='img-circle' alt="Holidaying in Pompeii" />
+  <img src='/assets/img/avatar_200x200.jpg' class='img-circle auto_w' alt="Holidaying in Pompeii" />
 </div>
 
 <h1 class="text-center">Hi I'm John</h1>
