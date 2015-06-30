@@ -2,11 +2,11 @@
 # Remember to set production_url in your _config.yml file!
 title : Sitemap
 sitemap:
-    priority: 0.1
-    noindex: true
+  noindex: true
+  priority: 0.1
 permalink: /sitemap.txt
 ---
 {% for page in site.pages %}
-{{site.production_url}}{{ page.url }}{% endfor %}
+{{site.production_url}}{% unless page.sitemap.noindex != null %}{{ page.url }}{% endunless %}{% endfor %}
 {% for post in site.posts %}
-{{site.production_url}}{{ post.url }}{% endfor %}
+{{site.production_url}}{% unless page.sitemap.noindex != null %}{{ post.url }}{% endunless %}{% endfor %}

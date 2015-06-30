@@ -1,5 +1,5 @@
 {% for url in urlset %}
-{% unless url.sitemap.noindex %}
+{% unless url.sitemap.noindex != null %}
   <url>
     <loc>{{site.production_url}}{{ url.url }}</loc>
     <lastmod>{% unless url.date == null %}{{ url.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}
