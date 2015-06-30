@@ -32,7 +32,7 @@
       $(".navbar-fixed-top").not('.disable-nav-expanded').removeClass("top-nav-collapse");
     }
 
-    // Show scroll to top button for posts
+    // Show scroll to *top* button for posts
     if ( $('.post-single').length > 0 &&
       $window.scrollTop() > $('.post-single').offset().top) {
       if($('.scroll-to-top').length < 1) {
@@ -44,7 +44,7 @@
         $('.scroll-to-top').css('opacity', 1);
       }
     } else {
-      // $('.scroll-to-top').css('opacity', 0);
+      $('.scroll-to-top').css('opacity', 0);
     }
   });
 
