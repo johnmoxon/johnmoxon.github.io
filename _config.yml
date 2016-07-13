@@ -1,4 +1,4 @@
-name: jmoxon.net webdev articles
+name: jmoxon.net
 markdown: redcarpet
 highlighter: pygments
 safe: false
@@ -25,9 +25,9 @@ relative_permalinks: false
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title :  articles on web development
-tagline: My 2 cents on everything web
-feed_description:  Web development industry news and articles
+title :  "Articles on digital life"
+tagline: "My 2 cents on everything online"
+feed_description:  "Web development industry news and articles"
 fail_back_keywords: "Web development, DevOps, workflow, productivity, automation"
 author :
   name : John Moxon

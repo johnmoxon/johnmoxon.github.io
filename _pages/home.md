@@ -2,8 +2,8 @@
 layout: page
 title: Articles
 intro:
-    title: articles on web development
-    tagline: My 2 cents on everything web
+    title: Travel, technology and a digital life
+    tagline: My 2 cents on everything online
     herounit: true
 description: Web Development articles
 keywords: web development, devops, HTML5, workflow, tooling

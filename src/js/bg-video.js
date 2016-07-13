@@ -8,9 +8,9 @@
  */
 (function($, window, undefined){
   var formats = {
-    webm : '/assets/video/bgclip.webm',
-    mp4  : '/assets/video/bgclip.mp4',
-    ogg  : '/assets/video/bgclip.ogg'
+    webm : '/assets/video/road-scene/bgclip.webm',
+    mp4  : '/assets/video/road-scene/bgclip.mp4',
+    ogg  : '/assets/video/road-scene/bgclip.ogg'
   };
 
   if(!Modernizr.touch) {
