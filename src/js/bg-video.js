@@ -8,9 +8,9 @@
  */
 (function($, window, undefined){
   var formats = {
-    webm : '/assets/video/road-scene/bgclip.webm',
-    mp4  : '/assets/video/road-scene/bgclip.mp4',
-    ogg  : '/assets/video/road-scene/bgclip.ogg'
+    webm : '/assets/video/airplane-window/bgclip.webm',
+    mp4  : '/assets/video/airplane-window/bgclip.mp4',
+    ogg  : '/assets/video/airplane-window/bgclip.ogg'
   };
 
   if(!Modernizr.touch) {
