@@ -1,9 +1,14 @@
-// Global vars
-
-// Fontstacks
-// @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-$fontsans  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-$fontserif : Merriweather,"Baskerville","Calibri",serif;
+// Import bulma
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/components/breadcrumb';
+@import '~bulma/sass/components/dropdown';
+@import '~bulma/sass/components/list';
+@import '~bulma/sass/components/navbar';
+@import '~bulma/sass/components/pagination';
+@import '~bulma/sass/elements/_all';
+@import '~bulma/sass/form/_all';
+@import '~bulma/sass/grid/columns';
+@import '~bulma/sass/layout/_all';
 
 // Colors
 $darkgreytext: #111;
@@ -13,6 +18,26 @@ $lightgreentext: #28c3ab;
 $lightgreentext_rgba: rgba(40,195,171,.2);
 $errortext: #c32836;
 
+$green: #28c3ab;
+$grey-dark: #111;
+
+// Custom vars
+$primary: $green;
+$link: $green;
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$dark: $grey-darker;
+$text: $grey-dark;
+
+// Fontstacks
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+$fontsans  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$fontserif : Merriweather,"Baskerville","Calibri",serif;
+
+
+
 @import 'theme';
 @import 'components';
 @import 'posts';
@@ -21,3 +46,10 @@ $errortext: #c32836;
 
 // Import sharing buttons
 // @import '~rrssb/scss/rrssb.scss';
+
+
+
+// DEBUG:
+.column {
+  background-color: $warning;
+}
