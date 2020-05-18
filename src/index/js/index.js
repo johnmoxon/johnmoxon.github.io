@@ -1,1 +1,2 @@
-import '../sass/base.scss'
+//  Import custom styles
+import '../sass/base.scss';

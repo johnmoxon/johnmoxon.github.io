@@ -9,6 +9,9 @@ module.exports = {
     app: './src/index/js/index.js',
     vendor: './src/index/js/vendor.js'
   },
+  resolve: {
+    modules: ['node_modules'],
+  },
   devtool: false,
   plugins: [
     new webpack.SourceMapDevToolPlugin({
