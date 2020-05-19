@@ -1,14 +1,19 @@
-// Import bulma
-@import '~bulma/sass/utilities/_all';
-@import '~bulma/sass/components/breadcrumb';
-@import '~bulma/sass/components/dropdown';
-@import '~bulma/sass/components/list';
-@import '~bulma/sass/components/navbar';
-@import '~bulma/sass/components/pagination';
-@import '~bulma/sass/elements/_all';
-@import '~bulma/sass/form/_all';
-@import '~bulma/sass/grid/columns';
-@import '~bulma/sass/layout/_all';
+@charset "utf-8";
+
+
+// Fontstacks
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+// family=Libre+Baskerville:ital,wght@0,400;0,700;1,400
+
+// family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
+
+$family-sans-serif  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$body-family : "Cardo","Baskerville","Calibri",serif;
+$family-primary: $body-family;
+$family-secondary: $family-sans-serif;
 
 // Colors
 $darkgreytext: #111;
@@ -17,31 +22,47 @@ $lightgreytext: #ccc;
 $lightgreentext: #28c3ab;
 $lightgreentext_rgba: rgba(40,195,171,.2);
 $errortext: #c32836;
-
 $green: #28c3ab;
 $grey-dark: #111;
+$size-1: 8rem;
 
-// Custom vars
-$primary: $green;
-$link: $green;
-$info: $cyan;
-$success: $green;
-$warning: $yellow;
-$danger: $red;
-$dark: $grey-darker;
-$text: $grey-dark;
 
-// Fontstacks
-// @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-$fontsans  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-$fontserif : Merriweather,"Baskerville","Calibri",serif;
+
+
+
+// Centralise the nav bar
+
+
+#jmoxon .navbar-start{
+  flex: 1;
+  justify-content: center;
+}
+
+
+// font-awesome
+.fab, .fas {
+  color: $grey-dark;
+
+}
+
+
+
+// // Custom vars
+// $primary: $green;
+// $link: $green;
+// $info: $cyan;
+// $success: $green;
+// $warning: $yellow;
+// $danger: $red;
+// $dark: $grey-darker;
+// $text: $grey-dark;
 
 
 
 @import 'theme';
-@import 'components';
-@import 'posts';
-@import 'syntax';
+// @import 'components';
+// @import 'posts';
+// @import 'syntax';
 
 
 // Import sharing buttons
@@ -51,5 +72,48 @@ $fontserif : Merriweather,"Baskerville","Calibri",serif;
 
 // DEBUG:
 .column {
-  background-color: $warning;
+  // background-color: $warning;//
 }
+
+
+
+
+// Import bulma
+// @import '~bulma/bulma';
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/base/_all';
+
+@import '~bulma/sass/layout/_all';
+
+// @import '~bulma/sass/grid/_all';
+@import '~bulma/sass/grid/columns';
+// @import '~bulma/sass/grid/tiles';
+
+
+// components
+@import '~bulma/sass/components/_all';
+// @import '~bulma/sass/components/breadcrumb';
+// @import '~bulma/sass/components/navbar';
+
+// elements
+// @import '~bulma/sass/elements/_all';
+// @import '~bulma/sass/elements/box';
+@import '~bulma/sass/elements/button';
+@import '~bulma/sass/elements/container';
+@import '~bulma/sass/elements/content';
+@import '~bulma/sass/elements/icon';
+@import '~bulma/sass/elements/image';
+@import '~bulma/sass/elements/notification';
+// @import '~bulma/sass/elements/progress';
+// @import '~bulma/sass/elements/table';
+// @import '~bulma/sass/elements/tag';
+@import '~bulma/sass/elements/title';
+// @import '~bulma/sass/elements/other';
+
+
+// Forms
+@import '~bulma/sass/form/_all';
+
+// grid
+
+// Layout
