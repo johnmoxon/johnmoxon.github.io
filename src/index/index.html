@@ -15,8 +15,8 @@
     <section class="hero">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h2 class="subtitle size-4">its the thoughts that count</h2>
-          <h1 class="title is-size-1 has-text-black">Train of thought</h1>
+          <h2 class="subtitle size-4is-spaced is-uppercase">its the thoughts that count</h2>
+          <h1 class="title is-size-1 has-text-black is-family-secondary">Train of thought</h1>
         </div>
       </div>
     </section>
@@ -28,7 +28,7 @@
       <!-- <a class="navbar-item" href="https://bulma.io">
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
       </a> -->
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+      <a role="button" class="navbar-burger burger is-fixed-top" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -74,7 +74,6 @@
         <div class="navbar-item">
           <span class="icon has-text-info">
             <i class="fab fa-linkedin has-text-black-bis"></i>
-
           </span>
           <span class="icon has-text-success">
             <i class="fas fa-check-square has-text-black-bis"></i>
@@ -103,25 +102,96 @@
     </div>
   </nav>
 
+  <!-- Featured post -->
+  <section class="section">
+    <div class="container">
+      <a href="#">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <img src="https://bulma.io/images/placeholders/640x320.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">John Smith</p>
+              <p class="subtitle is-6">@johnsmith</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+
+
   <!-- Main section -->
   <section class="section">
     <div class="container">
       <div class="columns">
-        <div class="column">column01</div>
-        <div class="column">column02</div>
-        <div class="column">column03</div>
-        <div class="column">column04</div>
+        <div class="column is-three-quarters">
+          <h2 class="title is-3 is-uppercase">Notes on a subject</h2>
+
+          <div class="article-list">
+
+            <!-- Article 1 -->
+            <div class="card is-clearfix">
+              <div class="card-image is-pulled-left">
+                <figure class="image is-square">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content is-pulled-right">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div class="column">
+          <h2 class="title is-3 is-uppercase">About Me</h2>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="notification">
-        This container is <strong>centered</strong> on desktop.
-      </div>
-    </div>
-  </section>
+
 
 
 

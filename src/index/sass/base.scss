@@ -5,17 +5,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 
 
+// breakpoints
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 
 // family=Libre+Baskerville:ital,wght@0,400;0,700;1,400
 
 // family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
 
 $family-sans-serif  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-$body-family : "Cardo","Baskerville","Calibri",serif;
-$family-primary: $body-family;
-$family-secondary: $family-sans-serif;
+$family-secondary: "Cardo","Baskerville","Calibri",serif;
+
+$family-primary: $family-sans-serif;
+$body-family: $family-sans-serif;
 
 // Colors
+$black: #000;
 $darkgreytext: #111;
 $lightgreytext: #ccc;
 // $lightgreentext: #28c3ab;
@@ -24,18 +43,59 @@ $lightgreentext_rgba: rgba(40,195,171,.2);
 $errortext: #c32836;
 $green: #28c3ab;
 $grey-dark: #111;
-$size-1: 8rem;
 
 
+// Text sizes
+$size-1: 6rem;
+
+// Theme Colors
+$link: $lightgreentext;
 
 
+// $gap: 35px;
+// $desktop: 600px + (2 * $gap);
 
-// Centralise the nav bar
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+
+// navbar
+$navbar-padding-horizontal: 4.2rem;
 
 
 #jmoxon .navbar-start{
-  flex: 1;
-  justify-content: center;
+  @include for-tablet-portrait-up {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+
+.navbar-menu{
+  @include for-tablet-portrait-up {
+    border:solid $black;
+    border-width: 1px 0;
+
+    .navbar-item:first-child{
+      border-left: 1px solid $black;
+    }
+
+    .navbar-item{
+      border-right: 1px solid $black;
+      padding-left: $navbar-padding-horizontal;
+      padding-right: $navbar-padding-horizontal;
+    }
+
+    .navbar-link:not(.is-arrowless){
+      padding-left: $navbar-padding-horizontal;
+      padding-right: $navbar-padding-horizontal + 0.5rem;
+    }
+
+    .navbar-dropdown .navbar-item{
+      border-right: unset;
+      border-left: unset;
+    }
+  }
 }
 
 
@@ -44,6 +104,7 @@ $size-1: 8rem;
   color: $grey-dark;
 
 }
+
 
 
 
@@ -117,3 +178,9 @@ $size-1: 8rem;
 // grid
 
 // Layout
+
+
+//
+// .container {
+//   background-color: $warning;
+// }
