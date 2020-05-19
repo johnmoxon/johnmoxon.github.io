@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-
 // Fontstacks
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-
+// family=Libre+Baskerville:ital,wght@0,400;0,700;1,400
+// family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
 
 // breakpoints
 @mixin for-phone-only {
@@ -21,11 +21,6 @@
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
-
-
-// family=Libre+Baskerville:ital,wght@0,400;0,700;1,400
-
-// family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
 
 $family-sans-serif  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 $family-secondary: "Cardo","Baskerville","Calibri",serif;
@@ -62,6 +57,12 @@ $fullhd-enabled: false;
 // navbar
 $navbar-padding-horizontal: 4.2rem;
 
+
+$column-gap: 2.5rem;
+
+.is-horizontal-center {
+  justify-content: center;
+}
 
 #jmoxon .navbar-start{
   @include for-tablet-portrait-up {
@@ -140,40 +141,40 @@ $navbar-padding-horizontal: 4.2rem;
 
 
 // Import bulma
-// @import '~bulma/bulma';
-@import '~bulma/sass/utilities/_all';
-@import '~bulma/sass/base/_all';
+@import '~bulma/bulma';
+// @import '~bulma/sass/utilities/_all';
+// @import '~bulma/sass/base/_all';
 
-@import '~bulma/sass/layout/_all';
+// @import '~bulma/sass/layout/_all';
 
 // @import '~bulma/sass/grid/_all';
-@import '~bulma/sass/grid/columns';
+// @import '~bulma/sass/grid/columns';
 // @import '~bulma/sass/grid/tiles';
 
 
 // components
-@import '~bulma/sass/components/_all';
+// @import '~bulma/sass/components/_all';
 // @import '~bulma/sass/components/breadcrumb';
 // @import '~bulma/sass/components/navbar';
 
 // elements
 // @import '~bulma/sass/elements/_all';
 // @import '~bulma/sass/elements/box';
-@import '~bulma/sass/elements/button';
-@import '~bulma/sass/elements/container';
-@import '~bulma/sass/elements/content';
-@import '~bulma/sass/elements/icon';
-@import '~bulma/sass/elements/image';
-@import '~bulma/sass/elements/notification';
+// @import '~bulma/sass/elements/button';
+// @import '~bulma/sass/elements/container';
+// @import '~bulma/sass/elements/content';
+// @import '~bulma/sass/elements/icon';
+// @import '~bulma/sass/elements/image';
+// @import '~bulma/sass/elements/notification';
 // @import '~bulma/sass/elements/progress';
 // @import '~bulma/sass/elements/table';
 // @import '~bulma/sass/elements/tag';
-@import '~bulma/sass/elements/title';
+// @import '~bulma/sass/elements/title';
 // @import '~bulma/sass/elements/other';
 
 
 // Forms
-@import '~bulma/sass/form/_all';
+// @import '~bulma/sass/form/_all';
 
 // grid
 
