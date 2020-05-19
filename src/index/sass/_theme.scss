@@ -1,39 +1,58 @@
-body {
-    width: 100%;
-    height: 100%;
-    font-family: $fontserif;
-    color: $darkgreytext;
-    background-color: #fff;
-}
+// body {
+//     width: 100%;
+//     height: 100%;
+//     font-family: $fontserif;
+//     color: $darkgreytext;
+//     background-color: #fff;
+// }
+//
+// html {
+//     width: 100%;
+//     height: 100%;
+// }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-    // margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: $fontsans;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-p {
-    // margin: 0 0 25px;
-    // font-size: 18px;
-    // line-height: 1.5;
-}
-
-blockquote {
-    font-style: italic;
-    color: lighten($darkgreytext,40);
-}
+// h1, .h1,
+// h2, .h2,
+// h3, .h3,
+// h4, .h4,
+// h5, .h5,
+// h6, .h6 {
+//     // margin: 0 0 35px;
+//     text-transform: uppercase;
+//     font-family: $fontsans;
+//     font-weight: 700;
+//     letter-spacing: 1px;
+// }
+//
+// p {
+//     // margin: 0 0 25px;
+//     // font-size: 18px;
+//     // line-height: 1.5;
+// }
+//
+// blockquote {
+//     font-style: italic;
+//     color: lighten($darkgreytext,40);
+// }
+//
+// a {
+//     color: #28c3ab;
+//     -webkit-transition: all .2s ease-in-out;
+//     -moz-transition: all .2s ease-in-out;
+//     transition: all .2s ease-in-out;
+// }
+//
+// a:hover,
+// a:focus {
+//     text-decoration: none;
+//     color: #176e61;
+// }
+//
+// ::selection {
+//     text-shadow: none;
+//     background:$lightgreentext;
+//     background: lighten($lightgreentext, 35%);
+// }
 
 // img {
 //   width:100%;
@@ -72,18 +91,7 @@ blockquote {
 //   }
 // }
 
-a {
-    color: #28c3ab;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
 
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #176e61;
-}
 
 // .light {
 //     font-weight: 400;
@@ -441,11 +449,7 @@ a:focus {
 //     background:lighten($lightgreentext, 35%);
 // }
 
-::selection {
-    text-shadow: none;
-    background:$lightgreentext;
-    background: lighten($lightgreentext, 35%);
-}
+
 
 // img::selection {
 //     background: 0 0;
