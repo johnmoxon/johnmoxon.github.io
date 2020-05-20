@@ -5,22 +5,41 @@
 // family=Libre+Baskerville:ital,wght@0,400;0,700;1,400
 // family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
 
-// breakpoints
+
+$gap: 32px;
+$tablet:769px;
+$desktop: 960px + (2 * $gap);
+$widescreen: 1152px + (2 * $gap);
+$fullhd: 1344px + (2 * $gap);
+
+
+// breakpoint mixins
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
+@mixin for-touch-devices {
+  @media (max-width: $tablet) { @content; }
 }
 @mixin for-tablet-portrait-up {
+  @media (min-width: $tablet) { @content; }
+}
+@mixin for-tablet-landscape-up {
   @media (min-width: 900px) { @content; }
 }
 @mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
+  @media (min-width: $desktop) { @content; }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+  @media (min-width: $widescreen) { @content; }
 }
+
+// Helper classes
+.is-horizontal-center {
+  justify-content: center;
+}
+
+
+// Base branding styles
 
 $family-sans-serif  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 $family-secondary: "Cardo","Baskerville","Calibri",serif;
@@ -40,37 +59,38 @@ $green: #28c3ab;
 $grey-dark: #111;
 
 
-// Text sizes
-$size-1: 6rem;
 
-// Theme Colors
-$link: $lightgreentext;
-
-
-// $gap: 35px;
-// $desktop: 600px + (2 * $gap);
-
+// Bulma configuration
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-
-
+$size-1: 6rem;
+$link: $lightgreentext;
 // navbar
-$navbar-padding-horizontal: 4.2rem;
-
-
+$navbar-padding-horizontal: 4.2rem; // not adhered to?
+// Columns
 $column-gap: 2.5rem;
 
-.is-horizontal-center {
-  justify-content: center;
-}
 
-#jmoxon .navbar-start{
-  @include for-tablet-portrait-up {
-    flex: 1;
-    justify-content: center;
+
+
+
+// #jmoxon .navbar-start{
+//   @include for-tablet-portrait-up {
+//     flex: 1;
+//     justify-content: center;
+//   }
+// }
+
+.navbar{
+
+  @include for-touch-devices{
+    position: absolute !important;
+    top:0px;
+    right:0;
+    width:100%;
   }
-}
 
+}
 
 .navbar-menu{
   @include for-tablet-portrait-up {
