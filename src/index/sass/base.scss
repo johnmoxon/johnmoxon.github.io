@@ -1,4 +1,7 @@
 @charset "utf-8";
+$size-1: 6rem;
+$navbar-padding-horizontal: 4rem;
+@import '~bulma/sass/utilities/_all';
 
 // Fontstacks
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
@@ -6,17 +9,24 @@
 // family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
 
 
-$gap: 32px;
-$tablet:769px;
-$desktop: 960px + (2 * $gap);
-$widescreen: 1152px + (2 * $gap);
-$fullhd: 1344px + (2 * $gap);
+// $gap: 32px;
+// $tablet:769px;
+// $desktop: 960px + (2 * $gap);
+// $widescreen: 1152px + (2 * $gap);
+// $fullhd: 1344px + (2 * $gap);
 
 
 // breakpoint mixins
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }
+@mixin has-mobile-navbar {
+  @media (max-width: $navbar-breakpoint - 1px) { @content;}
+}
+@mixin has-standard-navbar {
+  @media (min-width: $navbar-breakpoint) { @content; }
+}
+
 @mixin for-touch-devices {
   @media (max-width: $tablet) { @content; }
 }
@@ -63,10 +73,10 @@ $grey-dark: #111;
 // Bulma configuration
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-$size-1: 6rem;
+
 $link: $lightgreentext;
 // navbar
-$navbar-padding-horizontal: 4.2rem; // not adhered to?
+// $navbar-padding-horizontal: 4.2rem; // not adhered to?
 // Columns
 $column-gap: 2.5rem;
 
@@ -74,50 +84,8 @@ $column-gap: 2.5rem;
 
 
 
-// #jmoxon .navbar-start{
-//   @include for-tablet-portrait-up {
-//     flex: 1;
-//     justify-content: center;
-//   }
-// }
 
-.navbar{
 
-  @include for-touch-devices{
-    position: absolute !important;
-    top:0px;
-    right:0;
-    width:100%;
-  }
-
-}
-
-.navbar-menu{
-  @include for-tablet-portrait-up {
-    border:solid $black;
-    border-width: 1px 0;
-
-    .navbar-item:first-child{
-      border-left: 1px solid $black;
-    }
-
-    .navbar-item{
-      border-right: 1px solid $black;
-      padding-left: $navbar-padding-horizontal;
-      padding-right: $navbar-padding-horizontal;
-    }
-
-    .navbar-link:not(.is-arrowless){
-      padding-left: $navbar-padding-horizontal;
-      padding-right: $navbar-padding-horizontal + 0.5rem;
-    }
-
-    .navbar-dropdown .navbar-item{
-      border-right: unset;
-      border-left: unset;
-    }
-  }
-}
 
 
 // font-awesome
@@ -205,3 +173,60 @@ $column-gap: 2.5rem;
 // .container {
 //   background-color: $warning;
 // }
+
+
+
+.navbar{
+  @include has-mobile-navbar{
+    position: absolute !important;
+    top:0px;
+    right:0;
+    width:100%;
+  }
+
+  .navbar-menu{
+    @include has-standard-navbar {
+      border:solid $black;
+      border-width: 1px 0;
+
+      .navbar-item:first-child{
+        border-left: 1px solid $black;
+      }
+
+      a.navbar-item, a.navbar-link{
+        border-right: 1px solid $black;
+        // padding-left: $navbar-padding-horizontal;
+        // padding-right: $navbar-padding-horizontal;
+      }
+
+      div.sharing-utility{
+        border-right: 1px solid $black;
+        // padding-left: $navbar-padding-horizontal - 1rem;
+        // padding-right: $navbar-padding-horizontal - 1rem;
+      }
+
+
+      // .navbar-link:not(.is-arrowless){
+      //   // padding-left: $navbar-padding-horizontal;
+      //   // padding-right: $navbar-padding-horizontal + 0.5rem;
+      // }
+      //
+      .navbar-dropdown .navbar-item{
+        border-right: unset;
+        border-left: unset;
+      }
+    }
+  }
+
+
+  .navbar-start{
+    @include has-standard-navbar {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+
+
+
+
+}
