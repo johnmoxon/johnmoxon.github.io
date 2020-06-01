@@ -53,6 +53,8 @@ production_url : http://jmoxon.net
 webmastertools:
   verification_code : 'WF6HdnRC6yGC1qbfvGK4hBfGcCdhDbnlN_9n364Fq_o'
 
+meeting_url: 'https://meetings.hubspot.com/jmoxon'
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -124,11 +126,13 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #
   analytics :
-    provider : googletagmanager
+    provider : [googletagmanager, hubspot]
     google :
         tracking_id : 'UA-316326-5'
     googletagmanager :
         tracking_id : 'GTM-NWRZFM'
+    hubspot :
+        tracking_id : '7805952'
     getclicky :
       site_id :
     mixpanel :
