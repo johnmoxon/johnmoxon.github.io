@@ -2,8 +2,8 @@
 layout: page
 title: Articles
 intro:
-    title: Travel, technology and a digital life
-    tagline: My 2 cents on everything online
+    title: It's a matter of waste 
+    tagline: Tales of technology, fintech and digital leadership in ever changing times 
     herounit: true
 description: Web Development articles
 keywords: web development, devops, HTML5, workflow, tooling
@@ -14,4 +14,4 @@ permalink: /
 {% include JB/setup %}
 
 {% assign posts_list = site.posts %}
-{% include themes/grayscale/components/posts_list %}
+{% include themes/jmblog/components/posts_list %}
