@@ -19,11 +19,9 @@ I love to solve problems, I love standards in both web practice and standardised
 
 I have had great success implementing vitualised provisioned local-develop-server environments in large development teams using [Vagrant][vagrant] and [puppet][puppet]. Enabling new team members to get up and running quickly on standardised, _always up-to-date_, production-like environment, matching live hosting capabilities, resulting in drastically fewer _surprises_ when deploying work.
 
-> To learn more about working with Vagrant and Puppet, [check out my article on getting started here]({% post_url 2014-04-15-git-gutter-sublime-plugin %})
-
 There are so many great tools out there that can improve a development team's productivity, reduce errors and automate the boring stuff so we can concentrate on the fun stuff! I'm on a mission to find the right tools for the right job to overcome the challenges that many businesses face when implementing an effective production work-flow.
 
-My current favourite is [Gulp.js][gulp-js] which I'll be covering in a future article. Gulp.js is a [node-js][node-js] based [streaming build system](https://github.com/substack/stream-handbook) and task runner that is kicking up a storm in web development circles right now.  Gulp excels in running tasks with maximum concurrency meaning lightning quick builds, written in readable familiar javascript code.  Gulp.js build files are code not configuration like [Grunt][grunt-js], so readability of your build process is greatly improved.
+My current favourite is Gulp.jsgulp-js which I'll be covering in a future article. Gulp.js is a [node-js][node-js] based [streaming build system](https://github.com/substack/stream-handbook) and task runner that is kicking up a storm in web development circles right now.  Gulp excels in running tasks with maximum concurrency meaning lightning quick builds, written in readable familiar javascript code.  Gulp.js build files are code not configuration like [Grunt][grunt-js], so readability of your build process is greatly improved.
 
 
 [vagrant]: http://www.vagrantup.com/

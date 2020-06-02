@@ -8,7 +8,10 @@ exclude: ["node_modules","public", "src", "bower_components", "bower.json",
           "changelog.md","@archive"]
 include: ["_pages"]
 timezone: Australia/Brisbane
-gems: [jekyll-redirect-from, jekyll-mentions, jemoji]
+plugins:
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jemoji
 defaults :
     max_num_category_posts: 5
 

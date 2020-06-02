@@ -1,9 +1,9 @@
-source 'https://rubygems.org'
-gem 'github-pages'
-gem 'jekyll'
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+#git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 group :jekyll_plugins do
-   gem "jemoji"
-   gem "jekyll-redirect-from"
-   gem "jekyll-mentions"
- end
+  gem 'github-pages'
+end
