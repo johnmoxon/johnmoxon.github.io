@@ -8,7 +8,8 @@ module.exports = {
   mode: 'development',
   entry: {
     app: './src/index/js/index.js',
-    vendor: './src/index/js/vendor.js'
+    // holding: './src/holding-page/index.js',
+    // vendor: './src/index/js/vendor.js'
   },
   resolve: {
     modules: ['node_modules'],
@@ -17,14 +18,32 @@ module.exports = {
   plugins: [
     new webpack.SourceMapDevToolPlugin({
       filename: '[name].js.map',
-      exclude: ['vendor.bundle.js']
+      // exclude: ['vendor.bundle.js']
     }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Home page',
       hash: true,
       template: './src/index/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Holding page',
+      hash: true,
+      template: './src/holding-page/index.html',
+      filename: 'holding.html',
+      'meta': {
+        // 'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        // Will generate: <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        // 'theme-color': '#4285f4'
+        // Will generate: <meta name="theme-color" content="#4285f4">
+        // 'Content-Security-Policy': { 'http-equiv': 'Content-Security-Policy', 'content': 'default-src https:' },
+        // Will generate: <meta http-equiv="Content-Security-Policy" content="default-src https:">
+        // Which equals to the following http header: `Content-Security-Policy: default-src https:`
+        // 'set-cookie': { 'http-equiv': 'set-cookie', content: 'name=value; expires=date; path=url' },
+        // Will generate: <meta http-equiv="set-cookie" content="value; expires=date; path=url">
+        // Which equals to the following http header: `set-cookie: value; expires=date; path=url`
+      }
     }),
     new CopyPlugin({
       patterns: [
@@ -69,4 +88,3 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
 };
-//
