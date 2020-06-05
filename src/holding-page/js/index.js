@@ -17,6 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Add loading modifiers to buttons when clicked
+  const $buttons = Array.prototype.slice.call(document.querySelectorAll('.button'), 0);
+  if ($buttons.length > 0) {
+    $buttons.forEach( el => {
+      el.addEventListener('click', () => {
+        el.classList.toggle('is-loading');
+      })
+    });
+  }
+
 
 
 });

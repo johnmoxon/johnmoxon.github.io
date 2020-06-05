@@ -4,11 +4,11 @@ $navbar-padding-horizontal: 4rem;
 @import '~bulma/sass/utilities/_all';
 
 // Fontstacks
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 // family=Libre+Baskerville:ital,wght@0,400;0,700;1,400
 // family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
 
-
+//
 // $gap: 32px;
 // $tablet:769px;
 // $desktop: 960px + (2 * $gap);
@@ -74,7 +74,20 @@ $grey-dark: #111;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
+// // Custom vars
 $link: $lightgreentext;
+// $primary: $green;
+// $link: $green;
+// $info: $cyan;
+// $success: $green;
+// $warning: $yellow;
+// $danger: $red;
+// $dark: $grey-darker;
+// $text: $grey-dark;
+
+
+
+
 // navbar
 // $navbar-padding-horizontal: 4.2rem; // not adhered to?
 // Columns
@@ -82,7 +95,9 @@ $column-gap: 2.5rem;
 
 
 
-
+.column {
+  background-color: $errortext;//
+}
 
 
 
@@ -97,19 +112,11 @@ $column-gap: 2.5rem;
 
 
 
-// // Custom vars
-// $primary: $green;
-// $link: $green;
-// $info: $cyan;
-// $success: $green;
-// $warning: $yellow;
-// $danger: $red;
-// $dark: $grey-darker;
-// $text: $grey-dark;
 
 
 
-@import 'theme';
+
+// @import 'theme';
 // @import 'components';
 // @import 'posts';
 // @import 'syntax';
@@ -118,12 +125,6 @@ $column-gap: 2.5rem;
 // Import sharing buttons
 // @import '~rrssb/scss/rrssb.scss';
 
-
-
-// DEBUG:
-.column {
-  // background-color: $warning;//
-}
 
 
 

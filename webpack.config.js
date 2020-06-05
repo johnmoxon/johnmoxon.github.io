@@ -8,8 +8,13 @@ module.exports = {
   mode: 'development',
   entry: {
     app: './src/index/js/index.js',
-    // holding: './src/holding-page/index.js',
+    holding: './src/holding-page/js/index.js'
     // vendor: './src/index/js/vendor.js'
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'assets/js/[name].bundle.js',
+    publicPath: '/'
   },
   resolve: {
     modules: ['node_modules'],
@@ -17,20 +22,24 @@ module.exports = {
   devtool: false,
   plugins: [
     new webpack.SourceMapDevToolPlugin({
-      filename: '[name].js.map',
-      // exclude: ['vendor.bundle.js']
+      filename: 'assets/js/[name].js.map',
+      exclude: ['vendor.bundle.js']
     }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       title: 'Home page',
       hash: true,
+      // inject: true,
+      chunks: ['app'],
       template: './src/index/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       title: 'Holding page',
       hash: true,
-      template: './src/holding-page/index.html',
+      // inject: true,
+      chunks: ['holding'],
+      template: './src/holding-page/holding.html',
       filename: 'holding.html',
       'meta': {
         // 'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
@@ -47,7 +56,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: 'src/assets' },
+        { from: 'src/assets', to:'assets' },
         // { from: 'other', to: 'public' },
       ],
       options: {
@@ -62,11 +71,12 @@ module.exports = {
     host: '0.0.0.0',
     hot: true,
     open: true,
+    inline: true,
   },
   module: {
     rules: [
       {
-        test: /\.s[sc]ss$/i,
+        test: /\.s[ac]ss$/i,
         use: [
           'style-loader', // create `style` nodes from JS strings
           'css-loader', // Translates CSS into CommonJS
@@ -80,12 +90,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  // plugins:[
-  // ],
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/assets/js/'
   },
 };

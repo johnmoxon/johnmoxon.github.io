@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"> -->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+      as="style">
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+    <link rel="preload" href="/assets/fonts/Cardo/Cardo-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/assets/fonts/Montserrat/Montserrat-Regular.woff2" as="font" crossorigin>
+    <style>
+      @font-face {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Cardo'), local('Cardo-Regular'), url(/assets/fonts/Cardo/Cardo-Regular.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    
+      /* latin */
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Montserrat Regular'), local('Montserrat-Regular'), url(/assets/fonts/Montserrat/Montserrat-Regular.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
 
-    <%= htmlWebpackPlugin.tags.headTags %>
   </head>
   <body id="jmoxon">
 
@@ -113,7 +140,7 @@
           <span>Watching a pandemic destroy your company and 5 reasons it will survive</span></h1>
         <div class="card-image">
           <figure class="image is-2by1">
-            <img src="/img/balloon-3206530_1920.jpg" alt="Placeholder image">
+            <img src="/assets/img/balloon-3206530_1920.jpg" alt="Placeholder image">
           </figure>
         </div>
         <div class="card-content">
@@ -281,6 +308,6 @@
     </div>
   </footer>
 
-  <%= htmlWebpackPlugin.tags.bodyTags %>
+
   </body>
 </html>

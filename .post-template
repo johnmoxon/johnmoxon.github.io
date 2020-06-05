@@ -1,0 +1,16 @@
+---
+layout: post
+title: This is a new post article 
+subtitle: Article subtitle
+author: John Moxon
+category: Category 
+tags: ["sample-tag1","sample-tag2"]
+summary: Summary of the article 
+type: article
+
+group: navigation
+permalink: /my-incredible-url/
+
+description: "SEO Meta description"
+keywords: "SEO, keyword, meta, tags" 
+---
