@@ -1,10 +1,10 @@
 # ---------------------------------------------------------------------------- #
-Jekyll YAML config file
+# Jekyll YAML config file
 # ---------------------------------------------------------------------------- #
 
 # ----- Global site configuration -----#
-# source:                      # Current-dir
-# destination:                 # Current-dir/_site
+source: ./_build                    # Current-dir
+destination: ./_build/_site
 # plugins_dir:    '_plugins'
 # layouts_dir:    '_layouts'
 # data_dir:       '_data'
@@ -64,8 +64,8 @@ timezone: Australia/Brisbane
 
 quiet: false
 verbose: false
-defaults :
-  - max_num_category_posts: 5
+# defaults :
+#   - max_num_category_posts: 5
 
 liquid:
   error_mode        : warn
