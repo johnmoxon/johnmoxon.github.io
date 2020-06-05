@@ -1,5 +1,5 @@
 .DS_Store
-_build/
+_build/_site/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
