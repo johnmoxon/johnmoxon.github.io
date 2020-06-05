@@ -7,12 +7,11 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/index/js/index.js',
+    // app: './src/index/js/index.js',
     holding: './src/holding-page/js/index.js'
-    // vendor: './src/index/js/vendor.js'
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '_build'),
     filename: 'assets/js/[name].bundle.js',
     publicPath: '/'
   },
@@ -26,21 +25,21 @@ module.exports = {
       exclude: ['vendor.bundle.js']
     }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    new HtmlWebpackPlugin({
-      title: 'Home page',
-      hash: true,
-      // inject: true,
-      chunks: ['app'],
-      template: './src/index/index.html',
-      filename: 'index.html'
-    }),
+    // new HtmlWebpackPlugin({
+    //   title: 'Home page',
+    //   hash: true,
+    //   // inject: true,
+    //   chunks: ['app'],
+    //   template: './src/index/index.html',
+    //   filename: 'index.html'
+    // }),
     new HtmlWebpackPlugin({
       title: 'Holding page',
       hash: true,
       // inject: true,
       chunks: ['holding'],
-      template: './src/holding-page/holding.html',
-      filename: 'holding.html',
+      template: './src/jekyll/_includes/themes/jmblog/holding.html',
+      filename: '_includes/themes/jmblog/holding.html',
       'meta': {
         // 'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         // Will generate: <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,6 +56,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/assets', to:'assets' },
+        { from: 'src/jekyll' }
         // { from: 'other', to: 'public' },
       ],
       options: {
@@ -65,7 +65,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: './dist',
+    contentBase: './_build',
     compress:true,
     port: 9000,
     host: '0.0.0.0',
