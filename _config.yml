@@ -1,33 +1,98 @@
-name: jmoxon.net
-#markdown: redcarpet
-#highlighter: pygments
+# ---------------------------------------------------------------------------- #
+Jekyll YAML config file
+# ---------------------------------------------------------------------------- #
+
+# ----- Global site configuration -----#
+# source:                      # Current-dir
+# destination:                 # Current-dir/_site
+# plugins_dir:    '_plugins'
+# layouts_dir:    '_layouts'
+# data_dir:       '_data'
+# includes_dir:   '_includes'
+
+
+  
+
+# ---- Handle reading ----- #
 safe: false
-exclude: ["node_modules","public", "src", "bower_components", "bower.json",
-          "config.rb", "gulpfile.js",  ".sublime-workspace", ".sublime-project",
-          "package.json", ".rvmrc", ".rbenv-version", "README.md", "Rakefile",
-          "changelog.md","@archive"]
 include: ["_pages"]
-timezone: Australia/Brisbane
+exclude: 
+  - node_modules
+  - src
+  - package.json
+  - .ruby-version
+  - README.md
+  - Rakefile
+  - changelog.md
+keep_files: []
+encoding: 'utf-8'
+markdown_ext:   'markdown,mkdown,mkdn,mkd,md'
+
+
+# ----- Filtering content ----- #
+# Filtering Content
+# show_drafts         : false
+# limit_posts         : 0
+# future              : false
+# unpublished         : false
+
+
+# ----- Plugins ----- #
 plugins:
   - jekyll-redirect-from
   - jekyll-mentions
   - jemoji
-# defaults :
-    # max_num_category_posts: 5
+# whitelist:      []
+# gems:           []
 
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
+
+# ----- Conversion ----- #
+# markdown:       'kramdown'
+# highlighter:    'rouge'
+# lsi:            false
+# excerpt_separator:  "\n\n"
+# incremental:    false
+
+# ----- Output configuration -----#
 # permalink: /:categories/:year/:month/:day/:title
 permalink: /:categories/:title
 relative_permalinks: false
-# Will comment this back in when I have pagination sorted
+
+paginate_path:  '/page:num'
 # paginate: 5
+timezone: Australia/Brisbane
 
-# excerpt_separator: ""
+quiet: false
+verbose: false
+defaults :
+  - max_num_category_posts: 5
 
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
+
+
+# ----- Markdown Processors ----- #
+rdiscount:
+  extensions        : []
+
+redcarpet:
+  extensions        : []
+
+kramdown:
+  auto_ids          : true
+  entity_output     : as_char
+  toc_levels        : [1, 2, 3, 4, 5, 6]
+  smart_quotes      : lsquo,rsquo,ldquo,rdquo
+  input             : GFM
+  hard_wrap         : false
+  footnote_nr       : 1
+  show_warnings     : false
+
+  
+# ---- Default site settings ----- #
+name: jmoxon.net
 title :  "Thoughts and ideas"
 tagline: "My 2 cents on everything online"
 feed_description:  "Web development industry news and articles"
@@ -35,13 +100,13 @@ fail_back_keywords: "Web development, DevOps, workflow, productivity, automation
 author :
   name : John Moxon
   email : jmoxon@gmail.com
-  github : johnmoxon
-  twitter : johnmoxon
-  feedburner : feedname
-  googleplus : JohnMoxonAU
-  linkedin : johnmoxon
+  github : http://github.com/johnmoxon/
+  twitter : https://twitter.com/johnmoxon
+  linkedin : https://www.linkedin.com/in/johnmoxon/
+  medium : https://medium.com/@johnmoxon
+  meeting_url: 'https://meetings.hubspot.com/jmoxon'
 copyright: "copyright John Moxon 2020. All rights reserved."
-
+license: "copyright John Moxon 2020. All rights reserved."
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -56,8 +121,17 @@ production_url : http://jmoxon.net
 webmastertools:
   verification_code : 'WF6HdnRC6yGC1qbfvGK4hBfGcCdhDbnlN_9n364Fq_o'
 
-meeting_url: 'https://meetings.hubspot.com/jmoxon'
 
+# ----- Collections ----- #
+
+
+
+
+
+
+
+
+# ----- Jekyll Bootstrap configuration ---- # 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -164,3 +238,4 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
+
