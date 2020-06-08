@@ -3,8 +3,8 @@
 # ---------------------------------------------------------------------------- #
 
 # ----- Global site configuration -----#
-source: ./_build                    # Current-dir
-destination: ./_build/_site
+source: _build                    # Current-dir
+destination: _site
 # plugins_dir:    '_plugins'
 # layouts_dir:    '_layouts'
 # data_dir:       '_data'
