@@ -64,6 +64,18 @@ module.exports = {
       template: './src/jekyll/_includes/themes/jmblog/theme/error.html',
       filename: '_includes/themes/jmblog/theme/error.html'
     }),
+    new CompressionPlugin({
+      filename: '[path].br[query]',
+      algorithm: 'brotliCompress',
+      test: /\.(js|css|html|svg|woff|woff2)$/,
+      compressionOptions: {
+        // zlib’s `level` option matches Brotli’s `BROTLI_PARAM_QUALITY` option.
+        level: 11,
+      },
+      threshold: 10240,
+      minRatio: 0.8,
+      deleteOriginalAssets: false,
+    }),
     new CopyPlugin({
       patterns: [
         { from: 'src/assets', to:'assets' },
@@ -74,9 +86,10 @@ module.exports = {
         concurrency: 100,
       },
     }),
-    new CompressionPlugin({
-      test: /\.js(\?.*)?$/i,
-    }),
+    // new CompressionPlugin({
+    //   test: /\.js(\?.*)?$/i,
+    // }),
+    
   ],
   // devServer: {
   //   contentBase: './_build',
