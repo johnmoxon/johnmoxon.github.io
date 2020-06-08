@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   // mode: 'development',
@@ -73,16 +74,19 @@ module.exports = {
         concurrency: 100,
       },
     }),
+    new CompressionPlugin({
+      test: /\.js(\?.*)?$/i,
+    }),
   ],
-  devServer: {
-    contentBase: './_build',
-    compress:true,
-    port: 9000,
-    host: '0.0.0.0',
-    hot: true,
-    open: true,
-    inline: true,
-  },
+  // devServer: {
+  //   contentBase: './_build',
+  //   compress:true,
+  //   port: 9000,
+  //   host: '0.0.0.0',
+  //   hot: true,
+  //   open: true,
+  //   inline: true,
+  // },
   module: {
     rules: [
       {

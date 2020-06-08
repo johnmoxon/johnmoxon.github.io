@@ -3,14 +3,6 @@ $size-1: 6.6rem;
 $navbar-padding-horizontal: 4rem;
 @import '~bulma/sass/utilities/_all';
 
-
-// $gap: 32px;
-// $tablet:769px;
-// $desktop: 960px + (2 * $gap);
-// $widescreen: 1152px + (2 * $gap);
-// $fullhd: 1344px + (2 * $gap);
-
-
 // breakpoint mixins
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
@@ -21,7 +13,6 @@ $navbar-padding-horizontal: 4rem;
 @mixin has-standard-navbar {
   @media (min-width: $navbar-breakpoint) { @content; }
 }
-
 @mixin for-touch-devices {
   @media (max-width: $tablet) { @content; }
 }
@@ -69,7 +60,6 @@ $navbar-padding-horizontal: 4rem;
 
 
 // Base branding styles
-
 $family-sans-serif  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 $family-secondary: "Cardo","Baskerville","Calibri",serif;
 
@@ -99,38 +89,10 @@ $link: $primary;
 // $text: $grey-dark;
 
 
-// $icon-dimensions-large: 3rem;
-
-
-
-
 // Bulma configuration
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-
-// navbar
-// $navbar-padding-horizontal: 4.2rem; // not adhered to?
-// Columns
 $column-gap: 2.5rem;
-
-
-
-
-
-
-
-
-
-// font-awesome
-// .fab, .fas {
-//   color: $grey-dark;
-//   size:10rem;
-// }
-
-
-
-
-
 
 
 // @import 'theme';
@@ -138,29 +100,15 @@ $column-gap: 2.5rem;
 // @import 'posts';
 // @import 'syntax';
 
-
-// Import sharing buttons
-// @import '~rrssb/scss/rrssb.scss';
-
-
-
-// DEBUG:
-// .column {
-//   background-color: $warning;//
-// }
-
-
-
-
 // Import bulma
-@import '~bulma/bulma';
+// @import '~bulma/bulma';
 // @import '~bulma/sass/utilities/_all';
-// @import '~bulma/sass/base/_all';
+@import '~bulma/sass/base/_all';
 
-// @import '~bulma/sass/layout/_all';
+@import '~bulma/sass/layout/_all';
 
 // @import '~bulma/sass/grid/_all';
-// @import '~bulma/sass/grid/columns';
+@import '~bulma/sass/grid/columns';
 // @import '~bulma/sass/grid/tiles';
 
 
@@ -172,35 +120,24 @@ $column-gap: 2.5rem;
 // elements
 // @import '~bulma/sass/elements/_all';
 // @import '~bulma/sass/elements/box';
-// @import '~bulma/sass/elements/button';
-// @import '~bulma/sass/elements/container';
-// @import '~bulma/sass/elements/content';
-// @import '~bulma/sass/elements/icon';
-// @import '~bulma/sass/elements/image';
+@import '~bulma/sass/elements/button';
+@import '~bulma/sass/elements/container';
+@import '~bulma/sass/elements/content';
+@import '~bulma/sass/elements/icon';
+@import '~bulma/sass/elements/image';
 // @import '~bulma/sass/elements/notification';
 // @import '~bulma/sass/elements/progress';
 // @import '~bulma/sass/elements/table';
 // @import '~bulma/sass/elements/tag';
-// @import '~bulma/sass/elements/title';
+@import '~bulma/sass/elements/title';
 // @import '~bulma/sass/elements/other';
-
 
 // Forms
 // @import '~bulma/sass/form/_all';
 
-// grid
-
-// Layout
 
 
-//
-// .container {
-//   background-color: $warning;
-// }
-
-
-
-.navbar{
+// .navbar{
 //   @include has-mobile-navbar{
 //     position: absolute !important;
 //     top:0px;
@@ -242,65 +179,63 @@ $column-gap: 2.5rem;
 //   //   }
 //   // }
 
-  .navbar-start{
-    @include has-standard-navbar {
-      flex: 1;
-      justify-content: center;
-    }
-  }
-}
+//   .navbar-start{
+//     @include has-standard-navbar {
+//       flex: 1;
+//       justify-content: center;
+//     }
+//   }
+// }
 
-.card{
-  border: 1px solid $black;
+// .card{
+//   border: 1px solid $black;
 
-  .is-featured{
-    position: absolute;
-    // float: left;
-    z-index: 30;
-    // padding:0.5rem 3rem 0.5rem 0.8rem;
-    // margin:2rem 0 1rem 2rem;
-    top:2rem;
-    left:2rem;
-    line-height: 2rem;
-    // letter-spacing: -1px;
-    // -webkit-box-decoration-break: clone;
-    // box-decoration-break: clone;
+//   .is-featured{
+//     position: absolute;
+//     // float: left;
+//     z-index: 30;
+//     // padding:0.5rem 3rem 0.5rem 0.8rem;
+//     // margin:2rem 0 1rem 2rem;
+//     top:2rem;
+//     left:2rem;
+//     line-height: 2rem;
+//     // letter-spacing: -1px;
+//     // -webkit-box-decoration-break: clone;
+//     // box-decoration-break: clone;
 
-    // border:solid $black;
-    // border-width:0 1px 1px 0;
-    text-transform: uppercase;
-    // margin:-1.6rem null null -1px;
-    span{
-      background-color: $white;
-      display: block;
-
-
-    }
-  }
-
-  .padded-multiline {
-  // background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
-  line-height: 1.8;
-  // padding: 120px 50px 50px 50px;
-  // width: 400px;
-  // margin: 20px auto;
-  position: absolute;
-  z-index: 30;
-  padding:4rem 2rem 0.5rem 0.5rem;
-  // left:0.5rem;
-
-  span{
-    background-color: $black;
-    color: $white;
-    display: inline;
-    padding: 0.3rem 2.5rem 0.3rem 0.5rem;
-
-    /* Needs prefixing */
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-
-  }
-}
+//     // border:solid $black;
+//     // border-width:0 1px 1px 0;
+//     text-transform: uppercase;
+//     // margin:-1.6rem null null -1px;
+//     span{
+//       background-color: $white;
+//       display: block;
 
 
-}
+//     }
+//   }
+
+//   .padded-multiline {
+//     // background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
+//     line-height: 1.8;
+//     // padding: 120px 50px 50px 50px;
+//     // width: 400px;
+//     // margin: 20px auto;
+//     position: absolute;
+//     z-index: 30;
+//     padding:4rem 2rem 0.5rem 0.5rem;
+//     // left:0.5rem;
+
+//     span{
+//       background-color: $black;
+//       color: $white;
+//       display: inline;
+//       padding: 0.3rem 2.5rem 0.3rem 0.5rem;
+
+//       /* Needs prefixing */
+//       -webkit-box-decoration-break: clone;
+//       box-decoration-break: clone;
+
+//     }
+//   }
+// }
