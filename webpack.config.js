@@ -5,10 +5,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  // mode: 'development',
+  mode: 'production',
   entry: {
     // app: './src/index/js/index.js',
-    holding: './src/holding-page/js/index.js'
+    holding: './src/holding-page/js/index.js',
+    error: './src/error/js/error.js'
   },
   output: {
     path: path.resolve(__dirname, '_build'),
@@ -38,8 +40,8 @@ module.exports = {
       hash: true,
       // inject: true,
       chunks: ['holding'],
-      template: './src/jekyll/_includes/themes/jmblog/holding.html',
-      filename: '_includes/themes/jmblog/holding.html',
+      template: './src/jekyll/_includes/themes/jmblog/theme/holding.html',
+      filename: '_includes/themes/jmblog/theme/holding.html',
       'meta': {
         // 'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         // Will generate: <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -52,6 +54,14 @@ module.exports = {
         // Will generate: <meta http-equiv="set-cookie" content="value; expires=date; path=url">
         // Which equals to the following http header: `set-cookie: value; expires=date; path=url`
       }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Error',
+      hash: true,
+      // inject: true,
+      chunks: ['error'],
+      template: './src/jekyll/_includes/themes/jmblog/theme/error.html',
+      filename: '_includes/themes/jmblog/theme/error.html'
     }),
     new CopyPlugin({
       patterns: [
