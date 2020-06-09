@@ -9,6 +9,10 @@ centred-buttons: false
 date:  2020-06-08 14:48:47
 group: navigation
 permalink: /contact
+peep-image: /assets/img/head-shot-square.jpg
+peep_image_nfresize: fit
+peep_image_nfresize_w: 128
+peep_image_nfresize_h: 128
 ---
 
 If you would like to get in touch and explore opportunities in working together please fill in your contact details below or [book a meeting](https://meetings.hubspot.com/jmoxon) to catch up for a coffee or zoom.
