@@ -1,5 +1,5 @@
 [build]
-  publish = "public"
+  publish = "_site/"
 
 
 # Redirects and headers are GLOBAL for all builds – they do not get scoped to
