@@ -3,6 +3,7 @@
     ,
     "editor.fontSize": 13.5,
     "files.exclude": {
-      "_build": true
+      "_build": true,
+      "_site": true
     }
 }

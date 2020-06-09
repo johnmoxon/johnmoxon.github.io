@@ -54,6 +54,14 @@ module.exports = {
         // 'set-cookie': { 'http-equiv': 'set-cookie', content: 'name=value; expires=date; path=url' },
         // Will generate: <meta http-equiv="set-cookie" content="value; expires=date; path=url">
         // Which equals to the following http header: `set-cookie: value; expires=date; path=url`
+      },
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
       }
     }),
     new HtmlWebpackPlugin({
@@ -62,7 +70,15 @@ module.exports = {
       // inject: true,
       chunks: ['error'],
       template: './src/jekyll/_includes/themes/jmblog/theme/error.html',
-      filename: '_includes/themes/jmblog/theme/error.html'
+      filename: '_includes/themes/jmblog/theme/error.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
     }),
     new CompressionPlugin({
       filename: '[path].br[query]',

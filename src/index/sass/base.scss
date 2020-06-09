@@ -3,19 +3,6 @@ $size-1: 6.6rem;
 $navbar-padding-horizontal: 4rem;
 @import '~bulma/sass/utilities/_all';
 
-// Fontstacks
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-// family=Libre+Baskerville:ital,wght@0,400;0,700;1,400
-// family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&
-
-//
-// $gap: 32px;
-// $tablet:769px;
-// $desktop: 960px + (2 * $gap);
-// $widescreen: 1152px + (2 * $gap);
-// $fullhd: 1344px + (2 * $gap);
-
-
 // breakpoint mixins
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
@@ -50,7 +37,6 @@ $navbar-padding-horizontal: 4rem;
 
 
 // Base branding styles
-
 $family-sans-serif  : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 $family-secondary: "Cardo","Baskerville","Calibri",serif;
 
@@ -84,55 +70,17 @@ $link: $lightgreentext;
 // $danger: $red;
 // $dark: $grey-darker;
 // $text: $grey-dark;
-
-
-
-
-// navbar
-// $navbar-padding-horizontal: 4.2rem; // not adhered to?
-// Columns
 $column-gap: 2.5rem;
-
-
-
-.column {
-  background-color: $errortext;//
-}
-
-
-
-
-
-// font-awesome
-.fab, .fas {
-  color: $grey-dark;
-
-}
-
-
-
-
-
-
-
 
 // @import 'theme';
 // @import 'components';
 // @import 'posts';
 // @import 'syntax';
 
-
-// Import sharing buttons
-// @import '~rrssb/scss/rrssb.scss';
-
-
-
-
-
 // Import bulma
-@import '~bulma/bulma';
+// @import '~bulma/bulma';
 // @import '~bulma/sass/utilities/_all';
-// @import '~bulma/sass/base/_all';
+@import '~bulma/sass/base/_all';
 
 // @import '~bulma/sass/layout/_all';
 
