@@ -94,7 +94,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: 'src/admin' },
+        { from: 'src/admin', to: 'admin' },
         { from: 'src/assets', to:'assets' },
         { from: 'src/jekyll' }
         // { from: 'other', to: 'public' },
