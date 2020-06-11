@@ -1,33 +1,55 @@
-# ---------------------------------------------------------------------------- #
-# Jekyll YAML config file
-# ---------------------------------------------------------------------------- #
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# ----- Global site configuration -----#
-source: _build/                    # Current-dir
-destination: _site/
-# plugins_dir:    '_plugins'
-# layouts_dir:    '_layouts'
-# data_dir:       '_data'
-# includes_dir:   '_includes'
+source: ./_build                    # Current-dir
+destination: ./_site
+include:
+  - _pages
 
-
-
-# ---- Default site settings ----- #
-name: jmoxon.net
-title :  "Thoughts and ideas"
-tagline: "My 2 cents on everything online"
-feed_description:  "Web development industry news and articles"
-fail_back_keywords: "Web development, DevOps, workflow, productivity, automation"
-author :
-  name : John Moxon
-  email : jmoxon@gmail.com
-  github : http://github.com/johnmoxon/
-  twitter : https://twitter.com/johnmoxon
-  linkedin : https://www.linkedin.com/in/johnmoxon/
-  medium : https://medium.com/@johnmoxon
-  meeting_url: 'https://meetings.hubspot.com/jmoxon'
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Learn. Grow. Lead in Tech 
+tagline: "Finding inspiration and adventures in a digital leadership career."
+email: jmoxon@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal blog for John Moxon | Digital Leader, Life-long-learner,
+  Risk mitigator, Technology/Fintech evangelist and amateur 
+  beer brewer. Writing articles about what I know and what I learn as I 
+  find my own path in my career and life. 
 copyright: "copyright John Moxon 2020. All rights reserved."
 license: "copyright John Moxon 2020. All rights reserved."
+
+
+permalink: /:categories/:title
+relative_permalinks: false
+
+timezone: Australia/Brisbane
+
+quiet: false
+verbose: false
+
+
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.jmoxon.net # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username : https://twitter.com/johnmoxon
+github_username : http://github.com/johnmoxon/
+linkedin_username : https://www.linkedin.com/in/johnmoxon/
+medium_username : https://medium.com/@johnmoxon
+meeting_url: 'https://meetings.hubspot.com/jmoxon'
+
+
+# ---- Analytics ---- #
 analytics:
   gtm:
     tracking_id: GTM-WGHRT3
@@ -36,210 +58,29 @@ analytics:
 
 
 
-  # site.analytics.gtm.tracking_id
 
-# ---- Handle reading ----- #
-safe: false
-include: ["_pages"]
-exclude: 
-  - node_modules
-  - src
-  - package.json
-  - .ruby-version
-  - README.md
-  - Rakefile
-  - changelog.md
-# keep_files: []
-encoding: 'utf-8'
-markdown_ext:   'markdown,mkdown,mkdn,mkd,md'
-
-
-# ----- Filtering content ----- #
-# Filtering Content
-# show_drafts         : false
-# limit_posts         : 0
-# future              : false
-# unpublished         : false
-
-
-# ----- Plugins ----- #
+# Build settings
+markdown: kramdown
+# theme: jmblog
 plugins:
-  # - jekyll-redirect-from
+  - jekyll-gist
   - jekyll-mentions
-  - jemoji
-# whitelist:      []
-# gems:           []
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
 
 
-# ----- Conversion ----- #
-# markdown:       'kramdown'
-# highlighter:    'rouge'
-# lsi:            false
-# excerpt_separator:  "\n\n"
-# incremental:    false
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
-# ----- Output configuration -----#
-# permalink: /:categories/:year/:month/:day/:title
-permalink: /:categories/:title
-relative_permalinks: false
-
-paginate_path:  '/page:num'
-# paginate: 5
-timezone: Australia/Brisbane
-
-quiet: false
-verbose: false
-# defaults :
-#   - max_num_category_posts: 5
-
-# liquid:
-#   error_mode        : warn
-#   strict_filters    : false
-#   strict_variables  : false
-
-
-# ----- Markdown Processors ----- #
-rdiscount:
-  extensions        : []
-
-redcarpet:
-  extensions        : []
-
-# kramdown:
-#   auto_ids          : true
-#   entity_output     : as_char
-#   toc_levels        : [1, 2, 3, 4, 5, 6]
-#   smart_quotes      : lsquo,rsquo,ldquo,rdquo
-#   input             : GFM
-#   hard_wrap         : false
-#   footnote_nr       : 1
-#   show_warnings     : false
-
-
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : https://www.jmoxon.net
-
-webmastertools:
-  verification_code : 'WF6HdnRC6yGC1qbfvGK4hBfGcCdhDbnlN_9n364Fq_o'
-
-
-# ----- Collections ----- #
-
-
-
-
-
-
-
-
-# ----- Jekyll Bootstrap configuration ---- # 
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
-JB :
-  version : 0.3.0
-
-  # All links will be namespaced by BASE_PATH if defined.
-  # Links in your website should always be prefixed with {{BASE_PATH}}
-  # however this value will be dynamically changed depending on your deployment situation.
-  #
-  # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Project Pages (http://username.github.io/project-name)
-  #
-  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
-  #
-  # CAUTION:
-  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
-  #   - Only the following values are falsy: ["", null, false]
-  #   - When setting BASE_PATH it must be a valid url.
-  #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
-
-  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
-  #
-  # Override this by defining an absolute path to assets here.
-  # ex:
-  #   http://s3.amazonaws.com/yoursite/themes/watermelon
-  #   /assets
-  #
-  ASSET_PATH : /assets
-
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change them here if needed.
-  #
-  archive_path: /archive/
-  categories_path : /categories/
-  tags_path : /tags/
-  atom_path : /atom.xml
-  rss_path : /rss.xml
-
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : disqus
-    disqus :
-      short_name : jmoxon
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
-
-  # Settings for analytics helper
-  # Set 'provider' to the analytics provider you want to use.
-  # Set 'provider' to false to turn analytics off globally.
-  #
-  analytics :
-    provider :
-    google :
-        tracking_id : 'UA-316326-5'
-    getclicky :
-      site_id :
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
-
-
-
-  # Settings for sharing helper.
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : tweet
-
-  # Settings for all other include helpers can be defined by creating
-  # a hash with key named for the given helper. ex:
-  #
-  #   pages_list :
-  #     provider : "custom"
-  #
-  # Setting any helper's provider to 'custom' will bypass the helper code
-  # and include your custom code. Your custom file must be defined at:
-  #   ./_includes/custom/[HELPER]
-  # where [HELPER] is the name of the helper you are overriding.
-
+kramdown:
+  input: GFM
