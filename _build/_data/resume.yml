@@ -1,0 +1,70 @@
+contact:
+    name: John Moxon
+    phone: 0413 896 171
+    email: info@jmoxon.net
+social:
+    linkedin: https://www.linkedin.com/in/johnmoxon/
+    medium: https://medium.com/@johnmoxon
+    twitter: https://twitter.com/johnmoxon
+skills:
+    hard:
+        - skill 1
+        - skill 2
+        - skill 3
+    soft:
+        - skill 1 
+        - skill 2
+        - skill 3
+experiences:
+    - company: Travel Money Group
+      website: https://www.travelmoneyoz.com
+      positions:
+        - title: Chief Technical Lead
+          date_start: 2017-01-12
+          summary: >-
+            this is a summary
+          achievements:
+            - achievement 1
+            - achievement 2
+            - achievement 3
+        - title: Digital Customer Experience Officer
+          date_start: 2015-01-12
+          date_end: 2017-01-11
+          summary: >-
+            this is a summary
+          achievements:
+            - achievement 1
+            - achievement 2
+            - achievement 3
+    - company: Flight Centre Travel Group
+      website: https://www.flightcentre.com.au
+      postions:
+        - title: Chief Technical Lead
+          date_start: 2017-01-12
+          summary: >-
+            this is a summary
+          achievements:
+            - achievement 1
+            - achievement 2
+            - achievement 3
+        - title: Digital Customer Experience Officer
+          date_start: 2015-01-12
+          date_end: 2017-01-11
+          summary: >-
+            this is a summary
+          achievements:
+            - achievement 1
+            - achievement 2
+            - achievement 3
+education:
+    - institution: University of Leeds (Trinity and All Saints)
+      website: https://www.leedstrinity.ac.uk/
+      date_start: 2000
+      date:end: 2003
+      qualification: Digital Media & Internet Culture
+      level: Degree
+      grade: "2:1"
+          
+
+
+    

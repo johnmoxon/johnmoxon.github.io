@@ -1,0 +1,48 @@
+<h1>Resume</h1>
+
+<address>
+    {{ site.data.resume.contact.name }} | 
+    <a href="tel:{{ site.data.resume.contact.phone | replace: " ", "" }}">{{ site.data.resume.contact.phone }}</a> | 
+    <a href="mailto:{{ site.data.resume.contact.email }}">{{ site.data.resume.contact.email }}</a> | 
+    <a href="{{ site.data.resume.social.linkedin }}">{{ site.data.resume.social.linkedin }}</a>
+</address>
+<hr>
+
+<!-- Hard skills -->
+{% for skill in site.data.resume.skills.hard %}
+
+{% endfor %}
+
+<!-- Soft skills -->
+{% for skill in site.data.resume.skills.hard %}
+
+{% endfor %}
+<hr>
+
+<!-- Experience section -->
+<h2>Experience</h2>
+{% for experience in site.data.resume.experiences %}
+    <div data-type="company">
+        <h3>{{ experience.company }} | {{ experience.company }}</h3>
+        {% for position in experience.positions %}
+        <div data-type="position">
+            <h4 data>{{ postion.title }} | {{ postion.date_start | date: "%b %Y" }} - 
+                {{ postion.date_end | default: "Current role" | date: "%b %Y" }}</h4>
+            <p data-type="">{{ position.summary }}</p>
+            <ul>
+                {% for achievement in position.achievements %}
+                <li>{{ achievement }}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+<hr>
+
+<!-- Education -->
+{% for education in site.data.resume.education %}
+
+
+{% endfor %}
