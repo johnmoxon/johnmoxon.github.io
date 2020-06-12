@@ -1,12 +1,15 @@
 {%comment%}
-*** This is the basic markup inside the content section of a generic page ***
+Wrap user content, potentially include components that
+render front matter as content
 {%endcomment%}
 
+{% include themes/jmblog/components/centred_buttons.html %}
 
-{%unless page.intro.title == null or page.url == "/" %}
-<div class="page-header">
-  <h1>{{ page.intro.title }} {% if page.intro.tagline %} <small>{{ page.intro.tagline }}</small>{% endif %}</h1>
+<!-- Summary -->
+<div class="columns has-text-centered">
+    <div class="column content">
+        {{ content }}
+    </div>
 </div>
-{% endunless %}
 
-{{ content }}
+{% include themes/jmblog/components/social_buttons_large.html %}

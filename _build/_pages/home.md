@@ -4,10 +4,6 @@ title: Launching soon
 headline: John Moxon.
 quote: "We can not solve our problems with the same level of thinking that created them."
 quote-attribution: Albert Einstein.
-peep-image: /assets/img/head-shot-square.jpg
-peep_image_nfresize: fit
-peep_image_nfresize_w: 128
-peep_image_nfresize_h: 128
 
 intro:
     title: It's a matter of paste 
@@ -19,9 +15,10 @@ sitemap:
     priority: 1.0
 permalink: /
 ---
-{% include JB/setup %}
 
 {% comment %}
+TODO: this should be moved to theme/../page.html
+ - Keep the user content templates light (only stuff that will get edited).
 {% assign posts_list = site.posts %}
 {% include themes/jmblog/components/posts_list %}
 {% endcomment %}
