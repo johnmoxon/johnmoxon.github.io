@@ -1,23 +1,33 @@
-contact:
-    name: John Moxon
-    phone: 0413 896 171
-    email: info@jmoxon.net
-social:
-    linkedin: https://www.linkedin.com/in/johnmoxon/
-    medium: https://medium.com/@johnmoxon
-    twitter: https://twitter.com/johnmoxon
-skills:
-    hard:
-        - skill 1
-        - skill 2
-        - skill 3
-    soft:
-        - skill 1 
-        - skill 2
-        - skill 3
+resume_versions:
+  - version: 1.0
+    active: true
+    description: Base resume
+    sections:
+      - section_name: Contact details
+        name: John Moxon
+        phone: 0413 896 171
+        email: info@jmoxon.net
+      - section_name: Social
+        linkedin: https://www.linkedin.com/in/johnmoxon/
+        medium: https://medium.com/@johnmoxon
+        twitter: https://twitter.com/johnmoxon
+      - section_name: skills
+        hard:
+          - skill 1
+          - skill 2
+          - skill 3
+        soft:
+            - skill 1 
+            - skill 2
+            - skill 3
+      - section_name: Experience
+        experiences: 
+          - company: Travel Money Group
+            website: https://www.travelmoneyoz.com
+          - 
+          
+
 experiences:
-    - company: Travel Money Group
-      website: https://www.travelmoneyoz.com
       positions:
         - title: Chief Technical Lead
           date_start: 2017-01-12
