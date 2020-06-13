@@ -1,23 +1,27 @@
 <h1>Resume</h1>
-
+{% comment %}
 <address>
     {{ site.data.resume.contact.name }} | 
     <a href="tel:{{ site.data.resume.contact.phone | replace: " ", "" }}">{{ site.data.resume.contact.phone }}</a> | 
     <a href="mailto:{{ site.data.resume.contact.email }}">{{ site.data.resume.contact.email }}</a> | 
     <a href="{{ site.data.resume.social.linkedin }}">{{ site.data.resume.social.linkedin }}</a>
 </address>
+{% endcomment %}
 <hr>
 
-<!-- Hard skills -->
-{% for skill in site.data.resume.skills.hard %}
 
-{% endfor %}
 
-<!-- Soft skills -->
-{% for skill in site.data.resume.skills.hard %}
 
-{% endfor %}
-<hr>
+
+
+
+{% comment %}
+
+
+
+
+
+
 
 <!-- Experience section -->
 <h2>Experience</h2>
@@ -41,8 +45,4 @@
 {% endfor %}
 <hr>
 
-<!-- Education -->
-{% for education in site.data.resume.education %}
-
-
-{% endfor %}
+{% endcomment %}
