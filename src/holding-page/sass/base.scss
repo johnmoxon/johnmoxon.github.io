@@ -125,14 +125,14 @@ $column-gap: 2.5rem;
 
 
 // Import bulma
-// @import '~bulma/bulma';
+@import '~bulma/bulma';
 // @import '~bulma/sass/utilities/_all';
-@import '~bulma/sass/base/_all';
+// @import '~bulma/sass/base/_all';
 
-@import '~bulma/sass/layout/_all';
+// @import '~bulma/sass/layout/_all';
 
 // @import '~bulma/sass/grid/_all';
-@import '~bulma/sass/grid/columns';
+// @import '~bulma/sass/grid/columns';
 // @import '~bulma/sass/grid/tiles';
 
 
@@ -144,16 +144,16 @@ $column-gap: 2.5rem;
 // elements
 // @import '~bulma/sass/elements/_all';
 // @import '~bulma/sass/elements/box';
-@import '~bulma/sass/elements/button';
-@import '~bulma/sass/elements/container';
-@import '~bulma/sass/elements/content';
-@import '~bulma/sass/elements/icon';
-@import '~bulma/sass/elements/image';
+// @import '~bulma/sass/elements/button';
+// @import '~bulma/sass/elements/container';
+// @import '~bulma/sass/elements/content';
+// @import '~bulma/sass/elements/icon';
+// @import '~bulma/sass/elements/image';
 // @import '~bulma/sass/elements/notification';
 // @import '~bulma/sass/elements/progress';
 // @import '~bulma/sass/elements/table';
 // @import '~bulma/sass/elements/tag';
-@import '~bulma/sass/elements/title';
+// @import '~bulma/sass/elements/title';
 // @import '~bulma/sass/elements/other';
 
 

@@ -1,19 +1,15 @@
 resume_versions:
   - version: 1.0
+    name: John Moxon
     active: true
     description: Base resume
     sections:
       - section_name: Contact details
-        name: John Moxon
         phone: 0413 896 171
         email: info@jmoxon.net
+        linkedin: linkedin.com/in/johnmoxon/
 
-      - section_name: Social
-        linkedin: https://www.linkedin.com/in/johnmoxon/
-        medium: https://medium.com/@johnmoxon
-        twitter: https://twitter.com/johnmoxon
-
-      - section_name: skills
+      - section_name: Skills
         hard:
           - skill 1
           - skill 2
@@ -27,8 +23,10 @@ resume_versions:
         experiences: 
           - company: Travel Money Group
             website: https://www.travelmoneyoz.com
+            relevant: true
             positions:
               - title: Chief Technical Lead
+                relevant: true
                 date_start: 2017-01-12
                 summary: >-
                   this is a summary
@@ -37,6 +35,7 @@ resume_versions:
                   - achievement 2
                   - achievement 3
               - title: Digital Customer Experience Officer
+                relevant: true
                 date_start: 2015-01-12
                 date_end: 2017-01-11
                 summary: >-
@@ -47,8 +46,10 @@ resume_versions:
                   - achievement 3
           - company: Flight Centre Travel Group
             website: https://www.flightcentre.com.au
-            postions:
-              - title: Chief Technical Lead
+            relevant: true
+            positions:
+              - title: Chief TechLead
+                relevant: true
                 date_start: 2017-01-12
                 summary: >-
                   this is a summary
@@ -56,7 +57,8 @@ resume_versions:
                   - achievement 1
                   - achievement 2
                   - achievement 3
-              - title: Digital Customer Experience Officer
+              - title: Digital Cu
+                relevant: true
                 date_start: 2015-01-12
                 date_end: 2017-01-11
                 summary: >-
@@ -66,7 +68,7 @@ resume_versions:
                   - achievement 2
                   - achievement 3
 
-      - section_name: education
+      - section_name: Education
         qualifications:
           - name: Digital Media & Internet Culture
             level: Degree
@@ -76,7 +78,7 @@ resume_versions:
             date:end: 2003
             grade: "2:1"
 
-      - section_name: awards
+      - section_name: Awards
         awards:
           - name: Award name 1
             description: >-
