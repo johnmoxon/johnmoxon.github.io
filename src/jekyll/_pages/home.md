@@ -8,11 +8,9 @@ quote-attribution: Albert Einstein.
 intro:
     title: It's a matter of paste 
     tagline: Tales of technology, fintech and digital leadership in ever changing times 
-    herounit: true
-description: Articles on leadership, digital enablement and fintech
+    herounit: false
+description: Articles on fintech, technology, leadership and 
 keywords: fintech, digital, leadership, technology
-sitemap:
-    priority: 1.0
 permalink: /
 ---
 
@@ -25,4 +23,4 @@ TODO: this should be moved to theme/../page.html
 
 Hi! You've caught me while I'm still getting ready! Wow that's a little embarassing!
 
-I'm currently preparing a new site where I will host some of the articles I've being writing on technology and fintech. For now if you've landed here with a question or would like to get in touch, please use one of the links above
+I'm currently preparing a new site where I will publish some of the articles I've being writing on fintech, technology and leadership. For now if you've landed here with a question or would like to get in touch, please use one of the links above
