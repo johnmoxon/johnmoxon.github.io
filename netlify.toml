@@ -94,4 +94,4 @@
 	]
 
 [[plugins]]
-  package = "netlify-build-plugin-pushover"
+package = "netlify-build-plugin-pushover"
