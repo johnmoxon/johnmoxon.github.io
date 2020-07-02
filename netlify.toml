@@ -92,3 +92,6 @@
 		"google",
 		"bing"
 	]
+
+[[plugins]]
+package = "netlify-build-plugin-pushover"
