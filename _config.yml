@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-source: ./_build                    # Current-dir
+#source: ./_build                    # Current-dir
 destination: ./_site
 include:
   - _pages
@@ -61,13 +61,13 @@ analytics:
 
 # Build settings
 markdown: kramdown
-# theme: jmblog
-plugins:
-  - jekyll-gist
-  - jekyll-mentions
-  - jekyll-paginate
-  - jekyll-feed
-  - jekyll-sitemap
+theme: jmblog-theme
+  #plugins:
+  #  - jekyll-gist
+  #- jekyll-mentions
+  #- jekyll-paginate
+  #- jekyll-feed
+  #- jekyll-sitemap
 
 
 # Exclude from processing.
