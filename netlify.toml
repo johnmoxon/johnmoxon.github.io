@@ -93,5 +93,5 @@
 		"bing"
 	]
 
-[[plugins]]
-package = "netlify-build-plugin-pushover"
+#[[plugins]]
+#package = "netlify-build-plugin-pushover"
