@@ -5,6 +5,7 @@ _site
 .jekyll-metadata
 node_modules
 .archive
+@archive
 **/@*
 # Local Netlify folder
 .netlify
