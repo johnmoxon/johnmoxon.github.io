@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is a new post article 
+title: How to create a support loop and drive incredible user experiences
 subtitle: Article subtitle
 image: 
 author: John Moxon
@@ -9,7 +9,7 @@ tags:
 - sample-tag1
 - sample-tag2
 summary: >-
-  Summary of the article 
+  This article will promote the importance of using your call-centre / support centre as a valuable source of data for product enrichment
 
 comments: true
 
