@@ -3,8 +3,9 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-node_modules
-.archive
+.archive/
+node_modules/
+# @archive/
 **/@*
 # Local Netlify folder
 .netlify
