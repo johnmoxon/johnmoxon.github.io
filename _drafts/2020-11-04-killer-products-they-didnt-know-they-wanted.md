@@ -5,6 +5,11 @@ subtitle: The real value in customer data
 image: 
 author: John Moxon
 category: data
+image: 
+  path: /assets/img/designer-showing-web-design-layout-sketches-picjumbo-com.jpg
+  author: Viktor Hanacek
+  source: picjumbo
+  url: "https://picjumbo.com/author/viktorhanacek/"
 tags:
 - data
 - data-value-exchange

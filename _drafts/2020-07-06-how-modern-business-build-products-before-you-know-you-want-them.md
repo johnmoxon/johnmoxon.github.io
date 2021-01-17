@@ -4,6 +4,11 @@ title: Using data to create products you never knew you wanted
 date: 2020-07-06 19:31
 category: data
 author: John Moxon
+image: 
+  path: /assets/img/designer-showing-web-design-layout-sketches-picjumbo-com.jpg
+  author: Viktor Hanacek
+  source: picjumbo
+  url: "https://picjumbo.com/author/viktorhanacek/"
 tags:
 - future
 - data
