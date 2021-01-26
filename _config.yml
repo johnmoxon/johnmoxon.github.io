@@ -38,7 +38,7 @@ quiet: false
 verbose: false
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://www.jmoxon.net # the base hostname & protocol for your site, e.g. http://example.com
+url: https://stage.jmoxon.net # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username : https://twitter.com/johnmoxon
 github_username : http://github.com/johnmoxon/
 linkedin_username : https://www.linkedin.com/in/johnmoxon/
