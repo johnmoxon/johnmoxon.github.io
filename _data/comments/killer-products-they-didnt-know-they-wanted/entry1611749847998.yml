@@ -2,7 +2,7 @@ _id: 9efa03e0-6099-11eb-b447-0b36b6ce4842
 _parent: >-
   http://0.0.0.0:9000/data/2020/11/04/killer-products-they-didnt-know-they-wanted.html
 replying_to_uid: ''
-message: 'this is a link [https://www.google.com]'
+message: 'this **is a link** <https://www.google.com> [](https://www.google.com)'
 name: Jimmy Shoes
 email: ''
 hp: ''

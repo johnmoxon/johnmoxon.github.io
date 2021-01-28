@@ -5,13 +5,13 @@ header: Posts By Tag
 group: navigation
 permalink: /tags/
 ---
-{% include JB/setup %}
+{% comment %} {% include JB/setup %} {% endcomment %}
 
 # Posts by tag
 
 <ul class="tag-box-full list-unstyled list-inline">
 {% assign tags_list = site.tags %}
-{% include JB/tags_list %}
+{% comment %} {% include JB/tags_list %} {% endcomment %}
 </ul>
 
 
@@ -23,7 +23,7 @@ permalink: /tags/
 
 <ul class="list-unstyled tag-posts-list">
 {% assign pages_list = tag[1] %}
-{% include JB/pages_list %}
+{% comment %} {% include JB/pages_list %} {% endcomment %}
 </ul>
 </div>
 {% endfor %}

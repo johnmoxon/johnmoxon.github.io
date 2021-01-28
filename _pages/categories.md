@@ -5,13 +5,13 @@ header: Posts By Category
 group: navigation
 permalink: /categories/
 ---
-{% include JB/setup %}
+{% comment %} {% include JB/setup %} {% endcomment %}
 
 # Posts by category
 
 <ul class="tag-box-full list-unstyled list-inline">
 {% assign categories_list = site.categories %}
-{% include JB/categories_list %}
+{% comment %} {% include JB/categories_list %} {% endcomment %}
 </ul>
 
 
@@ -22,7 +22,7 @@ permalink: /categories/
   {% assign pages_list = category[1] %}
   {% comment %}Limit number of posts shown under each category{% endcomment %}
   {% assign limit = site.defaults.max_num_category_posts %}
-  {% include JB/pages_list %}
+  {% comment %} {% include JB/pages_list %} {% endcomment %}
   </ul>
   <a href="{{category[0]}}" class="btn btn-default">see more {{ category[0] }} posts &raquo;</a>
 </div>

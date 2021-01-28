@@ -62,6 +62,8 @@ comments:
     # Mailgun domain (encrypted)
     #domain: "4r3e2w1q"
 
+    # allowedOrigins: ["jmoxon.net", "www.jmoxon.net",]
+
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
