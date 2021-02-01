@@ -7,6 +7,16 @@
 # For context-specific rules, use _headers or _redirects files, which are
 # PER-DEPLOY.
 
+# [[redirects]]
+#   from = "/*"
+#   to = "/maintenance.html"
+#   status = 503
+
+[[redirects]]
+  from = "/maintenance.html"
+  # force = true
+  status = 404
+
 # A basic redirect rule
 #[[redirects]]
 #  from = "/*"
@@ -95,3 +105,26 @@
 
 #[[plugins]]
 #package = "netlify-build-plugin-pushover"
+
+
+# Config for the Netlify Build Plugin: netlify-plugin-minify-html
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+  # Specify which deploy contexts we'll minify HTML in.
+  # Supports any Deploy Contexts available in Netlify.
+  # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
+  [plugins.inputs]
+    contexts = [
+      'production',
+      'branch-deploy',
+      'deploy-preview'
+    ]
+  
+  # Optionally, override the default options for the minification
+  # https://github.com/kangax/html-minifier#options-quick-reference
+  [plugins.inputs.minifierOptions]
+    # removeComments = false
+    collapseInlineTagWhitespace = false
+    collapseWhitespace = true
+    conservativeCollapse = true
