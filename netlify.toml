@@ -14,7 +14,7 @@
 
 [[redirects]]
   from = "/maintenance.html"
-  # force = true
+  force = true
   status = 404
 
 # A basic redirect rule
