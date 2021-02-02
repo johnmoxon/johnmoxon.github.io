@@ -7,7 +7,6 @@ backend:
 media_folder: "assets/uploads"
 
 collections:
-
   - name: "Posts" # Used in routes, e.g. /admin/collections/blog
     label: "Posts" # Used in the UI
     folder: "_posts/" # The path to the folder where the documents are stored
@@ -27,7 +26,6 @@ collections:
         search_fields: [name],
         value_field: 'name',
       }
-  
   - name: "Authors"
     label: "Authors"
     folder: "_authors/"
@@ -68,7 +66,6 @@ collections:
         format: "LLL"
         picker_utc: false
       - {label: "Body", name: "body", widget: "markdown"}
-
   - name: "config"
   label: "Config"
   editor:
