@@ -50,7 +50,6 @@ collections:
         selectFrom:
           - collection: posts
             field: tags
-      - {label: 'Tags', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
       - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
