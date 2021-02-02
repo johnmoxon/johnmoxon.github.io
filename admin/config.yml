@@ -16,17 +16,42 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "featured", widget: "image"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "leadership"
+          - "data"
+          - "fintech"
+          - "payments"
+          - "product management"
+      - label: 'Author'
+        name: 'author'
+        widget: 'relation'
+        collection: 'Authors'
+        display_fields: [name]
+        search_fields: [name]
+        value_field: 'name'
+      - label: 'Image'
+        name: 'image'
+        widget: 'object'
+        fields:
+          - {label: "Image", name: "path", widget: "image"}
+          - {label: "Author", name: "author", widget: "string"}
+          - {label: "Source  site", name: "source", widget: "string"}
+          - {label: "Source  URL", name: "url", widget: "string"}
+      - label: 'Tags' 
+        name: 'tags' 
+        widget: 'list'
+        label_singular: 'Add tag'
+        min: 1
+      - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
+      - {label: 'Summary', name: 'summary', widget: 'text'}
+      - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {
-        label: 'Author',
-        name: 'author',
-        widget: 'relation',
-        collection: 'Authors',
-        display_fields: [name],
-        search_fields: [name],
-        value_field: 'name',
-      }
+      - {label: "SEO description", name: "description", widget: "string"}
+      
   
   - name: "Authors"
     label: "Authors"
@@ -68,6 +93,7 @@ collections:
         format: "LLL"
         picker_utc: false
       - {label: "Body", name: "body", widget: "markdown"}
+
 
   - name: "config"
   label: "Config"
