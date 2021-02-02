@@ -3,9 +3,7 @@ backend:
   repo: johnmoxon/johnmoxon.github.io
   branch: stage 
   site_domain: www.jmoxon.net
-
 media_folder: "assets/uploads"
-
 collections:
   - name: "Posts" # Used in routes, e.g. /admin/collections/blog
     label: "Posts" # Used in the UI
@@ -48,7 +46,6 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Summary", name: "summary", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-  
   - name: "Pages"
     label: "Pages"
     folder: "_pages/"
@@ -67,18 +64,18 @@ collections:
         picker_utc: false
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "config"
-  label: "Config"
-  editor:
-    preview: false
-  files:
-    - label: "Navigation"
-      name: "navigation"
-      file: "_data/navigation.yml"
-      fields:
-        - label: "Navigation Items"
-          name: "items"
-          widget: "list"
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Link, name: link, widget: string}
-    
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
+      
