@@ -1,14 +1,15 @@
 backend:
   name: github
   repo: johnmoxon/johnmoxon.github.io
-  branch: master
+  branch: stage 
   site_domain: www.jmoxon.net
 
 media_folder: "assets/uploads"
 
 collections:
-  - name: "Blog" # Used in routes, e.g. /admin/collections/blog
-    label: "Blog" # Used in the UI
+
+  - name: "Posts" # Used in routes, e.g. /admin/collections/blog
+    label: "Posts" # Used in the UI
     folder: "_posts/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
@@ -17,3 +18,70 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "featured", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {
+        label: 'Author',
+        name: 'author',
+        widget: 'relation',
+        collection: 'Authors',
+        display_fields: [name],
+        search_fields: [name],
+        value_field: 'name',
+      }
+  
+  - name: "Authors"
+    label: "Authors"
+    folder: "_authors/"
+    create: true # Allow users to create
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "bio"}
+      - {label: "Short name", name: "short_name", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - label: "social"
+        name: "social"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "LinkedIn", name: "linkedin", widget: "string"}
+          - {label: "Twitter", name: "twitter", widget: "string"}
+          - {label: "medium", name: "medium", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "Pages"
+    label: "Pages"
+    folder: "_pages/"
+    create: true # Allow users to create
+    slug: {{slug}}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        picker_utc: false
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "config"
+  label: "Config"
+  editor:
+    preview: false
+  files:
+    - label: "Navigation"
+      name: "navigation"
+      file: "_data/navigation.yml"
+      fields:
+        - label: "Navigation Items"
+          name: "items"
+          widget: "list"
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Link, name: link, widget: string}
+    
