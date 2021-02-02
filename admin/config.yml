@@ -8,6 +8,9 @@ backend:
 
 media_folder: "assets/uploads"
 publish_mode: editorial_workflow
+editor:
+  preview: false
+
 collections:
 
   - name: "Posts" # Used in routes, e.g. /admin/collections/blog
@@ -52,7 +55,8 @@ collections:
       - {label: 'Summary', name: 'summary', widget: 'text'}
       - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "SEO description", name: "description", widget: "string"}
+      - {label: "SEO description", name: "description", widget: "text", required: false}
+      - {label: "SEO keywords", name: "keywords", widget: "string", required: false}
       
   
   - name: "Authors"
