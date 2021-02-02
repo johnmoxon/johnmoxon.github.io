@@ -43,12 +43,14 @@ collections:
           - {label: "Author", name: "author", widget: "string"}
           - {label: "Source  site", name: "source", widget: "string"}
           - {label: "Source  URL", name: "url", widget: "string"}
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        allow_add: true
-        label_singular: 'Add tag'
-        min: 1
+      - name: tags
+        widget: select
+        multiple: true
+        create: true
+        selectFrom:
+          - collection: posts
+            field: tags
+      - {label: 'Tags', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
       - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
