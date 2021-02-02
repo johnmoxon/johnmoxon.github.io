@@ -2,12 +2,12 @@ backend:
   name: github
   repo: johnmoxon/johnmoxon.github.io
   branch: stage 
-  site_domain: stage.jmoxon.net
+  site_domain: www.jmoxon.net
 
-publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 
 collections:
+
   - name: "Posts" # Used in routes, e.g. /admin/collections/blog
     label: "Posts" # Used in the UI
     folder: "_posts/" # The path to the folder where the documents are stored
@@ -16,18 +16,43 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "featured", widget: "image"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "leadership"
+          - "data"
+          - "fintech"
+          - "payments"
+          - "product management"
+      - label: 'Author'
+        name: 'author'
+        widget: 'relation'
+        collection: 'Authors'
+        display_fields: [name]
+        search_fields: [name]
+        value_field: 'name'
+      - label: 'Image'
+        name: 'image'
+        widget: 'object'
+        fields:
+          - {label: "Image", name: "path", widget: "image"}
+          - {label: "Author", name: "author", widget: "string"}
+          - {label: "Source  site", name: "source", widget: "string"}
+          - {label: "Source  URL", name: "url", widget: "string"}
+      - label: 'Tags' 
+        name: 'tags' 
+        widget: 'list'
+        label_singular: 'Add tag'
+        min: 1
+      - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
+      - {label: 'Summary', name: 'summary', widget: 'text'}
+      - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {
-        label: 'Author',
-        name: 'author',
-        widget: 'relation',
-        collection: 'Authors',
-        display_fields: [name],
-        search_fields: [name],
-        value_field: 'name',
-      }
-
+      - {label: "SEO description", name: "description", widget: "string"}
+      
+  
   - name: "Authors"
     label: "Authors"
     folder: "_authors/"
@@ -50,12 +75,12 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Summary", name: "summary", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-
+  
   - name: "Pages"
     label: "Pages"
     folder: "_pages/"
     create: true # Allow users to create
-    slug: "{{slug}}"
+    slug: {{slug}}
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
@@ -67,22 +92,22 @@ collections:
         time_format: "HH:mm" # e.g. 21:07
         format: "LLL"
         picker_utc: false
-      - {label: "Permalink", name: "permalink", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
+
   - name: "config"
-    label: "Config"
-    editor:
-      preview: false
-    files:
-      - label: "Navigation"
-        name: "navigation"
-        file: "_data/navigation.yml"
-        fields:
-          - label: "Navigation Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Link, name: link, widget: string}
-      
+  label: "Config"
+  editor:
+    preview: false
+  files:
+    - label: "Navigation"
+      name: "navigation"
+      file: "_data/navigation.yml"
+      fields:
+        - label: "Navigation Items"
+          name: "items"
+          widget: "list"
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Link, name: link, widget: string}
+    
