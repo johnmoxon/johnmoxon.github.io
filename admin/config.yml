@@ -43,13 +43,11 @@ collections:
           - {label: "Author", name: "author", widget: "string"}
           - {label: "Source  site", name: "source", widget: "string"}
           - {label: "Source  URL", name: "url", widget: "string"}
-      - name: tags
-        widget: select
-        multiple: true
-        create: true
-        selectFrom:
-          - collection: posts
-            field: tags
+      - label: "Tags"
+        name: 'tags'
+        widget: "list"
+        summary: '{{fields.tags}}'
+        field: {label: 'tag', name: 'tag', widget: 'string'}
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
       - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
