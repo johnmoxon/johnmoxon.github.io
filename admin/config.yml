@@ -4,6 +4,7 @@ backend:
   branch: stage 
   site_domain: stage.jmoxon.net
 
+publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 
 collections:
