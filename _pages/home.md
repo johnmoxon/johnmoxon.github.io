@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: error
 title: Launching soon
 headline: John Moxon.
 quote: "We can not solve our problems with the same level of thinking that created them."
