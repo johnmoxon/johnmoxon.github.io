@@ -126,6 +126,7 @@ collections:
           - label: 'Tags'
             name: 'items'
             widget: 'list'
+            summary: '{{fields.tag}}'
             field: {label: Tag, name: tag, widget: string}
       - label: 'Categories'
         name: 'categories'
@@ -134,5 +135,6 @@ collections:
           - label: 'Categories'
             name: 'items'
             widget: 'list'
+            summary: '{{fields.category}}'
             field: {label: Category, name: category, widget: string}
     
