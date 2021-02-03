@@ -24,3 +24,9 @@ TODO: this should be moved to theme/../page.html
 Hi! You've caught me while I'm still getting ready! Wow that's a little embarassing!
 
 I'm currently preparing a new site where I will publish some of the articles I've being writing on fintech, technology and leadership. For now if you've landed here with a question or would like to get in touch, please use one of the links above
+
+
+<!-- include the widget -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  
