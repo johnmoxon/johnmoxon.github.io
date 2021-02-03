@@ -49,11 +49,11 @@ collections:
       - label: "Tags"
         name: 'tags'
         widget: "list"
-        summary: '{{fields.tags}}'
+        summary: '{{field.tag}}'
         field: {label: 'tag', name: 'tag', widget: 'string'}
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
-      - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
+      - {label: 'Permalink', name: 'permalink', widget: 'string', default: "/{{fields.category}}/{{year}}/{{month}}/{{slug}}"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "SEO description", name: "description", widget: "text", required: false}
       - {label: "SEO keywords", name: "keywords", widget: "string", required: false}
