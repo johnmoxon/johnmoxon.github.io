@@ -25,13 +25,20 @@ collections:
       - {label: 'Published', name: published, widget: 'boolean', default: true }
       - label: 'Category'
         name: 'category'
-        widget: 'select'
-        options:
-          - 'leadership'
-          - 'data'
-          - 'fintech'
-          - 'payments'
-          - 'product management'
+        widget: 'relation'
+        collection: 'Categories'
+        display_fields: [category]
+        search_fields: [category]
+        value_field: 'category'
+      # - label: 'Category'
+      #   name: 'category'
+      #   widget: 'select'
+      #   options:
+      #     - 'leadership'
+      #     - 'data'
+      #     - 'fintech'
+      #     - 'payments'
+      #     - 'product management'
       - label: 'Author'
         name: 'author'
         widget: 'relation'
@@ -55,7 +62,22 @@ collections:
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
       - {label: 'Permalink', name: 'permalink', widget: 'string', default: null, required: false}
-      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        default: >-
+         	1. What is your business goal - care about what you're writing
+          2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed
+          3. Seek out data that backs up your main idea. Don't discount your own experience
+          4. Organise. What structure helps communicate your point? Some options are a list, a how-to guide, and a client narrative.
+          5. Write to one person. Imagine the one person you're helping and wrote to them. Use 'you' not they/people/them
+          6. Produce the first ugly draft. - show up and throw up. Hey the ideas out don't worry about structure/spelling. Just get it down
+          7. Walk away. Give ideas time to mature. Preferably a day or more
+          8. Rewrite and reshape the mess. Swap places with your reader.
+          9. Give it a great headline. Make it irresistible
+          10. Have someone edit it***
+          11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
+          12. Publish but ask one more question. What next? Read more? Subscribe? But something?
       - {label: 'SEO description', name: 'description', widget: 'text', required: false}
       - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
   
