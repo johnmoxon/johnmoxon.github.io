@@ -26,10 +26,10 @@ collections:
       - label: 'Category'
         name: 'category'
         widget: 'relation'
-        collection: 'Categories'
-        display_fields: [category]
-        search_fields: [category]
-        value_field: 'category'
+        file: 'config'
+        display_fields: ["config.categories.items"]
+        search_fields: ["config.categories.items"]
+        value_field: "config.categories.items"
       # - label: 'Category'
       #   name: 'category'
       #   widget: 'select'
@@ -66,7 +66,8 @@ collections:
         name: 'body'
         widget: 'markdown'
         default: >-
-         	1. What is your business goal - care about what you're writing
+          ## Writing GPS 
+          1. What is your business goal - care about what you're writing
           2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed
           3. Seek out data that backs up your main idea. Don't discount your own experience
           4. Organise. What structure helps communicate your point? Some options are a list, a how-to guide, and a client narrative.
