@@ -26,10 +26,11 @@ collections:
       - label: 'Category'
         name: 'category'
         widget: 'relation'
-        file: 'config'
-        display_fields: ["config.*.category"]
-        search_fields: ["config.*.category"]
-        value_field: "config.*.category"
+        collection: "config"
+        file: 'categories'
+        display_fields: ["categories.*.category"]
+        search_fields: ["categories.*.category"]
+        value_field: "categories.*.category"
       # - label: 'Category'
       #   name: 'category'
       #   widget: 'select'
