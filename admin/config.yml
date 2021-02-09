@@ -27,9 +27,9 @@ collections:
         name: 'category'
         widget: 'relation'
         file: 'config'
-        display_fields: ["config.categories.items"]
-        search_fields: ["config.categories.items"]
-        value_field: "config.categories.items"
+        display_fields: ["config.categories.items.category"]
+        search_fields: ["config.categories.items.category"]
+        value_field: "config.categories.items.category"
       # - label: 'Category'
       #   name: 'category'
       #   widget: 'select'
