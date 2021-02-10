@@ -1,31 +1,57 @@
 backend:
-  name: github
+  name: git-gateway
   repo: johnmoxon/johnmoxon.github.io
   branch: stage 
   site_domain: www.jmoxon.net
+  site_url: https://stage.jmoxon.net
+  display_url: https://stage.jmoxon.net
 
-media_folder: "assets/uploads"
+# when using the default proxy server port
+local_backend: true
+
+media_folder: 'assets/uploads'
+publish_mode: editorial_workflow
+editor:
+  preview: false
 
 collections:
 
-  - name: "Posts" # Used in routes, e.g. /admin/collections/blog
-    label: "Posts" # Used in the UI
-    folder: "_posts/" # The path to the folder where the documents are stored
+  - name: 'Posts' # Used in routes, e.g. /admin/collections/blog
+    label: 'Posts' # Used in the UI
+    folder: '_posts/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        options:
-          - "leadership"
-          - "data"
-          - "fintech"
-          - "payments"
-          - "product management"
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
+      - {label: 'Published', name: published, widget: 'boolean', default: true }
+      - label: 'Category'
+        name: 'category'
+        widget: 'relation'
+        collection: "config"
+        file: 'categories'
+        # display_fields: ["items.*.category"]
+        search_fields: ["items.*"]
+        value_field: "items.*"
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'relation'
+        collection: "config"
+        file: 'tags'
+        multiple: true
+        # display_fields: ["items.*.category"]
+        search_fields: ["items.*"]
+        value_field: "items.*"
+      # - label: 'Category'
+      #   name: 'category'
+      #   widget: 'select'
+      #   options:
+      #     - 'leadership'
+      #     - 'data'
+      #     - 'fintech'
+      #     - 'payments'
+      #     - 'product management'
       - label: 'Author'
         name: 'author'
         widget: 'relation'
@@ -37,77 +63,126 @@ collections:
         name: 'image'
         widget: 'object'
         fields:
-          - {label: "Image", name: "path", widget: "image"}
-          - {label: "Author", name: "author", widget: "string"}
-          - {label: "Source  site", name: "source", widget: "string"}
-          - {label: "Source  URL", name: "url", widget: "string"}
-      - label: 'Tags' 
-        name: 'tags' 
-        widget: 'list'
-        label_singular: 'Add tag'
-        min: 1
+          - {label: 'Image', name: 'path', widget: 'image'}
+          - {label: 'Author', name: 'author', widget: 'string'}
+          - {label: 'Source  site', name: 'source', widget: 'string'}
+          - {label: 'Source  URL', name: 'url', widget: 'string'}
+      # - label: 'Tags'
+      #   name: 'tags'
+      #   widget: 'list'
+      #   summary: '{{fields.tag}}'
+      #   field: {label: 'tag', name: 'tag', widget: 'string'}
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
-      - {label: 'Permalink', name: 'permalink', widget: 'string', required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "SEO description", name: "description", widget: "string"}
-      
+      - {label: 'Permalink', name: 'permalink', widget: 'string', default: null, required: false}
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        default: >-
+          ## Writing GPS
+
+          1. What is your business goal - care about what you're writing
+
+          2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed
+
+          3. Seek out data that backs up your main idea. Don't discount your own experience
+
+          4. Organise. What structure helps communicate your point? Some options are a list, a how-to guide, and a client narrative.
+
+          5. Write to one person. Imagine the one person you're helping and wrote to them. Use 'you' not they/people/them
+
+          6. Produce the first ugly draft. - show up and throw up. Hey the ideas out don't worry about structure/spelling. Just get it down
+
+          7. Walk away. Give ideas time to mature. Preferably a day or more
+
+          8. Rewrite and reshape the mess. Swap places with your reader.
+
+          9. Give it a great headline. Make it irresistible
+
+          10. Have someone edit it***
+
+          11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
+
+          12. Publish but ask one more question. What next? Read more? Subscribe? But something?
+      - {label: 'SEO description', name: 'description', widget: 'text', required: false}
+      - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
   
-  - name: "Authors"
-    label: "Authors"
-    folder: "_authors/"
+  - name: 'Authors'
+    label: 'Authors'
+    folder: '_authors/' 
     create: true # Allow users to create
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "bio"}
-      - {label: "Short name", name: "short_name", widget: "string"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Position", name: "position", widget: "string"}
-      - label: "social"
-        name: "social"
-        widget: "object"
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio'}
+      - {label: 'Short name', name: 'short_name', widget: 'string'}
+      - {label: 'Name', name: 'name', widget: 'string'}
+      - {label: 'Position', name: 'position', widget: 'string'}
+      - label: 'social'
+        name: 'social'
+        widget: 'object'
         collapsed: true
         fields:
-          - {label: "LinkedIn", name: "linkedin", widget: "string"}
-          - {label: "Twitter", name: "twitter", widget: "string"}
-          - {label: "medium", name: "medium", widget: "string"}
-      - {label: "Email", name: "email", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Summary", name: "summary", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+          - {label: 'LinkedIn', name: 'linkedin', widget: 'string'}
+          - {label: 'Twitter', name: 'twitter', widget: 'string'}
+          - {label: 'medium', name: 'medium', widget: 'string'}
+      - {label: 'Email', name: 'email', widget: 'string'}
+      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Summary', name: 'summary', widget: 'text'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
   
-  - name: "Pages"
-    label: "Pages"
-    folder: "_pages/"
+  - name: 'Pages'
+    label: 'Pages'
+    folder: '_pages/'
     create: true # Allow users to create
-    slug: {{slug}}
+    slug: '{{slug}}'
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
-        date_format: "YYYY-MM-DD" # e.g. 24.12.2021
-        time_format: "HH:mm" # e.g. 21:07
-        format: "LLL"
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Subtitle', name: 'subtitle', widget: 'string'}
+      - label: 'Date'
+        name: 'date'
+        widget: 'datetime'
+        date_format: 'YYYY-MM-DD' # e.g. 24.12.2021
+        time_format: 'HH:mm' # e.g. 21:07
+        format: 'LLL'
         picker_utc: false
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'Permalink', name: 'permalink', widget: 'string'}
+      - {label: 'SEO description', name: 'description', widget: 'text', required: false}
+      - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
 
 
-  - name: "config"
-  label: "Config"
-  editor:
-    preview: false
-  files:
-    - label: "Navigation"
-      name: "navigation"
-      file: "_data/navigation.yml"
-      fields:
-        - label: "Navigation Items"
-          name: "items"
-          widget: "list"
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Link, name: link, widget: string}
+  - name: 'config'
+    label: 'Config'
+    editor:
+      preview: false
+    files:
+      - label: 'Navigation'
+        name: 'navigation'
+        file: '_data/navigation.yml'
+        fields:
+          - label: 'Navigation Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
+      - label: 'Tags'
+        name: 'tags'
+        file: '_data/tags.yml'
+        fields:
+          - label: 'Tags'
+            name: 'items'
+            widget: 'list'
+            summary: '{{fields.tag}}'
+            field: {label: Tag, name: tag, widget: string}
+      - label: 'Categories'
+        name: 'categories'
+        file: '_data/categories.yml'
+        fields:
+          - label: 'Categories'
+            name: 'items'
+            widget: 'list'
+            summary: '{{fields.category}}'
+            field: {label: Category, name: category, widget: string}
     
