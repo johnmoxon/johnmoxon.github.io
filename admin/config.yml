@@ -7,7 +7,9 @@ backend:
   display_url: https://stage.jmoxon.net
 
 # when using the default proxy server port
-local_backend: true
+local_backend:
+  allowed_hosts: ["ca447c05fbb743779c1482e6a4e5e691.vfs.cloud9.us-east-2.amazonaws.com", 'localhost', '127.0.0.1', '0.0.0.0','amazonaws.com', 'ca447c05fbb743779c1482e6a4e5e691.vfs.cloud9.us-east-2.amazonaws.com']
+  url: "http://18.217.184.111:8080/api/v1" #Used when developing in AWS c9 / otherwise comment out
 
 media_folder: 'assets/uploads'
 publish_mode: editorial_workflow
