@@ -6,6 +6,16 @@ backend:
   site_url: https://stage.jmoxon.net
   display_url: https://stage.jmoxon.net
 
+# when using the default proxy server port
+local_backend:
+  allowed_hosts: 
+    - 'localhost'
+    - '127.0.0.1'
+    - '0.0.0.0'
+    - '3.140.190.224'
+    - 'ca447c05fbb743779c1482e6a4e5e691.vfs.cloud9.us-east-2.amazonaws.com'
+  url: "http://3.140.190.224:8080/api/v1" #Used when developing in AWS c9 / otherwise comment out
+
 media_folder: 'assets/uploads'
 publish_mode: editorial_workflow
 editor:
@@ -28,18 +38,18 @@ collections:
         widget: 'relation'
         collection: "config"
         file: 'categories'
-        display_fields: ["categories.items.category"]
-        search_fields: ["categories.items.category"]
-        value_field: "categories.items.category"
-      # - label: 'Category'
-      #   name: 'category'
-      #   widget: 'select'
-      #   options:
-      #     - 'leadership'
-      #     - 'data'
-      #     - 'fintech'
-      #     - 'payments'
-      #     - 'product management'
+        search_fields: ["items.*"]
+        value_field: "items.*"
+        
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'relation'
+        collection: "config"
+        file: 'tags'
+        multiple: true
+        search_fields: ["items.*"]
+        value_field: "items.*"
+        
       - label: 'Author'
         name: 'author'
         widget: 'relation'
@@ -47,6 +57,7 @@ collections:
         display_fields: [name]
         search_fields: [name]
         value_field: 'name'
+        
       - label: 'Image'
         name: 'image'
         widget: 'object'
@@ -55,57 +66,44 @@ collections:
           - {label: 'Author', name: 'author', widget: 'string'}
           - {label: 'Source  site', name: 'source', widget: 'string'}
           - {label: 'Source  URL', name: 'url', widget: 'string'}
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'list'
-        summary: '{{fields.tag}}'
-        field: {label: 'tag', name: 'tag', widget: 'string'}
+          
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
       - {label: 'Permalink', name: 'permalink', widget: 'string', default: null, required: false}
+      
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
         default: >-
-          ## Writing GPS 
+          ## Writing GPS
+
           1. What is your business goal - care about what you're writing
+
           2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed
+
           3. Seek out data that backs up your main idea. Don't discount your own experience
+
           4. Organise. What structure helps communicate your point? Some options are a list, a how-to guide, and a client narrative.
+
           5. Write to one person. Imagine the one person you're helping and wrote to them. Use 'you' not they/people/them
+
           6. Produce the first ugly draft. - show up and throw up. Hey the ideas out don't worry about structure/spelling. Just get it down
+
           7. Walk away. Give ideas time to mature. Preferably a day or more
+
           8. Rewrite and reshape the mess. Swap places with your reader.
+
           9. Give it a great headline. Make it irresistible
+
           10. Have someone edit it***
+
           11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
+
           12. Publish but ask one more question. What next? Read more? Subscribe? But something?
+          
       - {label: 'SEO description', name: 'description', widget: 'text', required: false}
       - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
-  
-  - name: 'Authors'
-    label: 'Authors'
-    folder: '_authors/'
-    create: true # Allow users to create
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    fields: # The fields for each document, usually in front matter
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio'}
-      - {label: 'Short name', name: 'short_name', widget: 'string'}
-      - {label: 'Name', name: 'name', widget: 'string'}
-      - {label: 'Position', name: 'position', widget: 'string'}
-      - label: 'social'
-        name: 'social'
-        widget: 'object'
-        collapsed: true
-        fields:
-          - {label: 'LinkedIn', name: 'linkedin', widget: 'string'}
-          - {label: 'Twitter', name: 'twitter', widget: 'string'}
-          - {label: 'medium', name: 'medium', widget: 'string'}
-      - {label: 'Email', name: 'email', widget: 'string'}
-      - {label: 'Image', name: 'image', widget: 'image'}
-      - {label: 'Summary', name: 'summary', widget: 'text'}
-      - {label: 'Body', name: 'body', widget: 'markdown'}
-  
+ 
   - name: 'Pages'
     label: 'Pages'
     folder: '_pages/'
@@ -114,7 +112,9 @@ collections:
     fields:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Subtitle', name: 'subtitle', widget: 'string'}
+      - {label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
+      - {label: 'Published', name: published, widget: 'boolean', default: true }
+      
       - label: 'Date'
         name: 'date'
         widget: 'datetime'
@@ -122,12 +122,39 @@ collections:
         time_format: 'HH:mm' # e.g. 21:07
         format: 'LLL'
         picker_utc: false
+        
       - {label: 'Body', name: 'body', widget: 'markdown'}
-      - {label: 'Permalink', name: 'permalink', widget: 'string'}
+      - {label: 'Permalink', name: 'permalink', widget: 'string', default: null}
       - {label: 'SEO description', name: 'description', widget: 'text', required: false}
       - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
 
-
+  
+  - name: 'Authors'
+    label: 'Authors'
+    folder: '_authors/' 
+    create: true # Allow users to create
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields: # The fields for each document, usually in front matter
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio'}
+      - {label: 'Short name', name: 'short_name', widget: 'string'}
+      - {label: 'Name', name: 'name', widget: 'string'}
+      - {label: 'Position', name: 'position', widget: 'string', required: false}
+      - {label: 'Published', name: published, widget: 'boolean', default: true }
+      - label: 'social'
+        name: 'social'
+        widget: 'object'
+        collapsed: true
+        fields:
+          - {label: 'LinkedIn', name: 'linkedin', widget: 'string', required: false}
+          - {label: 'Twitter', name: 'twitter', widget: 'string', required: false}
+          - {label: 'medium', name: 'medium', widget: 'string', required: false}
+      - {label: 'Email', name: 'email', widget: 'string'}
+      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Summary', name: 'summary', widget: 'text'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'SEO description', name: 'description', widget: 'text', required: false}
+      - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
+  
   - name: 'config'
     label: 'Config'
     editor:
@@ -143,6 +170,7 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Link, name: link, widget: string}
+              
       - label: 'Tags'
         name: 'tags'
         file: '_data/tags.yml'
@@ -152,6 +180,7 @@ collections:
             widget: 'list'
             summary: '{{fields.tag}}'
             field: {label: Tag, name: tag, widget: string}
+            
       - label: 'Categories'
         name: 'categories'
         file: '_data/categories.yml'
