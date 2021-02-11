@@ -1,14 +1,15 @@
 ---
+summary: null
 layout: post
+author: null
 title: Resume
-subtitle: "Resumé of one John Edward Felonious Moxon"
-date: 2020-06-04 12:39
-category: 
-author: 
-tags: []
-summary: 
-group: navigation
+subtitle: Resumé of one John Edward Felonious Moxon
+published: false
+date: February 10, 2021 10:02 PM
 permalink: /about/resume
+tags: []
+category: null
+group: navigation
 ---
 
 <!-- 

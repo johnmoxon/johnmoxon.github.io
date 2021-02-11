@@ -1,6 +1,7 @@
 ---
 title: robots
 permalink: /robots.txt
+published: false
 sitemap: 
 ---
 User-agent: *
