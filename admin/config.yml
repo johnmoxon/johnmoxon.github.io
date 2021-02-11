@@ -12,9 +12,9 @@ local_backend:
     - 'localhost'
     - '127.0.0.1'
     - '0.0.0.0'
-    - '18.217.184.111'
+    - '3.140.190.224'
     - 'ca447c05fbb743779c1482e6a4e5e691.vfs.cloud9.us-east-2.amazonaws.com'
-  url: "http://18.217.184.111:8080/api/v1" #Used when developing in AWS c9 / otherwise comment out
+  url: "http://3.140.190.224:8080/api/v1" #Used when developing in AWS c9 / otherwise comment out
 
 media_folder: 'assets/uploads'
 publish_mode: editorial_workflow
@@ -103,30 +103,7 @@ collections:
           
       - {label: 'SEO description', name: 'description', widget: 'text', required: false}
       - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
-  
-  - name: 'Authors'
-    label: 'Authors'
-    folder: '_authors/' 
-    create: true # Allow users to create
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    fields: # The fields for each document, usually in front matter
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio'}
-      - {label: 'Short name', name: 'short_name', widget: 'string'}
-      - {label: 'Name', name: 'name', widget: 'string'}
-      - {label: 'Position', name: 'position', widget: 'string', required: false}
-      - label: 'social'
-        name: 'social'
-        widget: 'object'
-        collapsed: true
-        fields:
-          - {label: 'LinkedIn', name: 'linkedin', widget: 'string', required: false}
-          - {label: 'Twitter', name: 'twitter', widget: 'string', required: false}
-          - {label: 'medium', name: 'medium', widget: 'string', required: false}
-      - {label: 'Email', name: 'email', widget: 'string'}
-      - {label: 'Image', name: 'image', widget: 'image'}
-      - {label: 'Summary', name: 'summary', widget: 'text'}
-      - {label: 'Body', name: 'body', widget: 'markdown'}
-  
+ 
   - name: 'Pages'
     label: 'Pages'
     folder: '_pages/'
@@ -135,7 +112,8 @@ collections:
     fields:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Subtitle', name: 'subtitle', widget: 'string'}
+      - {label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
+      - {label: 'Published', name: published, widget: 'boolean', default: true }
       
       - label: 'Date'
         name: 'date'
@@ -150,7 +128,33 @@ collections:
       - {label: 'SEO description', name: 'description', widget: 'text', required: false}
       - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
 
-
+  
+  - name: 'Authors'
+    label: 'Authors'
+    folder: '_authors/' 
+    create: true # Allow users to create
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields: # The fields for each document, usually in front matter
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio'}
+      - {label: 'Short name', name: 'short_name', widget: 'string'}
+      - {label: 'Name', name: 'name', widget: 'string'}
+      - {label: 'Position', name: 'position', widget: 'string', required: false}
+      - {label: 'Published', name: published, widget: 'boolean', default: true }
+      - label: 'social'
+        name: 'social'
+        widget: 'object'
+        collapsed: true
+        fields:
+          - {label: 'LinkedIn', name: 'linkedin', widget: 'string', required: false}
+          - {label: 'Twitter', name: 'twitter', widget: 'string', required: false}
+          - {label: 'medium', name: 'medium', widget: 'string', required: false}
+      - {label: 'Email', name: 'email', widget: 'string'}
+      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Summary', name: 'summary', widget: 'text'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'SEO description', name: 'description', widget: 'text', required: false}
+      - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
+  
   - name: 'config'
     label: 'Config'
     editor:
