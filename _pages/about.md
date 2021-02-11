@@ -1,8 +1,9 @@
 ---
 layout: page
-title:  "about"
-subtitle: "Front end developer and project manager"
-date:  2014-06-11 08:20:47
+title: about
+subtitle: Front end developer and project manager
+published: false
+date: 2014-06-11 08:20:47
 group: navigation
 permalink: /about/
 ---

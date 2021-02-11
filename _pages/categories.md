@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Categories
-header: Posts By Category
-group: navigation
 permalink: /categories/
+header: Posts By Category
+subtitle: categories
+published: false
+date: February 10, 2021 10:00 PM
+group: navigation
 ---
 {% comment %} {% include JB/setup %} {% endcomment %}
 
