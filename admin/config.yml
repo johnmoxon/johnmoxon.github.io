@@ -19,13 +19,11 @@ local_backend:
 media_folder: 'assets/uploads'
 publish_mode: editorial_workflow
 editor:
-  preview: false
+  preview: true
 
 collections:
 
   - name: 'Posts' # Used in routes, e.g. /admin/collections/blog
-    editor:
-      preview: true
     label: 'Posts' # Used in the UI
     folder: '_posts/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
