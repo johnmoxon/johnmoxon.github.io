@@ -48,7 +48,7 @@ I've written about habit forming, so my goal in 2021 is to form key-stone habits
 
 Who knows? it could turn into a business, an opportunity or relegated to page 68 on the app store, but for now starting is enough.
 
-\## The project
+## The project
 
 I love to cook. It relaxes me, brings out my creative flair, the smells and flavours excite me.  How can I improve this recipe or make something completely new?  Maybe this will be a taste sensation!
 
@@ -56,7 +56,9 @@ But.. The online recipe experience frustrates me endlessly,
 
 \[insert salt bae meme]
 
-\## But I'm too busy!
+![This is alt text](/assets/uploads/you-x-ventures-vbxyfxlgpjm-unsplash.jpg "This is the title")
+
+## But I'm too busy!
 
 Suck it! I'm not going to go into life challenges.  I have those, and so does everyone else who does not have the luxury of not having to work. This is about choices and its all too easy to make the easy choice, to sit on the sofa eating dinner watching Netflix. I will do that from time to time, I like doing that, but I will make time to do this.
 
