@@ -21,9 +21,21 @@ summary: >
 ---
 ## Writing GPS
 
-1. What is your business goal - care about what you're writing - *I can show that I manage product and think about how to build and iterate on that product. Start small iterate, lean startup way*
+1. What is your business goal - care about what you're writing - *I can show that I manage product and think about how to build and iterate on that product. Start small iterate, lean startup way.*
+
+   > *To put it another way this post is about, motivation, starting something, building experience in product-management*
 2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed - *So what? can people learn from my product journey and apply to their own projects*
+
+   > *My reader is involved in product management or product development, or they have a product or project they have in some state of initial progress. So what?*
+   >
+   > *They know they could achieve something, they are excited about the prospect, but something is stopping them - so what*
+   >
+   > *This article will propose simple steps and small changes to make sure that it gets done.*
 3. Seek out data that backs up your main idea. Don't discount your own experience - *Lean startups, what else?*
+
+   > *Leader with no title*\
+   > Lean Startup\
+   > Power of Habit
 4. Organise. What structure helps communicate your point? Some options are a list, a how-to guide, and a client narrative. - *A client narrative I think for this one, this will be a series and this is really the short setup.*
 5. Write to one person. Imagine the one person you're helping and wrote to them. Use 'you' not they/people/them - *The one person is a product manager tasked with developing a successful product*
 6. Produce the first ugly draft. - show up and throw up. Hey the ideas out don't worry about structure/spelling. Just get it down
@@ -60,6 +72,6 @@ But.. The online recipe experience frustrates me endlessly,
 
 ## But I'm too busy!
 
-Suck it! I'm not going to go into life challenges.  I have those, and so does everyone else who does not have the luxury of not having to work. This is about choices and its all too easy to make the easy choice, to sit on the sofa eating dinner watching Netflix. I will do that from time to time, I like doing that, but I will make time to do this.
+Suck it! I'm not going to go into life challenges.  I have those, we all do. Finding time to improve my self, to learn and do something different is about choices. It's very easy to make the easy choice, to sit on the sofa eating dinner watching Netflix. I will do that from time to time, I like doing that, but I will make time to do this.
 
 5am starts, sounds horrendous, and I have failed before, so I need to start making this happen.
