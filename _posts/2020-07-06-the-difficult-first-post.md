@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why it's so hard to start something new
+title: Why it's hard to start new things
 subtitle: And just about impossible to stick to it
 published: true
 date: February 17, 2021 8:33 AM
