@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Tracking my own product journey (Part 1)
+title: My own product journey (Part 1)
 subtitle: Covid made me do it
 published: true
+date: December 31, 2020 6:56 AM
 category: product-management
 tags:
   - product-design
@@ -46,9 +47,15 @@ summary: >
 11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 12. Publish but ask one more question. What next? Read more? Subscribe? But something?
 
-Covid projects, who's got one?! I've had a few, built the kids a fort, finished landscaping the back yard, but there's been a few digital projects I've had planned for longer than I'm willing to admit that I've never found time to really take seriously - or at least that was the excuse I used to justify it.
+Covid projects, who's got one?! I've had a few, built a fort for the kids, finished landscaping the backyard, and finished a handful of books. But what about that passion project? the one you've had planned for longer than your willing to admit? that you've never found the time to take seriously? - or at least that's the excuse!
 
-Like many of my digital peers, my project folder is littered with ideas and passion projects in various states of dust-gathering to be picked up 'one-day' and turned into the next big thing.  Well covid certainly threw us a curve-ball (or six) and challenges for all from job-security, concern over physical health and the impact of our collective mental health, and I am no exception to that. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
+Speaking to my colleagues in digital fields, I'm not alone. Many of us have project folders littered with half-started ideas gathering dust, because one-day...
+
+### Thanks Covid! Let's Do this!
+
+\[meme here - I can aaccomplish anything!]
+
+Well 2020 certainly threw us a curve-ball didn't it! the challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
 
 I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish!  That kind of drive is infectious and since you can't bottle motivation, then its time to start!
 
