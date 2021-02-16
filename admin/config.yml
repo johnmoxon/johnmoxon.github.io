@@ -27,13 +27,13 @@ collections:
     label: 'Posts' # Used in the UI
     folder: '_posts/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    preview_path: '{{category}}/{{year}}/{{month}}/{{day}}/{{slug}}'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template i.e. YYYY-MM-DD-title.md
-    preview_path: '{{category}}/{{slug}}'
     fields: # The fields for each document, usually in front matter
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
-      - {label: 'Published', name: published, widget: 'boolean', default: true }
+      - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
       
       - label: 'Date'
         name: 'date'
@@ -123,7 +123,7 @@ collections:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
-      - {label: 'Published', name: published, widget: 'boolean', default: true }
+      - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
       
       - label: 'Date'
         name: 'date'
@@ -149,7 +149,7 @@ collections:
       - {label: 'Short name', name: 'short_name', widget: 'string'}
       - {label: 'Name', name: 'name', widget: 'string'}
       - {label: 'Position', name: 'position', widget: 'string', required: false}
-      - {label: 'Published', name: published, widget: 'boolean', default: true }
+      - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
       - label: 'social'
         name: 'social'
         widget: 'object'
