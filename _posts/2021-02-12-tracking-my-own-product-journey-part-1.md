@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My own product journey (Part 1)
-subtitle: Covid made me do it
+title: A case for starting now
+subtitle: My product journey
 published: true
 date: December 31, 2020 6:56 AM
 category: product-management
@@ -53,15 +53,18 @@ Speaking to my colleagues in digital fields, I'm not alone. Many of us have proj
 
 ### Thanks Covid! Let's Do this!
 
-\[meme here - I can aaccomplish anything!]
+\[meme here - I can accomplish anything!]
 
-Well 2020 certainly threw us a curve-ball didn't it! the challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
+Well 2020 certainly threw us a curve-ball didn't it! challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
 
-I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish!  That kind of drive is infectious and since you can't bottle motivation, then its time to start!
+I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish! Surrounding yourself with driven people is a great way to boost your own motivation, that kind of drive is infectious even competitive. Motivation can also be fleeting, sporadic and challenging to fit around a busy lifestyle. You can't bottle motivation, so strike while the iron is hot and start today!
 
-> It's not important how we start\
-> It's not important when we start\
-> It's important we start
+> It doesn’t matter when we start. <br>
+> It doesn’t matter where we start. <br>
+> All that matters is that we start.
+> <cite>&mdash; Simon Sinek</cite>
+
+I love that quote from Simon Sinek, starting is often the hardest part as I wrote about in my last post [why it's hard to start new things]({% post_url 2010-07-21-name-of-post %})
 
 I've written about habit forming, so my goal in 2021 is to form key-stone habits in creating. I'm going to start small and work on a passion project I've had in my toolbox for nearly 5 years, right now its unnamed, but I will be writing and tracking its progress (and likely its pitfalls here). Writing is powerful in creating habits and holding yourself accountable, this is where I choose to tell the world about my process of creating and developing something for me.
 
