@@ -80,11 +80,11 @@ collections:
       - {label: 'Comments allowed', name: 'comments', widget: 'boolean', default: true}
       - {label: 'Summary', name: 'summary', widget: 'text'}
       
-      - label: 'Permalink'
-        name: 'permalink'
-        widget: 'string'
-        default: '{{year}}/{{month}}/{{day}}/{{title}}'
-        required: false
+      # - label: 'Permalink'
+      #   name: 'permalink'
+      #   widget: 'string'
+      #   default: null
+      #   required: false
       
       - label: 'Body'
         name: 'body'
