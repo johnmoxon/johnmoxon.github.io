@@ -40,8 +40,9 @@ collections:
         widget: 'datetime'
         date_format: 'YYYY-MM-DD' # e.g. 24.12.2021
         time_format: 'HH:mm' # e.g. 21:07
-        format: 'LLL'
+        format: 'YYYY-MM-DD HH:mm:ss +1000'
         picker_utc: false
+        
       
       - label: 'Category'
         name: 'category'
