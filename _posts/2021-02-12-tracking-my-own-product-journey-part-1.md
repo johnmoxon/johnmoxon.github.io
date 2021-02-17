@@ -10,7 +10,7 @@ tags:
 author: John Moxon
 image:
   path: /assets/uploads/you-x-ventures-vbxyfxlgpjm-unsplash.jpg
-  author: Track this down
+  author: Track this down pls
   source: Pexels?
   url: https:/me.em
 comments: true
