@@ -5,9 +5,9 @@ name: John Moxon
 position: Head of Technology @ Travel Money Groups
 published: true
 social:
-  linkedin: johnmoxon
-  twitter: johnmoxon
-  medium: @johnmoxon
+  linkedin: 'johnmoxon'
+  twitter: 'johnmoxon'
+  medium: '@johnmoxon'
 email: john@jmoxon.net
 image: head-shot-4_3.jpg
 summary: I love helping businesses implement, operationalise and scale digital
