@@ -7,6 +7,8 @@ date: 2020-12-31 18:00:00 +1000
 category: product-management
 tags:
   - product-design
+  - motivation
+  - self-improvement
 author: John Moxon
 image:
   path: /assets/uploads/you-x-ventures-vbxyfxlgpjm-unsplash.jpg
