@@ -55,7 +55,7 @@ This isn't uncommon, chat to any developer, any product manager and ask them how
 
 ### Okay, Thanks Covid! Let's Do this!
 
-![Torn paper saying im-possible with the ]( "Photo by Andrew Wilus from Pexels")
+![Torn paper saying im-possible with the ](/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg "Photo by Andrew Wilus from Pexels")
 
 <figure class="image is-3by2 lazyloaded" data-expand="-1">
   <img data-src="/assets/uploads/pexels-andrew-wilus-5516221.jpg?nf_resize=fit
