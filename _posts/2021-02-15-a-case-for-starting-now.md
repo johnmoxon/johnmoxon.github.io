@@ -3,7 +3,7 @@ layout: post
 title: A case for starting now
 subtitle: My product journey
 published: true
-date: December 31, 2020 6:56 AM
+date: December 30, 2020 6:56 AM
 category: product-management
 tags:
   - product-design
