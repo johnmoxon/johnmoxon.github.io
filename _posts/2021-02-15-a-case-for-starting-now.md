@@ -55,6 +55,14 @@ This isn't uncommon, chat to any developer, any product manager and ask them how
 
 ### Okay, Thanks Covid! Let's Do this!
 
+![Torn paper saying im-possible with the ]( "Photo by Andrew Wilus from Pexels")
+
+<figure class="image is-3by2 lazyloaded" data-expand="-1">
+  <img data-src="/assets/uploads/pexels-andrew-wilus-5516221.jpg?nf_resize=fit
+&amp;w=790" data-lowsrc="/assets/uploads/pexels-andrew-wilus-5516221.jpg?nf_resize=fit&amp;w=100" alt="A case for starting now" class="blur-up lazyloaded" src="/assets/uploads/pexels-andrew-wilus-5516221.jpg?nf_resize=fit
+&amp;w=790">
+</figure>
+
 \[meme here - I can accomplish anything!]
 
 Well 2020 certainly threw us a curve-ball didn't it! challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
