@@ -53,7 +53,7 @@ Covid projects, who's got one?! I've had a few, built a fort for the kids, finis
 
 This isn't uncommon, chat to any developer, any product manager and ask them how many passion projects they started and not finished or never got round to. Like me, you are not alone. I have a fairly expansive bucket of ideas and a library of partially built or never started projects gathering dust, because one-day...
 
-### Okay, Thanks Covid! Let's Do this!
+### Okay, Thanks Covid! Let's Do this!!
 
 ![Torn paper saying im-possible with the ](/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg "Photo by Andrew Wilus from Pexels")
 
