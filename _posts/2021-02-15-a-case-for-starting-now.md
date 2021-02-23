@@ -49,9 +49,9 @@ summary: >
 11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 12. Publish but ask one more question. What next? Read more? Subscribe? But something?
 
-Covid projects, who's got one?! I've had a few, built a fort for the kids, finished landscaping the backyard, and read a handful of books, even built this website! But what about that passion project? the one you've had planned for longer than your willing to admit? the really cool idea you've never found the time to take seriously? - or at least that's the excuse!
+Covid projects, who's got one?! I've had a few, built a fort for the kids, finished landscaping the backyard, read a handful of books, even built this website! But what about that passion project? the one you've had planned for longer than your willing to admit? the really cool idea you've never found the time to take seriously? - or at least that's the excuse!
 
-This isn't uncommon, chat to any developer, any product manager and ask them how many passion projects they started and not finished or never got round to. Like me, you are not alone. I have a fairly expansive bucket of ideas and a library of partially built or never started projects gathering dust, because one-day...
+It's not even uncommon, chat to any developer or product manager and ask them how many passion projects they've started and not finished. You are not alone... I have a fairly expansive list of ideas and a library of partially built or never started projects gathering dust, because one-day...
 
 ### Okay, Thanks Covid! Let's Do this!
 
@@ -63,7 +63,16 @@ This isn't uncommon, chat to any developer, any product manager and ask them how
 &amp;w=790">
 </figure>
 
-\[meme here - I can accomplish anything!]
+My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
+
+Personal projects are a little different. Something that you are already good at, perhaps even trained at and that people actually pay you for. So then why do so many developers and product people fail to deliver on their own visions?  Maybe it's fear.  Starting is the hardest part because its scary, thoughts go straight to, will this be good enough, will it be well received? will my friends think I've gone crazy? Am I crazy?
+
+> The scariest moment is always just before you start.
+> After that things can only get better
+> <cite>&mdash; Stephen King</cite>
+
+
+
 
 Well 2020 certainly threw us a curve-ball didn't it! challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
 
