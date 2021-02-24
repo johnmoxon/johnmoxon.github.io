@@ -49,7 +49,17 @@ summary: >
 11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 12. Publish but ask one more question. What next? Read more? Subscribe? But something?
 
-Covid projects, who's got one?! I've had a few, built a fort for the kids, finished landscaping the backyard, read a handful of books, even built this website! But what about that passion project? the one you've had planned for longer than your willing to admit? the really cool idea you've never found the time to take seriously? - or at least that's the excuse!
+The difficult first post! I've been planning to write about my experience and thoughts now for what seems like an excessively long time. I'm hoping that over time, writing down what I've learned will become second nature, though today, writing is hard! I've got a huge range of topics I'd like to cover, leadership, technology, fair data-value exchange, people leadership, but today it seems apt to start by talking about starting something new.
+
+There are endless articles written like [article 1] and [article 2] that can do a much better job of of covering the fear in starting something completely new like driving, or starting a fitness journey, but what about the things you can already do, but struggle to start for yourself?
+
+My background is in developing digital products and product experiences. I'd like to think I'm pretty good. I've worked in some incredible teams and launched some incredible products that have gone on to be very successful. 
+
+So why is it that I have a folder of my own product ideas, passion projects that have never really got off the ground?
+
+
+
+ out there that talk about the fear and, who's got one?! I've had a few, built a fort for the kids, finished landscaping the backyard, read a handful of books, even built this website! But what about that passion project? the one you've had planned for longer than your willing to admit? the really cool idea you've never found the time to take seriously? - or at least that's the excuse!
 
 It's not even uncommon, chat to any developer or product manager and ask them how many passion projects they've started and not finished. You are not alone... I have a fairly expansive list of ideas and a library of partially built or never started projects gathering dust, because one-day...
 
