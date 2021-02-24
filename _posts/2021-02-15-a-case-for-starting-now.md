@@ -2,7 +2,7 @@
 layout: post
 title: A case for starting now
 subtitle: My product personal journey
-published: false
+published: true
 date: 2020-12-31 18:00:00 +1000
 category: product-management
 tags:
@@ -49,15 +49,17 @@ summary: >
 11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 12. Publish but ask one more question. What next? Read more? Subscribe? But something?
 
-The difficult first post! I've been planning to write about my experience and thoughts now for what seems like an excessively long time. I'm hoping that over time, writing down what I've learned will become second nature, though today, writing is hard! I've got a huge range of topics I'd like to cover, leadership, technology, fair data-value exchange, people leadership, but today it seems apt to start by talking about starting something new.
+The difficult first post! I've been planning to write about my experiences and thoughts now for what seems too long. I'm hoping that over time, writing down what I've learned will become second nature, an extension of the leadership and career journey, though today, writing is hard.
 
-There are endless articles written like [article 1] and [article 2] that can do a much better job of of covering the fear in starting something completely new like driving, or starting a fitness journey, but what about the things you can already do, but struggle to start for yourself?
+I've got many topics I'd like to cover, leadership, technology, fair data-value exchange, the future of technology and society, but today it seems fitting to talk about starting something new.
 
-My background is in developing digital products and product experiences. I'd like to think I'm pretty good. I've worked in some incredible teams and launched some incredible products that have gone on to be very successful. 
+There are endless articles written like \[article 1] and \[article 2] that can do a much better job of of covering the barriers to starting, the fear in learning a new skill, opening yourself to new experiences. But what if its something you are already at? Perhaps even paid for?
+
+I'm talking about passion projects, that idea for a mobile app you had 2 years ago which could have had a million downloads by now, the book you could have written by now, the side-hustle that your friends keep telling you you would be great at.
+
+\[continue here]My background is in developing digital products and product experiences. I'd like to think I'm pretty good. I've worked in some incredible teams and launched some incredible products that have gone on to be very successful. 
 
 So why is it that I have a folder of my own product ideas, passion projects that have never really got off the ground?
-
-
 
  out there that talk about the fear and, who's got one?! I've had a few, built a fort for the kids, finished landscaping the backyard, read a handful of books, even built this website! But what about that passion project? the one you've had planned for longer than your willing to admit? the really cool idea you've never found the time to take seriously? - or at least that's the excuse!
 
@@ -80,9 +82,6 @@ Personal projects are a little different. Something that you are already good at
 > The scariest moment is always just before you start.
 > After that things can only get better
 > <cite>&mdash; Stephen King</cite>
-
-
-
 
 Well 2020 certainly threw us a curve-ball didn't it! challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
 
