@@ -2,7 +2,7 @@
 layout: post
 title: A case for starting now
 subtitle: My product personal journey
-published: true
+published: false
 date: 2020-12-31 18:00:00 +1000
 category: product-management
 tags:
