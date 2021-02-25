@@ -72,8 +72,8 @@ It's not even uncommon, chat to any developer or product manager and ask them ho
 ![Torn paper saying im-possible with the ](/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg "Photo by Andrew Wilus from Pexels")
 
 <figure class="image is-3by2 lazyloaded" data-expand="-1">
-  <img data-src="/assets/uploads/pexels-andrew-wilus-5516221.jpg?nf_resize=fit
-&amp;w=790" data-lowsrc="/assets/uploads/pexels-andrew-wilus-5516221.jpg?nf_resize=fit&amp;w=100" alt="A case for starting now" class="blur-up lazyloaded" src="/assets/uploads/pexels-andrew-wilus-5516221.jpg?nf_resize=fit
+  <img data-src="assets/uploads/pexels-simon-migaj-747964.jpg?nf_resize=fit
+&amp;w=790" data-lowsrc="assets/uploads/pexels-simon-migaj-747964.jpg?nf_resize=fit&amp;w=100" alt="A case for starting now" class="blur-up lazyloaded" src="assets/uploads/pexels-simon-migaj-747964.jpg?nf_resize=fit
 &amp;w=790">
 </figure>
 
