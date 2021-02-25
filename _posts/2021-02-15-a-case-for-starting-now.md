@@ -55,13 +55,15 @@ I've got many topics I'd like to cover, leadership, technology, fair data-value 
 
 There are endless articles written like \[article 1] and \[article 2] that can do a much better job of of covering the barriers to starting, the fear in learning a new skill, opening yourself to new experiences. But what if its something you are already at? Perhaps even paid for?
 
-I'm talking about passion projects, that idea for a mobile app you had 2 years ago which could have had a million downloads by now, the book you could have written by now, the side-hustle that your friends keep telling you you would be great at.
+I'm talking about passion projects, that idea for a mobile app you had 2 years ago which could have had a million downloads by now, the book you could have written by now, the side-hustle that your friends keep telling you you would rock!
+
+### You're not alone.
+
+Chat to any colleague in a creative industry you will find many with similar stories. Folders of ideas and half started projects 
 
 \[continue here]My background is in developing digital products and product experiences. I'd like to think I'm pretty good. I've worked in some incredible teams and launched some incredible products that have gone on to be very successful. 
 
 So why is it that I have a folder of my own product ideas, passion projects that have never really got off the ground?
-
- out there that talk about the fear and, who's got one?! I've had a few, built a fort for the kids, finished landscaping the backyard, read a handful of books, even built this website! But what about that passion project? the one you've had planned for longer than your willing to admit? the really cool idea you've never found the time to take seriously? - or at least that's the excuse!
 
 It's not even uncommon, chat to any developer or product manager and ask them how many passion projects they've started and not finished. You are not alone... I have a fairly expansive list of ideas and a library of partially built or never started projects gathering dust, because one-day...
 
