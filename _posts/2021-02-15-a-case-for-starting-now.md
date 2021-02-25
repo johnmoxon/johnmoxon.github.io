@@ -71,7 +71,10 @@ It's not even uncommon, chat to any developer or product manager and ask them ho
 
 ![Torn paper saying im-possible with the ](/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg "Photo by Andrew Wilus from Pexels")
 
-{% include themes/jmblog-theme/components/img.html src="/assets/uploads/pexels-simon-migaj-747964.jpg" %}
+{% include themes/jmblog-theme/components/img.html 
+src="/assets/uploads/pexels-simon-migaj-747964.jpg" 
+
+%}
 
 [delete]My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
