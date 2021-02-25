@@ -71,11 +71,7 @@ It's not even uncommon, chat to any developer or product manager and ask them ho
 
 ![Torn paper saying im-possible with the ](/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg "Photo by Andrew Wilus from Pexels")
 
-<figure class="image is-3by2 lazyloaded" data-expand="-1">
-  <img data-src="/assets/uploads/pexels-simon-migaj-747964.jpg?nf_resize=fit
-&amp;w=790" data-lowsrc="/assets/uploads/pexels-simon-migaj-747964.jpg?nf_resize=fit&amp;w=100" alt="A case for starting now" class="blur-up lazyloaded" src="/assets/uploads/pexels-simon-migaj-747964.jpg?nf_resize=fit
-&amp;w=790">
-</figure>
+{% include themes/jmblog-theme/components/img.html %}
 
 My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
