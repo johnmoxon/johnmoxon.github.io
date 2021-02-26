@@ -72,13 +72,14 @@ It's not even uncommon, chat to any developer or product manager and ask them ho
 ![Torn paper saying im-possible with the ](/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg "Photo by Andrew Wilus from Pexels")
 
 {% include themes/jmblog-theme/components/img.html 
-src="/assets/uploads/pexels-simon-migaj-747964.jpg" 
-
+  src="/assets/uploads/pexels-simon-migaj-747964.jpg" 
+  alt="This is an alt taggy"
+  img_author="James Nesbit"
+  img_source="Pexels"
+  img_source_url="https://pexels.com"
 %}
 
-{% include themes/jmblog-theme/components/img.html 
-src="/assets/uploads/designer-showing-web-design-layout-sketches-picjumbo-com.jpg"
- %}
+
 
 [delete me]My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
