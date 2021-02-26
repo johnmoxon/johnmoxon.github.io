@@ -30,3 +30,11 @@ Straight out the gates, this post will not help you decide which of your passion
 > It doesn’t matter where we start. <br>
 > All that matters is that we start.
 > <cite>&mdash; Simon Sinek</cite>
+
+{% include themes/jmblog-theme/components/img.html 
+  src="/assets/uploads/pexels-simon-migaj-747964.jpg" 
+  alt="This is an alt taggy"
+  img_author="James Nesbit"
+  img_source="Pexels"
+  img_source_url="https://pexels.com"
+%}
