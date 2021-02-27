@@ -17,10 +17,9 @@ image:
   url: https:/me.em
 comments: true
 summary: >
-  Covid projects, who's got one?! I've had a few, built the kids a fort,
-  finished the back yard,  but there's been a few digital projects I've had
-  planned for quite a few years that I've never found time to really take
-  seriously.
+  Covid has been devastating for all us, some undoubtedly more than others, but
+  it also has given many of us an opportunity we are unlikely to unlikely to see
+  in our lifetimes again (hopefully!)
 permalink: ""
 ---
 ## Writing GPS
