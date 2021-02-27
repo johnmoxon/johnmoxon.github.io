@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A case for starting now
+title: Start your passion project right now!
 subtitle: My product personal journey
 published: true
 date: 2020-12-31 18:00:00 +1000
