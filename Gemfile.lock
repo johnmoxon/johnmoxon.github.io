@@ -196,7 +196,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    jmblog-theme (1.1.9)
+    jmblog-theme (1.2)
       github-pages
     kramdown (2.3.0)
       rexml
