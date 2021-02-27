@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Start your passion project right now!
+title: Start your passion project immediately!
 subtitle: My product personal journey
 published: true
 date: 2020-12-31 18:00:00 +1000
@@ -21,6 +21,7 @@ summary: >
   finished the back yard,  but there's been a few digital projects I've had
   planned for quite a few years that I've never found time to really take
   seriously.
+permalink: 2020/12/31/start-your-passion-project-immediately
 ---
 ## Writing GPS
 
