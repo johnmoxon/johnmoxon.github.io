@@ -21,7 +21,6 @@ summary: >
   finished the back yard,  but there's been a few digital projects I've had
   planned for quite a few years that I've never found time to really take
   seriously.
-permalink: 2020/12/31/start-your-passion-project-immediately
 ---
 ## Writing GPS
 
