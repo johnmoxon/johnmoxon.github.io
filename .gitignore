@@ -1,11 +1,12 @@
 .DS_Store
 _site
+src
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-.archive/
-node_modules/
-# @archive/
+node_modules
+.archive
+@archive
 **/@*
 # Local Netlify folder
 .netlify

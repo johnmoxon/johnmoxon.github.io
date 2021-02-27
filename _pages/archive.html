@@ -5,7 +5,7 @@ header : Post Archive
 permalink: /archive/
 date:  2014-05-03 08:22:47
 ---
-{% include JB/setup %}
+{% comment %} {% include JB/setup %} {% endcomment %}
 
 {% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+{% comment %} {% include JB/posts_collate %} {% endcomment %}

@@ -1,44 +1,41 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# This is a sample _config.yml and can be switched out for another if required
 
-#source: ./_build                    # Current-dir
 destination: ./_site
 include:
   - _pages
+collections:
+  authors:
+    output: true
+
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Learn. Grow. Lead in Tech 
-tagline: "Finding inspiration and adventures in a digital leadership career."
-email: jmoxon@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+title: Learn. Grow. Lead.
+tagline: "Lessons Learned Through A Career In Digital Leadership"
+author: John Moxon
+
+description: >-
   Personal blog for John Moxon | Digital Leader, Life-long-learner,
   Risk mitigator, Technology/Fintech evangelist and amateur 
   beer brewer. Writing articles about what I know and what I learn as I 
   find my own path in my career and life. 
+
 copyright: "copyright John Moxon 2020. All rights reserved."
 license: "copyright John Moxon 2020. All rights reserved."
 
+paginate: 5
+paginate_path: "/articles/page:num/"
 
-permalink: /:categories/:title
+# permalink: /:categories/:title
 relative_permalinks: false
 
 timezone: Australia/Brisbane
 
 quiet: false
 verbose: false
-
-
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://www.jmoxon.net # the base hostname & protocol for your site, e.g. http://example.com
@@ -48,26 +45,23 @@ linkedin_username : https://www.linkedin.com/in/johnmoxon/
 medium_username : https://medium.com/@johnmoxon
 meeting_url: 'https://meetings.hubspot.com/jmoxon'
 
-
-# ---- Analytics ---- #
+# GTM Tracking ID
 analytics:
   gtm:
     tracking_id: GTM-WGHRT3
-  hubspot :
-    tracking_id : '7805952'
-
-
-
 
 # Build settings
 markdown: kramdown
 theme: jmblog-theme
-  #plugins:
-  #  - jekyll-gist
-  #- jekyll-mentions
-  #- jekyll-paginate
-  #- jekyll-feed
-  #- jekyll-sitemap
+
+# Currently only plugins used that are supported on github pages, though now using netlify so may swap out for pagination v2 in the future
+plugins:
+- jekyll-gist
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
 
 
 # Exclude from processing.
@@ -84,3 +78,27 @@ theme: jmblog-theme
 
 kramdown:
   input: GFM
+
+
+# The URL for the staticman API bridge endpoint
+# You will want to modify some of the values:
+#  ${github-username}: the username of the account with which you publish your blog
+#  ${blog-repo}: the name of your blog repository in github
+#  master: this the branch out of which your blog is published, often master or gh-pages
+#  ${bridge_app_name}: the name you chose in Heroku for your bridge API
+#  comments: the so-called property, this defines the key in staticman.yml where the configuration is found
+#
+# for me, this line reads:
+# https://staticman-travisdownsio.herokuapp.com/v2/entry/travisdowns/travisdowns.github.io/master/comments
+# staticman_url: https://jmoxon-blog-comments.herokuapp.com/v2/entry/johnmoxon/johnmoxon.github.io/master/comments
+staticman_url: https://jmoxon-blog-comments.herokuapp.com/v2/entry/johnmoxon/johnmoxon.github.io/master/comments
+
+# reCaptcha configuration info: the exact same site key and *encrypted* secret that you used in staticman.yml
+# I personally don't think the secret needs to be included in the generated site, but the staticman API bridge uses
+# it to ensure the site configuration and bridge configuration match (but why not just compare the site key?)
+reCaptcha:
+  siteKey: 6LcSejMaAAAAALJHPL1cBtbVsrfmSamJRYvT6smz
+  secret: LVgwIjs00gp9SsSa3zMMCIajEEpPSGFtrYHpvZLBMdpagIQ3eAytPiYqXii18uxrwdc7PMfI/tTpOlkREPQ4kyeb6QaofkAiu+8gUxOpBdEqig+Q65Z6vrhQyJCiO6aOTytZvbpbQziVhAnbTt4P5Rnh/fKGegRDlzonw02HgTY=
+# reCaptcha:
+#   siteKey: 6Lf0ZSgaAAAAAB_8Gy4JzZmDvhwlEvQR7CrRNIg2
+#   secret: ceHGbjGxrmWQlCvJBQ1bFqegIWw0VlZxSruQOyCTs7+8+t/x2dN8+inqhE6KDxjH2OtwGPwIBHviWaRKHGgjCLJy5HtA9wB0Xg6J/E5VHpCHF8HQLd2HAYec8l/FQX66VcAJM6oZkHIibz13DogTvsGsc6A1ARJP+RI1S7SMbXA=
