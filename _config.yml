@@ -29,7 +29,7 @@ license: "copyright John Moxon 2020. All rights reserved."
 paginate: 5
 paginate_path: "/articles/page:num/"
 
-# permalink: /:categories/:title
+permalink: /:categories/:year/:month/:day/:title
 relative_permalinks: false
 
 timezone: Australia/Brisbane
