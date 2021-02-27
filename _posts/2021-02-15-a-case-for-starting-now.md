@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A case for starting now
+title: Start your passion project immediately!
 subtitle: My product personal journey
 published: true
 date: 2020-12-31 18:00:00 +1000
@@ -21,6 +21,7 @@ summary: >
   finished the back yard,  but there's been a few digital projects I've had
   planned for quite a few years that I've never found time to really take
   seriously.
+permalink: 2020/12/31/start-your-passion-project-immediately
 ---
 ## Writing GPS
 
@@ -69,10 +70,8 @@ It's not even uncommon, chat to any developer or product manager and ask them ho
 
 ### Okay, Thanks Covid! Let's Do this!
 
-![Torn paper saying im-possible with the ](/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg "Photo by Andrew Wilus from Pexels")
-
 {% include themes/jmblog-theme/components/img.html 
-  src="/assets/uploads/pexels-simon-migaj-747964.jpg" 
+  src="/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg" 
   alt="This is an alt taggy"
   img_author="James Nesbit"
   img_source="Pexels"
@@ -109,10 +108,6 @@ Who knows? it could turn into a business, an opportunity or relegated to page 68
 I love to cook. It relaxes me, brings out my creative flair, the smells and flavours excite me.  How can I improve this recipe or make something completely new?  Maybe this will be a taste sensation!
 
 But.. The online recipe experience frustrates me endlessly,
-
-<div style='position:relative; padding-bottom:calc(100.00% + 44px)'><iframe src='https://gfycat.com/ifr/MeaslyGrippingAmazontreeboa' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p><a href="https://gfycat.com/discover/meme-gifs">from Meme GIFs</a></p>
-
-![This is alt text](/assets/uploads/you-x-ventures-vbxyfxlgpjm-unsplash.jpg "This is the title")
 
 ## But I'm too busy!
 
