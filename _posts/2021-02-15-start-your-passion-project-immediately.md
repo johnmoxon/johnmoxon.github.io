@@ -105,7 +105,7 @@ I've got to give huge kudos to my partner who used her newly found lockdown time
 > All that matters is that we start.
 > <cite>&mdash; Simon Sinek</cite>
 
-I love that quote from Simon Sinek, starting is often the hardest part as I wrote about in my last post \[why it's hard to start new things]({% post_url 2020-07-06-the-difficult-first-post %})
+I love that quote from Simon Sinek, starting is often the hardest part as I wrote about in my last post \why it's hard to start new things
 
 I've written about habit forming, so my goal in 2021 is to form key-stone habits in creating. I'm going to start small and work on a passion project I've had in my toolbox for nearly 5 years, right now its unnamed, but I will be writing and tracking its progress (and likely its pitfalls here). Writing is powerful in creating habits and holding yourself accountable, this is where I choose to tell the world about my process of creating and developing something for me.
 
