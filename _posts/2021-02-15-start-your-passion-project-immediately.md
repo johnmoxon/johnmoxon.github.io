@@ -80,8 +80,6 @@ It's not even uncommon, chat to any developer or product manager and ask them ho
   img_source_url="https://pexels.com"
 %}
 
-
-
 [delete me]My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 Personal projects are a little different. Something that you are already good at, perhaps even trained at and that people actually pay you for. So then why do so many developers and product people fail to deliver on their own visions?  Maybe it's fear.  Starting is the hardest part because its scary, thoughts go straight to, will this be good enough, will it be well received? will my friends think I've gone crazy? Am I crazy?
@@ -91,6 +89,14 @@ Personal projects are a little different. Something that you are already good at
 > <cite>&mdash; Stephen King</cite>
 
 Well 2020 certainly threw us a curve-ball didn't it! challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
+
+{% include themes/jmblog-theme/components/img.html 
+  src="/assets/uploads/pexels-thought-catalog-2228570.jpg" 
+  alt="This is an alt taggy"
+  img_author="James Nesbit"
+  img_source="Pexels"
+  img_source_url="https://pexels.com"
+%}
 
 I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish! Surrounding yourself with driven people is a great way to boost your own motivation, that kind of drive is infectious even competitive. Motivation can also be fleeting, sporadic and challenging to fit around a busy lifestyle. You can't bottle motivation, so strike while the iron is hot and start today!
 
