@@ -6,6 +6,8 @@ published: true
 date: 2021-03-01 14:18:27 +1000
 category: payments
 tags:
+  - digital-payments
+  - cashless-society
   - fintech
   - covid19
 author: John Moxon
