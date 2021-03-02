@@ -11,10 +11,10 @@ tags:
   - self-improvement
 author: John Moxon
 image:
-  path: /assets/uploads/you-x-ventures-vbxyfxlgpjm-unsplash.jpg
-  author: Track this down pls
-  source: Pexels?
-  url: https:/me.em
+  path: /assets/uploads/pexels-startup-stock-photos-212286.jpg
+  author: Startup Stock Photos
+  source: Pexels
+  url: https://www.pexels.com/@startup-stock-photos?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
 comments: true
 summary: >
   Covid projects, who's got one?! I've had a few, built the kids a fort,
