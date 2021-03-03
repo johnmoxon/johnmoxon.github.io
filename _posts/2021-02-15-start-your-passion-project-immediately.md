@@ -28,19 +28,28 @@ It's not for a lack of ideas, I've got many topics mapped out covering leadershi
 
 There are endless articles written like \[article 1] and \[article 2] that can do a much better job of of covering why it's hard to start something completely new, like driving, public speaking etc. and most of these seem to root in fear. Fear of can I do it? what will people think? But what if its something you already know you're good at? Perhaps even paid for?
 
-I'm talking about passion projects, take all that skill, training and experience that you lend to your employer day in day out, and do that for you.
+I'm talking about passion projects, take all that skill, training and experience that you lend to your employer day in day out, and do the same but for you.
 
-The mobile app idea you had 2 years ago which could have had a million downloads by now, the book you could have written by now, the side-hustle that your friends keep telling you you would rock!
+The mobile app idea you had 2 years ago which could have had a hundred thousand downloads by now, the book you you know would be a hit, the side-hustle your friends have been telling you all year you would rock!
 
 ### You're not alone.
 
-Chat to any colleague in a creative industry you will find stories of half finished or never started ideas that could have been the next big thing. So what separates the ones who do, who take an idea and run with it vs those who leave ideas on the shelf? And how can we shift our mindsets to do? 
+Chat to any colleague in a creative industry you will find stories of half finished or never started projects that could have been the next big thing. So what separates the people who could from the people who do? For those driven enough to give it a shot, how can we shift our mindsets to doing?
 
-In my chosen field I'd like to think I'm pretty good, no I'm better than that, I'm damn good. I've worked in some incredible teams and launched some incredible products that have gone on to be incredibly successful. 
+Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and un-loved projects that could just be the next big thing...
 
-So why is it that I have a folder of my own product ideas, passion projects that have never really got off the ground?
+### Why haven't you started yet?
 
-It's not even uncommon, chat to any developer or product manager and ask them how many passion projects they've started and not finished. You are not alone... I have a fairly expansive list of ideas and a library of partially built or never started projects gathering dust, because one-day...
+{% include themes/jmblog-theme/components/img.html
+  src="/assets/uploads/pexels-brett-jordan-6140527.jpg"
+  alt="wooden blocks spelling 'if not now when'"
+  img_author="Brett Jordan"
+  img_source="Pexels"
+  img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+%}
+
+Well even if you are confident in your skills, talent and idea, fear will still be a factor. You are potentially doing this on your own
+will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 ### Okay, Thanks Covid! Let's Do this!
 
