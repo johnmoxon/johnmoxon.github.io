@@ -32,9 +32,11 @@ I'm talking about passion projects, take all that skill, training and experience
 
 The mobile app idea you had 2 years ago which could have had a hundred thousand downloads by now, the book you you know would be a hit, the side-hustle your friends have been telling you all year you would rock!
 
-### You're not alone.
+> The scariest moment is always just before you start.<br>
+> After that things can only get better<br>
+> <cite>&mdash; Stephen King</cite>
 
-Chat to any colleague in a creative industry you will find stories of half finished or never started projects that could have been the next big thing. So what separates the people who could from the people who do? For those driven enough to give it a shot, how can we shift our mindsets to doing?
+You're not alone. Chat to any colleague in a creative industry you will find stories of half finished or never started projects that could have been the next big thing. So what separates the people who could from the people who do? For those driven enough to give it a shot, how can we shift our mindsets to doing?
 
 Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and un-loved projects that could just be the next big thing...
 
@@ -64,10 +66,6 @@ will it be good enough? will it be well received? will my friends / peers / coll
 \[delete me]My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 Personal projects are a little different. Something that you are already good at, perhaps even trained at and that people actually pay you for. So then why do so many developers and product people fail to deliver on their own visions?  Maybe it's fear.  Starting is the hardest part because its scary, thoughts go straight to, will this be good enough, will it be well received? will my friends think I've gone crazy? Am I crazy?
-
-> The scariest moment is always just before you start.
-> After that things can only get better
-> <cite>&mdash; Stephen King</cite>
 
 Well 2020 certainly threw us a curve-ball didn't it! challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
 
