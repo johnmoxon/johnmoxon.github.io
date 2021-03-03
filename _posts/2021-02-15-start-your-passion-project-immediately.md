@@ -38,7 +38,7 @@ The mobile app idea you had 2 years ago which could have had a hundred thousand 
 
 You're not alone. Chat to any colleague in a creative industry you will find stories of half finished or never started projects that could have been the next big thing. So what separates the people who could from the people who do? For those driven enough to give it a shot, how can we shift our mindsets to doing?
 
-Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and un-loved projects that could just be the next big thing...
+Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and unloved projects that could just be the next big thing...
 
 ### Why haven't you started yet?
 
@@ -50,8 +50,10 @@ Full disclosure. I am a creative person who has developed and launched incredibl
   img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Well even if you are confident in your skills, talent and idea, fear will still be a factor. You are potentially doing this on your own
-will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
+Well even if you are confident in your skills, talent and idea, fear still present. Going out on your own with your own idea, without the backup of your team can seem scary. Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
+
+Procrastination
+busy
 
 ### Okay, Thanks Covid! Let's Do this!
 
