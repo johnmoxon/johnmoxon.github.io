@@ -65,7 +65,6 @@ busy
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Well 2020 certainly threw us a curve-ball didn't it! challenges to job-security, concern over physical and mental wellbeing. But in a time where time to socialise, explore and travel is limited, then why not make a positive start and build something exciting? Possibly even life changing?!
 
 I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish! Surrounding yourself with driven people is a great way to boost your own motivation, that kind of drive is infectious even competitive. Motivation can also be fleeting, sporadic and challenging to fit around a busy lifestyle. You can't bottle motivation, so strike while the iron is hot and start today!
 
