@@ -66,9 +66,7 @@ leap of faith
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-
 I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish! Surrounding yourself with driven people is a great way to boost your own motivation, that kind of drive is infectious even competitive. Motivation can also be fleeting, sporadic and challenging to fit around a busy lifestyle. You can't bottle motivation, so strike while the iron is hot and start today!
-
 
 I've written about habit forming, so my goal in 2021 is to form key-stone habits in creating. I'm going to start small and work on a passion project I've had in my toolbox for nearly 5 years, right now its unnamed, but I will be writing and tracking its progress (and likely its pitfalls here). Writing is powerful in creating habits and holding yourself accountable, this is where I choose to tell the world about my process of creating and developing something for me.
 
@@ -85,3 +83,32 @@ But.. The online recipe experience frustrates me endlessly,
 Suck it! I'm not going to go into life challenges.  I have those, we all do. Finding time to improve my self, to learn and do something different is about choices. It's very easy to make the easy choice, to sit on the sofa eating dinner watching Netflix. I will do that from time to time, I like doing that, but I will make time to do this.
 
 5am starts, sounds horrendous, and I have failed before, so I need to start making this happen.
+
+- - -
+
+## Writing GPS
+
+1. What is your business goal - care about what you’re writing - *I can show that I manage product and think about how to build and iterate on that product. Start small iterate, lean startup way.* *To put it another way this post is about, motivation, starting something, building experience in product-management*
+2. Reframe - put your reader into it, ask “so what” repeatedly. Express your reframed idea + put this say the top. This is where you are headed - *So what? can people learn from my product journey and apply to their own projects* *My reader is involved in product management or product development, or they have a product or project they have in some state of initial progress. So what?* *They know they could achieve something, they are excited about the prospect, but something is stopping them - so what* *This article will propose simple steps and small changes to make sure that it gets done.*
+3. Seek out data that backs up your main idea. Don’t discount your own experience -
+
+   * Lean startups, what else?
+   * Leader with no title
+   * Lean Startup
+   * Power of Habit
+4. Organise. What structure helps communicate your point? Some options are a list, a how-to guide, and a client narrative. -
+
+* A client narrative I think for this one, this will be a series and this is really the short setup.
+
+1. Write to one person. Imagine the one person you’re helping and wrote to them. Use ‘you’ not they/people/them -
+
+   * The one person is a product manager tasked with developing a successful product
+2. Produce the first ugly draft. - show up and throw up. Hey the ideas out don’t worry about structure/spelling. Just get it down
+3. Walk away. Give ideas time to mature. Preferably a day or more
+4. Rewrite and reshape the mess. Swap places with your reader.
+5. Give it a great headline. Make it irresistible
+6. Have someone edit it\*\**
+7. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
+8. ## Publish but ask one more question. What next? Read more? Subscribe? But something?
+
+   The difficult first post! I’ve been planning to write about my experiences and thoughts now for what seems too long. I’m hoping that over time, writing down what I’ve learned will become second nature, an extension of the leadership and career journey, though today, writing is hard.
