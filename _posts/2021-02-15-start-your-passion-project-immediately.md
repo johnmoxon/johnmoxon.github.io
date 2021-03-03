@@ -46,13 +46,13 @@ It's not even uncommon, chat to any developer or product manager and ask them ho
 
 {% include themes/jmblog-theme/components/img.html 
   src="/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg" 
-  alt="This is an alt taggy"
-  img_author="James Nesbit"
+  alt="Paper saying impossible with the first 2 letters torn off"
+  img_author="Andrew Wilus"
   img_source="Pexels"
-  img_source_url="https://pexels.com"
+  img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-[delete me]My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
+\[delete me]My first post on this new site, about starting something, because starting, certainly when it comes to a creative process is the hardest part right? It's scary, thoughts of will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 Personal projects are a little different. Something that you are already good at, perhaps even trained at and that people actually pay you for. So then why do so many developers and product people fail to deliver on their own visions?  Maybe it's fear.  Starting is the hardest part because its scary, thoughts go straight to, will this be good enough, will it be well received? will my friends think I've gone crazy? Am I crazy?
 
