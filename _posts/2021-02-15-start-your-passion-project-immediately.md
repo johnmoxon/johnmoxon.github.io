@@ -53,7 +53,8 @@ Full disclosure. I am a creative person who has developed and launched incredibl
 Well even if you are confident in your skills, talent and idea, fear still present. Going out on your own with your own idea, without the backup of your team can seem scary. Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 Procrastination
-busy
+too busy
+leap of faith
 
 ### Okay, Thanks Covid! Let's Do this!
 
@@ -68,12 +69,6 @@ busy
 
 I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish! Surrounding yourself with driven people is a great way to boost your own motivation, that kind of drive is infectious even competitive. Motivation can also be fleeting, sporadic and challenging to fit around a busy lifestyle. You can't bottle motivation, so strike while the iron is hot and start today!
 
-> It doesn’t matter when we start. <br>
-> It doesn’t matter where we start. <br>
-> All that matters is that we start.
-> <cite>&mdash; Simon Sinek</cite>
-
-I love that quote from Simon Sinek, starting is often the hardest part as I wrote about in my last post \why it's hard to start new things
 
 I've written about habit forming, so my goal in 2021 is to form key-stone habits in creating. I'm going to start small and work on a passion project I've had in my toolbox for nearly 5 years, right now its unnamed, but I will be writing and tracking its progress (and likely its pitfalls here). Writing is powerful in creating habits and holding yourself accountable, this is where I choose to tell the world about my process of creating and developing something for me.
 
