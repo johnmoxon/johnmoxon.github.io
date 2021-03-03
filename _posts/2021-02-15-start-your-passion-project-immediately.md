@@ -22,49 +22,21 @@ summary: >
   planned for quite a few years that I've never found time to really take
   seriously.
 ---
-## Writing GPS
+The difficult first post! I've been planning to write about my experiences and thoughts now for what seems an age. I hope that over time, writing down what I've learned will become second nature, an extension of the leadership and career journey, though today, writing is hard.
 
-1. What is your business goal - care about what you're writing - *I can show that I manage product and think about how to build and iterate on that product. Start small iterate, lean startup way.*
-*To put it another way this post is about, motivation, starting something, building experience in product-management*
+It's not for a lack of ideas, I've got many topics mapped out covering leadership, product development, fintech, fair data-value exchange, technology in society... but today this does not come naturally and it seems fitting to talk about starting new things.
 
-2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed - *So what? can people learn from my product journey and apply to their own projects*
-*My reader is involved in product management or product development, or they have a product or project they have in some state of initial progress. So what?*
-*They know they could achieve something, they are excited about the prospect, but something is stopping them - so what*
-*This article will propose simple steps and small changes to make sure that it gets done.*
-3. Seek out data that backs up your main idea. Don't discount your own experience - 
-* Lean startups, what else?
-* Leader with no title
-* Lean Startup
-* Power of Habit
+There are endless articles written like \[article 1] and \[article 2] that can do a much better job of of covering why it's hard to start something completely new, like driving, public speaking etc. and most of these seem to root in fear. Fear of can I do it? what will people think? But what if its something you already know you're good at? Perhaps even paid for?
 
-4. Organise. What structure helps communicate your point? Some options are a list, a how-to guide, and a client narrative. - 
+I'm talking about passion projects, take all that skill, training and experience that you lend to your employer day in day out, and do that for you.
 
-* A client narrative I think for this one, this will be a series and this is really the short setup.
-
-5. Write to one person. Imagine the one person you're helping and wrote to them. Use 'you' not they/people/them - 
-* The one person is a product manager tasked with developing a successful product
-
-6. Produce the first ugly draft. - show up and throw up. Hey the ideas out don't worry about structure/spelling. Just get it down
-7. Walk away. Give ideas time to mature. Preferably a day or more
-8. Rewrite and reshape the mess. Swap places with your reader.
-9. Give it a great headline. Make it irresistible
-10. Have someone edit it\*\**
-11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
-12. Publish but ask one more question. What next? Read more? Subscribe? But something?
----
-The difficult first post! I've been planning to write about my experiences and thoughts now for what seems too long. I'm hoping that over time, writing down what I've learned will become second nature, an extension of the leadership and career journey, though today, writing is hard.
-
-I've got many topics I'd like to cover, leadership, technology, fair data-value exchange, the future of technology and society, but today it seems fitting to talk about starting something new.
-
-There are endless articles written like \[article 1] and \[article 2] that can do a much better job of of covering the barriers to starting, the fear in learning a new skill, opening yourself to new experiences. But what if its something you are already at? Perhaps even paid for?
-
-I'm talking about passion projects, that idea for a mobile app you had 2 years ago which could have had a million downloads by now, the book you could have written by now, the side-hustle that your friends keep telling you you would rock!
+The mobile app idea you had 2 years ago which could have had a million downloads by now, the book you could have written by now, the side-hustle that your friends keep telling you you would rock!
 
 ### You're not alone.
 
-Chat to any colleague in a creative industry you will find many with similar stories. Folders of ideas and half started projects 
+Chat to any colleague in a creative industry you will find stories of half finished or never started ideas that could have been the next big thing. So what separates the ones who do, who take an idea and run with it vs those who leave ideas on the shelf? And how can we shift our mindsets to do? 
 
-\[continue here]My background is in developing digital products and product experiences. I'd like to think I'm pretty good. I've worked in some incredible teams and launched some incredible products that have gone on to be very successful. 
+In my chosen field I'd like to think I'm pretty good, no I'm better than that, I'm damn good. I've worked in some incredible teams and launched some incredible products that have gone on to be incredibly successful. 
 
 So why is it that I have a folder of my own product ideas, passion projects that have never really got off the ground?
 
