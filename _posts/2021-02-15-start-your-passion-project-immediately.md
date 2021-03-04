@@ -40,7 +40,7 @@ You're not alone. Chat to any creative colleague you will find similar stories o
 
 {para on why we should - what are the benefits?}
 
-### So why haven't you started yet?
+## So why haven't you started yet?
 
 {% include themes/jmblog-theme/components/img.html
   src="/assets/uploads/pexels-brett-jordan-6140527.jpg"
@@ -58,7 +58,7 @@ Overcoming the innate fear associated with starting something new is a significa
 
 Finding the time not only start but continue to put the effort to see passion projects through can also be a challenge. The struggle is real! We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices vying for our attention and it is easy to fall into a pattern of "I'm just too busy".
 
-### Okay, Thanks Covid! Let's Do this!
+## Okay, Thanks Covid! Let's Do this!
 
 {% include themes/jmblog-theme/components/img.html 
   src="/assets/uploads/pexels-andrew-wilus-5516221-cut.jpg" 
