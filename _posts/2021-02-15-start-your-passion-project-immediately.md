@@ -68,22 +68,16 @@ Finding the time not only start but continue to put the effort to see passion pr
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you find yourself at home and bored, look it as an opportunity to build positive habits that will far outlive the pandemic. 
 
-This paragraph will talk about habit forming
+{This paragraph will talk about habit forming}
 
-
-> 
->
->
+> It doesn't matter when we start.<br>
+> It doesn't matter where we start.<br>
+> All that matters is that we start.<br>
+> <cite>&mdash; Simon Sinek</cite>
 
 For my own journey, writing this piece is the start, creating accountability in myself by sharing this online is my first step. I'll continue to write more about my own product journey, the good, bad and ugly. 
 
 So next time you are feeling motivated and ponder _What if_, ask _"What if it's spectacular?"_, _"What if it's the start of something exciting? Possibly even life changing?!"_. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
-
-Procrastination
-too busy
-leap of faith
-A desire to do it
-Can't bottle motivation - when the feeling comes, jump on it! strike while the iron is hot!
 
 - - -
 
