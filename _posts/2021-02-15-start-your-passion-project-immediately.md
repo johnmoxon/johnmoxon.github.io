@@ -50,7 +50,9 @@ Full disclosure. I am a creative person who has developed and launched incredibl
   img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Even if you are confident in your skills, talent and idea, doing things  out on your own with your own idea, without the backup of your team can seem scary. Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
+Even if you are confident in your skills believe in the quality of your idea, doing something on your own, following your own path without the backup of your team is scary! Overcoming that fear is still a significant obstacle for many of us.
+
+Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 Procrastination
 too busy
