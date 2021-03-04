@@ -50,19 +50,11 @@ Full disclosure. I am a creative person who has developed and launched incredibl
   img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Even if you are confident in your skills and the quality of your idea, doing something on your own and following your own path without a team having your back is scary! Overcoming that innate fear is a significant obstacle for many of us and requires a leap of faith.
+Even if you are confident in your skills and the quality of your ideas, doing something on your own and following your own path without a team having your back is scary! What if it's not good enough? what if it's people hate it, or worse, ignore it? 
 
-Finding the time to put the effort to not only start but to see passion projects through can also be a challenge. Today we are more time poor than ever before with unlimited content, entertainment and xxx vying for our attention to occupy our time. Add adulting into the mix, working for a living coming home tired and  
+Overcoming that innate fear is a significant obstacle and requires a leap of faith.
 
-
-Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
-
-Procrastination
-too busy
-leap of faith
-A desire to do it
-Can't bottle motivation - when the feeling comes, jump on it! strike while the iron is hot!
-
+Finding the time not only start but continue to put the effort to see passion projects through can also be a challenge. The struggle is real! We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices vying for our attention and it is easy to fall into a pattern of "I'm just too busy".
 
 ### Okay, Thanks Covid! Let's Do this!
 
@@ -74,23 +66,24 @@ Can't bottle motivation - when the feeling comes, jump on it! strike while the i
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-I've got to give huge kudos to my partner who used her newly found lockdown time to write a novel! and is already working on book number 2 and working out how to publish! Surrounding yourself with driven people is a great way to boost your own motivation, that kind of drive is infectious even competitive. Motivation can also be fleeting, sporadic and challenging to fit around a busy lifestyle. You can't bottle motivation, so strike while the iron is hot and start today!
+Don't get me wrong, there have not been many positives to come out of our current situation, but if you find yourself at home and bored, look it as an opportunity to build positive habits that will far outlive the pandemic. 
 
-I've written about habit forming, so my goal in 2021 is to form key-stone habits in creating. I'm going to start small and work on a passion project I've had in my toolbox for nearly 5 years, right now its unnamed, but I will be writing and tracking its progress (and likely its pitfalls here). Writing is powerful in creating habits and holding yourself accountable, this is where I choose to tell the world about my process of creating and developing something for me.
+This paragraph will talk about habit forming
 
-Who knows? it could turn into a business, an opportunity or relegated to page 68 on the app store, but for now starting is what is important.
 
-## The project
+> 
+>
+>
 
-I love to cook. It relaxes me, brings out my creative flair, the smells and flavours excite me.  How can I improve this recipe or make something completely new?  Maybe this will be a taste sensation!
+For my own journey, writing this piece is the start, creating accountability in myself by sharing this online is my first step. I'll continue to write more about my own product journey, the good, bad and ugly. 
 
-But.. The online recipe experience frustrates me endlessly,
+So next time you are feeling motivated and ponder _What if_, ask _"What if it's spectacular?"_, _"What if it's the start of something exciting? Possibly even life changing?!"_. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
 
-## But I'm too busy!
-
-Suck it! I'm not going to go into life challenges.  I have those, we all do. Finding time to improve my self, to learn and do something different is about choices. It's very easy to make the easy choice, to sit on the sofa eating dinner watching Netflix. I will do that from time to time, I like doing that, but I will make time to do this.
-
-5am starts, sounds horrendous, and I have failed before, so I need to start making this happen.
+Procrastination
+too busy
+leap of faith
+A desire to do it
+Can't bottle motivation - when the feeling comes, jump on it! strike while the iron is hot!
 
 - - -
 
