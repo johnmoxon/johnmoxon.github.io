@@ -40,7 +40,7 @@ You're not alone. Chat to any colleague in a creative industry you will find sto
 
 Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and unloved projects that could just be the next big thing...
 
-### Why haven't you started yet?
+### So why haven't you started yet?
 
 {% include themes/jmblog-theme/components/img.html
   src="/assets/uploads/pexels-brett-jordan-6140527.jpg"
@@ -50,7 +50,7 @@ Full disclosure. I am a creative person who has developed and launched incredibl
   img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Well even if you are confident in your skills, talent and idea, fear still present. Going out on your own with your own idea, without the backup of your team can seem scary. Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
+Even if you are confident in your skills, talent and idea, doing things  out on your own with your own idea, without the backup of your team can seem scary. Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 Procrastination
 too busy
@@ -112,3 +112,5 @@ Suck it! I'm not going to go into life challenges.  I have those, we all do. Fin
 8. ## Publish but ask one more question. What next? Read more? Subscribe? But something?
 
    The difficult first post! I’ve been planning to write about my experiences and thoughts now for what seems too long. I’m hoping that over time, writing down what I’ve learned will become second nature, an extension of the leadership and career journey, though today, writing is hard.
+
+THIS IS UNSAVED CHANGE
