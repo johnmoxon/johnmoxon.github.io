@@ -22,23 +22,23 @@ summary: >
   planned for quite a few years that I've never found time to really take
   seriously.
 ---
-The difficult first post! I've been planning to write from my experience for longer than I'd like to admit. I hope over time, that writing down what I've learned will become second nature, an extension of my leadership and career journey. Though today, writing is hard.
+The difficult first post! I've been planning to write from my experience for longer than I want to admit. I hope over time, that writing down what I've learned will become second nature, an extension of my leadership and career journey. Though today, writing is hard.
 
-It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me a career. But today writing is difficult, unnatural, sentences do not flow freely. It therefore seems fitting to talk about starting new things.
+It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me so much. But today writing is difficult, unnatural, sentences do not flow freely. It therefore seems fitting to talk about starting new things.
 
-There are endless articles written like \[article 1] and \[article 2] that do a much better job of covering why it's hard to start something genuinely new, like driving, public speaking etc. and fear is the common factor. _Can I actually do this thing?  be successful?_, _will people hate? But what if its something you already know you're good at? Perhaps even paid for?
+There are endless articles that do a much better job of covering why it's hard to start something genuinely new. \[article 1] and \[article 2] are insightful and vulnerable pieces that highlight why fear is such a factor for us. But what if the thing that is hard to start is something you are already good at? Perhaps even paid for?
 
-I'm talking about passion projects, take all that skill, training and experience that you lend to your employer day in day out, and do the same but for you.
+I'm talking about passion projects, take all that skill, training and experience that you lend to your employer every day, and do the same but for you.
 
-The mobile app idea you had 2 years ago which could have had a hundred thousand downloads by now, the book you you know would be a hit, the side-hustle your friends have been telling you all year you would rock!
+The mobile app idea you had 2 years ago which could have had a hundred thousand downloads by now, the book you know would be an instant classic, the side-hustle your friends have been telling you all year you would rock!
 
 > The scariest moment is always just before you start.<br>
 > After that things can only get better<br>
 > <cite>&mdash; Stephen King</cite>
 
-You're not alone. Chat to any colleague in a creative industry you will find stories of half finished or never started projects that could have been the next big thing. So what separates the people who could from the people who do? For those driven enough to give it a shot, how can we shift our mindsets to doing?
+You're not alone. Chat to any creative colleague you will find similar stories of half finished or never started projects that could have been the next big thing. So what separates the people who could, from the people who do? For those of us driven enough to give it a shot, how can we shift our mindsets to doing?
 
-Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and unloved projects that could just be the next big thing...
+{para on why we should - what are the benefits?}
 
 ### So why haven't you started yet?
 
@@ -50,9 +50,11 @@ Full disclosure. I am a creative person who has developed and launched incredibl
   img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Even if you are confident in your skills and the quality of your ideas, doing something on your own and following your own path without a team having your back is scary! What if it's not good enough? what if it's people hate it, or worse, ignore it? 
+Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and unloved projects that could just be the next big thing...
 
-Overcoming that innate fear is a significant obstacle and requires a leap of faith.
+Even if you are confident in your skills and the quality of your idea, starting something on your own and following your own path without a team having your back is scary! What if it's not good enough? what if people hate it? or worse, ignore it? 
+
+Overcoming the innate fear associated with starting something new is a significant obstacle and does require a leap of faith.
 
 Finding the time not only start but continue to put the effort to see passion projects through can also be a challenge. The struggle is real! We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices vying for our attention and it is easy to fall into a pattern of "I'm just too busy".
 
