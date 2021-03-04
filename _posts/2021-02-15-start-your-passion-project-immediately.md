@@ -50,13 +50,18 @@ Full disclosure. I am a creative person who has developed and launched incredibl
   img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Even if you are confident in your skills believe in the quality of your idea, doing something on your own, following your own path without the backup of your team is scary! Overcoming that fear is still a significant obstacle for many of us.
+Even if you are confident in your skills believe in the quality of your idea, doing something on your own, following your own path without the backup of your team is scary! Overcoming that fear is still a significant obstacle for many of us requiring a leap of faith.
+
+Finding the time to put the effort in required can also be a challen
+There's al
 
 Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
 Procrastination
 too busy
 leap of faith
+A desire to do it
+
 
 ### Okay, Thanks Covid! Let's Do this!
 
@@ -112,7 +117,3 @@ Suck it! I'm not going to go into life challenges.  I have those, we all do. Fin
 6. Have someone edit it\*\**
 7. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 8. ## Publish but ask one more question. What next? Read more? Subscribe? But something?
-
-   The difficult first post! I’ve been planning to write about my experiences and thoughts now for what seems too long. I’m hoping that over time, writing down what I’ve learned will become second nature, an extension of the leadership and career journey, though today, writing is hard.
-
-THIS IS UNSAVED CHANGE
