@@ -22,15 +22,15 @@ summary: >
   planned for quite a few years that I've never found time to really take
   seriously.
 ---
-The difficult first post! I've been planning to write from my experience for longer than I want to admit. I hope over time, that writing down what I've learned will become second nature, an extension of my leadership and career journey. Though today, writing is hard.
+The difficult first post! I've been planning to write from my experience for longer than I want to admit. I hope over time, that writing down what I've learned will become second nature, an extension of my career and leadership journey. Though today, writing is hard.
 
-It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me so much. But today writing is difficult, unnatural, sentences do not flow freely. It therefore seems fitting to talk about starting new things.
+It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me so much. But today writing is difficult, unnatural, the sentences do not flow freely. It therefore seems fitting to talk about the challenge of starting new things.
 
-There are endless articles that do a much better job of covering why it's [hard to start something genuinely new](https://findlink.com). **No longer makes sense - edit** Insightful and vulnerable pieces that highlight why fear is such a factor for us. But what if the thing that is hard to start is something you are already good at? Perhaps even paid for?
+There are endless articles that do a much better job of covering [why it's hard to start something genuinely new](https://findlink.com). **Next sentence no longer makes sense - edit** Insightful and vulnerable pieces that highlight why fear is such a factor for us. But what if the thing that is hard to start is something you are already good at? Perhaps even paid for?
 
-I'm talking about passion projects, take all that skill, training and experience that you lend to your employer every day, and do the same but for you.
+Today I'm talking about passion projects, take all that skill, training and experience that you lend to your employer every day, and do the same but for you.
 
-The mobile app idea you had 2 years ago which could have had a hundred thousand downloads by now, the book you know would be an instant classic, the side-hustle your friends have been telling you all year you would rock!
+The mobile app idea you had 2 years ago which could have had a hundred thousand downloads by now, the book you meant to write you know would be an instant classic, the side-hustle your friends have been telling you all year you would rock!
 
 > The scariest moment is always just before you start.<br>
 > After that things can only get better<br>
