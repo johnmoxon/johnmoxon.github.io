@@ -22,11 +22,11 @@ summary: >
   planned for quite a few years that I've never found time to really take
   seriously.
 ---
-The difficult first post! I've been planning to write about my experiences and thoughts now for what seems an age. I hope that over time, writing down what I've learned will become second nature, an extension of the leadership and career journey, though today, writing is hard.
+The difficult first post! I've been planning to write from my experience for longer than I'd like to admit. I hope over time, that writing down what I've learned will become second nature, an extension of my leadership and career journey. Though today, writing is hard.
 
-It's not for a lack of ideas, I've got many topics mapped out covering leadership, product development, fintech, fair data-value exchange, technology in society... but today this does not come naturally and it seems fitting to talk about starting new things.
+It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me a career. But today writing is difficult, unnatural, sentences do not flow freely. It therefore seems fitting to talk about starting new things.
 
-There are endless articles written like \[article 1] and \[article 2] that can do a much better job of of covering why it's hard to start something completely new, like driving, public speaking etc. and most of these seem to root in fear. Fear of can I do it? what will people think? But what if its something you already know you're good at? Perhaps even paid for?
+There are endless articles written like \[article 1] and \[article 2] that do a much better job of covering why it's hard to start something genuinely new, like driving, public speaking etc. and fear is the common factor. _Can I actually do this thing?  be successful?_, _will people hate? But what if its something you already know you're good at? Perhaps even paid for?
 
 I'm talking about passion projects, take all that skill, training and experience that you lend to your employer day in day out, and do the same but for you.
 
