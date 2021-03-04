@@ -50,10 +50,10 @@ Full disclosure. I am a creative person who has developed and launched incredibl
   img_source_url="https://www.pexels.com/@brettjordan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Even if you are confident in your skills believe in the quality of your idea, doing something on your own, following your own path without the backup of your team is scary! Overcoming that fear is still a significant obstacle for many of us requiring a leap of faith.
+Even if you are confident in your skills and the quality of your idea, doing something on your own and following your own path without a team having your back is scary! Overcoming that innate fear is a significant obstacle for many of us and requires a leap of faith.
 
-Finding the time to put the effort in required can also be a challen
-There's al
+Finding the time to put the effort to not only start but to see passion projects through can also be a challenge. Today we are more time poor than ever before with unlimited content, entertainment and xxx vying for our attention to occupy our time. Add adulting into the mix, working for a living coming home tired and  
+
 
 Will it be good enough? will it be well received? will my friends / peers / colleagues think I'm crazy? Am I crazy? but what if it's spectacular? what if it's the start of something exciting? Possibly even life changing!?
 
@@ -61,6 +61,7 @@ Procrastination
 too busy
 leap of faith
 A desire to do it
+Can't bottle motivation - when the feeling comes, jump on it! strike while the iron is hot!
 
 
 ### Okay, Thanks Covid! Let's Do this!
