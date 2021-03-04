@@ -26,7 +26,7 @@ The difficult first post! I've been planning to write from my experience for lon
 
 It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me so much. But today writing is difficult, unnatural, the sentences do not flow freely. It therefore seems fitting to talk about the challenge of starting new things.
 
-There are endless articles that do a much better job of covering [why it's hard to start something genuinely new](https://findlink.com). **Next sentence no longer makes sense - edit** Insightful and vulnerable pieces that highlight why fear is such a factor for us. But what if the thing that is hard to start is something you are already good at? Perhaps even paid for?
+There are endless articles that do a much better job of covering [why it's hard to start something genuinely new](https://findlink.com), and how to overcome the fear that prevents us from experiencing new things. But what if the thing you are struggling to start is something you are already good at? Perhaps even paid for?
 
 Today I'm talking about passion projects, take all that skill, training and experience that you lend to your employer every day, and do the same but for you.
 
@@ -38,7 +38,7 @@ The mobile app idea you had 2 years ago which could have had a hundred thousand 
 
 You're not alone. Chat to any creative colleague you will find similar stories of half finished or never started projects that could have been the next big thing. So what separates the people who could, from the people who do? For those of us driven enough to give it a shot, how can we shift our mindsets to doing?
 
-There are [huge benefits in starting your own passion project](https://kraylfunch.com/5-benefits-of-creating-a-passion-project/). Explore directions you have not been able to go in your professional work, develop new skills and experience you would have otherwise not been exposed to. Even if it doesn't turn into a business, then you will have created positive habits that will last you a lifetime and will have reached new contacts and opportunities.
+There are [huge benefits in starting your own passion project](https://kraylfunch.com/5-benefits-of-creating-a-passion-project/). Explore directions you have not been able to go in your professional life, develop new skills and experience you would have otherwise not been exposed to. Even if it doesn't turn into a business, then you will hopefully have created positive habits that will last you a lifetime and will have reached new contacts and opportunities.
 
 ## So why haven't you started yet?
 
@@ -56,7 +56,7 @@ Even if you are confident in your skills and the quality of your idea, starting 
 
 Overcoming the innate fear associated with starting something new is a significant obstacle and does require a leap of faith.
 
-Finding the time not only start but continue to put the effort to see passion projects through can also be a challenge. The struggle is real! We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices vying for our attention and it is easy to fall into a pattern of "I'm just too busy".
+Finding the time not only to start but continue putting in the effort to see passion projects through can also be a challenge. We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices all vying for our attention and it is easy to fall into a pattern of "I'm just too busy".
 
 ## Okay, Thanks Covid! Let's Do this!
 
@@ -70,9 +70,12 @@ Finding the time not only start but continue to put the effort to see passion pr
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to start building positive habits that will far outlive our current situation. 
 
-Habits are powerful things, and they tend to be associated with negative behaviours. Though forming positive key-stone habits is just as powerful in 
+Habits are powerful things, and they tend to be associated with negative behaviours, but forming positive _keystone_ habits is a great way to become successful in many areas of life. Athletes, doctors, founders and CEO's have understood and harnessed the [cue, crave, response, reward habit loop](https://jamesclear.com/habit-triggers)
 
-{This paragraph will talk about habit forming}
+James Clear's
+
+
+{cover choices - habit of netflix rather than learn}
 
 > It doesn't matter when we start.<br>
 > It doesn't matter where we start.<br>
@@ -81,7 +84,7 @@ Habits are powerful things, and they tend to be associated with negative behavio
 
 For my own journey, writing this piece is the start, creating accountability in myself by sharing this online is my first step. I'll continue to write more about my own product journey, the good, bad and ugly. 
 
-So next time you are feeling motivated and ponder _What if_, ask _"What if it's spectacular?"_, _"What if it's the start of something exciting? Possibly even life changing?!"_. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
+So next time you are feeling motivated, resist the urge to turn on Netflix and ponder _What if_, _"What if it's spectacular?"_, _"What if it's the start of something exciting? Possibly even life changing?!"_. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
 
 - - -
 
