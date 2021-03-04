@@ -68,7 +68,9 @@ Finding the time not only start but continue to put the effort to see passion pr
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to start building positive habits that will far outlive this pandemic. 
+Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to start building positive habits that will far outlive our current situation. 
+
+Habits are powerful things, and they tend to be associated with negative behaviours. Though forming positive key-stone habits is just as powerful in 
 
 {This paragraph will talk about habit forming}
 
