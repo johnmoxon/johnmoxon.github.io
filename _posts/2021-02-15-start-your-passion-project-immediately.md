@@ -26,7 +26,7 @@ The difficult first post! I've been planning to write from my experience for lon
 
 It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me so much. But today writing is difficult, unnatural, sentences do not flow freely. It therefore seems fitting to talk about starting new things.
 
-There are endless articles that do a much better job of covering why it's hard to start something genuinely new. \[article 1] and \[article 2] are insightful and vulnerable pieces that highlight why fear is such a factor for us. But what if the thing that is hard to start is something you are already good at? Perhaps even paid for?
+There are endless articles that do a much better job of covering why it's [hard to start something genuinely new](https://findlink.com). **No longer makes sense - edit** Insightful and vulnerable pieces that highlight why fear is such a factor for us. But what if the thing that is hard to start is something you are already good at? Perhaps even paid for?
 
 I'm talking about passion projects, take all that skill, training and experience that you lend to your employer every day, and do the same but for you.
 
@@ -38,7 +38,7 @@ The mobile app idea you had 2 years ago which could have had a hundred thousand 
 
 You're not alone. Chat to any creative colleague you will find similar stories of half finished or never started projects that could have been the next big thing. So what separates the people who could, from the people who do? For those of us driven enough to give it a shot, how can we shift our mindsets to doing?
 
-{para on why we should - what are the benefits?}
+There are [huge benefits in starting your own passion project](https://kraylfunch.com/5-benefits-of-creating-a-passion-project/). Explore directions you have not been able to go in your professional work, develop new skills and experience you would have otherwise not been exposed to. Even if it doesn't turn into a business, then you will have created positive habits that will last you a lifetime and will have reached new contacts and opportunities.
 
 ## So why haven't you started yet?
 
@@ -52,7 +52,7 @@ You're not alone. Chat to any creative colleague you will find similar stories o
 
 Full disclosure. I am a creative person who has developed and launched incredibly successful products for other people and also have a folder bursting at the seams of half-started and unloved projects that could just be the next big thing...
 
-Even if you are confident in your skills and the quality of your idea, starting something on your own and following your own path without a team having your back is scary! What if it's not good enough? what if people hate it? or worse, ignore it? 
+Even if you are confident in your skills and the quality of your idea, starting something on your own and following your own path without a team having your back is scary! What if it's not good enough? What if people hate it? Or worse, ignore it? 
 
 Overcoming the innate fear associated with starting something new is a significant obstacle and does require a leap of faith.
 
@@ -68,7 +68,7 @@ Finding the time not only start but continue to put the effort to see passion pr
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Don't get me wrong, there have not been many positives to come out of our current situation, but if you find yourself at home and bored, look it as an opportunity to build positive habits that will far outlive the pandemic. 
+Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to start building those positive habits that will far outlive the pandemic. 
 
 {This paragraph will talk about habit forming}
 
