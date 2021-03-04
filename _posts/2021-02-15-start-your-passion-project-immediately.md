@@ -70,9 +70,9 @@ Finding the time not only to start but continue putting in the effort to see pas
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to start building positive habits that will far outlive our current situation. 
 
-Habits are powerful things, and they tend to be associated with negative behaviours, but forming positive _keystone_ habits is a great way to become successful in many areas of life. Athletes, doctors, founders and CEO's have understood and harnessed the [cue, crave, response, reward habit loop](https://jamesclear.com/habit-triggers)
+Habits are powerful things, and they tend to be associated with negative behaviours, but forming positive _keystone_ habits is a great way to become successful in many areas of life. Athletes, doctors, founders and CEO's have understood and harnessed the [cue, crave, response, reward habit loop](https://jamesclear.com/habit-triggers) which drives a lot of what we do.
 
-James Clear's
+{examples of modern keystone habits - get up early, }
 
 
 {cover choices - habit of netflix rather than learn}
@@ -86,12 +86,15 @@ For my own journey, writing this piece is the start, creating accountability in 
 
 So next time you are feeling motivated, resist the urge to turn on Netflix and ponder _What if_, _"What if it's spectacular?"_, _"What if it's the start of something exciting? Possibly even life changing?!"_. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
 
+{%- comment -%}
 - - -
 
 ## Writing GPS
 
-1. What is your business goal - care about what you’re writing - *I can show that I manage product and think about how to build and iterate on that product. Start small iterate, lean startup way.* *To put it another way this post is about, motivation, starting something, building experience in product-management*
+1. What is your business goal - care about what you’re writing - Motivating myself and other people to start something new.
+
 2. Reframe - put your reader into it, ask “so what” repeatedly. Express your reframed idea + put this say the top. This is where you are headed - *So what? can people learn from my product journey and apply to their own projects* *My reader is involved in product management or product development, or they have a product or project they have in some state of initial progress. So what?* *They know they could achieve something, they are excited about the prospect, but something is stopping them - so what* *This article will propose simple steps and small changes to make sure that it gets done.*
+
 3. Seek out data that backs up your main idea. Don’t discount your own experience -
 
    * Lean startups, what else?
@@ -112,3 +115,4 @@ So next time you are feeling motivated, resist the urge to turn on Netflix and p
 6. Have someone edit it\*\**
 7. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 8. ## Publish but ask one more question. What next? Read more? Subscribe? But something?
+{% endcomment %}
