@@ -28,7 +28,9 @@ It's not for a lack of ideas, I've mapped out many topics I intend to cover and 
 
 There are endless articles that do a much better job of covering [why it's hard to start something genuinely new](https://findlink.com), and how to overcome the fear that prevents us from experiencing new things. But what if the thing you are struggling to start is something you are already good at? Perhaps even paid for?
 
-Today I'm talking about passion projects, take all that skill, training and experience that you lend to your employer every day, and do the same but for you.
+## Why start your passion project?
+
+Take all that skill you have honed, the training and experience you have built up over several years, that you lend to your employer every day, and do the same but for you.
 
 The mobile app idea you had 2 years ago which could have had a hundred thousand downloads by now, the book you meant to write you know would be an instant classic, the side-hustle your friends have been telling you all year you would rock!
 
