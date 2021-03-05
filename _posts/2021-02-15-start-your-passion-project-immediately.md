@@ -76,8 +76,9 @@ Habits are powerful things, and they tend to be associated with negative behavio
 
 {examples of modern keystone habits - get up early, }
 
-
 {cover choices - habit of netflix rather than learn}
+
+{cover planning}
 
 > It doesn't matter when we start.<br>
 > It doesn't matter where we start.<br>
