@@ -113,6 +113,7 @@ collections:
           11. One final look for readability. Does it look inviting/easy to scan? Short paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text blocks
 
           12. Publish but ask one more question. What next? Read more? Subscribe? But something?
+          
           {%- endcomment -%}
           
       - {label: 'SEO description', name: 'description', widget: 'text', required: false}
