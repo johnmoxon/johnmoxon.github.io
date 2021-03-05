@@ -29,7 +29,7 @@ collections:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
-      - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
+    #   - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
       
       - label: 'Date'
         name: 'date'
@@ -82,11 +82,17 @@ collections:
         name: 'body'
         widget: 'markdown'
         default: >-
+          Content placeholder
+          
+          {%- comment -%}
+          
+          - - -
+          
           ## Writing GPS
 
           1. What is your business goal - care about what you're writing
 
-          2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed
+          2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this at the top. This is where you are headed
 
           3. Seek out data that backs up your main idea. Don't discount your own experience
 
@@ -94,7 +100,7 @@ collections:
 
           5. Write to one person. Imagine the one person you're helping and wrote to them. Use 'you' not they/people/them
 
-          6. Produce the first ugly draft. - show up and throw up. Hey the ideas out don't worry about structure/spelling. Just get it down
+          6. Produce the first ugly draft. _Show up and throw up_. Get the ideas out don't worry about structure/spelling. Just get it down
 
           7. Walk away. Give ideas time to mature. Preferably a day or more
 
@@ -104,9 +110,10 @@ collections:
 
           10. Have someone edit it***
 
-          11. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
+          11. One final look for readability. Does it look inviting/easy to scan? Short paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text blocks
 
           12. Publish but ask one more question. What next? Read more? Subscribe? But something?
+          {%- endcomment -%}
           
       - {label: 'SEO description', name: 'description', widget: 'text', required: false}
       - {label: 'SEO keywords', name: 'keywords', widget: 'string', required: false}
@@ -120,7 +127,7 @@ collections:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
-      - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
+    #   - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
       
       - label: 'Date'
         name: 'date'
@@ -146,7 +153,7 @@ collections:
       - {label: 'Short name', name: 'short_name', widget: 'string'}
       - {label: 'Name', name: 'name', widget: 'string'}
       - {label: 'Position', name: 'position', widget: 'string', required: false}
-      - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
+    #   - {label: 'Published', name: published, widget: 'boolean', default: true, required: false }
       - label: 'social'
         name: 'social'
         widget: 'object'
