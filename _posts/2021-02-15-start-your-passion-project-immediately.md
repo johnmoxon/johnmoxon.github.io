@@ -2,7 +2,6 @@
 layout: post
 title: Start your passion project immediately!
 subtitle: Why you should start your personal product journey today
-published: true
 date: 2020-12-31 18:00:00 +1000
 category: product-management
 tags:
@@ -10,23 +9,24 @@ tags:
   - motivation
   - self-improvement
 author: John Moxon
+summary: >
+  Covid projects, who's got one?! I've had a few, built the kids a fort,
+  finished the back yard,  but there's been a few digital projects I've had
+  planned for quite a few years that I've never found time to really take
+  seriously.
+published: true
 image:
   path: /assets/uploads/pexels-startup-stock-photos-212286.jpg
   author: Startup Stock Photos
   source: Pexels
   url: https://www.pexels.com/@startup-stock-photos?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
 comments: true
-summary: >
-  Covid projects, who's got one?! I've had a few, built the kids a fort,
-  finished the back yard,  but there's been a few digital projects I've had
-  planned for quite a few years that I've never found time to really take
-  seriously.
 ---
 The difficult first post! I've been planning to write from my experience for longer than I want to admit. I hope over time, that writing down what I've learned will become second nature, an extension of my career and leadership journey. Though today, writing is hard.
 
 It's not for a lack of ideas, I've mapped out many topics I intend to cover and give back to the industry that has given me so much. But today writing is difficult, unnatural, the sentences do not flow freely. It therefore seems fitting to talk about the challenge of starting new things.
 
-There are endless articles that do a much better job of covering [why it's hard to start something genuinely new](https://findlink.com), and how to overcome the fear that prevents us from experiencing new things. But what if the thing you are struggling to start is something you are already good at? Perhaps even paid for?
+There are endless articles that do a much better job of covering [why it's hard to start something genuinely new](https://medium.com/swlh/why-starting-is-the-hardest-part-and-how-to-overcome-it-ab87f5d1b577), and how to overcome the fear that prevents us from experiencing new things. But what if the thing you are struggling to start is something you are already good at? Perhaps even paid for?
 
 ## Why start your passion project?
 
