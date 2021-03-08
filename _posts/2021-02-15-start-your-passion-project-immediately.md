@@ -70,9 +70,16 @@ Finding the time not only to start but continue putting in the effort to see pas
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for a lifetime. If you really want to stick to it then you will need to make working on it a  habit, just like brushing your teeth or remembering your keys as you leave the house.
+Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same outcome. You start with the best intentions, you are motivate and produce a flash of inspiration. Things are looking good! then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out tonight. The project gets tucked away and you have quickly fallen into habits that means it will stay there again until the motivation (or guilt) strikes you to try again.
 
-Habits are powerful things and drive many of our actions day-to-day. Some we fall into like eating, watching netflix after a long day, some are designed and purposeful like going for a morning run or visiting the gym at lunchtime. All though habits follow the same pattern, _[cue, crave, response and reward](https://jamesclear.com/habit-triggers)_. There has been a huge amount of research put into understanding the role that habits play in our lives and several books that are worth checking out [Atomic habits by James Clear](https://jamesclear.com/atomic-habits) and [XXX The Power of Habit]
+Habits are powerful things and drive many of our actions day-to-day. Some we fall into like eating, watching netflix after a long day, some are designed and purposeful like going for a morning run or visiting the gym at lunchtime. All though habits follow the same pattern, _[cue, crave, response and reward](https://jamesclear.com/habit-triggers)_. There's been much research put into understanding the role that habits play in our lives and several books that are worth checking out [Atomic habits by James Clear](https://jamesclear.com/atomic-habits) and [XXX The Power of Habit]
+
+
+Being too busy and having time to succeed requires you to make touch choices, prioritise and sacrifice 
+
+then you will need to make working on it a  habit, just like brushing your teeth or remembering your keys as you leave the house.
+
+
 
 
  some are in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive _keystone_ habits to achieve success. Wherh
