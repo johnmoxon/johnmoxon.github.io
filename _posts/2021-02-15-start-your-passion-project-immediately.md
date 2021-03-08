@@ -72,13 +72,14 @@ Finding the time not only to start but continue putting in the effort to see pas
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for a lifetime. If you really want to stick to it then you will need to make working on it a  habit, just like brushing your teeth or remembering your keys as you leave the house.
 
-Habits are powerful things, some we fall into like eating, watching netflix after a long day, and some are purposeful
+Habits are powerful things and drive many of our actions day-to-day. Some we fall into like eating, watching netflix after a long day, some are designed and purposeful like going for a morning run or visiting the gym at lunchtime. All though habits follow the same pattern, _[cue, crave, response and reward](https://jamesclear.com/habit-triggers)_. There has been a huge amount of research put into understanding the role that habits play in our lives and several books that are worth checking out [Atomic habits by James Clear](https://jamesclear.com/atomic-habits) and [XXX The Power of Habit]
+
 
  some are in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive _keystone_ habits to achieve success. Wherh
 
 You brush your teeth without thinking about it, it is instinctual in fact a need, and you couldn't possibly think of leaving the house without doing it.  
 
-to  understood and harnessed habits and the [cue, crave, response, reward habit loop](https://jamesclear.com/habit-triggers) to create positive behaviours that emanate 
+to  understood and harnessed habits and the  to create positive behaviours that emanate 
 
 There are many great books about how habits shape our lives, how companies, athletes and global movements have used habits to make change. [James Clear](https://jamesclear.com/habit-guide) 
 
