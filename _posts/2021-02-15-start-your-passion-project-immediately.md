@@ -70,11 +70,17 @@ Finding the time not only to start but continue putting in the effort to see pas
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to start building positive habits that will far outlive our current situation. 
+Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for a lifetime. If you really want to stick to it then you will need to make working on it a  habit, just like brushing your teeth or remembering your keys as you leave the house.
 
-Habits are powerful in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive _keystone_ habits to achieve success. Wherh
+Habits are powerful things, some we fall into like eating, watching netflix after a long day, and some are purposeful
+
+ some are in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive _keystone_ habits to achieve success. Wherh
+
+You brush your teeth without thinking about it, it is instinctual in fact a need, and you couldn't possibly think of leaving the house without doing it.  
 
 to  understood and harnessed habits and the [cue, crave, response, reward habit loop](https://jamesclear.com/habit-triggers) to create positive behaviours that emanate 
+
+There are many great books about how habits shape our lives, how companies, athletes and global movements have used habits to make change. [James Clear](https://jamesclear.com/habit-guide) 
 
 {examples of modern keystone habits - get up early, }
 
