@@ -72,13 +72,15 @@ Finding the time not only to start but continue putting in the effort to see pas
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to start building positive habits that will far outlive our current situation. 
 
-Habits are powerful things, and they tend to be associated with negative behaviours, but forming positive _keystone_ habits is a great way to become successful in many areas of life. Athletes, doctors, founders and CEO's have understood and harnessed the [cue, crave, response, reward habit loop](https://jamesclear.com/habit-triggers) which drives a lot of what we do.
+Habits are powerful in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive _keystone_ habits to achieve success. Wherh
+
+to  understood and harnessed habits and the [cue, crave, response, reward habit loop](https://jamesclear.com/habit-triggers) to create positive behaviours that emanate 
 
 {examples of modern keystone habits - get up early, }
 
 {cover choices - habit of netflix rather than learn}
 
-{cover planning}
+{cover planning, free jira etc}
 
 > It doesn't matter when we start.<br>
 > It doesn't matter where we start.<br>
