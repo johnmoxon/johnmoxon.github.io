@@ -72,9 +72,13 @@ Finding the time not only to start but continue putting in the effort to see pas
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same outcome. You start with the best intentions, you are motivate and produce a flash of inspiration. Things are looking good! then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out tonight. The project gets tucked away and you have quickly fallen into habits which means it will stay there again until the motivation (or guilt) strikes you to try again.
 
-Habits are powerful things and control much of our day-to-day behaviours both good and bad. Snacking in-between meals, flicking on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop and knowing how to replace negative behaviours with positive responses is the key to creating new behaviour that is as natural 
+Habits are powerful things and control much of our day-to-day behaviours both good and bad. Snacking in-between meals, flicking on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving so we can replace the negative responses with productive behaviours. Aha! the way to 
 
-{Self accountability, why not use free jira}
+ and how to replace those negative behaviours with positive responses is the key to being successful according to Charles Duhigg writer of _[The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/)_.
+
+Easier said than done right!?
+
+{Self accountability, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
 
 
 Some habiare designed and purposeful like going for a morning run or visiting the gym at lunchtime. All though habits follow the same pattern, _[cue, crave, response and reward](https://jamesclear.com/habit-triggers)_. There's been much research put into understanding the role that habits play in our lives and several books that are worth checking out [Atomic habits by James Clear](https://jamesclear.com/atomic-habits) and [XXX The Power of Habit]
