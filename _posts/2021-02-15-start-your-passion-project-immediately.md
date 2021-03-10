@@ -9,11 +9,8 @@ tags:
   - motivation
   - self-improvement
 author: John Moxon
-summary: >
-  Covid projects, who's got one?! I've had a few, built the kids a fort,
-  finished the back yard,  but there's been a few digital projects I've had
-  planned for quite a few years that I've never found time to really take
-  seriously.
+summary: Why you should start your personal product journey today and how to set
+  yourself up for success
 published: true
 image:
   path: /assets/uploads/pexels-startup-stock-photos-212286.jpg
@@ -72,7 +69,7 @@ Finding the time not only to start but continue putting in the effort to see pas
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same outcome. You start with the best intentions, you are motivate and produce a flash of inspiration. Things are looking good! then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out tonight. The project gets tucked away and you have quickly fallen into habits which means it will stay there again until the motivation (or guilt) strikes you to try again.
 
-Habits are powerful things and control much of our day-to-day behaviours both good and bad. Snacking in-between meals, flicking on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving so we can replace the negative responses with productive behaviours. Aha! the way to 
+Habits are powerful things, and control much of our day-to-day behaviours both good and bad. Snacking in-between meals, flicking on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving so we can replace the negative responses with productive behaviours. Aha! the way to 
 
  and how to replace those negative behaviours with positive responses is the key to being successful according to Charles Duhigg writer of _[The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/)_.
 
