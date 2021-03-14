@@ -67,28 +67,25 @@ Finding the time not only to start but continue putting in the effort to see pas
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same outcome. You start with the best intentions, you are motivate and produce a flash of inspiration. Things are looking good! then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out tonight. The project gets tucked away and you have quickly fallen into habits which means it will stay there again until the motivation (or guilt) strikes you to try again.
+Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same results. You start with the best intentions, you're motivated, produce a flash of inspiration, things are looking good! Then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out tonight. The project gets tucked away, and you again quickly fall into unproductive habits, your project stagnates the next flash of motivation (or guilt) strikes you to try again.
 
-Habits are powerful things, and control much of our day-to-day behaviours both good and bad. Snacking in-between meals, flicking on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving so we can replace the negative responses with productive behaviours. Aha! the way to 
+Habits are powerful things, they control much of our day-to-day behaviours both good and bad. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving is the key to harnessing those powerful conditioned responses. Charles Duhigg in his book *The Power of Habit* argues, that once you recognise the cues and rewards that drive your habits, you’re halfway to changing them.
 
- and how to replace those negative behaviours with positive responses is the key to being successful according to Charles Duhigg writer of _[The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/)_.
+
+
+
+
+ so we can replace the negative responses with productive behaviours. Aha! the way to 
+
+ and how to replace those negative behaviours with positive responses is the key to being successful according to Charles Duhigg writer of *[The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/)*.
 
 Easier said than done right!?
 
 {Self accountability, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
 
-
-Some habiare designed and purposeful like going for a morning run or visiting the gym at lunchtime. All though habits follow the same pattern, _[cue, crave, response and reward](https://jamesclear.com/habit-triggers)_. There's been much research put into understanding the role that habits play in our lives and several books that are worth checking out [Atomic habits by James Clear](https://jamesclear.com/atomic-habits) and [XXX The Power of Habit]
-
-
 Being too busy and having time to succeed requires you to make touch choices, prioritise and sacrifice 
 
-then you will need to make working on it a  habit, just like brushing your teeth or remembering your keys as you leave the house.
-
-
-
-
- some are in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive _keystone_ habits to achieve success. Wherh
+ some are in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive *keystone* habits to achieve success. Wherh
 
 You brush your teeth without thinking about it, it is instinctual in fact a need, and you couldn't possibly think of leaving the house without doing it.  
 
@@ -109,17 +106,16 @@ There are many great books about how habits shape our lives, how companies, athl
 
 For my own journey, writing this piece is the start, creating accountability in myself by sharing this online is my first step. I'll continue to write more about my own product journey, the good, bad and ugly. 
 
-So next time you are feeling motivated, resist the urge to turn on Netflix and ponder _What if_, _"What if it's spectacular?"_, _"What if it's the start of something exciting? Possibly even life changing?!"_. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
+So next time you are feeling motivated, resist the urge to turn on Netflix and ponder *What if*, *"What if it's spectacular?"*, *"What if it's the start of something exciting? Possibly even life changing?!"*. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
 
 {%- comment -%}
+
 - - -
 
 ## Writing GPS
 
 1. What is your business goal - care about what you’re writing - Motivating myself and other people to start something new.
-
 2. Reframe - put your reader into it, ask “so what” repeatedly. Express your reframed idea + put this say the top. This is where you are headed - *So what? can people learn from my product journey and apply to their own projects* *My reader is involved in product management or product development, or they have a product or project they have in some state of initial progress. So what?* *They know they could achieve something, they are excited about the prospect, but something is stopping them - so what* *This article will propose simple steps and small changes to make sure that it gets done.*
-
 3. Seek out data that backs up your main idea. Don’t discount your own experience -
 
    * Lean startups, what else?
@@ -140,4 +136,5 @@ So next time you are feeling motivated, resist the urge to turn on Netflix and p
 6. Have someone edit it\*\**
 7. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 8. ## Publish but ask one more question. What next? Read more? Subscribe? But something?
-{% endcomment %}
+
+   {% endcomment %}
