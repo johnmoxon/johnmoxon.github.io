@@ -53,7 +53,7 @@ Full disclosure. I am a creative person who has developed and launched incredibl
 
 Even if you are confident in your skills and the quality of your idea, starting something on your own and following your own path without a team having your back is scary! What if it's not good enough? What if people hate it? Or worse, ignore it? 
 
-Overcoming the innate fear associated with starting something new is a significant obstacle and does require a leap of faith.
+Overcoming the innate fear associated with starting something new is a significant obstacle and requires a leap of faith.
 
 Finding the time not only to start but continue putting in the effort to see passion projects through can also be a challenge. We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices all vying for our attention and it is easy to fall into a pattern of "I'm just too busy".
 
