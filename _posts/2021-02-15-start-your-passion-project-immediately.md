@@ -71,17 +71,13 @@ Don't get me wrong, there have not been many positives to come out of our curren
 
 Habits are powerful things, they control much of our day-to-day behaviours both good and bad. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving is the key to harnessing those powerful conditioned responses. Charles Duhigg in his book *The Power of Habit* argues, that once you recognise the cues and rewards that drive your habits, you’re halfway to changing them.
 
-
-
-
-
  so we can replace the negative responses with productive behaviours. Aha! the way to 
 
  and how to replace those negative behaviours with positive responses is the key to being successful according to Charles Duhigg writer of *[The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/)*.
 
 Easier said than done right!?
 
-{Self accountability, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
+{Self accountability, chunk it into small pieces, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
 
 Being too busy and having time to succeed requires you to make touch choices, prioritise and sacrifice 
 
