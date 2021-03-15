@@ -74,25 +74,20 @@ Habits are powerful things, they control much of our day-to-day behaviours both 
 Creating new positive habits like a [pre-game routine](https://jamesclear.com/how-to-get-motivated)
 
 
-## The trick to  large projects 
+## Build in small wins
 
 {Self accountability, chunk it into small pieces, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
 
-Being too busy and having time to succeed requires you to make touch choices, prioritise and sacrifice 
-
- some are in some many areas of our lives and are generally associated with negative behaviours, though forming positive habits can be even more powerful and help to ensure success in many areas of our professional and personal lives. Athletes, doctors, founders and CEO's through many industries have used positive *keystone* habits to achieve success. Wherh
-
-You brush your teeth without thinking about it, it is instinctual in fact a need, and you couldn't possibly think of leaving the house without doing it.  
-
-to  understood and harnessed habits and the  to create positive behaviours that emanate 
-
-There are many great books about how habits shape our lives, how companies, athletes and global movements have used habits to make change. [James Clear](https://jamesclear.com/habit-guide) 
 
 {examples of modern keystone habits - get up early, }
 
 {cover choices - habit of netflix rather than learn}
 
 {cover planning, free jira etc}
+
+## Stat now!
+
+
 
 > It doesn't matter when we start.<br>
 > It doesn't matter where we start.<br>
