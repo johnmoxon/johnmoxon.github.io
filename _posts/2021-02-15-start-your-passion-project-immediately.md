@@ -67,15 +67,16 @@ Finding the time not only to start but continue putting in the effort to see pas
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you have been putting off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same results. You start with the best intentions, you're motivated, produce a flash of inspiration, things are looking good! Then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out tonight. The project gets tucked away, and you again quickly fall into unproductive habits, your project stagnates the next flash of motivation (or guilt) strikes you to try again.
+Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you've put off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same results. You start with the best intentions, you're motivated, produce a flash of inspiration, things are looking good! Then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out for the 3rd night this week. Your project gets tucked away, and you again quickly fall into unproductive habits, your project stagnates until the next flash of motivation (or guilt) strikes you to try again.
 
-Habits are powerful things, they control much of our day-to-day behaviours both good and bad. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, **[cue, crave, response and reward](https://jamesclear.com/habit-triggers)**. Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving is the key to harnessing those powerful conditioned responses. Charles Duhigg in his book *The Power of Habit* argues, that once you recognise the cues and rewards that drive your habits, you’re halfway to changing them.
+Habits are powerful things, they control much of our day-to-day behaviours both good and bad. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, [cue, crave, response and reward](https://jamesclear.com/habit-triggers). 
 
- so we can replace the negative responses with productive behaviours. Aha! the way to 
+Understanding this habit loop, identifying the cues that trigger our habits and the rewards we are craving is the key to harnessing those powerful conditioned responses. Charles Duhigg in his book [The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/) argues, that once you recognise the cues and rewards that drive your habits, you’re halfway to changing them. 
 
- and how to replace those negative behaviours with positive responses is the key to being successful according to Charles Duhigg writer of *[The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/)*.
+Next time you find yourself snacking or another habit you want to change, look for the cues that lead you here.  Were you really hungry, or just bored? do you find you snack at the same time each day? When you establish and become aware of what the trigger is, then 
 
-Easier said than done right!?
+
+## Break it into chunks
 
 {Self accountability, chunk it into small pieces, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
 
