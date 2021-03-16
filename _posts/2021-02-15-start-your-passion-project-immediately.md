@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Start your passion project immediately!
-subtitle: Why you should start your personal product journey today
+subtitle: Why and how you should start your personal product journey today
 date: 2020-12-31 18:00:00 +1000
 category: product-management
 tags:
@@ -69,8 +69,9 @@ Finding the time not only to start but continue putting in the effort to see pas
 
 Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you've put off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same results. You start with the best intentions, you're motivated, produce a flash of inspiration, things are looking good! Then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out for the 3rd night this week. Your project gets tucked away, and you again quickly fall into unproductive habits, things stagnate until the next flash of motivation (or guilt) strikes you to try again.
 
-Habits are powerful things, they control much of our day-to-day behaviours both good and bad. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, [cue, crave, response and reward](https://jamesclear.com/habit-triggers) and understanding this habit loop, identifying the cues that trigger your habits and the rewards we get from them is the key to harnessing those powerful habits productively. Charles Duhigg in his book [The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/) argues, that once you recognise the cues and rewards that drive your habits, you’re halfway to changing them. Look for the cues that trigger your habits, 
+Habits are powerful things, they control much of our day-to-day behaviours both good and bad. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, [cue, crave, response and reward](https://jamesclear.com/habit-triggers) and understanding this habit loop, identifying the cues that trigger your habits and the rewards we get from them is the key to harnessing those powerful habits productively. Charles Duhigg in his book [The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/) argues, that once you recognise the cues and rewards that drive your habit, you’re halfway to changing it. Try to spot your habit cues. Do they always happen at the same time of day?  Take note of how you were feeling before you fell back into that habit. 
 
+Now you understand what precedes the behaviour you need to start 
 Once you can identify {... example of identifying a habit, and replacing it to get the same reward, how do I pitch this as being productive at something that's not baseball or sport??} 
 
 Creating new positive habits like a [pre-game routine](https://jamesclear.com/how-to-get-motivated)
