@@ -10,6 +10,9 @@
 [[redirects]]
   from = "/"
   to = "/product-management/2020/12/31/start-your-passion-project-immediately"
+  force = true
+  status = 302
+  
 
 # [[redirects]]
 #   from = "/*"
