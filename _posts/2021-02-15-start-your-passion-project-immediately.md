@@ -85,22 +85,14 @@ James Clear writes a [great article on constructing your own pre-game routine](h
 
 ## Start now!
 
-{Self accountability, chunk it into small pieces, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
-
-{examples of modern keystone habits - get up early, }
-
-{cover choices - habit of netflix rather than learn}
-
-{cover planning, free jira etc}
-
 > It doesn't matter when we start.<br>
 > It doesn't matter where we start.<br>
 > All that matters is that we start.<br>
 > <cite>&mdash; Simon Sinek</cite>
 
-For my own journey, writing this piece is the start, creating accountability in myself by sharing this online is my first step. I'll continue to write more about my own product journey, the good, bad and ugly. 
+For my own journey, writing this piece is my start, creating accountability in myself by sharing this online is my first step. I'll continue to write more about my own product journey, the good, bad and ugly. 
 
-So next time you are feeling motivated, resist the urge to turn on Netflix and ponder *What if*, *"What if it's spectacular?"*, *"What if it's the start of something exciting? Possibly even life changing?!"*. And then start **immediately!** You can't bottle motivation, it is fleeting, so start now.
+So next time you are feeling motivated, resist the urge to turn on Netflix and instead ponder *What if*, *"What if it's spectacular?"*, *"What if it's the start of something exciting? Possibly even life changing?!"*. And then start **immediately!** You can't bottle motivation, it's fleeting, so start now.
 
 {%- comment -%}
 
