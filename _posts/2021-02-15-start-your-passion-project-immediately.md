@@ -35,7 +35,7 @@ The mobile app idea you had 2 years ago which could have had a hundred thousand 
 > After that things can only get better<br>
 > <cite>&mdash; Stephen King</cite>
 
-You're not alone. Chat to any creative colleague you will find similar stories of half finished or never started projects that could have been the next big thing. So what separates the people who could, from the people who do? For those of us driven enough to give it a shot, how can we shift our mindsets to doing?
+You're not alone. Chat to any creative colleague you will find similar stories of half finished or never started projects that could have been the next big thing. So what separates the people who could, from the people who do? For those of us driven enough to give it a shot, how can we shift our mindsets from planning to doing?
 
 There are [huge benefits in starting your own passion project](https://kraylfunch.com/5-benefits-of-creating-a-passion-project/). Explore directions you have not been able to go in your professional life, develop new skills and experience you would have otherwise not been exposed to. Even if it doesn't turn into a business, then you will hopefully have created positive habits that will last you a lifetime and will have reached new contacts and opportunities.
 
@@ -53,9 +53,9 @@ Full disclosure. I am a creative person who has developed and launched incredibl
 
 Even if you are confident in your skills and the quality of your idea, starting something on your own and following your own path without a team having your back is scary! What if it's not good enough? What if people hate it? Or worse, ignore it? 
 
-Overcoming the innate fear associated with starting something new is a significant obstacle and requires a leap of faith.
+Overcoming the innate fear associated with starting something new is a significant obstacle and will require a leap of faith.
 
-Finding the time not only to start but continue putting in the effort to see passion projects through can also be a challenge. We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices all vying for our attention and it is easy to fall into a pattern of "I'm just too busy".
+Finding the time not only to start but to continue putting in the effort to see passion projects through can also be a challenge. We are more time poor than ever before. Adulting, working a 9to5, taking care of kids is enough of a juggle, add unlimited content, socialising, entertainment and devices all vying for our attention, and it is easy to fall into a pattern of "I'm just too busy".
 
 ## Okay, Thanks Covid! Let's Do this!
 
@@ -67,30 +67,31 @@ Finding the time not only to start but continue putting in the effort to see pas
   img_source_url="https://www.pexels.com/@brejeq?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
 %}
 
-Don't get me wrong, there have not been many positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you've put off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same results. You start with the best intentions, you're motivated, produce a flash of inspiration, things are looking good! Then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out for the 3rd night this week. Your project gets tucked away, and you again quickly fall into unproductive habits, things stagnate until the next flash of motivation (or guilt) strikes you to try again.
+Don't get me wrong, there have not been a lot of positives to come out of our current situation, but if you have found yourself at home a lot more than usual, then you have been given an opportunity to make a start on that passion project you've put off for so long. If you've ever tried (and failed) to get your passion project off the ground you will know that going about things the same way will typically result in the same results. You start with the best intentions, you're motivated, produce a flash of inspiration, things are looking good! Then inevitably life interjects. You get busy at work, your car needs fixing and your friends just invited you to come out for the 3rd night this week. Your project gets tucked away, and you again quickly fall into unproductive habits, things stagnate until the next flash of motivation (or guilt) strikes you to try again.
 
-Habits are powerful things, they control much of our day-to-day behaviours both good and bad. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, [cue, crave, response and reward](https://jamesclear.com/habit-triggers) and understanding this habit loop, identifying the cues that trigger your habits and the rewards we get from them is the key to harnessing those powerful habits productively. Charles Duhigg in his book [The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/) argues, that once you recognise the cues and rewards that drive your habit, you’re halfway to changing it. Try to spot your habit cues. Do they always happen at the same time of day?  Take note of how you were feeling before you fell back into that habit. 
+Those habits are powerful things. They control much of our day-to-day behaviours both good and bad subconsciously. Snacking in-between meals, turning on Netflix when you feel tired, heading out for a morning run or to the gym at lunch. All habits though follow the same pattern, [cue, crave, response and reward](https://jamesclear.com/habit-triggers) and understanding this habit loop, identifying the cues that trigger your habits and the rewards we get from them is the key to harnessing those powerful habits productively. 
 
-Now you understand what precedes the behaviour you need to start 
-Once you can identify {... example of identifying a habit, and replacing it to get the same reward, how do I pitch this as being productive at something that's not baseball or sport??} 
+Charles Duhigg in his book [The Power of Habit](https://charlesduhigg.com/books/the-power-of-habit/) contends that once you recognise the cues and rewards that drive your habit, you’re halfway to changing it. Try it! Does your negative habit always happen at the same time of day? Is it triggered in a specific location or situation? Take note of how you were feeling at this point. When you notice the habit is happening you can experiment with replacing that behaviour, find a positive alternative that gives the same reward.
 
-Creating new positive habits like a [pre-game routine](https://jamesclear.com/how-to-get-motivated)
+Maybe when you head to the canteen to buy that snack or to the bar for a drink, you are actually craving social contact with your colleagues? Perhaps a professional [meetup](https://www.meetup.com/) would give you the same reward you are craving?
 
+## Start small, build in quick wins
 
-## Build in small wins
+Athletes throughout the ages have used pre-game routines to ready themselves. Put themselves in the right headspace to perform every time, even if they today they just don't feel like it.  I set of pre-conditioned habits that tells body and mind, _"I am here to succeed"_. Watch [Raphael Nadal as he enters the centre court](https://www.inverse.com/article/33718-rafael-nadal-and-the-psychology-of-sports-rituals) bottles of water lined up perfectly, drinking alternately from each bottle followed by a series of jumps. These rituals have been called superstitions or ticks, but that undersells the power of these rituals have to get your head in the game.
+
+Lining up water bottles, towels and rackets, jumping up and down does increas Raphael Nadal's tennis skills, it does however condition his mind and body to be ready for what comes next.  The pre-game routine tells the athlete, "I am ready, I am confident, I will win". Performing the same actions in the same order each time conditions your mind and body to perform.
+
+James Clear writes a [great article on constructing your own pre-game routine](https://jamesclear.com/how-to-get-motivated). The trick it appears, is to start with a task that is so small, so easy that you can't say no. Then build from that first step towards your goal. Pour a glass of water, tie on your running shoes, pack your day-bag the same way each time. This has the effect of readying us for the game or task, making sure our minds know performance is expected.
+
+## Start now!
 
 {Self accountability, chunk it into small pieces, why not use free jira}[Jira is currently free](https://www.atlassian.com/software/jira/free)
-
 
 {examples of modern keystone habits - get up early, }
 
 {cover choices - habit of netflix rather than learn}
 
 {cover planning, free jira etc}
-
-## Stat now!
-
-
 
 > It doesn't matter when we start.<br>
 > It doesn't matter where we start.<br>
