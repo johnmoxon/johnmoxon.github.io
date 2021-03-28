@@ -7,15 +7,19 @@
 # For context-specific rules, use _headers or _redirects files, which are
 # PER-DEPLOY.
 
+[[redirects]]
+  from = "/"
+  to = "/product-management/2020/12/31/start-your-passion-project-immediately"
+
 # [[redirects]]
 #   from = "/*"
 #   to = "/maintenance.html"
 #   status = 503
 
-[[redirects]]
-  from = "/maintenance.html"
-  force = true
-  status = 404
+# [[redirects]]
+#   from = "/maintenance.html"
+#   force = true
+#   status = 404
 
 # A basic redirect rule
 #[[redirects]]
