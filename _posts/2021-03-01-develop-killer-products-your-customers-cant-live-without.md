@@ -3,23 +3,28 @@ layout: post
 title: Develop killer products your customers can't live without
 subtitle: How big tech understand their customers and develop products they
   didn't know they need
-published: true
 date: 2021-03-01 11:02:58 +1000
 category: product-management
 tags:
   - data-driven
   - product-design
 author: John Moxon
+summary: Big tech is shaping the future of product design by spotting trends,
+  gaps and product-market-fit before its customers knew they needed their
+  products and services.  How do they do it and how can you start doing it now?
+published: true
 image:
   path: /assets/uploads/pexels-thought-catalog-2228570.jpg
   author: Pex
   source: Pexels
   url: https://pexels/com
 comments: true
-summary: Big tech is shaping the future of product design by spotting trends,
-  gaps and product-market-fit before its customers knew they needed their
-  products and services.  How do they do it and how can you start doing it now?
 ---
+There is power in the data you already collect and touchpoints you have with your customers. Learn from big tech and how they use that data to not only drive sales and increase customer base, but identify and develop new products their customers need but never knew they wanted.
+
+
+{%- comment -%}
+- - -
 ## Writing GPS
 1. What is your business goal - care about what you're writing
 2. Reframe - put your reader into it, ask "so what" repeatedly. Express your reframed idea + put this say the top. This is where you are headed
@@ -45,3 +50,5 @@ summary: Big tech is shaping the future of product design by spotting trends,
 - Probably report on this stuff.  How can you do it quicker and move from reports to insights
 4. Is it ethical?
 5. the future
+
+{%- endcomment -%}
