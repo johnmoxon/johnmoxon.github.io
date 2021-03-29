@@ -22,6 +22,10 @@ comments: true
 ---
 There is power in the data you already collect and touchpoints you have with your customers. Learn from big tech and how they use that data to not only drive sales and increase customer base, but identify and develop new products their customers need but never knew they wanted.
 
+so what?
+
+Huge opportunities exist in the data you collect from your customers, their purchases and interactions with you that could be the key to unlocking new markets, new products and new revenue streams. Accessing the data you collect may take effort and investment, but the opportunities could be worth that investment multiple times over.
+
 
 {%- comment -%}
 - - -
