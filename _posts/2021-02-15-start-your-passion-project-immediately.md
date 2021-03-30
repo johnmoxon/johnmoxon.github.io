@@ -2,7 +2,7 @@
 layout: post
 title: Start your passion project immediately!
 subtitle: Why and how you should start your personal product journey today
-date: 2020-12-31 18:00:00 +1000
+date: 2021-03-28 12:00:00 +1000
 category: product-management
 tags:
   - product-design
