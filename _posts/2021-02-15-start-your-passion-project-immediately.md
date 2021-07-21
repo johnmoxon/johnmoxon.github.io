@@ -77,7 +77,7 @@ Maybe when you head to the canteen to buy that snack or to the bar for a drink, 
 
 ## Start small, build in quick wins
 
-Athletes throughout the ages have used pre-game routines to ready themselves. Put themselves in the right headspace to perform every time, even if today they just don't feel like it.  A set of predefined habits that tells body and mind, _"I am here to succeed"_. Watch [Raphael Nadal as he enters the centre court](https://www.inverse.com/article/33718-rafael-nadal-and-the-psychology-of-sports-rituals). Bottles of water lined up perfectly, drinking alternately from each bottle followed by a series of jumps. These rituals have been called superstitions or ticks, but that undersells the power these rituals have to get the player's head in the game.
+Athletes throughout the ages have used pre-game routines to ready themselves. Put themselves in the right headspace to perform every time, even if today they just don't feel like it.  A set of predefined habits that tells body and mind, *"I am here to succeed"*. Watch [Raphael Nadal as he enters the centre court](https://www.inverse.com/article/33718-rafael-nadal-and-the-psychology-of-sports-rituals). Bottles of water lined up perfectly, drinking alternately from each bottle followed by a series of jumps. These rituals have been called superstitions or ticks, but that undersells the power these rituals have to get the player's head in the game.
 
 Lining up water bottles, towels and rackets, jumping up and down does not increase Raphael Nadal's ability to play tennis, it does however condition his mind and body to be ready for what comes next.  The pre-game routine tells the athlete, "I am ready, I am confident, I am here to win". Performing the same actions in the same order each time conditions their mind and body to perform.
 
@@ -123,4 +123,6 @@ So next time you are feeling motivated, resist the urge to turn on Netflix and i
 7. One final look for readability. Does it your inviting /easy to scan? Sorry paragraphs and bold subheads, lists bulleted/numbered. Avoid impenetrable chunky text
 8. ## Publish but ask one more question. What next? Read more? Subscribe? But something?
 
-   {% endcomment %}
+this is in the comment
+
+{% endcomment %}
