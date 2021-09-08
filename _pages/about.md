@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about
+title: about old
 subtitle: Front end developer and project manager
 published: false
 date: 2014-06-11 08:20:47
