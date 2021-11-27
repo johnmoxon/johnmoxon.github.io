@@ -3,20 +3,21 @@ layout: post
 title: Mapping organisational habits and process to understand business problems
   and strengths
 subtitle: Mapping operational processes to spot dumb shit
-published: true
+date: 2021-11-27 10:41:27 +1000
 category: strategy
 tags:
   - strategy
 author: John Moxon
+summary: This should cover how business processes evolve if left
+  unchecked.  Have you ever asked why do we do it that way and been told "thats
+  just the way we've always done it"
+published: true
 image:
   path: /assets/uploads/balloon-3206530_1920.jpg
   author: Me
   source: me
   url: https://me.com
 comments: true
-summary: This should cover how business processes evolve if left
-  unchecked.  Have you ever asked why do we do it that way and been told "thats
-  just the way we've always done it"
 ---
 ## Writing GPS
 1. What is your business goal - care about what you're writing
