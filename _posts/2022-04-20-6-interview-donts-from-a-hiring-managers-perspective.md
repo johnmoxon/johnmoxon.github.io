@@ -16,7 +16,7 @@ image:
 comments: true
 summary: "Interviews are peculiar situations. They're a short window into "
 ---
-Throughout my leadership career and even before I became a leader I have sat in, or conducted 100's of interviews, and although every one of them is different, the ones you remember, the standout candidates generally fall into a just one or two categories. You either blew me away and I was in awe of your technical competency, your people skills, your ability to take the complex and spin it into an engaging concise snippet, or you left an impression at the other end of the scale that compelled me to write a lengthy blog post on what not to do in an interview.
+Throughout my leadership career and even before I became a leader I have sat in, or conducted 100's of interviews, and although every one of them is different, the ones you remember, the standout candidates generally fall into a just one of two categories. You either blew me away and I was in awe of your technical competency, your people skills, your ability to take complex subject matter and spin it into an engaging concise snippet, or you left an impression at the other end of the scale that compelled me to write a lengthy blog post on what not to do in an interview.
 
 This is that post. It's kind of cathartic! and a little ranty.. _felt brave, may delete later!_
 
@@ -31,22 +31,27 @@ As a side note, this a great reason to build your profile and a reputation onlin
 ## Don't assume your resume told us what we need to know
 Got to say this is my number 1 pet hate and frustration in interviews. Yes we have read your resume, a good employer has likely gone even further and done their own research into your background and key achievements.  If you have made it to the interview stage it's a pretty safe bet to assume the interviewer thinks you can technically do the job, but that alone is not enough. 
 
-An attitude of _why are you asking me that, it's on my resume_ entirely misses the point of why you are being asked. 
+An attitude of _why are you asking me that, it's on my resume_ entirely misses the point of why and what you are being asked. 
 
-| you are really being asked to demonstrate your communication skills and show the depth of your experience. Don't be afraid to show you are passionate about a subject. 
+This question is really asking you to demonstrate your communication skills and show the depth of your experience. Anyone can say they are an expert in a field on paper. An interviewer wants to hear you speak about it, they want you to hear you add colour and depth to what is likely to have been just a few lines of text on your resume.
 
-Anyone can say they are an expert in a field on paper. An interviewer wants to hear you speak about it, they want you to add colour and depth to what is likely to have been only a few lines of text before they heard you speak.
-
-Yes we want to satisfy ourselves you are the real deal, but really what and interviewer is really looking for is and indication of your communication skills, hear what challenges were presented and how you overcame them. We want to hear what you are passionate about. We want to hear that you were invested in the outcome and worked to make it a success rather than just being there to collect a paycheck.
+Yes we want to satisfy ourselves you are the real deal, but really what an interviewer is looking for is and indication of how you communicate, the challenges that presented and how you overcame them. We want to hear what you are passionate about. We want to hear that you were invested in the outcome and worked to make it a success rather than just being there to collect a paycheck.
 
 > You've read my resume so I won't go into that...
 
-In the worst instances it can come across as arrogance. It may not be the intent, but it's not a good look. If I'm interviewing, I'll always choose quiet confidence over resolute belief. 
+In the worst instances it can come across as arrogance. It may not be the intent, but it's never a good look. If I'm interviewing, I'll always choose quiet confidence over resolute belief.
+
+---
   
 ## Don't bad mouth your previous employer
-I've seen the full spectrum of this one and it's almost a instant **no** vote when it comes up. I'll generally push through and keep the interview going to see if it can be redeemed, but it leaves an impression that is hard to come back from.
+
+I can't believe this one needs to be said, but I've seen it so many times its proven it really does. It's almost a instant **no** vote when this one comes up. I'll generally push through and keep the interview going to see if it can be redeemed, but it leaves an impression that is hard to come back from.
 
 No doubt there are some terrible employers out there, and finding a company whose culture is not only positive, but in line with your own values is extremely important for longevity and a positive employee experience.
+
+The trick is in how you spin it.  Any employer wants to know that you are not going to speak about them the same way you are bad mouthing your current or previous employer, hopefully that goes without question. Though it also goes a little deeper. No one loves their job every day (if you do, never leave), but there are those who look for the positives in bad situations. They either choose to look for ways to improve their situation or they look to move on, either is fine. Those that choose to live in the negative, choose to give up control and become a victim. In Australia and the majority of the western world, we are protected from becoming a victim in our workplace. It's not always an easy or safe choice to choose not to be a victim, but it is always the right decision.  Robin Sharma in his book The leader with no title invites you to list all the ways you are choosing to become a victim and take control ([check out this video](https://www.youtube.com/watch?v=Z5-iGA_zEKY))
+
+ 
 
 
 **Tip:** jump on [Glassdoor](https://www.glassdoor.com) and read up on the prospective company before you apply. Do take any review site with a healthy pinch of salt, but it can be an effective way to avoid some of the main offenders.
