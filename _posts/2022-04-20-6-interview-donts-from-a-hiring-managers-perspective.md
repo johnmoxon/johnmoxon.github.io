@@ -33,23 +33,33 @@ Got to say this is my number 1 pet hate and frustration in interviews. Yes we ha
 
 An attitude of _why are you asking me that, it's on my resume_ entirely misses the point of why you are being asked. 
 
-| you are really being asked to demonstrate your communication skills and  
+| you are really being asked to demonstrate your communication skills and show the depth of your experience. Don't be afraid to show you are passionate about a subject. 
 
-Anyone can say they are an expert in any number of fields on paper. An interviewer wants to hear you speak about it. I personally want to hear a candidate add colour and depth when they talk about their experience. Yes we want to validate that we believe your depth of experience
+Anyone can say they are an expert in a field on paper. An interviewer wants to hear you speak about it, they want you to add colour and depth to what is likely to have been only a few lines of text before they heard you speak.
 
-There's nothing more attractive to a prospective employer than a candidate 
-
-we want to hear to speak about it, add depth and colour to it so we can get a feel for if the candidate 
+Yes we want to satisfy ourselves you are the real deal, but really what and interviewer is really looking for is and indication of your communication skills, hear what challenges were presented and how you overcame them. We want to hear what you are passionate about. We want to hear that you were invested in the outcome and worked to make it a success rather than just being there to collect a paycheck.
 
 > You've read my resume so I won't go into that...
+
+In the worst instances it can come across as arrogance. It may not be the intent, but it's not a good look. If I'm interviewing, I'll always choose quiet confidence over resolute belief. 
   
 ## Don't bad mouth your previous employer
+I've seen the full spectrum of this one and it's almost a instant **no** vote when it comes up. I'll generally push through and keep the interview going to see if it can be redeemed, but it leaves an impression that is hard to come back from.
+
+No doubt there are some terrible employers out there, and finding a company whose culture is not only positive, but in line with your own values is extremely important for longevity and a positive employee experience.
+
+
+**Tip:** jump on [Glassdoor](https://www.glassdoor.com) and read up on the prospective company before you apply. Do take any review site with a healthy pinch of salt, but it can be an effective way to avoid some of the main offenders.
 
 ## Avoid negativity -> find the positives in bad experiences
 
-## num 4 
+## Don't tell me you've never made a mistake.
+This question is not designed to trip you out, though granted it can feel that way. 
 
-## num 5 
+The truth is we've all made mistakes, if you haven't, then time to gain some self awareness and try again.  The important thing is that we don't make mistakes that are too big (we take a risk based approach) and that we learn from them. 
+
+## Don't walk into an interview thinking your not experienced enough
+The fact you are in an interview at all 
 
 ## Don't answer, no when asked if you have any questions
 Show you are interest by asking questions
