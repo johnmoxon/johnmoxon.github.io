@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 6 Interview don'ts from a hiring managers perspective
-date: 2022-04-20 09:04:15 +1000
+date: 2022-04-20 23:04:15 +1000
 category: career
 tags:
   - self-improvement
