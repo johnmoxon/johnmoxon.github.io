@@ -51,7 +51,7 @@ No doubt there are some terrible employers out there, and finding a company whos
 
 The trick is in how you spin it.  Any employer wants to know that you are not going to speak about them the same way you are bad mouthing your current or previous employer, hopefully that goes without question. Though it also goes a little deeper. No one loves their job every day (if you do, never leave), but there are those who look for the positives in bad situations. They either choose to look for ways to improve their situation or they look to move on, either is fine. Those that choose to live in the negative, choose to give up control and become a victim. In Australia and the majority of the western world, we are protected from becoming a victim in our workplace. It's not always an easy or safe choice to choose not to be a victim, but it is always the right decision.  Robin Sharma in his book The leader with no title invites you to list all the ways you are choosing to become a victim and take control ([check out this video](https://www.youtube.com/watch?v=Z5-iGA_zEKY)).
 
-An employer (and interviewer) is looking for candidates with resilience, individuals who work through negative situations and makes positive choices to improve the  
+An employer (and interviewer) is looking for candidates with resilience. Those who work through negative situations to improve things rather than accepting the status quo.  
 
  
 
