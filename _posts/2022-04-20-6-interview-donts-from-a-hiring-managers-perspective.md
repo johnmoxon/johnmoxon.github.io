@@ -16,19 +16,52 @@ image:
 comments: true
 summary: "Interviews are peculiar situations. They're a short window into "
 ---
-## Don't assume your interview knows your resume inside out  
-They should have read it, if they are a employer worth your time they may have even gone deeper and done their own research, but if you expec
+Throughout my leadership career and even before I became a leader I have sat in, or conducted 100's of interviews, and although every one of them is different, the ones you remember, the standout candidates generally fall into a just one or two categories. You either blew me away and I was in awe of your technical competency, your people skills, your ability to take the complex and spin it into an engaging concise snippet, or you left an impression at the other end of the scale that compelled me to write a lengthy blog post on what not to do in an interview.
 
-We see it on paper, but we want you to add depth and colour to it.  Anyone can write a few words to say they know or did something, 
+This is that post. It's kind of cathartic! and a little ranty.. _felt brave, may delete later!_
+
+It is however from the heart and designed to help you (and me) navigate what can be a stressful and anxiety inducing situation. I'll happily admit I have made many of the mistakes I am about to describe. Sometimes you only see it when sitting on the other side of the table, and I often cringe when I think back to past interviews and how I may have come across.
+
+If you haven't interviewed in a while it is easy to fall into some of these traps.  You have built up competency, experience and a good reputation, why wouldn't they want you? Though as it turns out, reputation unless it transcends the organisation you are currently in, does not earn points when interviewing at a different company.
+
+As a side note, this a great reason to build your profile and a reputation online and within your industry network. Though this is an article in of itself I'll explore at a later date.  
+
+---
+
+## Don't assume your resume told us what we need to know
+Got to say this is my number 1 pet hate and frustration in interviews. Yes we have read your resume, a good employer has likely gone even further and done their own research into your background and key achievements.  If you have made it to the interview stage it's a pretty safe bet to assume the interviewer thinks you can technically do the job, but that alone is not enough. 
+
+An attitude of _why are you asking me that, it's on my resume_ entirely misses the point of why you are being asked. 
+
+| you are really being asked to demonstrate your communication skills and  
+
+Anyone can say they are an expert in any number of fields on paper. An interviewer wants to hear you speak about it. I personally want to hear a candidate add colour and depth when they talk about their experience. Yes we want to validate that we believe your depth of experience
+
+There's nothing more attractive to a prospective employer than a candidate 
+
+we want to hear to speak about it, add depth and colour to it so we can get a feel for if the candidate 
 
 > You've read my resume so I won't go into that...
   
-2. Don't bad mouth your previous employer
-3. Avoid negativity -> find the positives
+## Don't bad mouth your previous employer
+
+## Avoid negativity -> find the positives in bad experiences
+
+## num 4 
+
+## num 5 
+
+## Don't answer, no when asked if you have any questions
+Show you are interest by asking questions
+
+
 
 
 
 {%- comment -%}
+Potentially I should add a box of "what you are really being asked.." - a callout box
+
+
 - - -
 ## Writing GPS
 1. What is your business goal - care about what you're writing
