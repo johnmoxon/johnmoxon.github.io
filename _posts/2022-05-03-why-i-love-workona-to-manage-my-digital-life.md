@@ -14,8 +14,9 @@ image:
   source: Workona
   url: https://workona.com/
 comments: true
-summary: I've tried many many tab management solutions over the years, Workona
-  blows all others out of the water.
+summary: Hi I'm John, I'm a self confessed browser-tab-addict, in my defence, I
+  need them all! I and now I've found the perfect tool to manage my habit, but
+  will it work?
 ---
 Content placeholder
 {%- comment -%}
