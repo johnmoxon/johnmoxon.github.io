@@ -16,7 +16,23 @@ image:
 comments: true
 summary: "As leaders our primary "
 ---
-Content placeholder
+As the world becomes increasingly digital, it is essential for organizations to have a strong digital capability in order to stay competitive. But how can an organization go about building this capability? Here are some strategies to consider:
+
+Assess what digital capability is required within the company or function. This involves evaluating the organization's current and future needs in terms of technology, processes, and skills. This can be done through a variety of methods, such as conducting a gap analysis, surveying employees, or consulting with industry experts.
+
+Map the current digital capability of the incumbent team. This involves taking stock of the skills and knowledge that the current team possesses, as well as any areas where they may be lacking. This can be done through a combination of assessments, interviews, and other data gathering methods.
+
+Train existing talent. Once the gaps in digital capability have been identified, the next step is to find ways to fill them. One option is to invest in training and development for existing employees. This could include things like online courses, workshops, or in-person training sessions.
+
+Recruit individuals to fill identified gaps. If the organization is unable to fill its digital capability gaps through training alone, it may need to look to external sources for talent. This could involve recruiting individuals with the necessary skills and knowledge, or partnering with service providers who can bring in expertise as needed.
+
+Identify service partners to assist. In some cases, it may make more sense to partner with external service providers rather than trying to build the necessary digital capability in-house. These partners can help to fill gaps in knowledge and resources, and can often bring a fresh perspective to the organization.
+
+Implementing these strategies can help an organization grow its digital capability and stay competitive in today's fast-paced, digital world. By taking the time to assess its needs, map its current capabilities, and identify the best ways to fill any gaps, an organization can build a strong foundation for success.
+
+
+
+
 {%- comment -%}
 - - -
 ## Writing GPS
