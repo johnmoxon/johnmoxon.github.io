@@ -16,7 +16,7 @@ image:
 comments: true
 summary: "As leaders our primary "
 ---
-I've read so many articles lately that start with something along the lines of *"As the world becomes increasingly digital..." -* Let's be clear, that ship has sailed, we're already there. Yes, technology and digital adoption will continue to advance, but your organisation has 
+I've read so many articles lately that start with something along the lines of *"As the world becomes increasingly digital..." -* Let's be clear, that ship has sailed, we're already there. Yes, technology and digital adoption will continue to advance, but if your organisation has 
 
 it is essential for organizations to have a strong digital capability in order to stay competitive. But how can an organization go about building this capability? Here are some strategies to consider:
 
