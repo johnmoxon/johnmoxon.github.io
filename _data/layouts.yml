@@ -1,0 +1,7 @@
+items:
+  - name: Generic page layout
+    description: Generic content page
+    id: page
+  - name: Error / Maintenance page
+    description: Error page layout
+    id: error
