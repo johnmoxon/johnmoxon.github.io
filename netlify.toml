@@ -7,6 +7,8 @@
 # For context-specific rules, use _headers or _redirects files, which are
 # PER-DEPLOY.
 
+# v3.0
+
 [[redirects]]
   from = "/"
   to = "/product-management/2021/03/28/start-your-passion-project-immediately"
