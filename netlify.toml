@@ -21,10 +21,10 @@
   force = true
   status = 301
 
-[[redirects]]
-  from = "/assets/uploads/*"
-  to = "/.netlify/images?url=/assets/uploads/"
-  status = 200
+#[[redirects]]
+#  from = "/assets/uploads/*"
+#  to = "/.netlify/images?url=/assets/uploads/"
+#  status = 200
 
 
 # [[redirects]]
