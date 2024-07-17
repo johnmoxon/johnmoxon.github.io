@@ -6,9 +6,9 @@ source "https://rubygems.org"
 
 gem "jmblog-theme"
 gem "webrick"
-gem "jekyll"
+gem "jekyll", ">= 3.9.4"
 
 group :jekyll_plugins do
   gem 'jekyll-mentions'
-  gem 'github-pages'
+  gem 'github-pages', '>= 229'
 end
