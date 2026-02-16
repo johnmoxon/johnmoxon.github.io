@@ -10,5 +10,5 @@ gem "jekyll"
 
 group :jekyll_plugins do
   gem 'jekyll-mentions'
-  gem 'github-pages'
+  gem 'github-pages', '>= 229'
 end
